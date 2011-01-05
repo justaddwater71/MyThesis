@@ -1,0 +1,178 @@
+\chapter {Prior and Related Work}
+
+\section {Introduction}
+Detecting authors on mobile devices requires selection of a feature set that distinguishes authors, selection of techniques that effectively uses these features to identify authors, selection of efficient machine learning
+
+\section {Author Detection}
+"Automated authorship attribution is the problem of identifying the author of an anonymous text, or text whose authorship is in doubt" \cite{love_attributing_2002}.  For this thesis, author detection and authorship attribution are synonymous.  The explosive growth of communications and document storage on the Internet provides a vast amount of data to draw on for author detection.  Books, articles, blogs, tweets, and emails are posted for public viewing in an electronic format every day.  Some of these postings have verifiable authors.  Many Internet authors use nom de plumes or are posted anonymously.  The increased speed and storage capacity of computing devices allow analysis of these corpora for author detection.
+
+\section {Machine Learning}
+"Machine learning is programming computers to optimize a performance criterion using example data or past experience" \cite{alpaydin_introduction_2004}.  Machine learning has been used famously to determine the authors of the Federalist papers, allow computers to "read" human handwriting, and to mine sales data for profitable trends.  Two broad categories of machine learning are supervised learning and unsupervised learning.  Supervised learning is "learning with a teacher."  The teacher can show the learner what to do based on examples or experience. Unsupervised learning is "learning with a critic" \cite{alpaydin_introduction_2004}. This thesis relies exclusively on supervised learning because identifying authors on mobile devices requires construction of an author model away from the mobile device.  That model is then put on a device for ongoing author identification.  The models require previous "teaching" instead of predictive "criticizing".
+
+Machine learning is comprised of a set of classes, a classifier, a feature set, and data.  In supervised learning, the machine learner uses a data input comprised of features fitted to (or owned by) by a specific class.  Based on creatively counting these features, the machine learner creates a model for each class based on the the behavior of the classifier.  Finally, test data, consisting of sets of features, are processed by the classifier based on the previously built models.  The classifier provides an output of the most likely class that fits the given features.
+
+Machine learning is central to this thesis.  Modeling corpora of emails and tweets from numerous authors on large computers, and, then, testing prediction capability on mobile devices requires not just accurate machine learning, but efficient machine learning.  The efficiency is needed due to the limits of even the most advanced mobile devices.
+
+	\subsection {Machine Learning Techniques}
+	The techniques in this thesis are all supervised.  Specifically, the two supervised techniques used are Naive Bayes and Support Vector Machine (SVM).  Naive Bayes was chosen because it is computationally lightweight compared to many other methods.  Support Vector Machine was chosen because data for SVM can be stored in "sparse format".  Sparse means that every feature does not have to be represented in the stored data for a model or test case.  Features with a zero count can simply be excluded.  SVM has been successful in many other authorship attribution experiments \cite{jurafsky_speech_2009}.
+
+		\subsubsection{Naive Bayes}
+			\paragraph{} Naive Bayes is a supervised learning method that uses Bayes Rule of probability chaining over a set of features (words in a document) to arrive at an overall probability that a specific a set of features (words in a document) belongs to a particular class (specific author). Naive Bayes uses a strong independence assumption among the various features.  This means that the classifier assumes that the probability of one feature appearing in a data set is completely independent of another feature showing up in the data set.  While this independence of features is unlikely to be actually true, the independence keep the calculation of probabilities simple.  In the case of documents and authors, Naive Bayes represents a bag of words model of a document where word order is lost and only frequency or occurrence of words or word combination is captured. The probability that a document, d, belongs to a given class, c, is given by:
+				\begin{equation} P(c|d) \propto P(c) \prod_{i<k<n_d} P(t_k|c) \end{equation}
+
+			\paragraph{} To specifically apply the above equation to author detection, the classifier returns the class with the highest probability after executing the above formula.  This turns the above equation into a maximum a posteriori (MAP) class $c_{map}$:
+				\begin{equation} c_{map} = arg \: max \; \hat{P}(c|d) = arg \: max \; [ \hat{P}(c) \prod_{i<k<n_d} \hat{P}(t_k|c) ] \end{equation}
+
+			since underflow is an issue when numerous float values are multiplied together over a set of features, the practical application of the above formula is:
+				\begin{equation} c_{map} = arg \: max \; \hat{P}(c|d) = arg \: max [ log \: \hat{P}(c) + \sum_{i<k<n_d} log \: \hat{P}(t_k|c) ] \end{equation}
+
+			??? My code does not have a prior -- am I messing this up?  The project in machine learning did not have a given prior either, investigate this!!! ???
+			
+			Since the probability of each feature is multiplied by the probability of every other feature, a zero probability for any feature will make the overall probability zero.  To handle this issue, smoothing is used.  Smoothing is a method of adding some non-zero values to each feature to prevent zero values.  The simplest form of smoothing is Laplace (Plus One Smoothing).  In this method, each feature in the feature set is initialized with a count of 1 instead of zero.  The denominator in the probability equation is increased by $1 * number of features$ to account for all the added ones.  This method often produces undesirable results.  For this thesis, the counts from words in the Google Web1T corpus are used to smooth word counts in Naive Bayes.  The specific details of the Google Web1T corpus are covered in a later section of this chapter.
+
+		\subsubsection{Support Vector Machine}
+		A Support Vector Machine (SVM) is a supervised learning method that find a separating line or shape through a set of data based on a feature set.  This is based on finding a boundary between two types of data in a dataset, then computing the largest boundary between closest data points and the boundary.  In cases where a clear boundary between two data sets is not possible, a "slack variable" provides an allowance of data points to be on the wrong side of the boundary. To create the boundary, SVM "maps the input vectors into some high dimensional feature space, Z, through some non-linear mapping chosen a priori" \cite{vapnik_support-vector_1995}
+
+		Two situations: 1) data can be separated without error and 2) data cannot be separated without error.
+
+			\paragraph{Historical Roots of Support Vector Machines}
+			SVM historical roots lie in the R.A. Fischer's pattern recognition work using a Variance/Covariance matrix \cite{fisher_use_1936}.  Fisher's pattern recognition used the mean matrix (also know as the centroid of a matrix) and  variance-covariance matrix (also known as the dispersion of a matrix) of two normal distributions, and found the optimal Bayesian solution was a non-linear function.  Fisher simplified his non-linear function to a linear function for situations where the dispersion of both normal distributions are equal.  He even found that his simplified linear equation worked satisfactorily when the distributions needing patterns recognized were not strictly normal.
+
+				%\begin{equation}\label{Variance} \frac{(\mathbf{x} -\mathbf{m} ) (\mathbf{x} - \mathbf{m})}{n} \end{equation}
+
+				%\begin{equation}\label{Covariance} \frac{(\mathbf{x} - \mathbf{m}) (\mathbf{y} - \mathbf{m)}}{n} \end{equation} 
+
+			From this basis, Fisher created a precedent of pattern recognition based on linear discriminating surfaces within a multi-dimensional space.  Fisher's work was furthered by perceptron work in the 1960's.  This work created multiple linear discriminating surfaces to find a matching pattern.  However, there was no method to optimize the separation between data using perceptrons.  From the need to optimize the separation, feedback mechanisms were developed to refine the perceptron weights. By further developing the idea of feeding back to the perceptron weights, SVMs were created.
+
+			\paragraph{SVM Base Equations}
+				\subparagraph {Probability of Error} E being expectation value of the probability of committing an error on a test example is bounded by the ration between the expectation value of the number of support vectors and the number of training vectors:
+
+				\begin{equation} E[Pr(error)] \leq \frac{E(number\ of\ support\ vectors)}{number\ of\ training\ vectors}\end{equation}
+
+				\subparagraph{Optimal Hyperplane in Feature Space}
+				\begin{equation}\label{oh1} \mathbf{w_0} \cdot \mathbf{z} + b_0 = 0\end{equation} where $w_0$ are weights, $z$ is the space, and $b_0$ is still a mystery to me.
+				To that end, $\mathbf{w_0}$ "can be written as some linear combination of support vectors."  This uses the following equation:
+				\begin{equation}\mathbf{w_0} = \sum_{support\ vectors} \alpha_i \mathbf{z_i}\end{equation} and the decision function using those weights is given by
+				\begin{equation}I(z) = sign\left(\sum_{support\ vectors} \alpha_i \mathbf{z_i} \cdot \mathbf{z} + b_0\right)\end{equation}
+
+				\subparagraph*{Optimal Hyperplanes}
+				For distance $\rho$ between projections defined by the support vectors, $\rho$ is defined as:
+				\begin{equation}\rho(\mathbf{w}, b) = \min_{x:y=1} \frac{\mathbf{x} \cdot \mathbf{w}}{ |\mathbf{w}|} - \max_{x:y=-1} \frac{\mathbf{x} \cdot \mathbf{w}}{|\mathbf{w}|}\end{equation}
+				given that \eqref{oh1} it follows that the weights needed to create the optimal hyperplane are given by
+				\begin{equation}\label{oh2} \rho (\mathbf{w_0}, b_0) = \frac{2}{|\mathbf{w_0}|}\end{equation}  The best solution maximizes the distance $\rho$.  To maximize $\rho$, you must minimize the magnitude of $\mathbf{w_0}$.  Find that minimum $\mathbf{w_0}$ is a quadratic programming issue.
+
+				\subparagraph{Procedure} "Divide the training data into a number of portions with a reasonable small number of training vectors in each portion.  Start out by solving the quadratic programming problem determined by the first portion of training data.  For this problem there are two possible outcomes: either this portion of the data cannot be separated by a hyperplane (in which case the full set of data as well cannot be separated), or the optimal hyperplane for separating the first portion of the training data is found." If this first set is found to be linearly separable, then all the non-support vector values are discarded, a new batch of values are put into this set (these values do not meet the constraint of $y_i(\mathbf{w} \cdot \mathbf{x_i} + b) \ge 1, i = 1,...,{l}$ )
+				\subparagraph*{Soft Margins}
+				In cases where the data is not linearly separable, the goal becomes to minimize the number of errors (the number of values on the wrong side of the hyperplane).  Now a new variable $\xi \ge 0, i=1,...,l$ is introduced along with the function $\Phi (\xi) = \sum_{i=1}^{l} \xi_{i}^{\sigma}$ .  The constraints are that the value 
+				$\xi_i$ does not push values in the non-negative quadrant out of the negative quadrant ( $y_i(\mathbf{w} \cdot \mathbf{x_i} + b) \ge 1 - \xi_i, i=1,...,l$.  Also, $\xi_i$ is zero or a positive number ( $\xi_i \ge 0$).  $\xi$ here represents "the sum of deviations of training errors"
+				The central equation for minimizing the number of errors is:
+				\begin{equation}\label{soft_margin}  \frac{1}{2}\mathbf{w^2} + CF(\sum_{i=1}^{l} \xi_{i}^\sigma)\end{equation}
+				In cases for $ \xi_{i}^{\sigma} $ where $\sigma=1$, we are dealing with the soft margin hyperplane.  Cases where $\sigma < 1$, there may not be a unique solution.  For values of $\sigma > 1$, there are also unique solutions, but $\sigma =1$ is the smallest value and that allows the term $CF(\sum_{i=1}^{l} \xi_{i}^\sigma)$ from \eqref{soft_margin} to not overwhelm  the $frac{1}{2}\mathbf{w}^2$.
+			\paragraph{Multi-Class SVM}
+
+
+
+	\subsection {Machine Learning Tools}
+
+		\subsubsection{LibSVM} LibSVM attempts to optimize the SVM equation 
+		\begin{equation} \min_{\mathbf{w}, b, \xi} \frac{1}{2} \mathbf{w^t w} + C \sum_{i=1}^{l} \xi_i \end{equation}
+		\begin{equation} \text{subject to } y_i( \mathbf{w^t}\phi ( \mathbf{x}_i ) + b ) > 1- \xi_i \end{equation}
+		\begin{equation} \text{and } \xi_i > 0.
+
+		For all kernels used in SVM a variable that must be solved for prior to optimization, the penalty term, $C$.  Other kernels have additional variables that must be solved for prior to optimization, such as \gamma in the RBF kernel.  While there are sophisticated methods to find C and other required variables, LibSVM takes a simple, straighforward approach: grid search.  The grid for this search is a log grid search.  As the local minimum is found on each pass of the grid search, libSVM reduces the grid size to home in on the minimum C value.  
+
+			\paragraph{} To make libSVM more efficient and more likely to converge on a solution, data in the training set should be scale to either span 0 to +1 or -1 to +1.  While test data may show up outside the original training data range, libSVM will extend the normalized range to accomodate.  For example, if the range of the training data was -100 to +100, libSVM would scale that range to -1 to +1.  If there was test datum with a value of -110, then libSVM would scale that datum to -1.1.  While it is stated here that libSVM scales data, that function is not automatic within libSVM itself, but is rather part of the libSVM.
+		
+			\paragraph{} LibSVM was originally constructed in C (VERIFY) and employed with python tools to support.  LibSVM is not available in a wide array of languages, including Java.  A Java version of libSVM makes libSVM functional on many of the mobile operating systems available today, including Android.  For this reason, libSVM was originally chosen as the SVM tool for this thesis.
+
+
+		\subsubsection{LibLinear}  While libSVM has numerous kernel to improve results, the inclusion of code to accomdate these kernels slows libSVM down.  To increase processing speed for libSVM for linear kernels, libLinear was created.  LibLinear removes all code in libSVM except for code explicitly used for a linear kernel.  A linear kernel has been found to give as good or nearly as good a result as other kernels such as RBF, parabolic, and radial for text classification, especially when the corpus being used is large.  The reduction is code can produce resutls 100-200 times faster that using LibSVM.
+
+			\paragraph{} LibLinear has also been studied for large data sets that produces models which cannot be fit into memory.
+			
+
+\section {Features}
+
+	\subsection {Feature Types}
+
+	\subsubsection {N-Grams}
+
+	\subsubsection{Gappy Bigrams}
+
+	\subsubsection{Orthogonal Sparse Bigrams}
+
+	\subsection {Feature References} Feature selection is the process of deciding which features to include during classification. A set of features can be built from the training set, such as selecting N most used words in a training set.  Features can be further refined by using outside references.  For instance, a feature set could be built as the N most used words in a training set and filtered for stop words.  In this case, stop words could be defined by other researchers work or some standard stop word set.  Another option is to build all features from a reference set.  This thesis made heavy use of the Google Web1T Corpus to act as a feature filter and a feature reference.
+
+	\subsubsection{Google Web1T Corpus} 
+		\paragraph{} The Google Web1T Corpus is a massive corpus of English language N-grams ranging from N=1 to N=5.  The corpus was created from a snapshot of Google's search databases that took place during January 2006.  The corpus consists of text files with the N-grams accompanied by a count of those N-grams.  Each set of N-grams is stored in its own folder.  The N-Grams are organized alphabetically by the first word in the N-Gram.  For instance, "a cat" comes before "a dog" in the 2-Grams of the corpus.  The unique folder within the corpus is the 1-Gram folder.  There are two files within the 1-Gram folder.  One file is organized alphabetically like the rest of the corpus, but the other file is organize by count.  The largest count comes first.
+		\paragraph{} Punctuation is included in the corpus.  Sentence boundaries are indicated by $<$S$>$ and $<\backslash\text{S}>$.  To qualify for corpus inclusion, a 1-Gram needed to appear in the Google search databases at least 200 times.  Additionally, to appear in a 2-Gram or greater, a gram had to appear in the database at lest 40 times.  For 2-Grams and greater that appeared 40 times or more, but one of the words in the gram did not individually appear at least 200 times, the tag <UNK> is used to replace that word.  The characters used in the corpus are UTF 8.  Tokenization was "similar" to Penn Tree Bank except that hyphenated words were separated.\cite{brants_web_2006}  From working with the corpus, it becomes apparent that contraction within the corpus does not exactly match Penn Tree Bank.  No "'t" contractions were kept intact during tokenization.  The authors were contacted regarding this tokenization issue, to determine if this was intentional, but no reply has been received.
+		\paragraph{} The Google Web1T is massive.  This size makes Web1T both powerful to employ and cumbersome to use. The statistics for this corpus are listed in Table \ref{table:GoogleWeb1T}.
+		\begin{center}	
+			\begin{table}[h]
+			\caption{Token and Type Counts in Google Web1T Corpus}
+			\label{table:GoogleWeb1T}
+				\begin{center}
+					\begin{tabular}{ l r }
+						Number of tokens: & 1,024,908,267,229\\
+						Number of sentences: & 95,119,665,584\\
+						Number of unigrams: & 13,588,391\\
+						Number of bigrams: & 314,843,401\\
+						Number of trigrams: & 977,069,902\\
+						Number of fourgrams: & 1,313,818,354\\
+						Number of fivegrams: & 1,176,470,663\\
+					\end{tabular}
+				\end{center}
+			\end{table}
+		\end{center}
+
+	\subsection {Feature Compression Techniques} Due to the large size of the corpora and feature reference used in this thesis, an efficient way to represent words and N-grams was needed.  After surveying general literature on representing large data sets, the search for this thesis was narrowed.  Two methods of efficiently representing large sets were investigated: bloom filters and minimal perfect hash functions.  Minimal perfect hash functions were ultimately chosen as the tool for representing data in this thesis.
+
+		\subsubsection{Bloom Filters}
+			\paragraph{}Bloom filters allow efficient storage of a list of values with zero probability of false negatives and a minimum probability of false positives.  A Bloom filter consists of an array of m bits and k hash functions.  Each hash function has an output range of 0 through, but not including, m.  At the beginning of the construction of the Bloom filter, all m bits are set to zero. Each value to be a member of the Bloom filter is processed by each hash function.  The output of the hash function corresponds to the array position of one of the m bits, which is then set to 1.  If an output bit is already set to 1, that bit remains a 1. After all Bloom filter member values have been processed by the hash functions, the array of bits should be a mix of zeros and ones.  
+			\paragraph{}To determine if a value belongs to the Bloom filter, that value is run through all k hash functions.  If each array position output by the k hash function contains a bit set to one, then the value probably belongs to the Bloom filter.  If any of the m bits is a zero, that value does not belong.
+			\paragraph{} There are variations on the bloom filter that can use parallel architectures to advantage.  For example, if the array of m bits is a multiple of k, then each hash function can have a range of 0 to $\frac{m}{k}$.  Then each hash function can be run in parallel instead of in series.  This scheme has no effect on the probability of a false positive, but can be appreciably faster in parallel structures.
+			\paragraph{}The work in a Bloom filter comes from determining the minimum values required for k and m to represent the expected set of values for a required false positive rate. The trade offs are, the larger the number of bits, the lower the probability of a false positive, but the larger the storage of the Bloom filter becomes.  Likewise, an increased number of hash functions provides a lower probability of false positives, but larger numbers of hash functions increases the computational cost of the Bloom filter.  Given a required maximum false positive probability, p, and a maximum number of items, n, the minimum number of bits,m,  is given by:
+			\begin{equation}m = \frac{n \ln{p}}{(\ln{2})^2}\end{equation}
+
+		\subsubsection{Minimal Perfect Hash Functions} 
+
+\section {Evaluation Criteria}
+
+	\subsection {Accuracy} Accuracy is a widely used and intuitive performance measure classification.  Accuracy, however, is flawed.  Accuracy does not represent the effectiveness of a classifier well when the number of true negatives is large compared to the number of true positives.  Missing all the true positives, but calling everything a negative, true or otherwise, yields a high accuracy without actually being effective at finding correctly labeled positives.  Accuracy is defined as:
+	\begin{equation} accuracy = \frac{tp + tn}{tp + fp + tn + fn} \end{equation}
+
+	\subsection {Precision and Recall} Due to the weakness of accuracy as an evaluation criteria, precision and recall (also known as sensitivity) is used.  Precision measures how often a document that belongs to the class being sought is actually labeled as that class.  In other words, for all the actual documents written by the target author, how often are those documents labeld by the classifier as being written by the author.  For all the documents said to be true by the classifier, what percentage are actually true.
+	\begin{equation} precision = \frac{tp}{tp + fp} \end{equation} Recall determines how well the classifier picks out true documents.  In other words, for all the true documents in the set, how often does the classifier detect those true documents?  Recall is given by:
+	\begin{equation} recall = \frac{tp}{tp + fn} \end{equation}	
+
+	\subsection {F-Score} F-Score is the harmonic mean of precision and recall.  It is a superior indicator to accuracy in evaluating a classifier. The definition of F-Score used in this thesis is:
+	\begin{equation} F-Score = \frac{2}{ \frac{1}{p} + \frac{1}{r} } \end{equation}
+	This definition is a variant of the standard definition of:
+	\begin{equation} F-Score = \frac{(\beta^2 + 1) * 2pr}{\beta^2 * (p + r)} \end{equation}
+	The full definition of F-Score involves an additional term, $\beta$, which is a weighting value.  A $\beta$ value greater than one favors precision and a $\beta$ value less than one favors recall.  This thesis values precision and recall equally.  This makes $\beta = 1$, thus the simpler equation for F-Score used in this thesis:
+	\begin{equation} \frac{2pr}{p + r} = \frac{2}{ \frac{1}{p} + \frac{1}{r} }\end{equation}  F-Score will be the primary evaluation criteria for this thesis.
+
+
+\section{Mobile Device Platforms}  There are numerous mobile device platforms ranging from the near ubiquitous mobile phones to tablets to personal digital assistants.  Even within the category of mobile phones, there is a wide ranging array of capability and popularity.  For newer mobile phones, capabilities often include access to storage, a network, phone services, GPS, and multimedia.  Storage can be both onboard phone storage or removable storage such as a micro-SD card.  There is likely access to more than just the mobile provider GSM or CDMA network.  Modern phones often have WiFi access.  GPS services provide position updates to the phone.  Multimedia capability varies dependent on display size, resolution, battery consumption, processing speed, memory, and network availability.  Mobile phones have not yet reached the level of commonality expected in desktop and laptop computing devices.\cite{}
+
+	\subsection{Mobile Devices by Popularity} To determine an effective development strategy for author detection on a mobile phone, it is sensible to determine what development language would support the largest number of mobile phones.  By device popularity, the most dominant mobile operating systems, in order,  are Symbian (Nokia phones), Research In Motion (Blackberry), iOS (Apple iPhone, iPad, iPod), and Android (Droid, Evo, Galaxy Tab).  These four OS platforms constitute 88\percent of the mobile device market for first quarter of 2010.\cite{_gartner_????}  Symbian, RIM, and Android all accept applications built on Java, or at least a variant of Java. Based on this vast market share, using Java as the development language for author detection on a mobile device has the largest potential for use.\cite{_blackberry_????}\cite{_symbian_????}\cite{murphy_android_2010}  Only iOS uses exclusively Objective C.\cite{_creating_????}  
+
+	\subsection{Android Operating System}  
+		\paragraph{} Based on its popularity and ease of installing test applications, Android is used as the development platform for this thesis.  Android applications are not written, strictly speaking, in Java.  Android applications are written in Dalvik which implements most of the syntax and structure of Java.  Dalvik development is targeted at mimicking recent stable releases of the Java Development Kit (JDK).\cite{}  The core of the Android operating system is built on Linux\cite{}.  
+		\paragraph{} Android applications consist of a combination of Activities, Services, Intents, and Content Providers.  Activities are processes that users can see and interact with. Activities create the windows, tabs, and dialogs for user interaction.  Services run in the background with no user graphical user interface (GUI). Android Services are not equivalent to traditional Unix services.  Unix services are, by nature, persistent process within the operating system.  Android Services are just as prone to being killed by the operating system as an Activity. Intents are messages passed around by processes and Java Virtual Machines within the Android operating System. Typical Intents are created by Content Providers for actions such as incoming calls, incoming Short Messaging Service (SMS) messages, GPS, etc.  Other Typical Intents are passed between Activities in an application or between Services and Activities in an application.  Intents can start, stop, and pause Activities as well as just pass along data such as a String or integer. Applications use Activities, Services, and Intents in combination to provide functionality on an Android Mobile device.  
+		\paragraph{} Activities and Services continue to run in Android while sufficient resources remain on the mobile device.  When resources become exhausted, the Android operating system will shut down Activities and Services it deems as less important or less used.  This is why Android applications often lack a "Quit" or "Exit" function in their menus -- developers expect that the application can continue to run so long as the operating system has sufficient resources.  Contents providers, on the other hand, are persistent process driven by items such as GPS receivers, mobile networks, and WiFi networks.  Content providers are accessed and listened to by applications.  A Content Provider can also be built by a developer to act as a data provider for other application as an abstraction instead of an actual physical device like GPS or WiFi.\cite{}  
+
+
+\section{Corpora}
+
+	\subsection{ENRON Email Corpus}
+
+	\subsection{Twitter}
+
+\section{Recent Work in Author Detection, Google Web1T, and Mobile Devices}
+
+\section{Conclusion}
+
+
+
+

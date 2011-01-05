@@ -1,0 +1,6 @@
+FILE=$1
+
+latex --interaction=batchmode $FILE.tex
+bibtex $FILE.aux
+latex --interaction=batchmode $FILE.tex
+pdflatex --interaction=batchmode $FILE.tex

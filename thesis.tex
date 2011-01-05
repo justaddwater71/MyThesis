@@ -1,0 +1,182 @@
++% 
+% This is Jody Grady's Thesis
+%
+
+% This starts the document; the "npsreport" style is really a modified
+% report style. Feel free to use the options:
+%
+% "twoside" - prints "THIS PAGE INTENTIONALLY LEFT BLANK" on
+%             odd-numbered pages at the end of sections.
+%
+% "traditional" - prints a ``traditional'' NPS thesis style, rather
+% than the new one.
+% See also /opt/local/share/texmf-dist/tex/latex/base/report.cls
+
+%\documentclass[twoside,traditional]{npsreport} 
+%\documentclass[twoside]{npsreport} 
+%\documentclass[twoside,authorindex,thesis]{npsreport} 
+\documentclass[twoside,thesis]{npsreport} 
+\securitybanner{}
+\usepackage{pdfpages}
+\usepackage{amsmath}
+\usepackage{supertabular}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{eufrak}
+%\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{hyphenat}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage[pdftex,
+  pdftitle={\@title}, 
+  pdfauthor={\@author},
+  pdfkeywords={parts based object detection, computer forensics},
+  pdfpagemode=UseOutlines,
+  bookmarks,
+  bookmarksopen=false
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black,
+  urlbordercolor=white,
+  linkbordercolor=white,
+  citebordercolor=white,
+  filebordercolor=white,
+  menubordercolor=white,
+  runbordercolor=white,
+  pdfstartview={XYZ null null 1.22}]{hyperref}
+
+% Here are some commands that will help you make more attractive LaTeX
+%
+% Reference commands
+%
+% And here is the main thesis
+
+\urlstyle{rm}
+\title{Author Attribution on a Mobile Phone}
+\author{Jody Grady}
+\rank{Commander, United States Navy}
+\degree{Master of Science in Computer Science}
+\department{Department of Computer Science}
+\thesisadvisor{Robert Beverly}
+\secondreader{Craig Martell}
+\departmentchair{Peter J. Denning}
+\prevdegrees{B.E. Georgia Institute of Technology, 1994}
+\degreedate{March 2011} 
+\distribution{Approved for public release; distribution is unlimited}
+\RPTpreparedFor{}
+\abstract{ Put something abstracty here.....}
+
+% Information for the SF298.
+% These are mandatory:
+\ReportType{Master's Thesis}
+\DatesCovered{2009-03-01---2011-03-25}
+\SponsoringAgency{National Reconnaissance Office}
+\ReportClassification{Unclassified}
+\AbstractClassification{Unclassified}
+\PageClassification{Unclassified}
+
+\SupplementaryNotes{ The views expressed in this thesis are those of
+  the author and do not reflect the official policy or position of the
+  Department of Defense or the U.S. Government. \textbf{\footnotesize
+    IRB Protocol Number: n/a}}
+
+% These are optional:
+\ContractNumber{}
+\GrantNumber{}
+\ProgramElementNumber{}
+\TaskNumber{}
+\WorkUnitNumber{}
+\POReportNumber{}
+\Acronyms{}
+\SMReportNumber{}
+
+
+\SubjectTerms{Machine Learning,Author Attribution,Mobile Computing, Supervised Learning}
+\ResponsiblePerson{}
+\RPTelephone{}
+% Set up the floats properly. I love my floats!
+\setcounter{topnumber}{10}   % up to 10 floats at the top of the page; Should be enough
+\setcounter{totalnumber}{10} % see above
+%
+% your thesis begins here
+%
+% This must be on a line by itself:
+
+\begin{document}
+
+\NPScover                       % Cover
+\NPSsftne                       % SF298
+\NPSthesistitle                 % Title page
+\NPSabstractpage                % Abstract Page
+\NPSfrontmatter                 % NPS front matter follows
+
+% This changes the chaptermark and includes the various tables
+
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername}\ \thechapter.\ #1}{}}
+\tableofcontents\cleardoublepage
+\listoffigures\cleardoublepage
+\listoftables\cleardoublepage
+
+% I put the acknowledgements here
+\acknowledgements{
+..... I would like to thank all the little transistors that computed the results I got here....
+}
+
+% NPS body follows
+
+\NPSbody
+\include{rules}
+
+
+\include{chapter1} % Introduction
+\include{chapter2} % Prior and Related Work
+\include{chapter7} % Methods
+\include{chapter3} % Techniques
+\include{chapter4} % Experiments
+\include{chapter5} % Results and Discussions
+\include{chapter6} % Future Work and Conclusions
+
+% stop editing here. 
+
+\bibliographystyle{nps-plain-unsorted} %this was the original
+%\bibliographystyle{apalike} % use this to see name, date
+%\bibliographystyle{ieee}
+\bibliography{jhg-thesis}
+
+\NPSappendix                   % Appendices follow
+\include{Tables}
+%\chapter{Time Rules Code}
+%\lstset{language=Python,caption=Time Rules Code,label=time_rules.py,basicstyle=\footnotesize}
+%\singlespacing
+%\lstinputlisting{../../../src/timeline/time_rules.py}
+%\chapter{Timeline Code}
+%\singlespacing
+%\lstset{language=Python,caption=Timeline Code,label=timeline_thesis.py,basicstyle=\footnotesize}
+%\lstinputlisting{../../../src/timeline/timeline_thesis.py}
+
+
+% This is the official end of the thesis
+\NPSend
+
+% This is the official distribution list.
+% Free free to comment out or add your own
+% The list is automatically properly numbered.
+
+\addcontentsline{toc}{chapter}{Initial Distribution List}
+\chapter*{Initial Distribution List}
+\begin{enumerate}
+\item Defense Technical Information Center\\Ft. Belvoir, Virginia
+\item Dudley Knox Library\\Naval Postgraduate School\\Monterey, California
+%\item Naval Network Warfare Command\\Norfolk, Virginia
+%\item USCYBERCOM\\Fort George G  Meade, Maryland
+%\item COMFLTCYBERCOM\\Fort George G Meade, Maryland
+
+\end{enumerate}
+
+\end{document}
+
+% LocalWords:   Beverly
+
