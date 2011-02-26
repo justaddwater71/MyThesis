@@ -1,0 +1,139 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}Prior and Related Work}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.2.1}
+\contentsline {paragraph}{}{3}{paragraph*.2}
+\contentsline {section}{\numberline {2.2}Author Detection}{3}{section.2.2}
+\contentsline {paragraph}{}{3}{paragraph*.3}
+\contentsline {section}{\numberline {2.3}Machine Learning}{3}{section.2.3}
+\contentsline {paragraph}{}{3}{paragraph*.4}
+\contentsline {paragraph}{}{4}{paragraph*.5}
+\contentsline {paragraph}{}{4}{paragraph*.6}
+\contentsline {subsection}{\numberline {2.3.1}Machine Learning Techniques}{4}{subsection.2.3.1}
+\contentsline {paragraph}{}{4}{paragraph*.7}
+\contentsline {subsubsection}{Naive Bayes}{4}{subsubsection*.8}
+\contentsline {paragraph}{}{4}{paragraph*.9}
+\contentsline {paragraph}{}{5}{paragraph*.10}
+\contentsline {subsubsection}{Support Vector Machine}{5}{subsubsection*.11}
+\contentsline {paragraph}{}{5}{paragraph*.12}
+\contentsline {paragraph}{}{6}{paragraph*.13}
+\contentsline {paragraph}{Historical Roots of Support Vector Machines}{6}{paragraph*.14}
+\contentsline {paragraph}{Optimal Hyperplane in Feature Space}{7}{paragraph*.15}
+\contentsline {paragraph}{}{7}{paragraph*.16}
+\contentsline {paragraph}{}{7}{paragraph*.17}
+\contentsline {paragraph}{Procedure}{7}{paragraph*.18}
+\contentsline {paragraph}{Soft Margins}{8}{paragraph*.19}
+\contentsline {paragraph}{Multi-Class SVM}{8}{paragraph*.20}
+\contentsline {paragraph}{}{8}{paragraph*.21}
+\contentsline {subsection}{\numberline {2.3.2}Machine Learning Tools}{8}{subsection.2.3.2}
+\contentsline {paragraph}{}{8}{paragraph*.22}
+\contentsline {subsubsection}{LibSVM}{9}{subsubsection*.23}
+\contentsline {paragraph}{}{9}{paragraph*.24}
+\contentsline {paragraph}{}{9}{paragraph*.25}
+\contentsline {subsubsection}{LibLinear}{9}{subsubsection*.26}
+\contentsline {paragraph}{}{10}{paragraph*.27}
+\contentsline {section}{\numberline {2.4}Features}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Feature Types}{10}{subsection.2.4.1}
+\contentsline {paragraph}{}{10}{paragraph*.28}
+\contentsline {subsubsection}{N-Grams}{10}{subsubsection*.29}
+\contentsline {paragraph}{}{10}{paragraph*.30}
+\contentsline {subsubsection}{Gappy Bigrams}{11}{subsubsection*.31}
+\contentsline {paragraph}{}{11}{paragraph*.32}
+\contentsline {paragraph}{}{11}{paragraph*.33}
+\contentsline {paragraph}{}{12}{paragraph*.34}
+\contentsline {subsubsection}{Orthogonal Sparse Bigrams}{12}{subsubsection*.35}
+\contentsline {paragraph}{}{12}{paragraph*.36}
+\contentsline {paragraph}{}{12}{paragraph*.37}
+\contentsline {paragraph}{}{13}{paragraph*.38}
+\contentsline {paragraph}{}{13}{paragraph*.39}
+\contentsline {subsection}{\numberline {2.4.2}Feature References}{13}{subsection.2.4.2}
+\contentsline {subsubsection}{Google Web1T Corpus}{14}{subsubsection*.40}
+\contentsline {paragraph}{}{14}{paragraph*.41}
+\contentsline {paragraph}{}{14}{paragraph*.42}
+\contentsline {paragraph}{}{14}{paragraph*.43}
+\contentsline {paragraph}{}{14}{paragraph*.44}
+\contentsline {subsection}{\numberline {2.4.3}Feature Compression Techniques}{15}{subsection.2.4.3}
+\contentsline {subsubsection}{Bloom Filters}{15}{subsubsection*.45}
+\contentsline {paragraph}{}{15}{paragraph*.46}
+\contentsline {paragraph}{}{15}{paragraph*.47}
+\contentsline {paragraph}{}{15}{paragraph*.48}
+\contentsline {paragraph}{}{15}{paragraph*.49}
+\contentsline {subsubsection}{Minimal Perfect Hash Functions}{16}{subsubsection*.50}
+\contentsline {paragraph}{}{16}{paragraph*.51}
+\contentsline {paragraph}{}{16}{paragraph*.52}
+\contentsline {paragraph}{}{16}{paragraph*.53}
+\contentsline {paragraph}{}{17}{paragraph*.54}
+\contentsline {paragraph}{}{17}{paragraph*.55}
+\contentsline {paragraph}{}{17}{paragraph*.56}
+\contentsline {paragraph}{}{17}{paragraph*.57}
+\contentsline {paragraph}{}{17}{paragraph*.58}
+\contentsline {section}{\numberline {2.5}Evaluation Criteria}{18}{section.2.5}
+\contentsline {paragraph}{}{18}{paragraph*.59}
+\contentsline {subsection}{\numberline {2.5.1}Accuracy}{18}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Precision and Recall}{18}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}F-Score}{19}{subsection.2.5.3}
+\contentsline {section}{\numberline {2.6}Mobile Device Platforms}{19}{section.2.6}
+\contentsline {paragraph}{}{19}{paragraph*.60}
+\contentsline {paragraph}{}{19}{paragraph*.61}
+\contentsline {subsection}{\numberline {2.6.1}Mobile Devices by Popularity}{20}{subsection.2.6.1}
+\contentsline {paragraph}{}{20}{paragraph*.62}
+\contentsline {subsection}{\numberline {2.6.2}Android Operating System}{20}{subsection.2.6.2}
+\contentsline {paragraph}{}{20}{paragraph*.63}
+\contentsline {paragraph}{}{20}{paragraph*.64}
+\contentsline {paragraph}{}{20}{paragraph*.65}
+\contentsline {paragraph}{}{20}{paragraph*.66}
+\contentsline {paragraph}{}{21}{paragraph*.67}
+\contentsline {section}{\numberline {2.7}Corpora}{21}{section.2.7}
+\contentsline {paragraph}{}{21}{paragraph*.68}
+\contentsline {subsection}{\numberline {2.7.1}ENRON Email Corpus}{21}{subsection.2.7.1}
+\contentsline {paragraph}{}{21}{paragraph*.69}
+\contentsline {paragraph}{}{21}{paragraph*.70}
+\contentsline {subsection}{\numberline {2.7.2}Twitter}{22}{subsection.2.7.2}
+\contentsline {paragraph}{}{22}{paragraph*.71}
+\contentsline {paragraph}{}{22}{paragraph*.72}
+\contentsline {section}{\numberline {2.8}Recent Work in Author Detection, Google Web1T, and Mobile Devices}{22}{section.2.8}
+\contentsline {paragraph}{}{22}{paragraph*.73}
+\contentsline {paragraph}{}{23}{paragraph*.74}
+\contentsline {paragraph}{}{23}{paragraph*.75}
+\contentsline {section}{\numberline {2.9}Conclusion}{23}{section.2.9}
+\contentsline {chapter}{\numberline {3}Experimental Design}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Experimental Design Overview}{25}{section.3.1}
+\contentsline {paragraph}{Thesis Goals}{25}{paragraph*.76}
+\contentsline {paragraph}{Experimentation Phases}{25}{paragraph*.77}
+\contentsline {section}{\numberline {3.2}Phase One: Parameter Evaluation}{25}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Creating the Testing Combinations}{26}{subsection.3.2.1}
+\contentsline {paragraph}{}{26}{paragraph*.78}
+\contentsline {subsection}{\numberline {3.2.2}Organizing and Compressing Feature References}{27}{subsection.3.2.2}
+\contentsline {paragraph}{Sizing the Feature Reference Set}{27}{paragraph*.79}
+\contentsline {paragraph}{Three Tiered Hashing Scheme}{28}{paragraph*.80}
+\contentsline {paragraph}{Choosing Artifacts for the Three Tiered Hashing Scheme}{29}{paragraph*.81}
+\contentsline {subparagraph}{Omitting Punctuation}{29}{subparagraph*.82}
+\contentsline {subparagraph}{Omitting Capitalization}{30}{subparagraph*.83}
+\contentsline {subparagraph}{Omitting Sentence Boundaries}{31}{subparagraph*.84}
+\contentsline {subparagraph}{Omitting Unknown Words}{31}{subparagraph*.85}
+\contentsline {paragraph}{Choosing N-Grams}{31}{paragraph*.86}
+\contentsline {paragraph}{Gappy Bigram and Orthogonal Sparse Bigram Construction}{31}{paragraph*.87}
+\contentsline {paragraph}{Grouping By Size}{32}{paragraph*.88}
+\contentsline {subparagraph}{Small-To-Large}{32}{subparagraph*.89}
+\contentsline {subparagraph}{Small-And-Large}{33}{subparagraph*.90}
+\contentsline {subparagraph}{Random}{33}{subparagraph*.91}
+\contentsline {subparagraph}{Group Sizes}{33}{subparagraph*.92}
+\contentsline {subparagraph}{}{33}{subparagraph*.93}
+\contentsline {paragraph}{Data File Format}{34}{paragraph*.94}
+\contentsline {paragraph}{Running SVM}{35}{paragraph*.95}
+\contentsline {subparagraph}{}{35}{subparagraph*.96}
+\contentsline {subparagraph}{}{35}{subparagraph*.97}
+\contentsline {paragraph}{Running Naive Bayes}{35}{paragraph*.98}
+\contentsline {paragraph}{}{36}{paragraph*.99}
+\contentsline {section}{\numberline {3.3}Phase Two: Android Implementation}{36}{section.3.3}
+\contentsline {paragraph}{}{36}{paragraph*.100}
+\contentsline {paragraph}{}{36}{paragraph*.101}
+\contentsline {section}{\numberline {3.4}Corpora}{36}{section.3.4}
+\contentsline {paragraph}{ENRON Email Corpus}{37}{paragraph*.102}
+\contentsline {paragraph}{Naval Postgraduate School Twitter Short Message Corpus}{38}{paragraph*.103}
+\contentsline {section}{\numberline {3.5}Intended Comparison}{38}{section.3.5}
+\contentsline {chapter}{\numberline {4}Results and Analysis}{39}{chapter.4}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{41}{chapter.5}
+\contentsline {chapter}{List of References}{43}{chapter*.104}
+\contentsline {chapter}{Appendices}{44}{chapter*.104}
+\contentsline {chapter}{Initial Distribution List}{45}{chapter*.104}
+\contentsfinish 

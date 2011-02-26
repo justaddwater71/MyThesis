@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: rules.aux
+A level-1 auxiliary file: chapter1.aux
+A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter4.aux
+A level-1 auxiliary file: chapter5.aux
+The style file: nps-plain-unsorted.bst
+A level-1 auxiliary file: Tables.aux
+Database file #1: jhg-thesis.bib
+Warning--I didn't find a database entry for "_method_????"
+Warning--to sort, need author or key in _multiclass_????
+Warning--to sort, need author or key in _cmph_????
+Warning--to sort, need author or key in _gartner_????
+Warning--to sort, need author or key in _blackberry_????
+Warning--to sort, need author or key in _symbian_????
+Warning--to sort, need author or key in _creating_????
+Warning--to sort, need author or key in _enron_????
+Warning--to sort, need author or key in _streaming_????
+Warning--empty publisher in belazzougui_hash_2009
+You've used 19 entries,
+            2597 wiz_defined-function locations,
+            685 strings with 8049 characters,
+and the built_in function-call counts, 6499 in all, are:
+= -- 620
+> -- 131
+< -- 3
++ -- 58
+- -- 38
+* -- 265
+:= -- 810
+add.period$ -- 70
+call.type$ -- 19
+change.case$ -- 71
+chr.to.int$ -- 0
+cite$ -- 28
+duplicate$ -- 406
+empty$ -- 774
+format.name$ -- 38
+if$ -- 1600
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 15
+newline$ -- 134
+num.names$ -- 22
+pop$ -- 248
+preamble$ -- 1
+purify$ -- 57
+quote$ -- 0
+skip$ -- 281
+stack$ -- 0
+substring$ -- 298
+swap$ -- 118
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 66
+warning$ -- 9
+while$ -- 37
+width$ -- 21
+write$ -- 239
+(There were 10 warnings)
