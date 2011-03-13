@@ -1,0 +1,107 @@
+\section{Getting \LaTeX}
+Get a copy of the \texttt{npsthesis.tar.gz} distribution from
+\url{http://faculty.nps.edu/slgarfin/npsthesis.tar.gz}. Unpack this
+into a directory on your computer; \tabref{files} shows the important
+files that you will fine.
+
+\newcommand{\fileinfo}[2]{\texttt{#1} & #2\\}
+\begin{table}[h]
+\frame{
+\begin{tabularx}{\textwidth}{lX}
+\fileinfo{Makefile}{The Makefile to make the thesis}
+\fileinfo{authorindex.*}{The \LaTeX authorindex package, for making
+the Referenced Authors page.}
+\fileinfo{chngcntr.sty}{The \texttt{chngcntr} package, for changing
+the way that \LaTeX displays its counters.}
+\fileinfo{fixbbl.py}{A python program that removes the breaks in the
+\texttt{.bbl} file inserted by BibTex.}
+\fileinfo{nps-plain.bst}{A BibTex style file that makes references in a style that is acceptable to NPS.}
+\fileinfo{nps-plain-unsorted.bst}{A BibTex style file that makes references in a style that is acceptable to NPS.}
+\fileinfo{nps-plain-classified.bst}{A BibTex style file that makes references in a style that is acceptable to NPS.}
+\fileinfo{nps-plain-classified-unsorted.bst}{A BibTex style file that makes references in a style that is acceptable to NPS.}
+\fileinfo{nps\_logo\_3clr\_cymk.pdf}{NPS Logo, 3 color}
+\fileinfo{nps\_logo\_black\_cymk.pdf}{NPS Logo, black and white}
+\fileinfo{thesis.bib}{Your thesis bibliography file}
+\fileinfo{thesis.tex}{Your thesis \LaTeX source}
+\end{tabularx}}
+\caption{Files included with your distribution.}\label{files}
+\end{table}
+
+\begin{table}
+\frame{\begin{tabularx}{\textwidth}{lX}
+\fileinfo{\verb+\chapref+}{Chapter reference that formats as ``Chapter 3''}
+\fileinfo{\verb+\chapvref+}{Chapter reference that formats as ``Chapter 3 on page 4''}
+\fileinfo{\verb+\secref+}{Section reference that formats as ``Section
+  3.'' You can use this for sections, subsections, and so on.}
+\fileinfo{\verb+\secvref+}{Section reference that formats as ``Section 3 on page 4''}
+\fileinfo{\verb+\figref+}{Figure reference that formats as ``Figure 3''}
+\fileinfo{\verb+\figvref+}{Figure reference that formats as ``Figure 3 on page 4''}
+\fileinfo{\verb+\tabref+}{Table reference that formats as ``Table 3''}
+\fileinfo{\verb+\tabvref+}{Table reference that formats as ``Table 3 on page 4''}
+\fileinfo{\verb+\appref+}{Appendix reference that formats as ``Appendix 3''}
+\fileinfo{\verb+\appvref+}{Appendix reference that formats as ``Appendix 3 on page 4''}
+\end{tabularx}}
+\caption{Reference commands included in the \texttt{thesis.tex} demo file.}\label{refcommands}
+\end{table}
+
+To create your thesis, start with the file \texttt{thesis.tex}. 
+\texttt{thesis.bib} 
+
+\section{Tables and Figures}
+Tables and figures are floating objects that \LaTeX moves around as
+necessary to make your thesis look better. Tables are inserted with
+the \verb+\begin{table}+ command while figures are inserted with
+\verb+\begin{figure}+. Here are some rules to consider:
+
+\begin{itemize}
+\item Every table and figure should have a caption, created with the
+  \verb+\caption{text}+ command.
+\item Every table and figure should have a unique label, created with
+  the \verb+\label{marker}+ command.
+\item Every table and figure should be referred to in the main body of
+  your text. \LaTeX provides a command called \verb+\ref{marker}+;
+  this template provides additional commands \verb+\tabref{marker}+
+  and \verb+\figref{marker}+. All of the reference commands are shown
+  in \tabvref{refcommands}.
+\item Do not assume that figures will be on the same text as your
+  page. Always refer to the 
+\end{itemize}
+
+\section{Including Photos and Figures}
+This section shows how you can easily include photos. 
+
+Using the \verb+\sgraphic{filename}{caption}+ command you bring in a
+photo from a given filename and give it a caption. The filename is
+then automatically set up as \LaTeX cross-reference. Use the
+\verb+\figref{tag}+ command to get an in-paragraph
+reference. \figref{demos/demo_art/home_topimg} shows an example of this.
+
+\sgraphic{demos/demo_art/home_topimg}{Banner from the top of the NPS web site}
+
+The \verb+\twofigures{width1}{image1}{caption1}{width2}{image2}{caption2}+
+macro allows you to have two figures side-by-side, as shown in
+\figref{demos/demo_art/photo1} and \figref{art/photo2}.
+
+There are a large number of these layout macros at the end
+of\verb+npsthesis.cls+ --- give them a look!
+
+\twofigures{2.5in}{demos/demo_art/photo1}{A photo from the NPS web site}
+           {2.5in}{demos/demo_art/photo2}{A second photo from the NPS
+             web site.}
+
+\section{Going Further}
+If you are interested, feel free to review the file
+\verb+npsthesis.cls+. A great deal of effort has gone into making this
+file both readable and understandable. You will find additional
+commands in this file and you may even have thoughts on changes to
+make. Please let us know what you come up with!
+
+You may find the following packages useful:
+
+\verb+multirow+ -- Allows a single table cell to extend to multiple
+rows.
+\verb+ifthen+ --- allows you to put conditions in your thesis. It's a
+bit easier than using the \verb+if+ that's built in to \TeX.
+
+
+

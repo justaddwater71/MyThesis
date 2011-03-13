@@ -1,0 +1,457 @@
+\chapter{Introduction to \LaTeX}
+\LaTeX{} is a text formatting system that dates back to the 1980s. With 
+\LaTeX{} you create your document by editing a text input file using a
+program such as EMACS, \verb+vi+, or another editor. You then give
+this input file to \LaTeX{} (or, more accurately, to a program called
+\verb+pdflatex+). This program then literally \emph{compiles} your
+input file into a PDF file.
+
+There are many reasons that you may wish to use \LaTeX{} for preparing
+a technical report, journal article, or master's thesis:
+
+\begin{itemize}
+\item \LaTeX{} allows you to directly include other files at the time
+  that the PDF is created. This makes it easy to automatically
+  incorporate the results of experiments or graphing programs directly
+  into your final document, without having to retype anything.
+\item Because the \LaTeX{} input file is plain ASCII, you can store
+  your document using a source code control system such as
+  Subversion\cite{subversion}. This allows multiple people to work on
+  the same document at the same time; Subversion automatically merges
+  the changes together.
+\item The Bibtex bibliography system automatically maintains your
+  citations and bibliography. The citation format is maintained
+  separately from the citation contents, allowing you to easily change
+  citation styles when submitting to different conferences or journals.
+\item Unlike Word, \LaTeX{} gives you precise control over the
+  placement of the text on the page. You can easily make global changes
+  to your document and have them reflected everywhere. 
+\item \LaTeX{} is free software and runs on PCs, Macs, and Unix
+  systems. This means that you can produce your documents on
+  practically every computer you have, without having to purchase
+  anything else.
+\end{itemize}
+
+There are many good reference books and online tutorials for \LaTeX
+out there. The purpose of this document is not to duplicate that work,
+but to provide you with the minimum amount of information that you
+require to use \LaTeX{} to produce a master's thesis or technical
+report at NPS.
+
+
+\section{Installation}
+Before you can use \LaTeX, you will need to install two critical
+pieces of software:
+\begin{enumerate}
+\item The \LaTeX environment itself.
+\item A program for editing the |.tex| input files.
+\end{enumerate}
+
+Here once again there are many options that you have. For both \LaTeX
+and text editors there are both Free Open Source and commercial
+distributions. This document makes specific recommendations that were
+known to work as of the document's date of publication. You are free
+to explore on your own as well.
+
+
+\subsection{Installation on MacOS 10.5 and above}
+
+There are many ways to get \LaTeX running on the Mac. The most common
+are:
+
+\begin{enumerate}
+\item Download a working installer for the most recent distribution
+  from \url{http://www.tug.org/mactex}.
+\item Install it from sources using \url{http://www.macports.org}.
+\item Install it using the \textit{i-Installer}.
+\end{enumerate}
+
+\subsubsection{Installing from TuG}
+
+TUG's MacTeX distribution will install \LaTeX in the
+|/usr/texbin/pdflatex| directory and will update your startup files to
+include this directory in your path. If you chose this strategy, be
+sure to click ``Customize'' in the installer and select that all of
+the optional packages be installed:
+
+\subsubsection{Installing with MacPorts}
+
+MacPorts will download and compile the \LaTeX distribution from
+sources and then install it in the |/usr/local/bin| directory. This
+approach involes more work on your part to get going, but less work in
+the long run, as you can use the MacPorts system to automatically
+install many other open source software that might be of interest, and you
+can easily upgrade the installation at a later point in time.
+
+MacPorts also requires that the Apple XCode system be installed. You should
+really have this installed anyway, since you need XCode to compile
+programs. 
+
+\begin{enumerate}
+\item Verify that XCode is installed by opening a Terminal and typing
+  |gcc|. 
+
+If you see something that looks like this, you are good to go:
+\begin{Verbatim}
+$ gcc
+i686-apple-darwin10-gcc-4.2.1: no input files
+$ 
+\end{Verbatim}
+
+If you see a ``command not found'' error, you need to install XCode:
+\begin{Verbatim}
+$ gcc
+-bash: gcc: command not found
+$ 
+\end{Verbatim}
+
+You can install from your installation CD or download it
+from \url{http://developer.apple.com} (you will need to create an
+Apple Developer account to perform the download.)
+
+\item Visit \url{http://www.macports.org} and click the Download
+  button, which you will find in the upper-right hand corner of the
+  website.
+\item Select to download the |dmg| file.
+\item Open the |dmg| file. Run and install the MacPorts package. You
+  will need to type your password.
+\item Now you need to ``update'' the MacPorts library, and then
+  install the |teTeX| distribution (which includes \LaTeX and several
+  other tools). Open a Terminal window and type this command:
+\begin{Verbatim}
+# sudo port selfupdate
+# sudo port install teTeX
+\end{Verbatim}
+
+You are free to download and install a tool for editing the |.tex| and
+|.bib| files. However, you can also edit these files using EMACS, an
+editor that is built-in to MacOS. 
+
+\subsection{Installing on Ubuntu Linux or Debian Linux}
+Use this command:
+
+\begin{Verbatim}
+% sudo apt-get install texlive-latex3
+\end{Verbatim}
+
+We have noticed that the command occasionally fails. If it does, try
+it again. If that still doesn't work
+
+\subsection{Installation on Windows}
+
+\section{Running \LaTeX}
+\LaTeX{} is actually a set of programs. For creating a thesis at NPS
+you will use four programs:
+\begin{description}
+\item{\texttt{pdflatex}} This program read the input file (\eg
+  \verb+thesis.tex+) and produces a PDF file (\eg \verb+thesis.pdf+)
+  as an output. This program also produces a number of intermediate
+  file (\verb+thesis.aux+, \verb+thesis.bbl+, \verb+thesis.toc+,
+  \emph{et. cetera}.)
+\item{\texttt{bibtex}} This program reads the \verb+thesis.bbl+ file and
+  produces a bibliography in a file called \verb+thesis.bst+ which
+  includes the bibliography. The \verb+thesis.bst+ then gets read the
+  next time \verb+pdflatex+ is run.
+\item{\texttt{authorindex.pl}} a program in perl that produces the
+  author index from the \verb+thesis.bbl+ file. The authorindex is
+  saved in the file \verb+thesis.ain+.
+\item{\texttt{fixbbl.py}} It turns out that there is a bug in BibTeX
+  which causes URLs longer than 53 characters to be improperly
+  split. This program unsplits them.
+\end{description}
+
+Normally you would run \LaTeX{} with a three step process:
+\begin{itemize}
+\item \verb+pdflatex thesis+
+\item \verb+bibtex thesis+
+\item python fixbbl.py thesis
+\item 
+\item \verb+pdflatex thesis+
+\item \verb+pdflatex thesis+
+\end{itemize}
+
+\section{Basic \LaTeX}
+Here is a simple document:
+\begin{Verbatim}
+\documentclass{article}
+\begin{document}
+Hello World!
+\end{document}
+\end{Verbatim}
+
+Normally with \LaTeX you just type text. Leave a blank line between
+each paragraph. \LaTeX then formats it into beautiful
+paragraphs. \LaTeX will ignore the space at the beginning of each line.
+
+So if you type this:
+
+\begin{Verbatim}
+In December 1951, in a move virtually unparalleled in the history of
+academe, the Postgraduate School moved lock, stock and wind tunnel
+across the nation, establishing its current campus in Monterey,
+Calif. The coast-to-coast move involved 500 students, about 100
+faculty and staff and thousands of pounds of books and research
+equipment. Rear Adm. Ernest Edward Herrmann supervised the move that
+pumped new vitality into the Navy's efforts to advance naval science
+and technology.
+\end{Verbatim}
+
+\LaTeX will format it to look like this:
+
+\begin{quotation}
+In December 1951, in a move virtually unparalleled in the history of
+academe, the Postgraduate School moved lock, stock and wind tunnel
+across the nation, establishing its current campus in Monterey,
+Calif. The coast-to-coast move involved 500 students, about 100
+faculty and staff and thousands of pounds of books and research
+equipment. Rear Adm. Ernest Edward Herrmann supervised the move that
+pumped new vitality into the Navy's efforts to advance naval science
+and technology.
+\end{quotation}
+
+\subsection{Typing Quotes}
+
+To type quotes, you should not use the double-quote character. Instad,
+\LaTeX uses the back quote (\verb+`+) and the forward quote (\verb+'+)
+to type quotes.
+
+\begin{tabular}{ll}
+To get this & type this \\
+don't & \verb+don't+ \\
+ 3'2''  & \verb+3'2'+ '\\
+``this'' & \verb+``this''+ \\
+`is' & \verb+`is'+ \\
+``\,`special'\,'' & \verb+``\,`special'\,''+ \\
+\end{tabular}
+
+The last one is a bit confusing, but don't worry, everything will make
+sense in a bit.
+
+\subsection{Special Characters}
+
+Unlike Microsoft Word and other programs, \LaTeX uses special
+characters embedded in your text to control formatting. The most
+common of these characters is the backslash ($\backslash$). To produce
+each of these characters you must use a special sequence that begins,
+strangely enough, with a backslash.
+
+The table below shows the ten special characters.
+
+\begin{tabular}{ll|ll}
+To get this & type this & To get this & type this \\
+\$ & \verb+\$+ & \& & \verb+\&+ \\
+\{ & \verb+\{+ & \} & \verb+\}+ \\
+\% & \verb+\%+ & \_ & \verb+\_+ \\
+\# & \verb+\#+ & \^{} & \verb+\^{}+ \\
+\~{} & \verb+\~{}+ & $\backslash$ & \verb+$\backslash$+ \\
+\end{tabular}
+
+The good news is that you typically don't need these characters very
+much when preparing technical documents.
+
+\subsection{Accented Vowels}
+For the most part \LaTeX builds accented vowls by combining an accent character with a
+vowel:
+
+\begin{tabular}{cl|cl}
+To get this & Type this & To get this & type this\\ 
+\'{o} & \verb+\'{o}+ & \~{o} & \verb+\~{o}+ \\
+\'{o} & \verb+\'{o}+ & \={o} & \verb+\={o}+ \\
+\^{o} & \verb+\^{o}+ & \.{o} & \verb+\.{o}+ \\
+\"{o} & \verb+\"{o}+ & \d{o} & \verb+\d{o}+ \\
+\c{o} & \verb+\c{o}+ & \u{o} & \verb+\u{o}+ \\
+\b{o} & \verb+\b{o}+ \\
+\end{tabular}
+
+
+However, there are some special accented characters that are just specials:
+
+\begin{tabular}{ll|ll}
+To get this & Type this\\
+\aa & \verb+\aa+ & \AA & \verb+\AA+ \\
+\end{tabular}
+
+Sometimes you will need to use dotless characters. You can get them
+with these sequences:
+
+\begin{tabular}{ll|ll}
+\i & \verb+\i+ & \j & \verb+\j+ \\
+\o & \verb+\o+ & \O & \verb+\O+ \\
+\end{tabular}
+
+These sequences will give you slashes and daggers:
+\begin{tabular}{ll|ll}
+\l & \verb+\l+ & \L & \verb+\L+ \\
+\dag & \verb+\dag+ & \ss & \verb+\ss+ \\
+\P & \verb+\P+ & \pounds & \verb+\pounds+ \\
+\end{tabular}
+
+
+\subsection{Special Characters}
+
+
+\begin{tabular}{ll|ll}
+type this & To get this &type this & To get this\\
+?` & \verb+?`+ & \copyright & \verb+\copyright+ \\
+\oe & \verb+\oe+ & \OE & \verb+\OE+ \\
+!` & \verb+!`+ & \S & \verb+\S+ \\
+\v{o} & \verb+\v{o}+ & \H{o} & \verb+\H{o}+ \\
+\t{oo} & \verb+\t{oo}+ & \ae & \verb+\ae+ \\
+\AE & \verb+\AE+ & \l & \verb+\l+ \\
+\dag & \verb+\dag+ & \P & \verb+\P+ \\
+\ss & \verb+\ss+ & \L & \verb+\L+ \\
+\ddag & \verb+\ddag+ & \pounds & \verb+\pounds+ \\
+\end{tabular}
+
+\subsection{Changing font size}
+\begin{tabular}{ll}
+Command & Example\\
+\verb+\tiny+ & {\tiny this is 6 point font} \\
+\verb+\scriptsize+ & 8\\
+\footnotesize & 10\\
+\small & 11\\
+\normalsize & 12\\
+\large & 14\\
+\Large & 17\\
+\LARGE & 20\\
+\huge & 25\\
+\Huge & 25\\
+\end{tabular}
+
+\subsection{Changing font style}
+\begin{tabular}{ll}
+Command & Example\\
+{\rm Roman} \\
+\textbf{This is bold}\\
+\texttt{This is typewriter}\\
+\textsc{This is small capitals}\\
+\textsl{This is slanted}\\
+\textit{Itallics}\\
+\emph{This is emphasized}\\
+$\cal CALLIGRAPHIC$\\
+{\boldmath $\cal BOLD CALIGRAPHICS$}\\
+\end{tabular}
+
+\subsection{choosing an arbitrary font}
+
+\subsection{Controlling Spaces}
+
+Use:
+
+ \verb+\,+ (a slash followed by a comma) to produce a small space.
+ \verb+\ + (a slash followed by a space) to produce a standard word  space
+ \verb+\@+ (a slash followed by an at sign) to produce a standard
+ intersentence space.
+
+
+
+
+\begin{tabular}{ll}
+Type this & To get this \\
+\verb+``One Way''+ & ``One Way'' \\
+\end{tabular}
+
+\subsection{Controlling Line Breaks}
+You can force a blank line with: \verb+\\+
+
+Like this:
+
+This is\\
+a test
+
+You can insert an arbitrary amount of space with the optional
+argument:
+
+This is\\[3pt]
+a test
+
+You can add or remove space on a page with
+\verb+\enlargethispage+. For example, to squeeze a second line, try
+this:
+
+\begin{verbatim}
+    \enlargethispage{1pc}
+\end{verbatim}
+
+You can insert verticale or horizontal space (or take it away) with
+
+\verb+\vspace{1in}+
+\verb+\hspace{1in}+
+
+You can draw a box around text with:
+
+\verb+\framebox[width]{textstring}+
+
+The width is optional.
+
+Centering:
+
+\begin{center}
+This is centered.
+\end{center}
+
+
+\subsection{Lists}
+
+There are three kinds of lists that you may wish to make:
+
+\begin{description}
+\item[description] lists are used for definitions (like this).
+ \item[enumerated] lists are lists where each item is numbered and the
+  ordering is relevant, like the steps of a recipe. 
+\item[itemized] lists are lists where each item is of equal
+  importance.
+\end{description}
+
+Lists are implemented as \LaTeX environments, which means that they
+begin with a \verb+\begin{+\emph{listname}\verb+}+ and end with an
+\verb+\end{+\emph{listname}\verb+}+.
+
+\begin{minipage}{.45\textwidth}
+\begin{Verbatim}
+\begin{enumerate}
+\item Wake up.
+\item Go to work.
+\item Go home.
+\item Go to sleep.
+\item Repeat.
+\end{enumerate}
+\end{Verbatim}
+\end{minipage}
+\hfill
+\begin{minipage}{.45\textwidth}
+\begin{enumerate}
+\item Wake up.
+\item Go to work.
+\item Go home.
+\item Go to sleep.
+\item Repeat.
+\end{enumerate}
+\end{minipage}
+
+
+\subsection{Tables}
+\subsection{Math}
+\subsection{Graphics}
+This section briefly describes graphics and \LaTeX. For alternative
+treatments we recommend H\"oppner's  ``Strategies for including graphics in \LaTeX
+documents''\cite{strategies}, and the book TK.
+
+There are many graphic file formats and practically all of them can be
+embedded within a \LaTeX document. Unfortunately, including graphics
+is complicated by the fact that there are two flavors of \LaTeX and
+they both require different graphic file inputs.
+
+
+
+There are two kinds graphics that you can include in a \LaTeX
+document: vector graphics and bitmaps:
+\begin{description}
+\item[Vector graphics] are graphical objects that contain commands for
+  rendering an illustration---the graphic describes \emph{how}
+  something is to be drawn. Typical examples of vector graphics are
+  text and 
+\end{description}
+
+\section{BiBTeX}
+% http://stefaanlippens.net/bibentry

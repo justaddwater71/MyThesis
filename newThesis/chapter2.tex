@@ -1,0 +1,335 @@
+\chapter {Prior and Related Work}
+
+\section {Introduction}
+	\paragraph{}Author detection is the process of analyzing documents to determine if that document was created by a pre-determined set of authors.Detecting authors on mobile devices requires selection of a feature set that distinguishes authors, selection of techniques that effectively uses these features to identify authors, and selection of efficient machine learning
+
+\section {Author Detection}
+	\paragraph{}``Automated authorship attribution is the problem of identifying the author of an anonymous text, or text whose authorship is in doubt" \cite{love_attributing_2002}.  For this thesis, author detection and authorship attribution are synonymous.  The explosive growth of communications and document storage on the Internet provides a vast amount of data to draw on for author detection.  Books, articles, blogs, tweets, and emails are posted for public viewing in an electronic format every day.  Some of these postings have verifiable authors.  Many Internet authors use nom de plumes or are posted anonymously.  Matching verified authors to anonymous Internet authors or mobile phone texters has numerous practical applications. The increased speed and storage capacity of computing devices allow analysis of these corpora for author detection. The methods of author detection fall within the science of machine learning.
+
+\section {Machine Learning}
+	\paragraph{}``Machine learning is programming computers to optimize a performance criterion using example data or past experience" \cite{alpaydin_introduction_2004}.  Machine learning has been used famously to determine the authors of the Federalist papers, allow computers to "read" human handwriting, and to mine sales data for profitable trends.  Two broad categories of machine learning are supervised learning and unsupervised learning.  Supervised learning is "learning with a teacher."  The teacher can show the learner what to do based on examples or experience. Unsupervised learning is "learning with a critic" \cite{alpaydin_introduction_2004}. This thesis relies exclusively on supervised learning. Mobile device limitations demand author identification models be constructed on a platform more powerful than a mobile device.  That model is then put on a device for ongoing author identification.  The models require previous "teaching" instead of predictive "criticizing".
+
+	\paragraph{}Machine learning can be used for many tasks.  Often, machine learning is used to assign a given data set to a specific class or predict an outcome value over a continuous range of values. This thesis uses machine learning to assign a given data set, a document, to a given class, an author. Classification machine learning is comprised of a set of classes, a classifier, a feature set, and data.  In supervised learning, the machine learner uses a data input comprised of features trained to (or owned by) by a specific class.  Based on creatively counting these features, the machine learner creates a model for each class based on the the behavior of the classifier.  Finally, test data, consisting of sets of features, are processed by the classifier based on the previously built models.  The classifier provides an output of the most likely class that fits the given features.
+
+	\paragraph{}Machine learning is central to this thesis.  Modeling corpora of emails and tweets from numerous authors on traditional workstation or server computers, and, then, testing prediction capability on mobile devices requires not just accurate machine learning, but efficient machine learning.  The efficiency is needed due to the limits of even the most advanced mobile devices. Hardware specifications are not the only limiting factor in machine learning.  There are competing strengths and weaknesses in the techniques chosen, as well.
+
+	\subsection {Machine Learning Techniques}
+		\paragraph{}The techniques in this thesis are all supervised machine learning techniques.  Specifically, the two supervised techniques used are Naive Bayes and Support Vector Machine (SVM).  Naive Bayes was chosen because it is computationally lightweight compared to many other methods.  Support Vector Machine was chosen because data for SVM can be stored in "sparse format".  Sparse means that every feature does not have to be represented in the stored data for a model or test case.  Features with a zero count can simply be excluded.  SVM has been successful in many other authorship attribution experiments \cite{jurafsky_speech_2009}.
+
+		\subsubsection{Naive Bayes}
+			\paragraph{} Naive Bayes is a supervised learning method that uses Bayes Rule of probability chaining over a set of features (words in a document) to arrive at an overall probability that a specific a set of features (words in a document) belongs to a particular class (specific author). Naive Bayes uses a strong independence assumption among the various features.  This means that the classifier assumes that the probability of one feature appearing in a data set is completely independent of another feature showing up in the data set.  While this assumed independence of features is unlikely to be actually true, the independence keeps the calculation of probabilities simple -- meaning we do not have to store the full joint set of related words and their word relation probabilities.  In the case of documents and authors, Naive Bayes represents a bag of words model of a document where word order can be lost and only frequency or occurrence of words or word combination is captured.  Lost word order occurs, for instance, if a unigram token is taken from a document and paired with the counts of that word in the document.  In a bigram token model, word order is not lost within the bigram, but is lost between different bigram tokens. Based on a set of words, $t$, of size $n$, the probability that a document, $d$, belongs to a given class, $c$, is given by:
+				\begin{equation} P(c|d) \propto P(c) \prod_{i<k<n_d} P(t_k|c) \end{equation}
+
+			\paragraph{} To specifically apply the above equation to author detection, the classifier returns the class with the highest probability after executing the above formula.  This turns the above equation into a maximum a posteriori (MAP) class $c_{map}$:
+				\begin{equation}\label{underflow_naive} c_{map} = \operatorname*{arg\,max}_c \hat{P}(c|d) = \operatorname*{arg\,max}_c [ \hat{P}(c) \prod_{i<k<n_d} \hat{P}(t_k|c) ] \end{equation}
+
+			Since underflow is an issue when numerous float values are multiplied together over a set of features, the practical application of the above formula is:
+				\begin{equation}\label{log_prob_naive} c_{map} = \operatorname*{arg\,max}_c \hat{P}(c|d) = \operatorname*{arg\,max}_c [ log \: \hat{P}(c) + \sum_{i<k<n_d} log \: \hat{P}(t_k|c) ] \end{equation}
+				
+			This Equation \ref{log_prob_naive} is functionally equivalent to Equation \ref{underflow_naive}.
+			
+			Because the probability of each feature is multiplied by the probability of every other feature, a zero probability for any feature will make the overall probability zero.  To handle this issue, a technique called smoothing is used.  Beyond the arithmetic issue of multiplying by a zero, smoothing accounts for words the classifier has not seen due to the fact that we have incomplete data to train on. The simplest form of smoothing is Laplace Smoothing (Plus One Smoothing).  In this method, each feature in the feature set is initialized with a count of 1 instead of zero.  The denominator in the probability equation is increased by $1 * number of features$ to account for all the added ones.  This method, attractive in its simplicity, often produces undesirable results.  For this thesis, the counts from words in the Google Web1T corpus are used to smooth word counts in Naive Bayes.  For example, the word "dog" appears 3,450,297 time in the Web1T corpus, so the count for "dog" is initialized to 3,450,297.  The denominator for a Google Web1T smooth Naive Bayes instance is 1,024,908,267 based on total count weight of all tokens in the corpus.The specific details of the Google Web1T corpus are covered in a later section of this chapter.
+
+		\subsubsection{Support Vector Machine}
+			\paragraph{}A Support Vector Machine (SVM) is a supervised machine learning method that finds a separating line or shape through a set of data based on a selected feature set.  This is based on finding a boundary between two types of data in a dataset, then computing the largest boundary between closest data points and the boundary.  In cases where a clear boundary between two data sets is not possible, a "slack variable" provides an allowance of data points to be on the wrong side of the boundary. To create the boundary, SVM "maps the input vectors into some high dimensional feature space, Z, through some non-linear mapping chosen a priori" \cite{vapnik_support-vector_1995}
+
+			\paragraph{}For the two situations that a SVM can encounter: data can be separated without error and data cannot be separated without error, the same equation can be used.  In the first situation, where data can be separated without error, the SVM optimizes the SVM base equation with $C=0$.  For the second situation, where the training data cannot be strictly separated, $C > 0$:
+			\begin{equation} \min_{w,\alpha}\frac{1}{2}\mathbf{||w||}^2 + C \sum_i^n{\xi} 
+			\end{equation}
+			where $\xi$ is known as the slack variable, C is the error penalty, and the entire term $C\sum_i^n{\xi}$ is the soft margin.  This is a quadratic programming problem to find $\xi$ and C, often accomplished by a logarithmic grid search ( $C = { 2^{-5}, 2^{-3}, 2^{-1}, 2^1, 2^3, 2^5}$ and $\xi = {2^{-15}, 2^{-10}, 2^{-5}, 2^ 0, 2^5}$ ) with the best accuracy or F-Score determining where to continue refining the grid.
+
+			\paragraph{Historical Roots of Support Vector Machines}
+			SVM historical roots lie in the R.A. Fischer's pattern recognition work using a Variance/Covariance matrix \cite{fisher_use_1936}.  Fisher's pattern recognition used the mean matrix (also know as the centroid of a matrix) and  variance-covariance matrix (also known as the dispersion of a matrix) of two normal distributions, and found the optimal Bayesian solution was a non-linear function.  Fisher simplified his non-linear function to a linear function for situations where the dispersion of both normal distributions are equal.  He even found that his simplified linear equation worked satisfactorily when the distributions needing patterns recognized were not strictly normal.
+
+				%\begin{equation}\label{Variance} \frac{(\mathbf{x} -\mathbf{m} ) (\mathbf{x} - \mathbf{m})}{n} \end{equation}
+
+				%\begin{equation}\label{Covariance} \frac{(\mathbf{x} - \mathbf{m}) (\mathbf{y} - \mathbf{m)}}{n} \end{equation} 
+
+			From this basis, Fisher created a precedent of pattern recognition based on linear discriminating surfaces within a multi-dimensional space.  Fisher's work was furthered by perceptron work in the 1960's.  This work created multiple linear discriminating surfaces to find a matching pattern.  However, there was no method to optimize the separation between data using perceptrons.  From the need to optimize the separation, feedback mechanisms were developed to refine the perceptron weights. By further developing the idea of feeding back to the perceptron weights, SVMs were created.
+
+			%\paragraph {Probability of Error} E being expectation value of the probability of committing an error on a test example is bounded by the ration between the expectation value of the number of support vectors and the number of training vectors:
+
+			%\begin{equation} E[Pr(error)] \leq \frac{E(number\ of\ support\ vectors)}{number\ of\ training\ vectors}\end{equation}
+
+			\paragraph{Optimal Hyperplane in Feature Space}
+			\paragraph{} The core of SVM is finding an optimal hyperplane in the higher dimension space mapped from the original feature space.  That hyperplane is defined as:
+			\begin{equation}\label{eq:oh1} \mathbf{w_0} \cdot \mathbf{z} + b_0 = 0\end{equation} where $w_0$ are weights, $z$ is the space, and $b_0$ is still a mystery to me.
+			To that end, $\mathbf{w_0}$ "can be written as some linear combination of support vectors."  This uses the following equation:
+			\begin{equation}\mathbf{w_0} = \sum_{support\ vectors} \alpha_i \mathbf{z_i}\end{equation} and the decision function using those weights is given by
+			\begin{equation}I(z) = sign\left(\sum_{support\ vectors} \alpha_i \mathbf{z_i} \cdot \mathbf{z} + b_0\right)\end{equation}
+			meaning that $I(z) < 0$ for one class and $I(z) > 0$ for the other class.
+			\paragraph{}
+			For distance $\rho$ between projections defined by the support vectors, $\rho$ is defined as:
+			\begin{equation}\rho(\mathbf{w}, b) = \min_{x:y=1} \frac{\mathbf{x} \cdot \mathbf{w}}{ |\mathbf{w}|} - \max_{x:y=-1} \frac{\mathbf{x} \cdot \mathbf{w}}{|\mathbf{w}|}\end{equation}
+			given that \ref{eq:oh1} it follows that the weights needed to create the optimal hyperplane are given by
+			\begin{equation} \rho (\mathbf{w_0}, b_0) = \frac{2}{|\mathbf{w_0}|}\end{equation}  The best solution maximizes the distance $\rho$.  To maximize $\rho$, you must minimize the magnitude of $\mathbf{w_0}$.  Find that minimum $\mathbf{w_0}$ is a quadratic programming issue.\cite{vapnik_support-vector_1995}
+
+			\paragraph{Procedure} "Divide the training data into a number of portions with a reasonable small number of training vectors in each portion.  Start out by solving the quadratic programming problem determined by the first portion of training data.  For this problem there are two possible outcomes: either this portion of the data cannot be separated by a hyperplane (in which case the full set of data as well cannot be separated), or the optimal hyperplane for separating the first portion of the training data is found." If this first set is found to be linearly separable, then all the non-support vector values are discarded, a new batch of values are put into this set (these values do not meet the constraint of $y_i(\mathbf{w} \cdot \mathbf{x_i} + b) \ge 1, i = 1,...,{l}$ )
+			\paragraph{Soft Margins}
+			In cases where the data is not linearly separable, the goal becomes to minimize the number of errors (the number of values on the wrong side of the hyperplane).  Now a new variable $\xi \ge 0, i=1,...,l$ is introduced along with the function $\Phi (\xi) = \sum_{i=1}^{l} \xi_{i}^{\sigma}$ .  The constraints are that the value 
+			$\xi_i$ does not push values in the non-negative quadrant out of the negative quadrant ( $y_i(\mathbf{w} \cdot \mathbf{x_i} + b) \ge 1 - \xi_i, i=1,...,l$.  Also, $\xi_i$ is zero or a positive number ( $\xi_i \ge 0$).  $\xi$ here represents "the sum of deviations of training errors"
+			The central equation for minimizing the number of errors is:
+			\begin{equation}\label{soft_margin}  \frac{1}{2}\mathbf{w^2} + CF(\sum_{i=1}^{l} \xi_{i}^\sigma)\end{equation}
+			In cases for $ \xi_{i}^{\sigma} $ where $\sigma=1$, we are dealing with the soft margin hyperplane.  Cases where $\sigma < 1$, there may not be a unique solution.  For values of $\sigma > 1$, there are also unique solutions, but $\sigma =1$ is the smallest value and that allows the term $CF(\sum_{i=1}^{l} \xi_{i}^\sigma)$ from \eqref{soft_margin} to not overwhelm  the $\frac{1}{2}\mathbf{w}^2$.\cite{vapnik_support-vector_1995}
+			\paragraph{Multi-Class SVM}  SVM is an inherently binary classifier.  However, SVM can process multi-class data sets using SVM.  There are two approaches to applying a binary classifier to a multi-class data set: one-versus-all and one-versus-one.  In one-versus-all, each class in the training set is singled out against the conglomerated remaining classes in the training set.  Whichever class achieves the best separation is labeled as the correct class for that data.  In one-versus-one, the data classes in the training set are paired against each other and the best comparison among pairs is labeled as the correct class for that data.  
+			\paragraph{} It is important to define what is meant by "best" in the classification process.  Best is defined as the class that nets the most positive results from individual data instances in the training set. Settling ties, should they occur is implementation dependent, sometimes as simple as making a random choice among the tied classes.\cite{_multiclass_????}.
+
+	\subsection {Machine Learning Tools}
+	\paragraph{} There are many machine learning toolkits available.  These tools come in both open source and proprietary forms.  Tools are chosen based on techniques used, so, for this thesis, libSVM and libLinear were examined as SVM tools.  Naive Bayes was constructed from scratch for customization with Google Web1T.
+
+		\subsubsection{LibSVM} LibSVM attempts to optimize the basic SVM equation:
+		\begin{equation} \min_{\mathbf{w}, b, \xi} \frac{1}{2} \mathbf{w^t w} + C \sum_{i=1}^{l} \xi_i \end{equation}
+		\begin{equation} \text{subject to } y_i( \mathbf{w^t}\phi ( \mathbf{x}_i ) + b ) > 1- \xi_i \end{equation}
+		\begin{equation} \text{and } \xi_i > 0\end{equation}
+
+		For all kernels used in SVM a variable that must be solved for prior to optimization, the penalty term, $C$.  Other kernels have additional variables that must be solved for prior to optimization, such as $\gamma$ in the RBF kernel.  While there are sophisticated methods to find $C$ and other required variables, LibSVM takes a simple, straightforward approach: grid search.  The grid for this search is a log grid search.  As the local minimum is found on each pass of the grid search, libSVM reduces the grid size to home in on the minimum $C$ value.  
+
+			\paragraph{} To make libSVM more efficient and more likely to converge on a solution, data in the training set should be scaled to either span 0 to +1 or -1 to +1.  While test data may show up outside the original training data range, libSVM will extend the normalized range to accommodate.  For example, if the range of the training data was -100 to +100, libSVM would scale that range to -1 to +1 by dividing by 100.  If there was test datum with a value of -110, then libSVM would scale that datum to -1.1.  While it is stated here that libSVM scales data, that function is not automatic within libSVM itself, but is rather part of the libSVM.
+		
+			\paragraph{} LibSVM was originally constructed in C and employed with python tools to support.  LibSVM is not available in a wide array of languages, including Java.  A Java version of libSVM makes libSVM functional on many of the mobile operating systems available today, including Android.  For this reason, libSVM was originally chosen as the SVM tool for this thesis.
+
+
+		\subsubsection{LibLinear}  While libSVM has numerous kernels to improve results, the inclusion of code to accommodate these kernels slows libSVM down.  To increase processing speed for libSVM for linear kernels, libLinear was created.  LibLinear is heavily modeled on libSVM but without non-linear kernel support.  The kernels, represented within the $\phi$ function in SVM equations is not dealt with at all in libLinear, thus cutting down on checks and processing time.   A linear kernel has been found to give as good or nearly as good a result as other kernels such as RBF, parabolic, and radial for text classification, especially when the corpus being used is large.  The reduction in code can produce results 100-200 times faster that using LibSVM.
+
+			\paragraph{} LibLinear has also been studied for large data sets that produces models which cannot be fit into memory.  the application of "chunked" data on a mobile platform with very limited RAM, but significant storage (due to microSD cards) makes libLinear even more attractive for mobile device use.
+			
+\section {Features}
+
+	\subsection {Feature Types}
+	\paragraph{} Feature types for natural language processing can be as simple a keeping counts of individual characters within a document to complex tracking of word combinations.  There are three feature types used in this thesis, N-Grams, Gappy Bigrams, and Orthogonal Sparse Bigrams.  These feature types vary in complexity and effectiveness for author detection.
+
+	\subsubsection {N-Grams}
+		\paragraph{} N-grams are word groups or character groups of size N within a document.  These word groups can include sentence boundaries, often denoted as $<\text{S}>$ for sentence start and $<\text{/S}>$ for sentence end. For instance, in the phrase the "the quick brown fox" the set of 2-grams (bigrams) are shown in Table \ref{table:2grams}:
+		\begin{center}
+			\begin{table}[h]
+			\caption{N-grams (N=2) of "the quick brown fox" with sentence boundaries}
+			\label{table:2grams}
+				\begin{center}
+					\begin{tabular}{l}
+					$<\text{S}>$ the\\
+					the quick\\
+					quick brown\\
+					brown fox\\
+					fox $<\text{/S}>$\\
+					\end{tabular}
+				\end{center}
+			\end{table}
+		\end{center}
+		
+		To further illustrate, the 3-grams (N=3 N-grams) of the phrase "the quick brown fox" are show in Table \ref{table:3grams}:
+		
+		\begin{center}
+			\begin{table}[h]
+			\caption{N-grams (N=3) of "the quick brown fox" with sentence boundaries}
+			\label{table:3grams}
+				\begin{center}
+					\begin{tabular}{l}
+					$<\text{S}>$ the quick\\
+					the quick brown \\
+					quick brown fox\\
+					brown fox $<\text{/S}>$\\
+					\end{tabular}
+				\end{center}
+			\end{table}
+		\end{center}
+		
+		The larger the N-Gram, the lower the probability of finding that N-Gram in a document.  A specific 5-Gram may be very rarely repeated, even by the same author.  That makes a 5-gram distinctive, but unreliable for author detection.  A 1-Gram like "the", "of", "a", etc occurs frequently across almost all authors, but is not discriminating.  Finding discriminating words groupings without the unreliable low probability of large-N N-Grams drove the creation of a modified N-Gram grouping called a Gappy Bigram.
+
+	\subsubsection{Gappy Bigrams}
+		\paragraph{} Gappy Bigram definitions vary between the sources cited in this thesis.  For the purposes of this thesis, a Gappy Bigram will be composed of two tokens (words) found within a distance of words.  A Gappy Bigram of distance 0 reduces to an identical set to 2-Grams (also know as bigrams). Just like N-Grams, Gappy Bigrams can extend beyond a sentence boundary, include punctuation, etc. However, for larger distances, the distinction between Gappy Bigrams and regular bigrams is clear. For instance, in the phrase "the quick brown fox" and a Gappy Bigram distance of 2, the Gappy Bigrams are given in Table \ref{table:2gappybigrams}:
+		\begin{center}
+			\begin{table}[h]
+			\caption{Gappy Bigrams (of distance 2) of "the quick brown fox" with sentence boundaries}
+			\label{table:2gappybigrams}
+				\begin{center}
+					\begin{tabular}{l}
+					$<\text{S}>$ the\\
+					$<\text{S}>$ quick\\
+					$<\text{S}>$ brown\\
+					the quick\\
+					the brown\\
+					the fox\\
+					quick brown\\
+					quick fox\\
+					quick $<\text{/S}>$
+					brown fox\\
+					brown $<\text{/S}>$\\
+					fox $<\text{/S}>$\\
+					\end{tabular}
+				\end{center}
+			\end{table}
+		\end{center}
+		
+		\paragraph{}To further illustrate, Gappy Bigrams of distance 1 are given in Table \ref{table:1gappybigrams}:
+		
+		\begin{center}
+			\begin{table}[h]
+			\caption{Gappy Bigrams (of distance 1) of "the quick brown fox" with sentence boundaries}
+			\label{table:1gappybigrams}
+				\begin{center}
+					\begin{tabular}{l}
+					$<\text{S}>$ the\\
+					$<\text{S}>$ quick\\
+					the quick\\
+					the brown\\
+					quick brown\\
+					quick fox\\
+					brown fox\\
+					brown $<\text{/S}>$\\
+					fox $<\text{/S}>$\\
+					\end{tabular}
+				\end{center}
+			\end{table}
+		\end{center}
+
+		\paragraph{}  The Gappy Bigram is able to preserve distinctive word groups for an author without the extremely low probability of occurrence.  However, an author may distinctively used a two word group at exactly an interval of 3 words or 2 words or 1 word.  That distinctiveness could be a key attribute for that grouping and is lost in Gappy Bigrams.  To capture that distinctiveness, Orthogonal Sparse Bigrams are employed.
+
+	\subsubsection{Orthogonal Sparse Bigrams}
+		\paragraph{} Orthogonal Sparse Bigrams (OSB) are similar to Gappy Bigrams in how there are constructed except that the distance between words in the OSB is included in the OSB. Just like N-Grams, Gappy Bigrams can extend beyond a sentence boundary, include punctuation, etc. For instance, in the phrase "the quick brown fox" and a OSB distance of 2, the OSBs are given in Table \ref{table:2OSB}:
+		\begin{center}
+			\begin{table}[h]
+			\caption{Orthogonal Sparse Bigrams (of distance 2) of "the quick brown fox" with sentence boundaries}
+			\label{table:2OSB}
+				\begin{center}
+					\begin{tabular}{l}
+					$<\text{S}>$ the 0\\
+					$<\text{S}>$ quick 1\\
+					$<\text{S}>$ brown 2\\
+					the quick 0\\
+					the brown 1\\
+					the fox 2\\
+					quick brown 0\\
+					quick fox 1\\
+					quick $<\text{/S}>$ 2\\
+					brown fox0\\
+					brown $<\text{/S}>$ 1\\
+					fox $<\text{/S}>$ 0\\
+					\end{tabular}
+				\end{center}
+			\end{table}
+		\end{center}
+		
+		\paragraph{}To further illustrate, OSBs of distance 1 are given in Table \ref{table:1OSB}:
+		
+		\begin{center}
+			\begin{table}[h]
+			\caption{Orthogonal Sparse Bigrams (of distance 1) of "the quick brown fox" with sentence boundaries}
+			\label{table:1OSB}
+				\begin{center}
+					\begin{tabular}{l}
+					$<\text{S}>$ the 0\\
+					$<\text{S}>$ quick 1\\
+					the quick 0\\
+					the brown 1\\
+					quick brown 0\\
+					quick fox 1\\
+					brown fox 0\\
+					brown $<\text{/S}>$ 1\\
+					fox $<\text{/S}>$ 0\\
+					\end{tabular}
+				\end{center}
+			\end{table}
+		\end{center}
+		
+		\paragraph{}It is important to note that in the cited references, the distance for OSBs is place between token 1 and token 2 instead of after token 1 and token 2 as shown in Tables \ref{table:2OSB} and \ref{table:1OSB}.  The distance is placed after the tokens in this thesis for more convenient parsing within reference files.  Also, for OSBs, there is an issue of how to count OSBs.  The two approaches are to strictly use on the distance that a token pair is found.  In "the quick brown fox", the OSB of distance 2 of "quick brown" has one instance, with a distance of 0.  For the other approach, using lesser-included distances for OSB of distance 2 , "quick brown" has three instances: quick brown 0, quick brown 1, and quick brown 2 because quick brown is a lesser included OSB of distance 2.  
+		\paragraph{} If file or database of OSBs is constructed, then a file or database of Gappy Bigrams also exists by default.  The count of maximum distance OSBs equals the count of Gappy Bigrams, assuming the lesser included version of OSBs is used.  This can be useful for conserving space in a system when both OSBs and Gappy Bigrams are needed.
+
+	\subsection {Feature References} Once a scheme is determined for managing features, the features required must be selected. Feature selection is the process of deciding which features to include during classification. A set of features can be built from the training set, such as selecting N most used words in a training set.  Features can be further refined by using outside references.  For instance, a feature set could be built as the N most used words in a training set and filtered for stop words.  In this case, stop words could be defined by other researchers work or some standard stop word set.  Another option is to build all features from a reference set.  This thesis made heavy use of the Google Web1T Corpus to act as a feature filter and a feature reference.
+
+	\subsubsection{Google Web1T Corpus}
+		\paragraph{} The Google Web1T Corpus is a massive corpus of English language N-grams ranging from N=1 to N=5.  The corpus was created from a snapshot of Google's search databases that took place during January 2006.  The corpus consists of text files with the N-grams accompanied by a count of those N-grams.  Each set of N-grams is stored in its own folder.  The N-Grams are organized alphabetically by the first word in the N-Gram.  For instance, "a cat" comes before "a dog" in the 2-Grams of the corpus.  
+		\paragraph{} The unique folder within the corpus is the 1-Gram folder.  There are two files within the 1-Gram folder.  One file is organized alphabetically like the rest of the corpus, but the other file is organize by count.  The largest count comes first. This folder serves as both a 1-Gram source and an authoritative reference of all types within the Google Web1T corpus.
+		\paragraph{} Punctuation is included in the corpus.  Sentence boundaries are indicated by $<$S$>$ and $<\backslash\text{S}>$.  To qualify for corpus inclusion, a 1-Gram needed to appear in the Google search databases at least 200 times.  Additionally, to appear in a 2-Gram or greater, a gram had to appear in the database at lest 40 times.  For 2-Grams and greater that appeared 40 times or more, but one of the words in the gram did not individually appear at least 200 times, the tag $<$UNK$>$ is used to replace that word.  The characters used in the corpus are UTF 8.  Tokenization was "similar" to Penn Tree Bank except that hyphenated words were separated.\cite{brants_web_2006}  From working with the corpus, it becomes apparent that contraction within the corpus does not exactly match Penn Tree Bank.  No "'t" contractions were kept intact during tokenization.  The authors were contacted regarding this tokenization issue, to determine if this was intentional, but no reply has been received.
+		\paragraph{} The Google Web1T is massive.  This size makes Web1T both powerful to employ and cumbersome to use. The statistics for this corpus are listed in Table \ref{table:GoogleWeb1T}.
+		\begin{center}	
+			\begin{table}[h]
+			\caption{Token and Type Counts in Google Web1T Corpus}
+			\label{table:GoogleWeb1T}
+				\begin{center}
+					\begin{tabular}{ l r }
+						Number of tokens: & 1,024,908,267,229\\
+						Number of sentences: & 95,119,665,584\\
+						Number of unigrams: & 13,588,391\\
+						Number of bigrams: & 314,843,401\\
+						Number of trigrams: & 977,069,902\\
+						Number of fourgrams: & 1,313,818,354\\
+						Number of fivegrams: & 1,176,470,663\\
+					\end{tabular}
+				\end{center}
+			\end{table}
+		\end{center}
+
+	\subsection {Feature Compression Techniques} Due to the large size of the corpora and feature reference used in this thesis, an efficient way to represent words and N-grams was needed.  After surveying general literature on representing large data sets, the search for this thesis was narrowed.  Two methods of efficiently representing large sets were investigated: bloom filters and minimal perfect hash functions.  Minimal perfect hash functions were ultimately chosen as the tool for representing data in this thesis.
+
+		\subsubsection{Bloom Filters}
+			\paragraph{}Representing a large dataset in a small memory space requires trading off between probability of a false positive, probability of a false negative, processing time, and size of representation. Bloom filters allow efficient storage of a list of values with zero probability of false negatives and a minimum probability of false positives.  A Bloom filter consists of an array of $m$ bits and $k$ hash functions.  Each hash function has an output range of 0 to $m - 1$.  Each hash function must provide an equal probability distribution for each value 0 to $m-1$. At the beginning of the construction of the Bloom filter, all $m$ bits are set to 0. Each value to be a member of the Bloom filter is processed by each hash function.  The output of the hash function corresponds to the array position of one of the $m$ bits, which is then set to 1.  If an output bit is already set to 1, that bit remains a 1. After all Bloom filter member values have been processed by the hash functions, the array of bits should be a mix of 0's and 1's.  
+			\paragraph{}To determine if a value belongs to the Bloom filter, that value is run through all $k$ hash functions.  If each array position output by the $k$ hash function contains a bit set to 1, then the value probably belongs to the Bloom filter.  If any of the m bits is a 0, that value does not belong.
+			\paragraph{} There are variations on the Bloom filter that can use parallel architectures to advantage.  For example, if the array of $m$ bits is a multiple of $k$, then each hash function can have a range of 0 to $\frac{m}{k}$.  Then each hash function can be run in parallel instead of in series.  This scheme has no effect on the probability of a false positive, but can be appreciably faster to process in parallel processing platforms.
+			\paragraph{}The work in a Bloom filter comes from determining the minimum values required for $k$ and $m$ to represent the expected set of values for a required false positive rate. The trade offs are, the larger the number of bits, the lower the probability of a false positive, but the larger the storage of the Bloom filter becomes.  Likewise, an increased number of hash functions provides a lower probability of false positives, but larger numbers of hash functions increases the computational cost of the Bloom filter.  Given a required maximum false positive probability, $p$, and a maximum number of items, $n$, the minimum number of bits, $m$,  is given by:
+			\begin{equation}m = \frac{n \ln{p}}{(\ln{2})^2}.\end{equation}
+			Once the number of bits, $m$, is determined, the minimum number of hash functions, $k$, must be found.  The required minimum of hash functions is given by:
+			\begin{equation} k = \ln{\frac{m}{n}}.\end{equation}
+			Bloom filters are flexible and compressible.  They are flexible because the number of bits, $m$, can be changed on the fly based on a changing number of items, $n$.  Various compression techniques can be used to compress the bits, $m$, in the filters for transmission between computers.  The filters can be processed in serial or parallel based on hardware architecture.  Unfortunately, while flexible, Bloom filters are not as compact as their closely related cousin, the minimal perfect hash function.
+
+		\subsubsection{Minimal Perfect Hash Functions}
+			\paragraph{} A minimal perfect hash fuctnion is the culmination of three concepts: a hash, a perfect hash, and a minimal hash. A hash function is a function that maps values from a set, $U$, with a number of values, $k$, to a range of values, $m$ \cite{belazzougui_hash_2009}. Hashes are normally associated with mapping a large universe to a small universe, but hashes can map between spaces of equal size. Hashes are often used in computer science for cryptography, efficiently mapping values, and myriad other tasks. 
+			\paragraph{} A hash function is a perfect hash function if there are no hashing collisions. A collision occurs when different values from U result in the same output value. More formally, in perfect hashes, there are $m$ distinct values resulting from applying the hash function to all $k$ values in $U$ such that $k=m$.  In short there must be a 1-1 mapping between each value in $U$ to each resulting value in the range, $m$ -- no collisions to be handled (load factor $\alpha = 1$.  A perfect hash function is called a k-perfect hash function if the ratio of possible values in the mapped space is not larger than k times the original space.  This means the range, $m$, must be $k$ time larger than U to ensure there are no collisions.
+			\paragraph{} A perfect hash function is called a minimal perfect hash function if there are no "blank" spaces in the hash table -- meaning that no space is wasted in storing the hash.  This is the same as a k-perfect hash function where k=1. Less formally, the size of the range, $m$ is equal to $n$, the size of the universe, $U$.
+			\paragraph{}The time required to compute a value in $m$ from a value in $U$ is known as evaluation time.  The required to construct the minimal perfect hash function is known as construction time.  Along with representation space, evaluation time and construction time are the three performance parameters used to judge the efficiency of a minimal perfect hash function.
+			\paragraph{} Minimal perfect hash functions (MPHF) are comprised of a set of hashing functions and a lookup data structure.  The set of values (the universe, $U$)to be hashed must be known in advance.  Those values are mapped, one-to-one to a unique range of numbers.  At the end of the mapping, there is exactly one unique numerical hash for every provided input.  The required number of bits for the hash is the minimum number of bits possible to uniquely identify all the items. The theoretical lower bound is 1.44n bits, where $n$ is the number of elements in $U$. 
+			\paragraph{}A lower bound of 1.44n bits is the advantage of the MPHF, the data structure is extremely compact once created.  The disadvantage is that any value submitted to the MPHF will result in a hash value.  This requires a second discriminating function to determine member in the correct value set, such as a second, traditional, hash.  This second hash undermines the compact size of the MPHF.  However, combining a MPHF with a single traditional hash provides an extremely small probability of a false positive during a membership check and a fast lookup time.
+			\paragraph{} In general, there are three stages of creating a minimal perfect hash function or any k-perfect hash function.  These three stages are mapping, ordering, and searching.  The mapping stage maps the set of keys in universe, $U$, to some other values.  For example mapping a set of strings to an integer value or creating a set of vertices in a graph could serve as the mapping step.  Ordering involves finding the buckets, vertices, etc that have been mapped with the most keys.  These highly mapped entries become levels or child graphs in a further refined hashing scheme to develop into the final data structure. The final step, searching, involves assigning keys to positions within the mapping.  The mapping is often multilevel allowing duplication from hashing to be "backed off" and retried to continue building the hash.			
+			\paragraph{}There are many MPHF implementations available in the open source world.  The implementation claiming to be the closest to the theoretical minimum for representation space is called the Compress, Hash, and Displace (CHD) algorithm\cite{_cmph_????}.  CHD maps keys into buckets.  Each bucket is assigned its own hash function, $\phi$ to create an index into the final data structures.  The buckets are ordered by magnitude (number of values in the bucket) for placement into the data structure.  The theoretical lower bound of storage for a minimal perfect hash is 1.44n bits \cite{belazzougui_hash_2009}.  CHD's lower bound of storage is 2.07n to 3.56n bits depending on generation time allowed for the data structure.
+
+\section {Evaluation Criteria}
+	\paragraph{}Results from classifying data are computed from four basic categories of results: true positives, ($tp$), true negatives ($tn$), false positives ($fp$), and false negatives ($fn$).  These four basic results are combined into accuracy, precision recall and F-Score for this thesis.  While there are other evaluation criteria, these chosen criteria are clear enough and sufficient for measuring results.
+	
+	\subsection {Accuracy} Accuracy is a widely used and intuitive performance measure for classification.  Accuracy, however, is flawed.  Accuracy poorly represents the effectiveness of a classifier when the number of true negatives is large compared to the number of true positives.  Missing all the true positives, but calling everything a negative, true or otherwise, yields a high accuracy without actually being effective at finding correctly labeled positives.  Accuracy is defined as:
+	\begin{equation} accuracy = \frac{tp + tn}{tp + fp + tn + fn} \end{equation}\cite{sokolova_beyond_2006}
+
+	\subsection {Precision and Recall} Due to the weakness of accuracy as an evaluation criteria, precision and recall (also known as sensitivity) is used.  Precision measures how often a document that belongs to the class being sought is actually labeled as that class.  In other words, for all the actual documents written by the target author, how often are those documents labeled by the classifier as being written by the author.  For all the documents said to be true by the classifier, what percentage are actually true.
+	\begin{equation} precision = \frac{tp}{tp + fp} \end{equation} Recall determines how well the classifier picks out true documents.  In other words, for all the true documents in the set, how often does the classifier detect those true documents?  Recall is given by:
+	\begin{equation} recall = \frac{tp}{tp + fn} \end{equation}\cite{sokolova_beyond_2006}
+
+	\subsection {F-Score} F-Score is the harmonic mean of precision and recall.  It is a superior indicator to accuracy in evaluating a classifier. The definition of F-Score used in this thesis is:
+	\begin{equation} F-Score = \frac{2}{ \frac{1}{p} + \frac{1}{r} } \end{equation}
+	This definition is a variant of the standard definition of:
+	\begin{equation} F-Score = \frac{(\beta^2 + 1) * 2pr}{\beta^2 * (p + r)} \end{equation}
+	The full definition of F-Score involves an additional term, $\beta$, which is a weighting value.  A $\beta$ value greater than one favors precision and a $\beta$ value less than one favors recall.  This thesis values precision and recall equally.  This makes $\beta = 1$, thus the simpler equation for F-Score is used:
+	\begin{equation} \frac{2pr}{p + r} = \frac{2}{ \frac{1}{p} + \frac{1}{r} }\end{equation}  F-Score will be the primary evaluation criteria for this thesis.\cite{sokolova_beyond_2006}
+
+\section{Mobile Device Platforms}  
+	\paragraph{}There are numerous mobile device platforms ranging from the near ubiquitous mobile phones to tablets to personal digital assistants.  Even within the category of mobile phones, there is a wide ranging array of capability and popularity.  For newer mobile phones, capabilities often include access to storage, a network, phone services, GPS, and multimedia.  Storage can be both onboard phone storage or removable storage such as a micro-SD card.  
+	\paragraph{}Often, there network access to more than just the mobile provider GSM or CDMA network.  Modern phones often have WiFi access.  GPS services provide position updates to the phone.  Multimedia capability varies dependent on display size, resolution, battery consumption, processing speed, memory, and network availability.  Mobile phones have not yet reached the level of commonality expected in desktop and laptop computing devices.
+
+	\subsection{Mobile Devices by Popularity} 
+		\paragraph{}To determine an effective development strategy for author detection on a mobile phone, it is sensible to determine what development language would support the largest number of mobile phones.  By device popularity, the most dominant mobile operating systems, in order,  are Symbian (Nokia phones), Research In Motion (Blackberry), iOS (Apple iPhone, iPad, iPod), and Android (Droid, Evo, Galaxy Tab).  These four OS platforms constitute 88\% of the mobile device market for first quarter of 2010.\cite{_gartner_????}  Symbian, RIM, and Android all accept applications built on Java, or at least a variant of Java. Based on this vast market share, using Java as the development language for author detection on a mobile device has the largest potential for use.\cite{_blackberry_????}\cite{_symbian_????}\cite{murphy_android_2010}  Only iOS uses exclusively Objective C.\cite{_creating_????}  
+
+	\subsection{Android Operating System}
+		\paragraph{} Based on its popularity and ease of installing test applications, Android is used as the development platform for this thesis.  Android applications are not written, strictly speaking, in Java.  Android applications are written in Dalvik which implements most of the syntax and structure of Java.  Dalvik development is targeted at mimicking recent stable releases of the Java Development Kit (JDK). The core of the Android operating system is built on Linux, but is not built as a traditional Linux environment.\cite{murphy_android_2010}
+		
+		\paragraph{} Android applications consist of a combination of Activities, Services, Intents, and Content Providers.  Activities are processes that users can see and interact with. Activities create the windows, tabs, and dialogs for user interaction.  
+		\paragraph{}Services run in the background with no user graphical user interface (GUI). Android Services are not equivalent to traditional Unix services.  Unix services are, by nature, persistent process within the operating system.  Android Services are just as prone to being killed by the operating system as an Activity. 
+		\paragraph{}Intents are messages passed around by processes and Java Virtual Machines within the Android operating System. Typical Intents are created by Content Providers for actions such as incoming calls, incoming Short Messaging Service (SMS) messages, GPS, etc.  Other typical Intents are passed between Activities in an application or between Services and Activities in an application.  Intents can start, stop, and pause Activities as well as just pass along data such as a String or integer. Applications use Activities, Services, and Intents in combination to provide functionality on an Android Mobile device.  
+		\paragraph{} The lifecycle of an application in Android varies from a standard PC application lifecycle. Activities and Services continue to run in Android while sufficient resources remain on the mobile device.  When resources become exhausted, the Android operating system will shut down Activities and Services it deems as less important or less used.  This is why Android applications often lack a "Quit" or "Exit" function in their menus -- developers expect that the application can continue to run so long as the operating system has sufficient resources.  Contents providers, on the other hand, are persistent processes driven by items such as GPS receivers, mobile networks, and WiFi networks.  Content providers are accessed and listened to by applications.  A Content Provider can also be built by a developer to act as a data provider for other application as an abstraction instead of an actual physical device like GPS or WiFi.\cite{murphy_busy_2010}
+
+\section{Corpora}
+	\paragraph{}A major portion of validating a method of author attribution is securing a corpus of usable data.  There are some tried and true corpora openly available, such as the ENRON Email Corpus, which are well know, well studied, and useful for comparison.  With a focus on mobile devices, this thesis needed a more short text relevant corpus.  For this need an in-house corpus of Twitter posts, known as Tweets, was used.  Using these two corpora provides a standard corpus to judge effectiveness and a newer corpus to anticipate future capability in the evolving medium of mobile computing.
+	\subsection{ENRON Email Corpus}
+		\paragraph{} The ENRON email corpus is a set of emails collected by the Cognitive Assistant that Learns and Organizes (CALO) Project.  The original corpus contains 619,446 emails from 158 users.  These emails were posted on the web by the Federal Energy regulatory Commission during the investigation of ENRON.  Issues with the raw posting were corrected by several people at MIT and SRI to arrive at the form of the current corpus.  The emails are organized in folders, by user.  The folder organization used by the original user is kept mostly intact (Inbox, Sent Items, etc) except for some computer generated folders that were seldom used by the actual users.  Each email is contained in its own text file.  Each text file contains the full email header as well as any threaded conversation headers (replies and forwards).\cite{_enron_????}
+		\paragraph{} The ENRON corpus is a frequent target for natural language processing.  Author detection performance for character and word N-grams, SVM, Naive Bayes and other classifiers on the ENRON corpus is well documented. For this reason, all methods used in this thesis were attempted on the ENRON email corpus as a benchmark of performance, before moving on to the more mobile-centric corpus of Twitter.
+
+	\subsection{Twitter}
+	\paragraph{} Twitter is a short message micro-blogging services that users can access from traditional computers as well as mobile devices.  Originally designed for use over Short Message Service (SMS), Tweets (vernacular for message sent on Twitter) are limited to 140 characters.  Unlike other social networking sites, Twitter has no requirement for users to post their real names.  Author detection on a corpus of Tweets will be challenged by the short duration of each Tweet (Tweets would constitute a document in this case) and the non-standard use of language.  Also, users do not have to formulate original content for their Tweets.  Just like as email forward, users can re-Tweet a Tweet they have already received.  
+	\paragraph{} Tweets are formatted for use with a JavaScript Object Notation (JSON) format. The JSON formatting provides numerous fields containing language, Twitter id, geocode (latitude and longitude of sender).  The Twitter API contains both streaming and RESTful methods.  Using the Twitter API, Tweets can be pulled from the TwitterSphere using a free, rate limited service called Garden Hose or via a fee-based, rate unlimited service called Fire Hose.  The rate limit for Garden Hose is 150 messages per hour.  Those messages are randomly chosen from Twitter accounts that make themselves viewable by the public.  The Twitter API allows for filters to affect the stream of Tweets to avoid getting Tweets that do not meet your needs and would otherwise impact your rate limit.  The length limitation and mobile nature of Tweeting, makes Twitter a reasonable model of SMS behavior for testing purposes.\cite{_streaming_????}
+
+\section{Recent Work in Author Detection, Google Web1T, and Mobile Devices} :NOTE: I just found a slew of related work that is worth studying some more, but I don't want to hold up the process of getting feedback on the bulk of this chapter 2.  The below incomplete sentences are placeholders for me on what I have for related work right now.  There is a patent on author detection based on a compressed hash, there are articles solely on managing and querying the Web1T, and a paper on chunking data on memory constrained systems. :ENDNOTE:
+	\paragraph{} Google Web1T has been used as a smoothing reference in other machine learning studies.  XXXXXX used a backoff method based on Google Web1T XXXX counts to ....... Google Web1T has also been a reference for spelling correction\cite{} and semantic classification\cite{}.  There has even been a paper on just managing the Google Web1T corpus effectively\cite{}.
+	\paragraph{} Author detection across varied information sources using a normalized compressor distance has been patented.  This method creates a bitwise compression of content from web pages, emails, texts, or any electronic document and uses clustering, based on this patented distance measure, to arrive at probability of various  documents being from the same author.\cite{_method_????}  Author detection on mobile devices has not shown up in patent or paper searches.  There are author detection papers that reference the prevalence of text messages in author attribution, but none on using the mobile platform itself to conduct processing.  Despite a breathtaking pace of application development on mobile device platforms such as iPhone and Android, using mobile computing capability for traditional machine learning has appears to be a wide open question.
+	\paragraph{} Recent SVM work has included....
+
+\section{Conclusion} There is a rich body of work on author attribution, SVM, Naive Bayes, and on the ENRON Email corpus.  Applying traditional document and email author attribution tools to the short message environment of mobile phones is an area ripe for exploration.
+
+
+
+

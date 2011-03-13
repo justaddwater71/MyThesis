@@ -1,0 +1,27 @@
+\chapter{Results and Analysis}
+
+\section{Most Effective Combination of Classification Methods, Feature Types, and Vocabulary}
+	\paragraph*{} Look at accuracy.  Look at f-score.  f-score is averaged over all authors.  confusion matrices number in the grunches, so that's why I used f-score averages.  the standard deviation on f-score is really high.  every test set has a minimum f-score of 0.00.  That shows that at least one author per test set had none of his documents classified.  This further indicates wonkiness in the off diagonal values of the confusion matrix.  As an example, one confusion matrix for a 10 X 10 liblinear run is included here.  Here is a 10 X 10 naive bayes run showing similar results.
+	
+	\paragraph*{}First blush, we should rank the average accuracy.  The problem with this straightforward approach for liblinear results is the averages don't account for liblinear not working on larger group sizes.  This is caused by liblinear using an array as its data structure for holding the SVM model.  Arrays in Java are limited to a size of $2^31$ elements because Java uses an integer as the index to all arrays.  Integers in Java are 32 bit objects regardless of the operating system architecture.  So what does this mean?  $\text{liblinear model array size} = {# features} * {# classifiers}$.  So, for 150 authors, the maximum number of features is $2^31 / 150 = 14,316,557.65$.  The number of features in a data set like Gappy Bigrams 3 is much larger that 14,316,557.65.  Table (put reference here) shows which liblinear vocabulary set versus author size was feasible.  Shaded blocks in the table represent combinations that were too large to hold in a liblinear model.  This was not an issue for Naive Bayes models.
+	
+	\paragraph*{}So, a better way to compare the effectiveness of each method-feature-size combination is to plot accuracy versus group size for each vocabulary set.  These plots show both the accuracy of each combinaton and which combinations are able to span each author group size (5 authors, 10 authors, 25 authors, 50 authors, 75 authors, and 150 authors).  In these plots, a Web1T\% of 0 denote that the model was constructed by directly using features from the trainins set without any correlation to the Web1T corpus.  Essentially, the Web1T\% 0 features are "bootstrapped" from the training set.  In the testing, each model was constructed individually for each crossvalidated training set.  However, the vocabulary hashmap for this model was constructed over all author files in the corpus.  This did have an impact of providing additional zeroes for liblinear in prediction tests, but had not impact on Naive Bayes prediction tests.
+	
+	
+	
+	\paragraph*{}Fortunately, the relative performance of average F-Score matched the relative performance of accuracy for each test set.  In all cases, f-score was much lower than the average accuracy.  In all cases, average accuracy much higher than MLE.
+
+\section{Impact of Author Relative Prolificity on Classification Effectivess}
+
+
+\section{Storage Requirements for Combinations of Classification Methods, Feature Types, and Vocabulary}
+	\paragraph*{} Author prolificity had little impact on model size for liblinear.  The overiding factor was the number of authors and the vocabulary size.  The average sizes are shown in Table (PUT REFERENCE HERE).  Any model over $2^30$ bytes is shown as INF meaning that for the intents of this thesis, the model size was infinite.  This was necessary since file I/O time to write these models to disk was prohibitive.  Also, writing these files to a Java OutputStreamByteArray was limite to $2^30$ bytes.
+	
+	
+	
+	\paragraph*{}  From the sizes in Table 1, it is apparent that very few model sizes would be appropriate for use on a mobile phone.  Using the standard Dalvik VM heap size of 16MB, only ...... would be good candidates for use on a mobile phone.
+
+\section{Classification Effectiveness Versus Storage Requirements}
+
+
+\section{Ability to Execute on an Android Mobile Phone}
