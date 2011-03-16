@@ -1,0 +1,687 @@
+\chapter{Naive Bayes Storage Requirements for the ENRON Email Corpus}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 0.21 & 1.60\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 0.33 & 2.85\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 0.33 & 5.37\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 0.33 & 10.40\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 0.33 & 20.48\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 0.33 & 40.62\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM1-ALL-ALL-5}
+\label{table:nb-enron-GM1-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 0.41 & 1.81\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 0.66 & 3.18\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 0.66 & 5.70\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 0.66 & 10.73\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 0.66 & 20.81\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 0.66 & 40.95\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM1-ALL-ALL-10}
+\label{table:nb-enron-GM1-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 1.03 & 2.43\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 1.64 & 4.16\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 1.65 & 6.69\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 1.65 & 11.72\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 1.65 & 21.80\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 1.65 & 41.94\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM1-ALL-ALL-25}
+\label{table:nb-enron-GM1-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 2.07 & 3.46\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 3.29 & 5.81\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 3.30 & 8.34\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 3.31 & 13.38\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 3.31 & 23.45\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 3.31 & 43.60\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM1-ALL-ALL-50}
+\label{table:nb-enron-GM1-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 3.10 & 4.50\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 4.93 & 7.45\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 4.95 & 9.99\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 4.96 & 15.03\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 4.96 & 25.11\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 4.96 & 45.25\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM1-ALL-ALL-75}
+\label{table:nb-enron-GM1-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 6.18 & 7.58\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 9.87 & 12.39\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 9.90 & 14.94\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 9.92 & 19.99\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 9.93 & 30.07\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 9.93 & 50.22\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM1-ALL-ALL-150}
+\label{table:nb-enron-GM1-ALL-ALL-150}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 16.61 & 0.87 & 17.48\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 0.33 & 58.67\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 0.33 & 115.12\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 0.33 & 229.93\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 0.33 & 459.52\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 0.33 & 926.79\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM2-ALL-ALL-5}
+\label{table:nb-enron-GM2-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 16.61 & 1.73 & 18.34\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 0.65 & 58.99\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 0.65 & 115.45\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 0.65 & 230.26\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 0.65 & 459.84\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 0.65 & 927.12\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM2-ALL-ALL-10}
+\label{table:nb-enron-GM2-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 16.61 & 4.38 & 20.99\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 1.63 & 59.97\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 1.63 & 116.42\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 1.63 & 231.24\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 1.63 & 460.82\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 1.63 & 928.09\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM2-ALL-ALL-25}
+\label{table:nb-enron-GM2-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 16.61 & 8.69 & 25.30\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 3.25 & 61.59\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 3.25 & 118.05\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 3.26 & 232.86\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 3.26 & 462.45\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 3.26 & 929.72\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM2-ALL-ALL-50}
+\label{table:nb-enron-GM2-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 16.61 & 13.21 & 29.82\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 4.88 & 63.22\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 4.88 & 119.68\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 4.88 & 234.49\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 4.88 & 464.07\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 4.88 & 931.35\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM2-ALL-ALL-75}
+\label{table:nb-enron-GM2-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 16.61 & 25.99 & 42.60\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 9.75 & 68.10\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 9.76 & 124.56\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 9.77 & 239.37\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 9.77 & 468.96\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 9.77 & 936.23\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM2-ALL-ALL-150}
+\label{table:nb-enron-GM2-ALL-ALL-150}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 111.31 & 1.63 & 112.94\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 0.32 & 212.91\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 0.32 & 425.65\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 0.32 & 851.16\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 0.32 & 1704.99\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 0.32 & 3410.72\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM5-ALL-ALL-5}
+\label{table:nb-enron-GM5-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 111.31 & 3.27 & 114.58\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 0.63 & 213.23\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 0.63 & 425.96\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 0.63 & 851.48\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 0.63 & 1705.31\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 0.63 & 3411.04\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM5-ALL-ALL-10}
+\label{table:nb-enron-GM5-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 111.31 & 7.99 & 119.30\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 1.58 & 214.18\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 1.58 & 426.91\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 1.58 & 852.43\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 1.58 & 1706.26\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 1.59 & 3411.99\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM5-ALL-ALL-25}
+\label{table:nb-enron-GM5-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 111.31 & 16.13 & 127.44\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 3.17 & 215.76\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 3.17 & 428.50\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 3.17 & 854.01\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 3.17 & 1707.85\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 3.17 & 3413.58\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM5-ALL-ALL-50}
+\label{table:nb-enron-GM5-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 111.31 & 24.39 & 135.70\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 4.75 & 217.34\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 4.75 & 430.08\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 4.75 & 855.60\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 4.75 & 1709.43\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 4.75 & 3415.16\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM5-ALL-ALL-75}
+\label{table:nb-enron-GM5-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 111.31 & 48.92 & 160.23\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 9.51 & 222.10\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 9.51 & 434.84\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 9.51 & 860.35\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 9.51 & 1714.19\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 9.51 & 3419.91\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GM5-ALL-ALL-150}
+\label{table:nb-enron-GM5-ALL-ALL-150}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 2.67 & 56.98\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 4.22 & 116.41\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 4.24 & 228.64\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 4.26 & 453.08\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 4.27 & 901.90\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 4.27 & 1800.20\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GB3-ALL-ALL-5}
+\label{table:nb-enron-GB3-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 5.31 & 59.61\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 8.43 & 120.63\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 8.49 & 232.88\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 8.52 & 457.34\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 8.53 & 906.17\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 8.54 & 1804.47\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GB3-ALL-ALL-10}
+\label{table:nb-enron-GB3-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 13.42 & 67.73\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 21.08 & 133.28\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 21.22 & 245.61\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 21.29 & 470.12\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 21.33 & 918.97\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 21.34 & 1817.28\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GB3-ALL-ALL-25}
+\label{table:nb-enron-GB3-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 26.67 & 80.97\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 42.16 & 154.36\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 42.44 & 266.83\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 42.58 & 491.40\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 42.65 & 940.29\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 42.68 & 1838.62\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GB3-ALL-ALL-50}
+\label{table:nb-enron-GB3-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 40.22 & 94.53\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 63.24 & 175.43\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 63.66 & 288.05\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 63.87 & 512.69\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 63.98 & 961.62\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 64.03 & 1859.96\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GB3-ALL-ALL-75}
+\label{table:nb-enron-GB3-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 79.47 & 133.78\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 126.47 & 238.67\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 127.32 & 351.71\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 127.73 & 576.56\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 127.96 & 1025.59\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 128.05 & 1923.99\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-GB3-ALL-ALL-150}
+\label{table:nb-enron-GB3-ALL-ALL-150}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 118.02 & 5.33 & 123.35\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 8.53 & 442.91\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 8.54 & 877.33\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 8.55 & 1746.33\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 8.55 & 3484.08\\ \cline{2-9}
+ & 16 & 198.81 & 751.03 & 3004.14 & 3004.14 & 0.00 & 8.55 & 6966.67\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-OSB3-ALL-ALL-5}
+\label{table:nb-enron-OSB3-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 118.02 & 10.62 & 128.64\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 17.06 & 451.44\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 17.09 & 885.87\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 17.10 & 1754.88\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 17.11 & 3492.64\\ \cline{2-9}
+ & 16 & 198.81 & 751.03 & 3004.14 & 3004.14 & 0.00 & 11.94 & 6970.05\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-OSB3-ALL-ALL-10}
+\label{table:nb-enron-OSB3-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{4}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 118.02 & 26.84 & 144.86\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 42.64 & 477.03\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 42.72 & 911.50\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 42.75 & 1780.53\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 42.77 & 3518.29\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-OSB3-ALL-ALL-25}
+\label{table:nb-enron-OSB3-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{3}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 118.02 & 53.35 & 171.37\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 85.28 & 519.67\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 85.43 & 954.22\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 85.50 & 1823.28\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-OSB3-ALL-ALL-50}
+\label{table:nb-enron-OSB3-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{4}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 118.02 & 80.47 & 198.49\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 127.92 & 562.31\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 128.15 & 996.94\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 128.25 & 1866.03\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 128.30 & 3603.82\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-OSB3-ALL-ALL-75}
+\label{table:nb-enron-OSB3-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{4}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 118.02 & 158.91 & 276.94\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 255.84 & 690.22\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 256.30 & 1125.09\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 256.51 & 1994.29\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 256.59 & 3732.12\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-enron-OSB3-ALL-ALL-150}
+\label{table:nb-enron-OSB3-ALL-ALL-150}
+\end{table}
+\end{center}
+

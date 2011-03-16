@@ -14,6 +14,14 @@ A level-1 auxiliary file: appendixE.aux
 A level-1 auxiliary file: appendixF.aux
 A level-1 auxiliary file: appendixG.aux
 A level-1 auxiliary file: appendixH.aux
+A level-1 auxiliary file: appendixI.aux
+A level-1 auxiliary file: appendixJ.aux
+A level-1 auxiliary file: appendixK.aux
+A level-1 auxiliary file: appendixL.aux
+A level-1 auxiliary file: appendixM.aux
+A level-1 auxiliary file: appendixN.aux
+A level-1 auxiliary file: appendixO.aux
+A level-1 auxiliary file: appendixP.aux
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: thesis.bib
 Warning--I didn't find a database entry for "_method_????"
@@ -24,7 +32,7 @@ Warning--I didn't find a database entry for "_method_????"
 Done.
 You've used 19 entries,
             4030 wiz_defined-function locations,
-            919 strings with 10410 characters,
+            927 strings with 10514 characters,
 and the built_in function-call counts, 8871 in all, are:
 = -- 706
 > -- 114

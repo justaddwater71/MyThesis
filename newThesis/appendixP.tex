@@ -1,0 +1,692 @@
+\chapter{Naive Bayes Storage Requirements for the Twitter Short Message Corpus}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 0.20 & 0.02 & 0.22\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 0.04 & 2.56\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 0.04 & 5.08\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 0.04 & 10.11\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 0.04 & 20.18\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 0.04 & 40.33\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM1-ALL-ALL-5}
+\label{table:nb-twitter-GM1-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 0.20 & 0.05 & 0.25\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 0.08 & 2.60\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 0.08 & 5.12\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 0.08 & 10.15\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 0.08 & 20.22\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 0.08 & 40.37\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM1-ALL-ALL-10}
+\label{table:nb-twitter-GM1-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 0.20 & 0.12 & 0.32\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 0.20 & 2.72\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 0.20 & 5.23\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 0.20 & 10.27\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 0.20 & 20.34\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 0.20 & 40.49\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM1-ALL-ALL-25}
+\label{table:nb-twitter-GM1-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 0.20 & 0.24 & 0.43\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 0.40 & 2.91\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 0.40 & 5.43\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 0.39 & 10.47\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 0.40 & 20.54\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 0.40 & 40.69\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM1-ALL-ALL-50}
+\label{table:nb-twitter-GM1-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 0.20 & 0.36 & 0.55\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 0.60 & 3.11\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 0.60 & 5.63\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 0.60 & 10.67\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 0.59 & 20.74\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 0.59 & 40.88\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM1-ALL-ALL-75}
+\label{table:nb-twitter-GM1-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM1}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 0.20 & 0.71 & 0.91\\ \cline{2-9}
+ & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 1.18 & 3.70\\ \cline{2-9}
+ & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 1.19 & 6.23\\ \cline{2-9}
+ & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 1.19 & 11.26\\ \cline{2-9}
+ & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 1.19 & 21.33\\ \cline{2-9}
+ & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 1.18 & 41.47\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM1-ALL-ALL-150}
+\label{table:nb-twitter-GM1-ALL-ALL-150}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.13 & 0.04 & 1.17\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 0.04 & 58.38\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 0.04 & 114.84\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 0.04 & 229.65\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 0.04 & 459.23\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 0.04 & 926.51\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM2-ALL-ALL-5}
+\label{table:nb-twitter-GM2-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.13 & 0.09 & 1.22\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 0.08 & 58.42\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 0.08 & 114.87\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 0.08 & 229.68\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 0.08 & 459.27\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 0.08 & 926.54\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM2-ALL-ALL-10}
+\label{table:nb-twitter-GM2-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.13 & 0.22 & 1.35\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 0.19 & 58.53\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 0.19 & 114.99\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 0.19 & 229.80\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 0.19 & 459.38\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 0.19 & 926.66\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM2-ALL-ALL-25}
+\label{table:nb-twitter-GM2-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.13 & 0.44 & 1.57\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 0.38 & 58.72\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 0.38 & 115.18\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 0.38 & 229.99\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 0.38 & 459.57\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 0.38 & 926.85\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM2-ALL-ALL-50}
+\label{table:nb-twitter-GM2-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.13 & 0.66 & 1.79\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 0.57 & 58.91\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 0.58 & 115.37\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 0.58 & 230.19\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 0.58 & 459.77\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 0.58 & 927.05\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM2-ALL-ALL-75}
+\label{table:nb-twitter-GM2-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM2}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.13 & 1.33 & 2.46\\ \cline{2-9}
+ & 1 & 1.67 & 6.30 & 25.19 & 25.19 & 0.00 & 1.15 & 59.49\\ \cline{2-9}
+ & 2 & 3.28 & 12.39 & 49.56 & 49.56 & 0.00 & 1.15 & 115.95\\ \cline{2-9}
+ & 4 & 6.56 & 24.78 & 99.13 & 99.13 & 0.00 & 1.15 & 230.76\\ \cline{2-9}
+ & 8 & 13.12 & 49.56 & 198.25 & 198.25 & 0.00 & 1.15 & 460.34\\ \cline{2-9}
+ & 16 & 26.47 & 100.00 & 400.00 & 400.00 & 0.00 & 1.15 & 927.61\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM2-ALL-ALL-150}
+\label{table:nb-twitter-GM2-ALL-ALL-150}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.08 & 0.04 & 3.13\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 0.03 & 212.63\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 0.03 & 425.36\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 0.03 & 850.88\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 0.03 & 1704.71\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 0.03 & 3410.44\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM5-ALL-ALL-5}
+\label{table:nb-twitter-GM5-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.08 & 0.09 & 3.17\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 0.07 & 212.66\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 0.07 & 425.40\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 0.07 & 850.91\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 0.07 & 1704.74\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 0.07 & 3410.47\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM5-ALL-ALL-10}
+\label{table:nb-twitter-GM5-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.08 & 0.22 & 3.31\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 0.17 & 212.76\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 0.17 & 425.50\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 0.17 & 851.01\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 0.17 & 1704.85\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 0.17 & 3410.57\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM5-ALL-ALL-25}
+\label{table:nb-twitter-GM5-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.08 & 0.45 & 3.53\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 0.34 & 212.93\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 0.34 & 425.67\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 0.34 & 851.18\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 0.34 & 1705.02\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 0.34 & 3410.75\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM5-ALL-ALL-50}
+\label{table:nb-twitter-GM5-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.08 & 0.67 & 3.75\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 0.51 & 213.10\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 0.51 & 425.84\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 0.51 & 851.35\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 0.51 & 1705.18\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 0.51 & 3410.91\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM5-ALL-ALL-75}
+\label{table:nb-twitter-GM5-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GM5}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.08 & 1.34 & 4.42\\ \cline{2-9}
+ & 1 & 6.07 & 22.95 & 91.79 & 91.79 & 0.00 & 1.02 & 213.61\\ \cline{2-9}
+ & 2 & 12.15 & 45.91 & 183.63 & 183.63 & 0.00 & 1.02 & 426.35\\ \cline{2-9}
+ & 4 & 24.31 & 91.84 & 367.35 & 367.35 & 0.00 & 1.02 & 851.86\\ \cline{2-9}
+ & 8 & 48.70 & 184.00 & 735.99 & 735.99 & 0.00 & 1.02 & 1705.70\\ \cline{2-9}
+ & 16 & 97.43 & 368.11 & 1472.43 & 1472.43 & 0.00 & 1.01 & 3411.42\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GM5-ALL-ALL-150}
+\label{table:nb-twitter-GM5-ALL-ALL-150}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.18 & 0.13 & 3.31\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 0.21 & 112.40\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 0.20 & 224.60\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 0.20 & 449.03\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 0.21 & 897.84\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 0.20 & 1796.14\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GB3-ALL-ALL-5}
+\label{table:nb-twitter-GB3-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.18 & 0.26 & 3.44\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 0.41 & 112.61\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 0.41 & 224.81\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 0.41 & 449.24\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 0.41 & 898.05\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 0.41 & 1796.35\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GB3-ALL-ALL-10}
+\label{table:nb-twitter-GB3-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.18 & 0.64 & 3.82\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 1.02 & 113.22\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 1.03 & 225.42\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 1.03 & 449.86\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 1.03 & 898.67\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 1.03 & 1796.96\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GB3-ALL-ALL-25}
+\label{table:nb-twitter-GB3-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.18 & 1.28 & 4.46\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 2.05 & 114.24\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 2.06 & 226.45\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 2.06 & 450.88\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 2.06 & 899.70\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 2.06 & 1797.99\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GB3-ALL-ALL-50}
+\label{table:nb-twitter-GB3-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.18 & 1.92 & 5.10\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 3.08 & 115.28\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 3.08 & 227.47\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 3.08 & 451.91\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 3.08 & 900.72\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 3.09 & 1799.02\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GB3-ALL-ALL-75}
+\label{table:nb-twitter-GB3-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{GB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 3.18 & 3.84 & 7.02\\ \cline{2-9}
+ & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 6.17 & 118.37\\ \cline{2-9}
+ & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 6.18 & 230.57\\ \cline{2-9}
+ & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 6.19 & 455.02\\ \cline{2-9}
+ & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 6.18 & 903.82\\ \cline{2-9}
+ & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 6.17 & 1802.10\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-GB3-ALL-ALL-150}
+\label{table:nb-twitter-GB3-ALL-ALL-150}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{5}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 7.30 & 0.26 & 7.56\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 0.41 & 434.80\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 0.41 & 869.20\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 0.41 & 1738.19\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 0.41 & 3475.94\\ \cline{2-9}
+ & 16 & 198.81 & 751.03 & 3004.14 & 3004.14 & 0.00 & 0.42 & 6958.53\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-OSB3-ALL-ALL-5}
+\label{table:nb-twitter-OSB3-ALL-ALL-5}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{10}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 7.30 & 0.52 & 7.83\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 0.83 & 435.22\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 0.83 & 869.62\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 0.83 & 1738.61\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 0.83 & 3476.36\\ \cline{2-9}
+ & 16 & 198.81 & 751.03 & 3004.14 & 3004.14 & 0.00 & 0.83 & 6958.95\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-OSB3-ALL-ALL-10}
+\label{table:nb-twitter-OSB3-ALL-ALL-10}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{25}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 7.30 & 1.31 & 8.61\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 2.09 & 436.47\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 2.08 & 870.87\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 2.08 & 1739.86\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 2.08 & 3477.61\\ \cline{2-9}
+ & 16 & 198.81 & 751.03 & 3004.14 & 3004.14 & 0.00 & 2.09 & 6960.20\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-OSB3-ALL-ALL-25}
+\label{table:nb-twitter-OSB3-ALL-ALL-25}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{50}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 7.30 & 2.60 & 9.90\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 4.17 & 438.56\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 4.18 & 872.97\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 4.16 & 1741.94\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 4.16 & 3479.69\\ \cline{2-9}
+ & 16 & 198.81 & 751.03 & 3004.14 & 3004.14 & 0.00 & 4.17 & 6962.28\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-OSB3-ALL-ALL-50}
+\label{table:nb-twitter-OSB3-ALL-ALL-50}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{75}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 7.30 & 3.90 & 11.20\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 6.28 & 440.66\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 6.22 & 875.01\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 6.27 & 1744.05\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 6.26 & 3481.79\\ \cline{2-9}
+ & 16 & 198.81 & 751.03 & 3004.14 & 3004.14 & 0.00 & 6.25 & 6964.37\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-OSB3-ALL-ALL-75}
+\label{table:nb-twitter-OSB3-ALL-ALL-75}
+\end{table}
+\end{center}
+
+\begin{center}
+\begin{table}[htbp]
+\begin{tabular}{ | r | r | r | r | r | r | r | r | r |}
+\hline
+\multicolumn{9}{|c|}{OSB3}\\
+\hline
+ & & \multicolumn{7}{|c|}{Size (MB)}\\ \cline{3-9}
+\begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T \% \end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Authors Model \end{sideways} & \begin{sideways}TOTAL\end{sideways}\\
+\hline
+\multirow{5}{*}{150}
+ & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 7.30 & 7.79 & 15.10\\ \cline{2-9}
+ & 1 & 12.41 & 46.89 & 187.54 & 187.54 & 0.00 & 12.51 & 446.89\\ \cline{2-9}
+ & 2 & 24.82 & 93.77 & 375.10 & 375.10 & 0.00 & 12.47 & 881.26\\ \cline{2-9}
+ & 4 & 49.65 & 187.57 & 750.28 & 750.28 & 0.00 & 12.46 & 1750.24\\ \cline{2-9}
+ & 8 & 99.29 & 375.14 & 1500.55 & 1500.55 & 0.00 & 12.50 & 3488.02\\ \cline{2-9}
+ & 16 & 198.81 & 751.03 & 3004.14 & 3004.14 & 0.00 & 12.47 & 6970.58\\ \cline{2-9}
+\hline
+\end{tabular}
+\caption{nb-twitter-OSB3-ALL-ALL-150}
+\label{table:nb-twitter-OSB3-ALL-ALL-150}
+\end{table}
+\end{center}
+

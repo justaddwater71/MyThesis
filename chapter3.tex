@@ -10,7 +10,7 @@ This chapter document the concepts and technical approaches used in this thesis,
 	\subsection{Creating the Testing Combinations} The classification methods to be compared are Naive Bayes and Support Vector machines (SVM). Naive Bayes is fast and uses a relatively small amount of RAM and disk storage. SVMs, are slower, use greater RAM and disk storage, but often yield higher f-scores.  There are numerous feature sets that can be chosen.  For this thesis, 1-grams, 2-grams, 5-grams, gappy bigrams, and orthogonal Sparse bigrams will be examined.  The intuition is that 1-grams are simple and use less space, but will be less effective than bigger feature sets such as gappy bigrams or 5-grams.
 	\paragraph{} For this thesis, two feature reference sets will be examined, a bootstrapped bag of words and the Google Web1T corpus.  Bootstrapped bag of words simply means finding all the unique types within a training set and making each type a feature in the feature set. Since the Google Web1T corpus is huge, a parameter of that feature reference which can be adjusted is the percentage of a given feature set that might be used.  These experiments will permute through these numerous options to determine size, speed, precision and f-score.  The end result will be an analysis of the utility of these various approaches to author detection on a mobile phone.  A graphic of the parameter combinations is given in Figure \ref{fig:parameterCombinations}.   
 	
-	\begin{figure}[h!]
+	\begin{figure}[ht!]
 		\begin{center}
 			\fbox{\includegraphics[width=0.5\textwidth]{Experiment_Design.pdf}}
 			\caption{Parameter Combinations for Testing}
@@ -25,7 +25,7 @@ The small numbers "5 10 25 50 75 150" given under each column heading in Figure 
 
 		\paragraph{Three Tiered Hashing Scheme} Even once the feature set of types to be used for classification has been determined, the smaller set of text is still too slow to process and very bulky to store.  To further compress the data, a three tiered hashing scheme is used.  The structure of the three tiered hashing scheme is shown in Figure \ref{fig:3tierHashStructure}. 
 		
-		\begin{figure}[h!]
+		\begin{figure}[ht!]
 			\begin{center}
 				\fbox{\includegraphics[width=0.75\textwidth]{3_tier_explanation.pdf}}
 				\caption{Three Tiered Hashing Scheme Structure}
@@ -35,7 +35,7 @@ The small numbers "5 10 25 50 75 150" given under each column heading in Figure 
 		
 		The first tier is comprised of minimal perfect hash (MPH) values of the selected feature set.  The second tier of the scheme is comprised of a 64 bit hash of the original type.  This second tier's job is to reduce the probability of a false positive in the fist tier.  This issue arises because no matter what string is input to the MPH function, a valid MPH value will be produced.  The second tier's traditional hash is accessed by mapping the MPH value to the index of an array that comprises the second tier.  That array cell contains the 64 bit hash of the original text used to create the MPH value.  This make the false positive rate for a given type $\frac{1}{2^{64}} * \frac{1}{\text{range of MPH values}}$ which is deemed an appropriate risk of collision in this hashing scheme.  The third tier is simply an array of long values.  The MPH value from tier 1 is used to access this array which hold the count value for a given type.  An example of converting a phrase, "the quick brown", is shown in Figure \ref{fig:3tierHashExample}. 
 		
-		\begin{figure}[h!]
+		\begin{figure}[ht!]
 			\begin{center}
 				\fbox{\includegraphics[width=0.75\textwidth]{3_tier_example.pdf}}
 				\caption{Three Tiered Hashing Scheme Example}
@@ -47,7 +47,7 @@ The small numbers "5 10 25 50 75 150" given under each column heading in Figure 
 
 		\paragraph{Choosing Artifacts for the Three Tiered Hashing Scheme} One impact of using MPH to reduce the size of storing types is a loss of flexibility with the text artifact selection process.  Before the MPH data structure is created, the creator must determine if punctuation, capitalization, sentence boundaries, or "unknown" words will be allowed.  The omission of each of these artifact types brings its own unique challenges. A binary style number scheme was adopted for each of these features where capital letters hold the 1 position, punctuation the 2 position, unknown word tags the 4 position, and sentence boundaries hold the 8 position.  The complete matrix of artifacts allowed in the MPH model is included in Figure \ref{fig:cmphMatrix}.
 		
-		\begin{figure}[h!]
+		\begin{figure}[ht!]
 			\begin{center}
 				\fbox{\includegraphics[width=0.5\textwidth]{cmph_matrix.pdf}}
 				\caption{Matrix of CMPH Models by Artifacts Included}
@@ -66,7 +66,7 @@ The small numbers "5 10 25 50 75 150" given under each column heading in Figure 
 	
 	\paragraph{Grouping By Size} With references built and sized, an efficient structuring of the authors and documents needs to be devised.  During data file construction, the grouping and conversion processes happened simultaneously.  The grouping sets built were: small-to-large, small-and-large, and random.  
 		\subparagraph{Small-To-Large} The small-to-large group matched the least prolific authors together with increasing size up to the most prolific authors.  For example, of the 5 authors in the ENRON corpus with 5 total kilobytes worth of text are group together while the 5 authors with greater than 1 total megabyte of text are group together.  No author is picked more than once.  An example is shown in Figure \ref{fig:smallToLargeGrouping}.
-		\begin{figure}[h!]
+		\begin{figure}[ht!]
 			\begin{center}
 				\fbox{\includegraphics[width=0.5\textwidth]{small_to_large_grouping.pdf}}
 				\caption{Small-To-Large Group for Group Size 5, 25 Authors}
@@ -74,7 +74,7 @@ The small numbers "5 10 25 50 75 150" given under each column heading in Figure 
 			\end{center}
 		\end{figure}
 		\subparagraph{Small-And-Large} The next group, small-and-large, is created by binning the authors by size.  Then one author from each bin is picked to be group with one author from each other bin.  For example the least prolific author is paired with one author from the most prolific bin and one author from each bin in between.  In this situation, the selection from each bin is not random.  The least prolific remaining author from each bin is picked for grouping.  No author is picked more than once. An example is shown in Figure \ref{fig:smallAndLargeGrouping}.
-		\begin{figure}[h!]
+		\begin{figure}[ht!]
 			\begin{center}
 				\fbox{\includegraphics[width=0.5\textwidth]{small_and_large_grouping.pdf}}
 				\caption{Small-And-Large Group for Group Size 5, 25 Authors}
@@ -82,7 +82,7 @@ The small numbers "5 10 25 50 75 150" given under each column heading in Figure 
 			\end{center}
 		\end{figure}
 		\subparagraph{Random} This grouping simply produces a random number in the range of available authors and places the selected author into a group until that group is full.  Then the next group is filled the same way until no authors remain.  No author is picked more than once. No author is picked more than once. An example is shown in Figure \ref{fig:randomGrouping}.
-		\begin{figure}[h!]
+		\begin{figure}[ht!]
 			\begin{center}
 				\fbox{\includegraphics[width=0.5\textwidth]{random_grouping.pdf}}
 				\caption{Random Group for Group Size 5, 25 Authors}
@@ -93,7 +93,7 @@ The small numbers "5 10 25 50 75 150" given under each column heading in Figure 
 		\subparagraph{}After these grouping types were constructed, there were 171 totals sets (30 sets of 5 small-to-large, 15 sets of 10 small-to-large, ..., 1 set of 150 small-to-large, 1 set of 150 random.)  Each of these sets were intended to be run through Bootstrapped SVM, Web1T SVM, Laplace Smoothed Naive Bayes, and Web1T Smoothed Naive Bayes.  Assuming that only one MPH model is chosen to represent Google Web1T, that results in 684 experiments.  Since there are 16 different MPH models based on the combinations punctuation, capitalization, sentence boundaries, and unknown words, the number of experiments could rise drastically.  However, only two MPH models will be used during the experiments resulting in only 1,368 per feature type.  Using 1-grams, 2-grams, 5-grams, 3-gb, and 3-osb results in 6,840 totals experiments.
 	
 		\paragraph{Data File Format}With combinations of features, artifacts, and group sizes chosen and the MPH data structures created, the actual documents must be converted into a format that can be used by the classifiers. The LibSVM file format was used since that it is the native format for LibLinear, the tool used for SVM in this thesis.  The Naive Bayes classifier was built specifically for this thesis and was designed to use LibSVM format for convenience. The format of the data files consisted of an integer representing the author followed by a space, followed by a number representing the MPH value, followed by a colon, followed by another number representing the count.  Each succeeding instance of a MPH value coupled with a count is separated by a space.  Each document in the corpus is represented by a single line.  Each line's mph number is in increasing order from left to right.  The data files store the word/count pairs in a sparse fashion.  This means that a zero count is not included in the data file.  Absence of a word/count pair constitutes a zero count without needlessly using up space in the file.  An example of this file format is provide in Figure \ref{fig:svmFormat}.
-		\begin{figure}[h!]
+		\begin{figure}[ht!]
 			\begin{center}
 				\fbox{\includegraphics[width=.75\textwidth]{svm_format.pdf}}
 				\caption{LibSVM File Format}
@@ -107,7 +107,7 @@ The small numbers "5 10 25 50 75 150" given under each column heading in Figure 
 	
 	\paragraph{Running Naive Bayes} The Naive Bayes classifier has been specifically built for this thesis.  The classifier reads in a pre-built array of long values from a file.  The two types of arrays are a Laplace Smoothing array, which is comprised of all 1's.  the second type of array is the Google Smoothing array comprised of the count values from the Web1T corpus.  Using an array to hold the smoothing values for Naive Bayes has an impact on RAM usage.  There must be enough available RAM to hold the smoothing array.  To prevent having numerous copies of the smoothing array in memory (one for each author being trained) a hashmap is used to create the author models instead.  The process for training put each encountered feature type into a hashmap along with a count of $1 plus \text{the array smoothing value}$.  If that feature type is encountered, the the count is simply incremented. Once all the training documents have been read and counted, the hashmaps of feature types and counts is converted into a hashmap of feature types and log of probability.
 	\paragraph{}During the prediction process, each encountered feature type is queried against the author hashmap first.  If the feature type is found in the hashmap, then the hashmap $\log{probability}$ is used.  If not, then the smoothing array containing log of probabilities is used.  An example of this hashmap/array process is shown in Figure \ref{fig:predictionFlowChart}. The result of the prediction process is outputted to a file in the corresponding results directory.  Those results are then processed into a file in the corresponding analysis folder where all data is then read into a mySQL database for evaluation of precision, recall, and f-score.
-		\begin{figure}[h!]
+		\begin{figure}[ht!]
 			\begin{center}
 				\fbox{\includegraphics[width=.75\textwidth]{prediction_flow_chart.pdf}}
 				\caption{Naive Bayes Hashmap and Smoothing Array Flow Chart}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  3 FEB 2011 14:48
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2010.8.26)  10 MAR 2011 13:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -16,9 +16,7 @@ Type  H <return>  for immediate help.
                                                   
 l.1 +
      %
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
+? 
 Missing character: There is no + in font nullfont!
 
 Overfull \hbox (20.0pt too wide) in paragraph at lines 1--4
@@ -44,16 +42,19 @@ File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (/usr/share/texmf-texli
-ve/tex/latex/geometry/geometry.sty
+ [1])
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
 Package: geometry 2008/12/21 v4.2 Page Geometry
+
 (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
-) (/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in pdf mode detected.
-) (/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
 Package ifvtex Info: VTeX not detected.
 )
@@ -65,26 +66,33 @@ Package ifvtex Info: VTeX not detected.
 \Gm@odd@mp=\dimen105
 \Gm@even@mp=\dimen106
 \Gm@dimlist=\toks15
-) (/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
 (/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
-) (/etc/texmf/tex/latex/config/graphics.cfg
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
 File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
-(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2009/08/25 v0.04m Graphics/color for pdfTeX
-\Gread@gobject=\count91
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
-) (/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/times.sty
 Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
-) (/usr/share/texmf-texlive/tex/latex/tools/tabularx.sty
+)
+(/usr/share/texmf-texlive/tex/latex/tools/tabularx.sty
 Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
 (/usr/share/texmf-texlive/tex/latex/tools/array.sty
 Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen109
@@ -98,12 +106,14 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \TX@old@col=\dimen113
 \TX@target=\dimen114
 \TX@delta=\dimen115
-\TX@cols=\count92
+\TX@cols=\count91
 \TX@ftn=\toks17
-) (/usr/share/texmf-texlive/tex/latex/titlesec/titletoc.sty
+)
+(/usr/share/texmf-texlive/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2007/08/12 v1.6 TOC entries
 \ttl@leftsep=\dimen116
-) (/usr/share/texmf-texlive/tex/latex/titlesec/titlesec.sty
+)
+(/usr/share/texmf-texlive/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \ttl@box=\box26
 \beforetitleunit=\skip45
@@ -114,7 +124,8 @@ Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \titlewidth=\dimen119
 \titlewidthlast=\dimen120
 \titlewidthfirst=\dimen121
-) (/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip47
 \f@ncyO@elh=\skip48
 \f@ncyO@erh=\skip49
@@ -124,26 +135,29 @@ Package: titlesec 2007/08/12 v2.8 Sectioning titles
 \f@ncyO@erf=\skip53
 \f@ncyO@olf=\skip54
 \f@ncyO@orf=\skip55
-) (/usr/share/texmf-texlive/tex/latex/ccaption/ccaption.sty
+)
+(/usr/share/texmf-texlive/tex/latex/ccaption/ccaption.sty
 Package: ccaption 2009/09/02 v3.2b Extended captioning and new floats
 \@contcwidth=\skip56
 \@contindw=\skip57
 \abovelegendskip=\skip58
 \belowlegendskip=\skip59
-\c@newflo@tctr=\count93
-) (/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
+\c@newflo@tctr=\count92
+)
+(/usr/share/texmf-texlive/tex/latex/setspace/setspace.sty
 Package: setspace 2000/12/01 6.7 Contributed and Supported LaTeX2e package
+
 Package: `setspace' 6.7 <2000/12/01>
 ) (/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
 Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
-\c@tracingmulticols=\count94
+\c@tracingmulticols=\count93
 \mult@box=\box27
 \multicol@leftmargin=\dimen122
-\c@unbalance=\count95
-\c@collectmore=\count96
-\doublecol@number=\count97
-\multicoltolerance=\count98
-\multicolpretolerance=\count99
+\c@unbalance=\count94
+\c@collectmore=\count95
+\doublecol@number=\count96
+\multicoltolerance=\count97
+\multicolpretolerance=\count98
 \full@width=\dimen123
 \page@free=\dimen124
 \premulticols=\dimen125
@@ -173,39 +187,44 @@ Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
 \@tempa=\box48
 \@tempa=\box49
 \@tempa=\box50
-\c@columnbadness=\count100
-\c@finalcolumnbadness=\count101
+\c@columnbadness=\count99
+\c@finalcolumnbadness=\count100
 \last@try=\dimen127
 \multicolovershoot=\dimen128
 \multicolundershoot=\dimen129
 \mult@nat@firstbox=\box51
 \colbreak@box=\box52
-) (/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
+)
+(/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count102
+\FV@CodeLineNo=\count101
 \FV@InFile=\read1
 \FV@TabBox=\box53
-\c@FancyVerbLine=\count103
-\FV@StepNumber=\count104
+\c@FancyVerbLine=\count102
+\FV@StepNumber=\count103
 \FV@OutFile=\write3
 ) (/usr/share/texmf-texlive/tex/latex/tools/varioref.sty
 Package: varioref 2009/09/13 v1.4w package for extended references (FMi)
-\c@vrcnt=\count105
-) (/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
+\c@vrcnt=\count104
+)
+(/usr/share/texmf-texlive/tex/latex/tools/xspace.sty
 Package: xspace 2006/05/08 v1.12 Space after command names (DPC,MH)
 ) (./nps_sf298.sty
 Package: nps_sf298 2004/12/22 Standard Form 298
+
 Package: sf298 2004/12/22 v1.2 - Modified for NPS)
 (/usr/share/texmf-texlive/tex/latex/totpages/totpages.sty
 Package: totpages 2005/09/19 v2.00 Totpages Package (muewi)
+
 (/usr/share/texmf-texlive/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-\c@sf@page=\count106
+\c@sf@page=\count105
 LaTeX Font Info:    Try loading font information for OT1+phv on input line 123.
+
 
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
@@ -218,39 +237,51 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <8> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 131.
 LaTeX Font Info:    Try loading font information for OT1+ptm on input line 135.
 
+
 (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)) (/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
+))
+(/usr/share/texmf-texlive/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
-) (/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
+)
+(/usr/share/texmf-texlive/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen130
-) (/usr/share/texmf-texlive/tex/latex/psnfss/pifont.sty
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/pifont.sty
 Package: pifont 2005/04/12 PSNFSS-v9.2a Pi font support (SPQR) 
 LaTeX Font Info:    Try loading font information for U+pzd on input line 63.
+
 (/usr/share/texmf-texlive/tex/latex/psnfss/upzd.fd
 File: upzd.fd 2001/06/04 font definitions for U/pzd.
 )
 LaTeX Font Info:    Try loading font information for U+psy on input line 64.
+
 (/usr/share/texmf-texlive/tex/latex/psnfss/upsy.fd
 File: upsy.fd 2001/06/04 font definitions for U/psy.
-)) (/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+))
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
 (/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
-) (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
 (/etc/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Driver file: dvips.def on input line 225.
 LaTeX Info: Redefining \color on input line 702.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -258,18 +289,22 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
-) (/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
 \Urlmuskip=\muskip10
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
-) (/usr/share/texmf-texlive/tex/latex/paralist/paralist.sty
+)
+(/usr/share/texmf-texlive/tex/latex/paralist/paralist.sty
 Package: paralist 2002/03/18 v2.3b Extended list environments (BS)
 \pltopsep=\skip62
 \plpartopsep=\skip63
 \plitemsep=\skip64
 \plparsep=\skip65
 \pl@lab=\toks19
-) (/usr/share/texmf-texlive/tex/latex/tocloft/tocloft.sty
+)
+(/usr/share/texmf-texlive/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2009/09/04 v2.3d parameterised ToC, etc., typesetting
+
 
 Package tocloft Note: The document has chapter divisions.
 
@@ -302,8 +337,8 @@ Package tocloft Note: The document has chapter divisions.
 \cftbeforefigskip=\skip92
 \cftfigindent=\skip93
 \cftfignumwidth=\skip94
-\c@lofdepth=\count107
-\c@lotdepth=\count108
+\c@lofdepth=\count106
+\c@lotdepth=\count107
 \cftbeforelottitleskip=\skip95
 \cftafterlottitleskip=\skip96
 \cftbeforetabskip=\skip97
@@ -312,55 +347,73 @@ Package tocloft Note: The document has chapter divisions.
 )
 \figurelen=\skip100
 \tablelen=\skip101
+
 Using new NPS thesis design
 ) (/usr/share/texmf-texlive/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2009/02/07 v0.4g Insert pages of external PDF documents (AM)
+
 (/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
-) (/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+)
+(/usr/share/texmf-texlive/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count109
-\calc@Bcount=\count110
+\calc@Acount=\count108
+\calc@Bcount=\count109
 \calc@Adimen=\dimen131
 \calc@Bdimen=\dimen132
 \calc@Askip=\skip102
 \calc@Bskip=\skip103
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count111
+\calc@Ccount=\count110
 \calc@Cskip=\skip104
-) (/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
-Package: eso-pic 2006/07/14 v1.1d eso-pic (RN)
-) (/usr/share/texmf-texlive/tex/latex/pdfpages/pppdftex.def
-File: pppdftex.def 2009/02/07 v0.4g Pdfpages driver for pdfTeX (AM)
 )
+(/usr/share/texmf-texlive/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2006/07/14 v1.1d eso-pic (RN)
+)
+(/usr/share/texmf-texlive/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2009/02/07 v0.4g Pdfpages driver for pdfTeX (AM)
+
+(/usr/share/texmf-texlive/tex/latex/pdfpages/ppnull.def
+File: ppnull.def 2009/02/07 v0.4g Pdfpages dummy driver (AM)
+
+
+Package pdfpages Warning: I will use a dummy \includepdf command
+(pdfpages)                which will NOT insert any pages, because
+(pdfpages)                you are producing DVI output.
+
+))
 \AM@pagebox=\box54
 \AM@toc@title=\toks20
-\c@AM@survey=\count112
+\c@AM@survey=\count111
 \AM@templatesizebox=\box55
 ) (/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip105
+
 For additional information on amsmath, use the `?' option.
 (/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
+
 (/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks21
 \ex@=\dimen133
-)) (/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen134
-) (/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count113
+\inf@bad=\count112
 LaTeX Info: Redefining \frac on input line 211.
-\uproot@=\count114
-\leftroot@=\count115
+\uproot@=\count113
+\leftroot@=\count114
 LaTeX Info: Redefining \overline on input line 307.
-\classnum@=\count116
-\DOTSCASE@=\count117
+\classnum@=\count115
+\DOTSCASE@=\count116
 LaTeX Info: Redefining \ldots on input line 379.
 LaTeX Info: Redefining \dots on input line 382.
 LaTeX Info: Redefining \cdots on input line 467.
@@ -369,15 +422,15 @@ LaTeX Info: Redefining \cdots on input line 467.
 \big@size=\dimen135
 LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
-\macc@depth=\count118
-\c@MaxMatrixCols=\count119
+\macc@depth=\count117
+\c@MaxMatrixCols=\count118
 \dotsspace@=\muskip11
-\c@parentequation=\count120
-\dspbrk@lvl=\count121
+\c@parentequation=\count119
+\dspbrk@lvl=\count120
 \tag@help=\toks22
-\row@=\count122
-\column@=\count123
-\maxfields@=\count124
+\row@=\count121
+\column@=\count122
+\maxfields@=\count123
 \andhelp@=\toks23
 \eqnshift@=\dimen136
 \alignsep@=\dimen137
@@ -391,9 +444,10 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \mathdisplay@stack=\toks25
 LaTeX Info: Redefining \[ on input line 2666.
 LaTeX Info: Redefining \] on input line 2667.
-) (/usr/share/texmf-texlive/tex/latex/supertabular/supertabular.sty
+)
+(/usr/share/texmf-texlive/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count125
+\c@tracingst=\count124
 \ST@wd=\dimen142
 \ST@rightskip=\skip108
 \ST@leftskip=\skip109
@@ -409,70 +463,83 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@toadd=\dimen151
 \ST@dimen=\dimen152
 \ST@pbox=\box58
-) (/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
+)
+(/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
 Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip111
 \LTright=\skip112
 \LTpre=\skip113
 \LTpost=\skip114
-\LTchunksize=\count126
+\LTchunksize=\count125
 \LTcapwidth=\dimen153
 \LT@head=\box59
 \LT@firsthead=\box60
 \LT@foot=\box61
 \LT@lastfoot=\box62
-\LT@cols=\count127
-\LT@rows=\count128
-\c@LT@tables=\count129
-\c@LT@chunks=\count130
+\LT@cols=\count126
+\LT@rows=\count127
+\c@LT@tables=\count128
+\c@LT@chunks=\count129
 \LT@p@ftn=\toks26
-) (/usr/share/texmf-texlive/tex/latex/amsfonts/eufrak.sty
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/eufrak.sty
 Package: eufrak 2009/06/22 v3.00 Euler Fraktur fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuFrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 39.
-) (/usr/share/texmf-texlive/tex/latex/hyphenat/hyphenat.sty
+)
+(/usr/share/texmf-texlive/tex/latex/hyphenat/hyphenat.sty
 Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
 \langwohyphens=\language4
 LaTeX Info: Redefining \_ on input line 43.
-) (/usr/share/texmf-texlive/tex/latex/listings/listings.sty
-\lst@mode=\count131
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count130
 \lst@gtempboxa=\box63
 \lst@token=\toks27
-\lst@length=\count132
+\lst@length=\count131
 \lst@currlwidth=\dimen154
-\lst@column=\count133
-\lst@pos=\count134
+\lst@column=\count132
+\lst@pos=\count133
 \lst@lostspace=\dimen155
 \lst@width=\dimen156
-\lst@newlines=\count135
-\lst@lineno=\count136
+\lst@newlines=\count134
+\lst@lineno=\count135
 \lst@maxwidth=\dimen157
+
 (/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
-\c@lstnumber=\count137
-\lst@skipnumbers=\count138
+\c@lstnumber=\count136
+\lst@skipnumbers=\count137
 \lst@framebox=\box64
-) (/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
 File: listings.cfg 2007/02/22 1.4 listings configuration
 ))
 Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
 (/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
 (/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
-) (/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
 Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
 O)
+
 (/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
 Package: xcolor-patch 2009/10/02 xcolor patch
 ))
 \@linkdim=\dimen158
-\Hy@linkcounter=\count139
-\Hy@pagecounter=\count140
+\Hy@linkcounter=\count138
+\Hy@pagecounter=\count139
+
 (/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
-) (/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
 (/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
 )
@@ -480,10 +547,13 @@ Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
 (etexcmds)             that some package has redefined \expanded.
 (etexcmds)             In the latter case, load this package earlier.
-) (/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
-) (/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
 (/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
 t (HO)
@@ -520,17 +590,22 @@ Package hyperref Info: Bookmarks ON on input line 3191.
 LaTeX Info: Redefining \url on input line 3428.
 (/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
 Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
 (/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
 Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
-) (/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
 Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
 (/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
  (HO)
+
 (/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-) (/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
 )
 )
@@ -538,7 +613,7 @@ Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 )))
-\Fld@menulength=\count141
+\Fld@menulength=\count140
 \Field@Width=\dimen159
 \Fld@charsize=\dimen160
 \Field@toks=\toks28
@@ -549,18 +624,32 @@ Package hyperref Info: backreferencing OFF on input line 4392.
 Package hyperref Info: Link coloring OFF on input line 4397.
 Package hyperref Info: Link coloring with OCG OFF on input line 4402.
 Package hyperref Info: PDF/A mode OFF on input line 4407.
+
 (/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
 )
-\Hy@abspage=\count142
-\c@Item=\count143
+\Hy@abspage=\count141
+\c@Item=\count142
 )
-*hyperref using driver hpdftex*
-(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
-\Fld@listcount=\count144
-) (./thesis.aux (./rules.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux
-) (./chapter4.aux) (./chapter5.aux) (./Tables.aux))
+
+Package hyperref Warning: Wrong driver `hpdftex.def';
+(hyperref)                pdfTeX is not running in PDF mode.
+(hyperref)                Using default driver.
+
+*hyperref using default driver hdvips*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2009/10/09 v6.79a Hyperref driver for dvips
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
+\pdf@docset=\toks29
+\pdf@box=\box65
+\pdf@toks=\toks30
+\pdf@defaulttoks=\toks31
+\Fld@listcount=\count143
+)) (./thesis.aux
+(./rules.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux)
+(./chapter4.aux) (./chapter5.aux) (./appendixA.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 108.
@@ -577,8 +666,9 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 108.
 LaTeX Font Info:    ... okay on input line 108.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 108.
 LaTeX Font Info:    ... okay on input line 108.
+
 *geometry auto-detecting driver*
-*geometry detected driver: pdftex*
+*geometry detected driver: dvips*
 -------------------- Geometry parameters
 paper: letterpaper
 landscape: --
@@ -596,7 +686,7 @@ truedimen: --
 includehead: --
 includefoot: --
 includemp: --
-driver: pdftex
+driver: dvips
 -------------------- Page layout dimensions and switches
 \paperwidth  614.295pt
 \paperheight 794.96999pt
@@ -618,32 +708,23 @@ driver: pdftex
 \@twosidetrue \@mparswitchtrue 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count145
-\scratchdimen=\dimen161
-\scratchbox=\box65
-\nofMPsegments=\count146
-\nofMParguments=\count147
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count148
-\MPscratchDim=\dimen162
-\MPnumerator=\count149
-\everyMPtoPDFconversion=\toks30
-) ABD: EveryShipout initializing macros
-\c@lstlisting=\count150
+ABD: EveryShipout initializing macros
+\c@lstlisting=\count144
 Package hyperref Info: Link coloring OFF on input line 108.
+
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
 (/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
 Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
-\c@section@level=\count151
+\c@section@level=\count145
 LaTeX Info: Redefining \Ref on input line 396.
 )
 LaTeX Info: Redefining \ref on input line 108.
 LaTeX Info: Redefining \pageref on input line 108.
-(./thesis.out) (./thesis.out)
+ (./thesis.out)
+(./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
@@ -651,19 +732,31 @@ LaTeX Info: Redefining \pageref on input line 108.
 LaTeX Info: Redefining \Ref on input line 108.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
-<nps_logo_3clr_cymk.pdf, id=93, 222.8325pt x 153.57375pt>
-File: nps_logo_3clr_cymk.pdf Graphic file (type pdf)
-<use nps_logo_3clr_cymk.pdf>
+
+
+! LaTeX Error: Cannot determine size of graphic in nps_logo_3clr_cymk.pdf (no B
+oundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 \NPScover
+                                      % Cover
+? 
+File: nps_logo_3clr_cymk.pdf Graphic file (type eps)
+<nps_logo_3clr_cymk.pdf>
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
-(/usr/share/texmf-texlive/tex/latex/base/ulasy.fd)
+ (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
+
 [1.1
 
- <./nps_logo_3clr_cymk.pdf>] [2.2
+] [2.2
 
 ]
 Overfull \hbox (51.98967pt too wide) in paragraph at lines 111--111
@@ -687,18 +780,7 @@ Overfull \hbox (52.94322pt too wide) in paragraph at lines 111--111
 $[]$ 
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.111 \NPSsftne
-                                      % SF298 [1.3]pdfTeX warning (ext4): desti
-nation with the same identifier (name{page.ii}) has been already used, duplicat
-e ignored
-<to be read again> 
-                   \relax 
-l.111 \NPSsftne
-                                      % SF298 [2.4]
+[1.3] [2.4]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -734,20 +816,20 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
-[7.9]
+ [7.9]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8.10] (./thesis.lof)
+[8.10
+
+] (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
-[9.11
-
-]
+ [9.11]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -760,7 +842,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
-[11.13]
+ [11.13]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -783,6 +865,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 \openout2 = `rules.aux'.
 
+
 No file rules.tex.
 \openout2 = `chapter1.aux'.
 
@@ -796,7 +879,7 @@ Chapter 1.
 ]
 \openout2 = `chapter2.aux'.
 
-(./chapter2.tex
+ (./chapter2.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -811,7 +894,23 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+
+LaTeX Warning: Citation `love_attributing_2002' on page 3 undefined on input li
+ne 7.
+
+
+LaTeX Warning: Citation `alpaydin_introduction_2004' on page 3 undefined on inp
+ut line 10.
+
+
+LaTeX Warning: Citation `alpaydin_introduction_2004' on page 3 undefined on inp
+ut line 10.
+
 [3.19]
+
+LaTeX Warning: Citation `jurafsky_speech_2009' on page 4 undefined on input lin
+e 17.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -819,6 +918,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4.20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -826,26 +928,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [5.21]
-! You can't use `\eqno' in math mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.36 			\end{equation}
-                      
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.36 			\end{equation}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+LaTeX Warning: Citation `vapnik_support-vector_1995' on page 6 undefined on inp
+ut line 34.
+
+
+LaTeX Warning: Citation `fisher_use_1936' on page 6 undefined on input line 42.
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -855,12 +944,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6.22]
 
+LaTeX Warning: Citation `vapnik_support-vector_1995' on page 7 undefined on inp
+ut line 65.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [7.23]
+
+LaTeX Warning: Citation `vapnik_support-vector_1995' on page 8 undefined on inp
+ut line 73.
+
+
+LaTeX Warning: Citation `_multiclass_????' on page 8 undefined on input line 75
+.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -879,6 +980,9 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -889,12 +993,18 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [11.27]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -913,6 +1023,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13.29]
 
+LaTeX Warning: Citation `brants_web_2006' on page 14 undefined on input line 24
+2.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -926,6 +1043,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [15.31]
+
+LaTeX Warning: Citation `belazzougui_hash_2009' on page 16 undefined on input l
+ine 275.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -941,12 +1062,31 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17.33]
 
+LaTeX Warning: Citation `_cmph_????' on page 18 undefined on input line 282.
+
+
+LaTeX Warning: Citation `belazzougui_hash_2009' on page 18 undefined on input l
+ine 282.
+
+
+LaTeX Warning: Citation `sokolova_beyond_2006' on page 18 undefined on input li
+ne 288.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [18.34]
+
+LaTeX Warning: Citation `sokolova_beyond_2006' on page 19 undefined on input li
+ne 292.
+
+
+LaTeX Warning: Citation `sokolova_beyond_2006' on page 19 undefined on input li
+ne 299.
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -955,6 +1095,30 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19.35]
 
+LaTeX Warning: Citation `_gartner_????' on page 20 undefined on input line 306.
+
+
+
+LaTeX Warning: Citation `_blackberry_????' on page 20 undefined on input line 3
+06.
+
+
+LaTeX Warning: Citation `_symbian_????' on page 20 undefined on input line 306.
+
+
+
+LaTeX Warning: Citation `murphy_android_2010' on page 20 undefined on input lin
+e 306.
+
+
+LaTeX Warning: Citation `_creating_????' on page 20 undefined on input line 306
+.
+
+
+LaTeX Warning: Citation `murphy_android_2010' on page 20 undefined on input lin
+e 309.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -962,20 +1126,26 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [20.36]
 
+LaTeX Warning: Citation `murphy_busy_2010' on page 21 undefined on input line 3
+14.
+
+
+LaTeX Warning: Citation `_enron_????' on page 21 undefined on input line 319.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [21.37]
-! Undefined control sequence.
-l.325 ...the Google Web1T corpus effectively\citre
-                                                  {}.
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+
+LaTeX Warning: Citation `_streaming_????' on page 22 undefined on input line 32
+4.
+
+
+Underfull \vbox (badness 2626) has occurred while \output is active []
+
 
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -985,7 +1155,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [22.38]
 
-LaTeX Warning: Citation `_method_????' on page 23 undefined on input line 326.
+LaTeX Warning: Citation `_method_????' on page 23 undefined on input line 328.
 
 )
 
@@ -997,7 +1167,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [23.39]
 \openout2 = `chapter3.aux'.
 
-(./chapter3.tex
+ (./chapter3.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1010,28 +1180,133 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 3.
-[25.41] <Experiment_Design.pdf, id=518, 614.295pt x 578.16pt>
-File: Experiment_Design.pdf Graphic file (type pdf)
-<use Experiment_Design.pdf>
+[25.41]
+
+! LaTeX Error: Cannot determine size of graphic in Experiment_Design.pdf (no Bo
+undingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 ...dth=0.5\textwidth]{Experiment_Design.pdf}}
+                                                  
+? 
+File: Experiment_Design.pdf Graphic file (type eps)
+<Experiment_Design.pdf>
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[26.42 <./Experiment_Design.pdf>]
+[26.42]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27.43] <3_tier_explanation.pdf, id=540, 460.72125pt x 244.915pt>
-File: 3_tier_explanation.pdf Graphic file (type pdf)
-<use 3_tier_explanation.pdf> <3_tier_example.pdf, id=542, 532.99126pt x 450.683
-75pt>
-File: 3_tier_example.pdf Graphic file (type pdf)
-<use 3_tier_example.pdf>
+[27.43]
+
+! LaTeX Error: Cannot determine size of graphic in 3_tier_explanation.pdf (no B
+oundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 ...h=0.75\textwidth]{3_tier_explanation.pdf}}
+                                                  
+? 
+File: 3_tier_explanation.pdf Graphic file (type eps)
+<3_tier_explanation.pdf>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28.44]
+
+! LaTeX Error: Cannot determine size of graphic in 3_tier_example.pdf (no Bound
+ingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.40 ...width=0.75\textwidth]{3_tier_example.pdf}}
+                                                  
+? 
+File: 3_tier_example.pdf Graphic file (type eps)
+<3_tier_example.pdf>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29.45]
+
+! LaTeX Error: Cannot determine size of graphic in cmph_matrix.pdf (no Bounding
+Box).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 ...ics[width=0.5\textwidth]{cmph_matrix.pdf}}
+                                                  
+? 
+File: cmph_matrix.pdf Graphic file (type eps)
+<cmph_matrix.pdf>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30.46]
+
+LaTeX Warning: Citation `bikel_if_2007' on page 31 undefined on input line 65.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31.47]
+
+! LaTeX Error: Cannot determine size of graphic in small_to_large_grouping.pdf 
+(no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 ...5\textwidth]{small_to_large_grouping.pdf}}
+                                                  
+? 
+File: small_to_large_grouping.pdf Graphic file (type eps)
+<small_to_large_grouping.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+! LaTeX Error: Cannot determine size of graphic in small_and_large_grouping.pdf
+ (no BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 ...\textwidth]{small_and_large_grouping.pdf}}
+                                                  
+? 
+File: small_and_large_grouping.pdf Graphic file (type eps)
+<small_and_large_grouping.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1041,10 +1316,50 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[28.44 <./3_tier_explanation.pdf>] <cmph_matrix.pdf, id=556, 473.77pt x 754.82p
-t>
-File: cmph_matrix.pdf Graphic file (type pdf)
-<use cmph_matrix.pdf>
+[32.48]
+
+! LaTeX Error: Cannot determine size of graphic in random_grouping.pdf (no Boun
+dingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ...width=0.5\textwidth]{random_grouping.pdf}}
+                                                  
+? 
+File: random_grouping.pdf Graphic file (type eps)
+<random_grouping.pdf>
+Underfull \vbox (badness 1609) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[33.49]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[34.50]
+
+! LaTeX Error: Cannot determine size of graphic in svm_format.pdf (no BoundingB
+ox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 ...hics[width=.75\textwidth]{svm_format.pdf}}
+                                                  
+? 
+File: svm_format.pdf Graphic file (type eps)
+<svm_format.pdf>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1054,72 +1369,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[29.45 <./3_tier_example.pdf>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[30.46 <./cmph_matrix.pdf>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[31.47] <small_to_large_grouping.pdf, id=590, 542.025pt x 361.35pt>
-File: small_to_large_grouping.pdf Graphic file (type pdf)
-<use small_to_large_grouping.pdf>
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[32.48 <./small_to_large_grouping.pdf>] <small_and_large_grouping.pdf, id=606, 
-542.025pt x 361.35pt>
-File: small_and_large_grouping.pdf Graphic file (type pdf)
-<use small_and_large_grouping.pdf> <random_grouping.pdf, id=608, 542.025pt x 36
-1.35pt>
-File: random_grouping.pdf Graphic file (type pdf)
-<use random_grouping.pdf>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[33.49 <./small_and_large_grouping.pdf>] <svm_format.pdf, id=624, 624.3325pt x 
-88.33pt>
-File: svm_format.pdf Graphic file (type pdf)
-<use svm_format.pdf>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[34.50 <./random_grouping.pdf>]
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[35.51 <./svm_format.pdf>] <prediction_flow_chart.pdf, id=651, 614.295pt x 794.
-97pt>
-File: prediction_flow_chart.pdf Graphic file (type pdf)
-<use prediction_flow_chart.pdf>
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[35.51]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1128,31 +1378,45 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [36.52]
 
+! LaTeX Error: Cannot determine size of graphic in prediction_flow_chart.pdf (n
+o BoundingBox).
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 ...75\textwidth]{prediction_flow_chart.pdf}}
+                                                  
+? 
+File: prediction_flow_chart.pdf Graphic file (type eps)
+<prediction_flow_chart.pdf>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[37.53 <./prediction_flow_chart.pdf>])
+[37.53]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[38.54]
+[38.54])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[39.55]
 \openout2 = `chapter4.aux'.
 
-(./chapter4.tex
-Chapter 4.
-) [39.55
-
-
-
-]
-\openout2 = `chapter5.aux'.
-
-(./chapter5.tex
+ (./chapter4.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1164,8 +1428,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 ]
-Chapter 5.
-) [41.57] (./thesis.bbl
+Chapter 4.
+) [41.57]
+\openout2 = `chapter5.aux'.
+
+ (./chapter5.tex
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1175,203 +1442,32 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 [42.58
 
 
+
 ]
-LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 1.
+Chapter 5.
+) [43.59] (./thesis.bbl)
+\openout2 = `appendixA.aux'.
 
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 9--15
-$[]$ 
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 16--22
-[]$[]$ 
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 23--30
-[]$[]$ 
- []
-
-
-Underfull \hbox (badness 2617) in paragraph at lines 32--38
-[]\OT1/ptm/m/n/12 Vladimir Vap-nik and Corinna Cortes.  Support-Vector net-work
-s.  \OT1/ptm/m/it/12 Ma-chine Learn-
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 31--39
-[]$[]$ 
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 40--45
-[]$[]$ 
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 46--54
-[]$[]$ 
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 55--60
-[]$[]$ 
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 61--67
-[]$[]$ 
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 68--73
-[]$[]$ 
- []
-
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 74--81
-[]$[]$ 
- []
-
-
-Underfull \hbox (badness 7667) in paragraph at lines 83--87
-[]\OT1/ptm/m/n/12 Gartner says world-wide mo-bile phone sales grew 17 per cent 
-in first quar-ter
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 82--88
-[]$[]$ 
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 89--94
-[]$[]$ 
- []
-
-
-Underfull \hbox (badness 3333) in paragraph at lines 96--103
-[]\OT1/ptm/m/n/12 Symbian SDKs.  http://www.forum.nokia.com/info/sw.nokia.com/i
-d/ec866fab-4b76-49f6-
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 95--104
-[]$[]$ 
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 105--111
-[]$[]$ 
- []
-
-
-Overfull \hbox (89.0613pt too wide) in paragraph at lines 113--120
-[]\OT1/ptm/m/n/12 Creating an iPhone ap-pli-ca-tion.  http://developer.apple.co
-m/library/ios/#referencelibrary/GettingStarted/Creating[]-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--120
-\OT1/ptm/m/n/12 an[]-iPhone[]-Ap-p/in-dex.html.  []$http : / / developer . appl
-e . com / library / ios / #referencelibrary /
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 112--121
-[]$[]$ 
- []
-
-[43.59]
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 122--128
-[]$[]$ 
- []
-
-
-Underfull \hbox (badness 1968) in paragraph at lines 130--133
-[]\OT1/ptm/m/n/12 Enron email dataset.  http://www-2.cs.cmu.edu/%7Eenron/.  []$
-http : / / www-[]2 . cs . cmu . edu /
- []
-
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 129--134
-[]$[]$ 
- []
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 136.
-
-(/usr/share/texmf-texlive/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 136.
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 135--140
-[]$[]$ 
- []
-
-Missing character: There is no â in font ptmr7t!
-Missing character: There is no € in font ptmr7t!
-Missing character: There is no “ in font ptmr7t!
-
-Overfull \hbox (25.86685pt too wide) in paragraph at lines 141--151
-[]$[]$ 
- []
-
-)
-
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
- Make it at least 14.49998pt.
- We now make it that large for the rest of the document.
- This may cause the page layout to be inconsistent, however.
-
-[44.60]
-\openout2 = `Tables.aux'.
-
-No file Tables.tex.
-[45.61
-
-
-
-] (./thesis.aux (./rules.aux) (./chapter1.aux) (./chapter2.aux) (./chapter3.aux
-) (./chapter4.aux) (./chapter5.aux) (./Tables.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ (./appendixA.tex)
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.150 \include{appendixA}
+                          %ENRON Liblinear Results
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.150 \include{appendixA}
+                          %ENRON Liblinear Results
+? X
+ 
 Here is how much of TeX's memory you used:
- 10267 strings out of 495061
- 145416 string characters out of 1182621
- 261937 words of memory out of 3000000
- 12895 multiletter control sequences out of 15000+50000
- 43906 words of font info for 78 fonts, out of 3000000 for 9000
+ 9742 strings out of 495062
+ 138945 string characters out of 1182644
+ 309690 words of memory out of 3000000
+ 12661 multiletter control sequences out of 15000+50000
+ 21526 words of font info for 57 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,12n,45p,1430b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
-ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
-pe1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
-msfonts/cm/cmex10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi6.pfb><
-/usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/t
-exmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive
-/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type1/
-public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/
-texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fon
-ts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/tim
-es/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/
-share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (62 pages, 593537 bytes).
-PDF statistics:
- 840 PDF objects out of 1000 (max. 8388607)
- 256 named destinations out of 1000 (max. 500000)
- 227 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 38i,12n,45p,1447b,337s stack positions out of 5000i,500n,10000p,200000b,50000s
+Output written on thesis.dvi (60 pages, 178852 bytes).

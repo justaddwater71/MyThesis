@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  11 MAR 2011 13:45
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  16 MAR 2011 09:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -426,7 +426,757 @@ Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux)
 (./chapter5.aux) (./appendixA.aux) (./appendixB.aux) (./appendixC.aux)
 (./appendixD.aux) (./appendixE.aux) (./appendixF.aux) (./appendixG.aux)
-(./appendixH.aux))
+(./appendixH.aux) (./appendixI.aux
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-75' multiply defined.
+
+) (./appendixJ.aux
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-10' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-25' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-50' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-75' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-150' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-10' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-25' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-50' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-75' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-150' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-10' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-25' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-50' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-75' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-150' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-10' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-25' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-50' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-75' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-150' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-5' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-10' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-25' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-50' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-75' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-150' multiply define
+d.
+
+) (./appendixK.aux
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-150' multiply defined.
+
+) (./appendixL.aux
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-150' multiply defined.
+
+) (./appendixM.aux
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-5' multiply defined.
+
+) (./appendixN.aux
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-10' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-25' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-50' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-75' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-150' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-10' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-25' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-50' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-75' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-150' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-10' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-25' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-50' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-75' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-150' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-10' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-25' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-50' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-75' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-150' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-5' multiply defined.
+
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-10' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-25' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-50' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-75' multiply defined
+.
+
+
+LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-150' multiply define
+d.
+
+) (./appendixO.aux
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM1-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM2-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GM5-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-GB3-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-enron-OSB3-ALL-ALL-150' multiply defined.
+
+) (./appendixP.aux
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM1-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM2-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GM5-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-GB3-ALL-ALL-150' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-5' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-10' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-25' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-50' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-75' multiply defined.
+
+
+LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-150' multiply defined.
+
+))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
@@ -543,67 +1293,101 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ] [5.7] [6.8
 
-] (./thesis.toc [7.9
+] (./thesis.toc
+Overfull \hbox (10.86407pt too wide) in paragraph at lines 135--135
+ []|| []\OT1/ptm/m/n/12 Most Ef-fec-tive Com-bi-na-tion of Clas-si-fi-ca-tion M
+eth-ods, Fea-ture Types, and Vocabulary| 
+ []
 
-])
+[7.9
+
+] [8.10])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
- [8.10] (./thesis.lof)
+ [9.11] [10.12
+
+] (./thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
- [9.11
+ [11.13
 
+] [12.14
+
+] (./thesis.lot
+[13.15
 
 ]
-[10.12
-
-] (./thesis.lot [11.13
-
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12.14]
-[13.15]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14.16]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15.17]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [16.18]
+[16.18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17.19]
-[18.20] [19.21]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20.22])
+ [18.20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19.21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20.22]
+[21.23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [22.24]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23.25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24.26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [25.27]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26.28]
+[27.29]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28.30]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29.31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30.32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31.33])
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
 
-[21.23] [22.24
+[32.34] [33.35
 
-] [23.25
 
-] [24.26
+] [34.36
 
 ]
 \openout2 = `chapter1.aux'.
 
  (./chapter1.tex
 Chapter 1.
-) [1.27
+) [1.37
 
 
 ]
 \openout2 = `chapter2.aux'.
 
- (./chapter2.tex [2.28
+ (./chapter2.tex [2.38
 
 
 
@@ -611,106 +1395,112 @@ Chapter 1.
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-[3.29] [4.30]
+[3.39] [4.40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5.31]
-[6.32] [7.33] [8.34] [9.35]
+ [5.41]
+[6.42] [7.43] [8.44] [9.45]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10.36]
+[10.46]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11.37]
+[11.47]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12.38] [13.39]
+[12.48] [13.49]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14.40] [15.41] [16.42] [17.43] [18.44] [19.45] [20.46] [21.47]
+[14.50] [15.51] [16.52] [17.53] [18.54] [19.55] [20.56] [21.57]
 Underfull \vbox (badness 2626) has occurred while \output is active []
 
- [22.48]
+ [22.58]
 
 LaTeX Warning: Citation `_method_????' on page 23 undefined on input line 328.
 
-) [23.49]
+) [23.59]
 \openout2 = `chapter3.aux'.
 
- (./chapter3.tex [24.50
+ (./chapter3.tex [24.60
 
 
 
 ]
 Chapter 3.
-[25.51] <Experiment_Design.pdf, id=183, 614.295pt x 578.16pt>
+[25.61] <Experiment_Design.pdf, id=215, 614.295pt x 578.16pt>
 File: Experiment_Design.pdf Graphic file (type pdf)
 
-<use Experiment_Design.pdf> [26.52 <./Experiment_Design.pdf>] [27.53]
-<3_tier_explanation.pdf, id=196, 460.72125pt x 244.915pt>
+<use Experiment_Design.pdf> [26.62 <./Experiment_Design.pdf>] [27.63]
+<3_tier_explanation.pdf, id=228, 460.72125pt x 244.915pt>
 File: 3_tier_explanation.pdf Graphic file (type pdf)
 
 <use 3_tier_explanation.pdf>
-<3_tier_example.pdf, id=197, 532.99126pt x 450.68375pt>
+<3_tier_example.pdf, id=229, 532.99126pt x 450.68375pt>
 File: 3_tier_example.pdf Graphic file (type pdf)
 
-<use 3_tier_example.pdf> [28.54 <./3_tier_explanation.pdf>]
-<cmph_matrix.pdf, id=208, 473.77pt x 754.82pt>
+<use 3_tier_example.pdf> [28.64 <./3_tier_explanation.pdf>]
+<cmph_matrix.pdf, id=240, 473.77pt x 754.82pt>
 File: cmph_matrix.pdf Graphic file (type pdf)
- <use cmph_matrix.pdf> [29.55 <./3_tier_example.pdf>] [30.56 <./cmph_matrix.pdf
->] [31.57]
-<small_to_large_grouping.pdf, id=231, 542.025pt x 361.35pt>
+ <use cmph_matrix.pdf> [29.65 <./3_tier_example.pdf>] [30.66 <./cmph_matrix.pdf
+>] [31.67]
+<small_to_large_grouping.pdf, id=263, 542.025pt x 361.35pt>
 File: small_to_large_grouping.pdf Graphic file (type pdf)
 
-<use small_to_large_grouping.pdf> [32.58 <./small_to_large_grouping.pdf>]
-<small_and_large_grouping.pdf, id=241, 542.025pt x 361.35pt>
+<use small_to_large_grouping.pdf> [32.68 <./small_to_large_grouping.pdf>]
+<small_and_large_grouping.pdf, id=273, 542.025pt x 361.35pt>
 File: small_and_large_grouping.pdf Graphic file (type pdf)
 
 <use small_and_large_grouping.pdf>
-<random_grouping.pdf, id=242, 542.025pt x 361.35pt>
+<random_grouping.pdf, id=274, 542.025pt x 361.35pt>
 File: random_grouping.pdf Graphic file (type pdf)
  <use random_grouping.pdf>
-[33.59 <./small_and_large_grouping.pdf>]
-<svm_format.pdf, id=252, 624.3325pt x 88.33pt>
+[33.69 <./small_and_large_grouping.pdf>]
+<svm_format.pdf, id=284, 624.3325pt x 88.33pt>
 File: svm_format.pdf Graphic file (type pdf)
- <use svm_format.pdf> [34.60 <./random_grouping.pdf>] [35.61 <./svm_format.pdf>
+ <use svm_format.pdf> [34.70 <./random_grouping.pdf>] [35.71 <./svm_format.pdf>
 ]
-<prediction_flow_chart.pdf, id=272, 614.295pt x 794.97pt>
+<prediction_flow_chart.pdf, id=303, 614.295pt x 794.97pt>
 File: prediction_flow_chart.pdf Graphic file (type pdf)
 
-<use prediction_flow_chart.pdf> [36.62] [37.63 <./prediction_flow_chart.pdf>])
-[38.64]
+<use prediction_flow_chart.pdf> [36.72] [37.73 <./prediction_flow_chart.pdf>])
+[38.74]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 4.
-) [39.65
+[39.75
 
 
 
 ]
+Overfull \hbox (0.35117pt too wide) in paragraph at lines 27--27
+ |[]\OT1/ptm/b/n/17.28 Classification Ef-fec-tive-ness Ver-sus Stor-age Re-quir
+e-ments| 
+ []
+
+) [40.76]
 \openout2 = `chapter5.aux'.
 
- (./chapter5.tex [40.66
-
-
-
-]
+ (./chapter5.tex
 Chapter 5.
-) [41.67] (./thesis.bbl [42.68
+) [41.77
+
+
+
+] (./thesis.bbl [42.78
 
 
 ]
@@ -719,7 +1509,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
- [43.69]
+ [43.79]
 Overfull \hbox (90.80879pt too wide) in paragraph at lines 109--115
 \OT1/ptm/m/n/12 http://developer.apple.com/library/ios/#referencelibrary/Gettin
 gStarted/Creating[]an[]iPhone[]App/index.html. 
@@ -735,51 +1525,101 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
-) [44.70]
+) [44.80]
 \openout2 = `appendixA.aux'.
 
  (./appendixA.tex
 Appendix A.
-[45.71
+[45.81
 
 
-] [46.72] [47.73] [48.74] [49.75]) [50.76] [51.77] [52.78] [53.79]
-[54.80] [55.81] [56.82]
+] [46.82] [47.83]
+Overfull \vbox (14.49998pt too high) detected at line 358
+ []
+
+[48.84] [49.85]
+Overfull \vbox (14.49998pt too high) detected at line 500
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 518
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 536
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 554
+ []
+
+) [50.86] [51.87] [52.88] [53.89] [54.90]
 \openout2 = `appendixB.aux'.
 
  (./appendixB.tex
 Appendix B.
-[57.83
+[55.91
 
 
 
-] [58.84] [59.85] [60.86] [61.87]) [62.88] [63.89] [64.90] [65.91]
-[66.92] [67.93] [68.94]
+] [56.92]
+Overfull \vbox (14.49998pt too high) detected at line 335
+ []
+
+[57.93]
+Overfull \vbox (14.49998pt too high) detected at line 353
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 371
+ []
+
+[58.94] [59.95]
+Overfull \vbox (14.49998pt too high) detected at line 492
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 551
+ []
+
+[60.96]
+Overfull \vbox (14.49998pt too high) detected at line 569
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 587
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 605
+ []
+
+) [61.97] [62.98] [63.99] [64.100] [65.101]
 \openout2 = `appendixC.aux'.
 
- (./appendixC.tex
+ (./appendixC.tex [66.102
+
+
+
+]
 Appendix C.
-[69.95
-
-
-
-] [70.96] [71.97] [72.98] [73.99]) [74.100] [75.101] [76.102] [77.103]
-[78.104] [79.105] [80.106]
+[67.103] [68.104] [69.105] [70.106] [71.107]) [72.108] [73.109] [74.110]
+[75.111] [76.112] [77.113] [78.114]
 \openout2 = `appendixD.aux'.
 
  (./appendixD.tex
 Appendix D.
-[81.107
+[79.115
 
 
 
-] [82.108] [83.109] [84.110] [85.111]) [86.112] [87.113] [88.114]
-[89.115] [90.116] [91.117] [92.118]
+] [80.116] [81.117] [82.118] [83.119]) [84.120] [85.121] [86.122]
+[87.123] [88.124] [89.125] [90.126]
 \openout2 = `appendixE.aux'.
 
  (./appendixE.tex
 Appendix E.
-[93.119
+[91.127
 
 
 
@@ -788,15 +1628,15 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 175--203
 [][] 
  []
 
-[94.120] [95.121] [96.122] [97.123]) [98.124] [99.125] [100.126] [101.127]
-[102.128] [103.129] [104.130] [105.131] [106.132] [107.133] [108.134] [109.135]
-[110.136] [111.137] [112.138] [113.139] [114.140] [115.141] [116.142]
+[92.128] [93.129] [94.130] [95.131]) [96.132] [97.133] [98.134] [99.135]
+[100.136] [101.137] [102.138] [103.139] [104.140] [105.141] [106.142] [107.143]
+[108.144] [109.145] [110.146] [111.147] [112.148] [113.149] [114.150]
 \openout2 = `appendixF.aux'.
 
 
 (./appendixF.tex
 Appendix F.
-[117.143
+[115.151
 
 
 
@@ -805,14 +1645,14 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 175--203
 [][] 
  []
 
-[118.144] [119.145] [120.146] [121.147]) [122.148] [123.149] [124.150] [125.151
-] [126.152] [127.153] [128.154] [129.155] [130.156] [131.157] [132.158]
-[133.159] [134.160] [135.161] [136.162] [137.163] [138.164] [139.165] [140.166]
+[116.152] [117.153] [118.154] [119.155]) [120.156] [121.157] [122.158] [123.159
+] [124.160] [125.161] [126.162] [127.163] [128.164] [129.165] [130.166]
+[131.167] [132.168] [133.169] [134.170] [135.171] [136.172] [137.173] [138.174]
 \openout2 = `appendixG.aux'.
 
 (./appendixG.tex
 Appendix G.
-[141.167
+[139.175
 
 
 
@@ -826,30 +1666,30 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 379--407
 [][] 
  []
 
-[142.168]
+[140.176]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 583--611
 [][] 
  []
 
-[143.169]
+[141.177]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 787--815
 [][] 
  []
 
-[144.170]
+[142.178]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 985--1013
 [][] 
  []
 
-[145.171]) [146.172] [147.173] [148.174] [149.175] [150.176] [151.177] [152.178
-] [153.179] [154.180] [155.181] [156.182] [157.183] [158.184] [159.185]
-[160.186] [161.187] [162.188] [163.189] [164.190] [165.191] [166.192] [167.193]
-[168.194] [169.195] [170.196]
+[143.179]) [144.180] [145.181] [146.182] [147.183] [148.184] [149.185] [150.186
+] [151.187] [152.188] [153.189] [154.190] [155.191] [156.192] [157.193]
+[158.194] [159.195] [160.196] [161.197] [162.198] [163.199] [164.200] [165.201]
+[166.202] [167.203] [168.204]
 \openout2 = `appendixH.aux'.
 
  (./appendixH.tex
 Appendix H.
-[171.197
+[169.205
 
 
 
@@ -863,44 +1703,215 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 379--407
 [][] 
  []
 
-[172.198]
+[170.206]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 583--611
 [][] 
  []
 
-[173.199]
+[171.207]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 787--815
 [][] 
  []
 
-[174.200]
+[172.208]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 991--1019
 [][] 
  []
 
-[175.201]) [176.202] [177.203] [178.204] [179.205] [180.206] [181.207] [182.208
-] [183.209] [184.210] [185.211] [186.212] [187.213] [188.214] [189.215]
-[190.216] [191.217] [192.218] [193.219] [194.220] [195.221] [196.222] [197.223]
-[198.224] [199.225] [200.226]
+[173.209]) [174.210] [175.211] [176.212] [177.213] [178.214] [179.215] [180.216
+] [181.217] [182.218] [183.219] [184.220] [185.221] [186.222] [187.223]
+[188.224] [189.225] [190.226] [191.227] [192.228] [193.229] [194.230] [195.231]
+[196.232] [197.233] [198.234]
+\openout2 = `appendixI.aux'.
+
+ (./appendixI.tex
+Appendix I.
+[199.235
+
+
+
+] [200.236]
+Overfull \vbox (14.49998pt too high) detected at line 340
+ []
+
+[201.237]
+Overfull \vbox (14.49998pt too high) detected at line 475
+ []
+
+[202.238]
+Overfull \vbox (14.49998pt too high) detected at line 492
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 509
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 526
+ []
+
+) [203.239] [204.240] [205.241] [206.242] [207.243]
+\openout2 = `appendixJ.aux'.
+
+ (./appendixJ.tex [208.244
+
+
+
+]
+Appendix J.
+[209.245] [210.246]
+Overfull \vbox (14.49998pt too high) detected at line 319
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 336
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 353
+ []
+
+[211.247]
+Overfull \vbox (14.49998pt too high) detected at line 468
+ []
+
+[212.248]
+Overfull \vbox (14.49998pt too high) detected at line 524
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 541
+ []
+
+[213.249]
+Overfull \vbox (14.49998pt too high) detected at line 558
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 575
+ []
+
+) [214.250] [215.251] [216.252] [217.253] [218.254]
+\openout2 = `appendixK.aux'.
+
+ (./appendixK.tex
+Appendix K.
+[219.255
+
+
+
+] [220.256] [221.257] [222.258] [223.259]) [224.260] [225.261] [226.262] [227.2
+63] [228.264] [229.265] [230.266]
+\openout2 = `appendixL.aux'.
+
+ (./appendixL.tex
+Appendix L.
+[231.267
+
+
+
+] [232.268] [233.269] [234.270] [235.271]) [236.272] [237.273] [238.274] [239.2
+75] [240.276] [241.277] [242.278]
+\openout2 = `appendixM.aux'.
+
+ (./appendixM.tex
+Appendix M.
+[243.279
+
+
+
+] [244.280] [245.281] [246.282]
+Overfull \vbox (14.49998pt too high) detected at line 358
+ []
+
+[247.283]) [248.284] [249.285] [250.286] [251.287] [252.288]
+\openout2 = `appendixN.aux'.
+
+ (./appendixN.tex
+Appendix N.
+[253.289
+
+
+
+] [254.290] [255.291] [256.292]
+Overfull \vbox (14.49998pt too high) detected at line 335
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 353
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 371
+ []
+
+[257.293]
+Overfull \vbox (14.49998pt too high) detected at line 492
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 551
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 569
+ []
+
+[258.294]
+Overfull \vbox (14.49998pt too high) detected at line 587
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 605
+ []
+
+) [259.295] [260.296] [261.297] [262.298] [263.299] [264.300]
+\openout2 = `appendixO.aux'.
+
+ (./appendixO.tex
+Appendix O.
+[265.301
+
+
+
+] [266.302] [267.303] [268.304] [269.305] [270.306]) [271.307] [272.308] [273.3
+09] [274.310] [275.311] [276.312] [277.313] [278.314] [279.315]
+\openout2 = `appendixP.aux'.
+
+
+(./appendixP.tex [280.316
+
+
+
+]
+Appendix P.
+[281.317] [282.318] [283.319] [284.320] [285.321] [286.322]) [287.323] [288.324
+] [289.325] [290.326] [291.327] [292.328] [293.329] [294.330] [295.331]
+[296.332
+
+
+]
 No file thesis.ain.
-[201.227
+[297.333] [298.334
 
-
-] [202.228
-
-] [203.229] (./thesis.aux (./chapter1.aux) (./chapter2.aux)
+] [299.335] (./thesis.aux (./chapter1.aux) (./chapter2.aux)
 (./chapter3.aux) (./chapter4.aux) (./chapter5.aux) (./appendixA.aux)
 (./appendixB.aux) (./appendixC.aux) (./appendixD.aux) (./appendixE.aux)
-(./appendixF.aux) (./appendixG.aux) (./appendixH.aux))
+(./appendixF.aux) (./appendixG.aux) (./appendixH.aux) (./appendixI.aux)
+(./appendixJ.aux) (./appendixK.aux) (./appendixL.aux) (./appendixM.aux)
+(./appendixN.aux) (./appendixO.aux) (./appendixP.aux))
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 5317 strings out of 495061
- 69867 string characters out of 1182621
- 560796 words of memory out of 3000000
- 8243 multiletter control sequences out of 15000+50000
+ 5498 strings out of 495061
+ 74873 string characters out of 1182621
+ 564365 words of memory out of 3000000
+ 8368 multiletter control sequences out of 15000+50000
  43906 words of font info for 78 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  35i,12n,45p,1422b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -919,9 +1930,9 @@ texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (229 pages, 1059795 bytes).
+Output written on thesis.pdf (335 pages, 1294314 bytes).
 PDF statistics:
- 875 PDF objects out of 1000 (max. 8388607)
+ 1213 PDF objects out of 1440 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
