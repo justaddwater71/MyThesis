@@ -1,0 +1,152 @@
+\begin{thebibliography}{10}
+\addcontentsline{toc}{chapter}{List of References}
+\ifx \showCODEN  \undefined \def \showCODEN #1{CODEN #1}  \fi
+\ifx \showISBN   \undefined \def \showISBN  #1{ISBN #1}   \fi
+\ifx \showISSN   \undefined \def \showISSN  #1{ISSN #1}   \fi
+\ifx \showLCCN   \undefined \def \showLCCN  #1{LCCN #1}   \fi
+\ifx \showPRICE  \undefined \def \showPRICE #1{#1}        \fi
+
+\begin{minipage}{\textwidth}\bibitem{love_attributing_2002}
+Harold Love.
+\newblock {\em Attributing authorship: an introduction}.
+\newblock Cambridge University Press, June 2002.
+\newblock \showISBN{9780521789486}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{alpaydin_introduction_2004}
+Ethem Alpaydin.
+\newblock {\em Introduction to machine learning}.
+\newblock {MIT} Press, October 2004.
+\newblock \showISBN{9780262012119}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{jurafsky_speech_2009}
+Daniel Jurafsky and James~H. Martin.
+\newblock {\em Speech and language processing: an introduction to natural
+  language processing, computational linguistics, and speech recognition}.
+\newblock Prentice Hall, 2009.
+\newblock \showISBN{9780131873216}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{vapnik_support-vector_1995}
+Vladimir Vapnik and Corinna Cortes.
+\newblock {Support-Vector} networks.
+\newblock {\em Machine Learning}, 20:\penalty0 273--297, 1995.
+\newblock \showISSN{0885-6125}.
+\newblock \url{http://dx.doi.org/10.1023/A:1022627411411}.
+\newblock {10.1023/A:1022627411411}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{fisher_use_1936}
+{RA} Fisher.
+\newblock {{The} use of multiple measurements in taxonomic problems}.
+\newblock {\em Annals of Eugenics}, 7\penalty0 (2):\penalty0 179--188, 1936.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{_multiclass_????}
+Multiclass {SVMs}.
+\newblock
+  {http://nlp.stanford.edu/IR-book/html/htmledition/multiclass-svms-1.html}.
+\newblock
+  \url{http://nlp.stanford.edu/IR-book/html/htmledition/multiclass-svms-1.html%
+}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{brants_web_2006}
+Thorsten Brants and Alex Franz.
+\newblock {{Web} {1T} 5-gram Version 1}, 2006, Linguistic Data Consortium,
+  Philadelphia.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{belazzougui_hash_2009}
+Djamal Belazzougui, Fabiano Botelho, and Martin Dietzfelbinger.
+\newblock Hash, displace, and compress.
+\newblock In {\em Algorithms - {ESA} 2009}, pp. 682--693. 2009.
+\newblock \url{http://dx.doi.org/10.1007/978-3-642-04128-0_61}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{_cmph_????}
+{CMPH} - c minimal perfect hashing library.
+\newblock http://cmph.sourceforge.net/.
+\newblock \url{http://cmph.sourceforge.net/}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{sokolova_beyond_2006}
+M.~Sokolova, N.~Japkowicz, and S.~Szpakowicz.
+\newblock Beyond accuracy, f-score and roc: a family of discriminant measures
+  for performance evaluation.
+\newblock {\em {AI} 2006: Advances in Artificial Intelligence}, p. 1015–1021,
+  2006.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{_gartner_????}
+Gartner says worldwide mobile phone sales grew 17 per cent in first quarter
+  2010.
+\newblock http://www.gartner.com/it/page.jsp?id=1372013.
+\newblock \url{http://www.gartner.com/it/page.jsp?id=1372013}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{_blackberry_????}
+{BlackBerry} - {BlackBerry} developer zone.
+\newblock http://us.blackberry.com/developers/.
+\newblock \url{http://us.blackberry.com/developers/}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{_symbian_????}
+Symbian {SDKs}.
+\newblock
+  {http://www.forum.nokia.com/info/sw.nokia.com/id/ec866fab-4b76-49f6-b5a5-af0%
+631419e9c/S60\_All\_in\_One\_SDKs.html}.
+\newblock
+  \url{http://www.forum.nokia.com/info/sw.nokia.com/id/ec866fab-4b76-49f6-b5a5%
+-af0631419e9c/S60_All_in_One_SDKs.html}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{murphy_android_2010}
+Mark~Lawrence Murphy.
+\newblock {\em Android Beyond Java}.
+\newblock {CommonsWare,} {LLC}, September 2010.
+\newblock \showISBN{9780981678047}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{_creating_????}
+Creating an {iPhone} application.
+\newblock
+  {http://developer.apple.com/library/ios/\#referencelibrary/GettingStarted/Cr%
+eating\_an\_iPhone\_App/index.html}.
+\newblock
+  \url{http://developer.apple.com/library/ios/#referencelibrary/GettingStarted%
+/Creating_an_iPhone_App/index.html}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{murphy_busy_2010}
+Mark~L. Murphy.
+\newblock {\em The Busy Coder's Guide to Android Development}.
+\newblock {CommonsWare}, October 2010.
+\newblock \showISBN{9780981678009}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{_enron_????}
+Enron email dataset.
+\newblock {http://www-2.cs.cmu.edu/\%7Eenron/}.
+\newblock \url{http://www-2.cs.cmu.edu/%7Eenron/}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{_streaming_????}
+Streaming {API} documentation {\textbar} dev.twitter.com.
+\newblock http://dev.twitter.com/pages/streaming\_api.
+\newblock \url{http://dev.twitter.com/pages/streaming_api}.
+\end{minipage}
+
+\begin{minipage}{\textwidth}\bibitem{bikel_if_2007}
+Daniel~M Bikel and Jeffrey Sorensen.
+\newblock If we want your opinion.
+\newblock In {\em Proceedings of the International Conference on Semantic
+  Computing}, p. 493–500. {IEEE} Computer Society, Washington, {DC,} {USA},
+  2007.
+\newblock \showISBN{0-7695-2997-6}.
+\newblock \url{http://portal.acm.org/citation.cfm?id=1304608.1306375}.
+\newblock {ACM} {ID:} 1306375.
+\end{minipage}
+
+\end{thebibliography}

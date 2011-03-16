@@ -3,22 +3,121 @@
 \section{Most Effective Combination of Classification Methods, Feature Types, and Vocabulary}
 	\paragraph*{} Two measurements of effectiveness were used in this thesis: accuracy and f-score.  Since the accuracy for each author is not the focus of this thesis, but rather the overall effectiveness of each classifier, feature type, and vocabulary combination, f-score is averaged for each combination.  In each test set, average accuracy was higher then MLE.  Likewise, average f-score was always lower than average accuracy.
 
+	\paragraph*{} At this point, it would be natural to simply compare the highest accuracy for each method-feature-vocabulary combination in the thesis and determine which combination performed best.  This analysis would be flawed.  Due to the underlying data structure in the Liblinear model, there is an absolute maximum number, $2^{31}$ of elements allowed in the model.  There is one element created in the model for each feature-classifier combination.  This means that the number of authors multiplied by the number of features cannot exceed $2^{31}$.  Figure \ref{fig:FeatureVSsize} shows the value of each feature-vocabulary-group combination.  Cells highlighted in red cannot be used with the LibLinear model.  There will be no LibLinear results for these combinations.  
 	
-	Look at accuracy.  Look at f-score.  f-score is averaged over all authors.  confusion matrices number in the grunches, so that's why I used f-score averages.  the standard deviation on f-score is really high.  every test set has a minimum f-score of 0.00.  That shows that at least one author per test set had none of his documents classified.  This further indicates wonkiness in the off diagonal values of the confusion matrix.  As an example, one confusion matrix for a 10 X 10 liblinear run is included here.  Here is a 10 X 10 naive bayes run showing similar results.
+	\begin{center}
+\begin{figure}[ht!]
+	\centering
+	\includegraphics[scale=1.00]{FeatureVSsize}
+	\caption{Liblinear Limits Due to Vocabulary Size and Group Size}
+	\label{fig:FeatureVSsize}
+\end{figure}
+\end{center}
+
+	\paragraph*{} The impact of this hard maximum is large vocabularies show a higher accuracy and f-score than smaller vocabularies.  This is not necessarily because the large vocabularies are more effective, but because the the larger vocabularies do not have the lower accuracy and f-score outcomes of the large group sizes.  To illustrate this, the top ten feature-method combinations are show in Table \ref{} for the ENRON Email Corpus.  The performance of each Liblinear OSB3-vocabulary combination is shown in Figure \ref{fig:plot-liblinear-enron-accuracy}. Using Table \ref{} to evaluate effective would lead to a conclusion that LibLinear OSB3 has the best accuracy and f-score in this thesis.  However, plotting all OSB3 results for each Web1t \%  in \ref{fig:plot-liblinear-enron-accuracy} shows that all OSB3-vocabulary combinations perform along a similar curve.  The Web1T \% $= 0$ is actually able to perform against all group sizes (5, 10, 25, 50, 75, and 150) and, thus, appears to perform worse than other OSB3s in the table, but clearly performs similarly from Figure \ref{fig:plot-liblinear-enron-accuracy}.  From this example, it becomes clear that simply using the table values in Appendix A through Appendix D provides an insufficient analysis.  A better analysis is provided by examining the plots in Appendix Q through Appendix T.  
 	
-	\paragraph*{}First blush, we should rank the average accuracy.  The problem with this straightforward approach for liblinear results is the averages don't account for liblinear not working on larger group sizes.  This is caused by liblinear using an array as its data structure for holding the SVM model.  Arrays in Java are limited to a size of $2^31$ elements because Java uses an integer as the index to all arrays.  Integers in Java are 32 bit objects regardless of the operating system architecture.  So what does this mean?  $\text{liblinear model array size} = \text{\# features} * \text{\# classifiers}$.  So, for 150 authors, the maximum number of features is $2^31 / 150 = 14,316,557.65$.  The number of features in a data set like Gappy Bigrams 3 is much larger that 14,316,557.65.  Table (put reference here) shows which liblinear vocabulary set versus author size was feasible.  Shaded blocks in the table represent combinations that were too large to hold in a liblinear model.  This was not an issue for Naive Bayes models.
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale=1.00]{liblinear-enron-avg-by-group_size}
+	\caption{Accuracy of LibLinear OSB3 for the ENRON Email Corpus}
+	\label{fig:plot-liblinear-enron-accuracy}
+\end{figure}
 	
-	\paragraph*{}So, a better way to compare the effectiveness of each method-feature-size combination is to plot accuracy versus group size for each vocabulary set.  These plots show both the accuracy of each combinaton and which combinations are able to span each author group size (5 authors, 10 authors, 25 authors, 50 authors, 75 authors, and 150 authors).  In these plots, a Web1T\% of 0 denote that the model was constructed by directly using features from the trainins set without any correlation to the Web1T corpus.  Essentially, the Web1T\% 0 features are "bootstrapped" from the training set.  In the testing, each model was constructed individually for each crossvalidated training set.  However, the vocabulary hashmap for this model was constructed over all author files in the corpus.  This did have an impact of providing additional zeroes for liblinear in prediction tests, but had not impact on Naive Bayes prediction tests.
+	\paragraph*{}It is important to note that this is not an issue for combinations using Naive Bayes as a classification method.  However, Naive Bayes did not outperform Liblinear in these tests, so a careful analysis of LibLinear using the plots in Appendix Q through Appendix T is required.
+
+	\paragraph*{} By examining the plots in Appendix Q through Appendix T, a clear trend emerges that the bootstrapped models, meaning models that made no use of the Web1T corpus as a vocabulary reference) performed similarly for liblinear to Web1T vocabularies.  In all cases, the bootstrapped liblinear tests are usable for all group sizes.  In this case, a good comparison would be to drop all liblinear combinatons that are not usable for all group sizes, then compare these remaining liblinear tests against all Naive Bayes tests.  Since all Naive Bayes tests were usable for all group sizes, this makes the comparison fair.
 	
+	\paragraph*{} After extracting out liblinear tests that were not usable against all groups sizes, the highest accuracy method-feature combination show the most accurate results for the ENRON Email Corpus in Table \ref{tab:enron-accuracy-filtered-ranked} below.  The highest accuracy method-feature combination show the most accurate resutls for the Twitter Short Message Corpus in Table \ref{tab:twitter-accuracy-filtered-ranked} below.
 	
+	\begin{center}
+	\begin{table}[h]
+
+			\begin{tabular}{ | r | r | r | r | r | r | r | }
+			\hline
+			\multicolumn{2}{|c|}{Combinations} & \multicolumn{5}{|c|}{Accuracy}\\
+			\hline
+			Method & Feature Type & Web1T \% & AVG & MIN & MAX & STDDEV\\ \hline 
+			liblinear & OSB3 & 0 & 0.8362 & 0.5106 & 0.9732 & 0.1043\\ \hline 
+			nb & OSB3 & 16 & 0.8325 & 0.5213 & 0.9823 & 0.0890\\ \hline 
+			nb & OSB3 & 8 & 0.8315 & 0.5213 & 0.9714 & 0.0893\\ \hline 
+			nb & OSB3 & 4 & 0.8274 & 0.5197 & 0.9587 & 0.0924\\ \hline 
+			liblinear & GM2 & 0 & 0.8262 & 0.4824 & 0.9753 & 0.1087\\ \hline 
+			liblinear & GB3 & 0 & 0.8212 & 0.4787 & 0.9835 & 0.1121\\ \hline 
+			nb & GB3 & 16 & 0.8195 & 0.5201 & 0.9674 & 0.0947\\ \hline 
+			nb & GB3 & 4 & 0.8194 & 0.5340 & 0.9522 & 0.0941\\ \hline 
+			liblinear & GB3 & 1 & 0.8191 & 0.4731 & 0.9673 & 0.1110\\ \hline 
+			liblinear & GB3 & 2 & 0.8184 & 0.4765 & 0.9805 & 0.1113\\ \hline 
+			nb & GB3 & 8 & 0.8172 & 0.5255 & 0.9782 & 0.0935\\ \hline 
+			nb & OSB3 & 1 & 0.8126 & 0.3615 & 0.9574 & 0.1185\\ \hline 
+			nb & OSB3 & 2 & 0.8095 & 0.3526 & 0.9575 & 0.1283\\ \hline 
+			nb & OSB3 & 0 & 0.8058 & 0.5185 & 0.9592 & 0.0970\\ \hline 
+			liblinear & GM5 & 16 & 0.7918 & 0.3908 & 0.9676 & 0.1204\\ \hline 
+			liblinear & GM5 & 8 & 0.7872 & 0.3908 & 0.9513 & 0.1193\\ \hline 
+			nb & GB3 & 2 & 0.7857 & 0.4790 & 0.9669 & 0.1166\\ \hline 
+			liblinear & GM5 & 4 & 0.7755 & 0.3908 & 0.9455 & 0.1241\\ \hline 
+			liblinear & GM1 & 4 & 0.7742 & 0.4006 & 0.9590 & 0.1212\\ \hline 
+			liblinear & GM1 & 8 & 0.7740 & 0.4074 & 0.9570 & 0.1223\\ \hline 
+			liblinear & GM1 & 0 & 0.7735 & 0.3776 & 0.9531 & 0.1222\\ \hline 
+
+			\end{tabular}
+		\caption{Higest Accuracy Method-Feature Type Combinations for the ENRON Email Corpus}
+		\label{tab:enron-accuracy-filtered-ranked}
+	\end{table}
+	\end{center}
+
+	\begin{center}
+	\begin{table}[h]
+			\begin{tabular}{ | r | r | r | r | r | r | r | }
+			\hline
+			\multicolumn{2}{|c|}{Combinations} & \multicolumn{5}{|c|}{Accuracy}\\
+			\hline
+			Method & Feature Type & Web1t \% & AVG & MIN & MAX & STDDEV\\ \hline 
+			nb & OSB3 & 0 & 0.5525 & 0.2320 & 0.8164 & 0.1339\\ \hline 
+			nb & GB3 & 16 & 0.5327 & 0.2216 & 0.8216 & 0.1351\\ \hline 
+			nb & GB3 & 4 & 0.5271 & 0.2190 & 0.8546 & 0.1375\\ \hline 
+			nb & GB3 & 8 & 0.5256 & 0.2176 & 0.8474 & 0.1362\\ \hline 
+			nb & GB3 & 2 & 0.5249 & 0.2186 & 0.7823 & 0.1324\\ \hline 
+			liblinear & GM2 & 4 & 0.5228 & 0.1809 & 0.8210 & 0.1477\\ \hline 
+			nb & GB3 & 1 & 0.5204 & 0.2148 & 0.8125 & 0.1319\\ \hline 
+			nb & GB3 & 0 & 0.5203 & 0.1973 & 0.8021 & 0.1389\\ \hline 
+			liblinear & GM2 & 1 & 0.5197 & 0.1882 & 0.8454 & 0.1483\\ \hline 
+			liblinear & GM1 & 8 & 0.5187 & 0.1743 & 0.9026 & 0.1525\\ \hline 
+			liblinear & GM2 & 2 & 0.5186 & 0.1830 & 0.8232 & 0.1495\\ \hline 
+			liblinear & GM1 & 1 & 0.5159 & 0.1768 & 0.8211 & 0.1494\\ \hline 
+			liblinear & GM1 & 4 & 0.5149 & 0.1874 & 0.8546 & 0.1485\\ \hline 
+			liblinear & GM1 & 0 & 0.5141 & 0.1802 & 0.8089 & 0.1485\\ \hline 
+			nb & GM1 & 0 & 0.5140 & 0.1247 & 0.7714 & 0.1631\\ \hline 
+			liblinear & GM1 & 16 & 0.5134 & 0.1865 & 0.8324 & 0.1483\\ \hline 
+			liblinear & GM1 & 2 & 0.5131 & 0.1818 & 0.8966 & 0.1487\\ \hline 
+			liblinear & GM5 & 1 & 0.4768 & 0.1398 & 0.8362 & 0.1521\\ \hline 
+			nb & GM2 & 0 & 0.4750 & 0.1630 & 0.7890 & 0.1406\\ \hline 
+			nb & OSB3 & 2 & 0.4739 & 0.1790 & 0.7734 & 0.1370\\ \hline 
+			nb & OSB3 & 8 & 0.4707 & 0.1787 & 0.7790 & 0.1373\\ \hline 
+
+			\end{tabular}
+		\caption{Higest Accuracy Method-Feature Type Combinations for the Twitter Short Message Corpus}
+		\label{tab:twitter-accuracy-filtered-ranked}
+	\end{table}
+	\end{center}
 	
-	\paragraph*{}Fortunately, the relative performance of average F-Score matched the relative performance of accuracy for each test set.  In all cases, f-score was much lower than the average accuracy.  In all cases, average accuracy much higher than MLE.
+%	Look at accuracy.  Look at f-score.  f-score is averaged over all authors.  confusion matrices number in the grunches, so that's why I used f-score averages.  the standard deviation on f-score is really high.  every test set has a minimum f-score of 0.00.  That shows that at least one author per test set had none of his documents classified.  This further indicates wonkiness in the off diagonal values of the confusion matrix.  As an example, one confusion matrix for a 10 X 10 liblinear run is included here.  Here is a 10 X 10 naive bayes run showing similar results.
+	
+%	\paragraph*{}First blush, we should rank the average accuracy.  The problem with this straightforward approach for liblinear results is the averages don't account for liblinear not working on larger group sizes.  This is caused by liblinear using an array as its data structure for holding the SVM model.  Arrays in Java are limited to a size of $2^31$ elements because Java uses an integer as the index to all arrays.  Integers in Java are 32 bit objects regardless of the operating system architecture.  So what does this mean?  $\text{liblinear model array size} = \text{\# features} * \text{\# classifiers}$.  So, for 150 authors, the maximum number of features is $2^31 / 150 = 14,316,557.65$.  The number of features in a data set like Gappy Bigrams 3 is much larger that 14,316,557.65.  Table (put reference here) shows which liblinear vocabulary set versus author size was feasible.  Shaded blocks in the table represent combinations that were too large to hold in a liblinear model.  This was not an issue for Naive Bayes models.	
+	
+	\paragraph*{} From Table \ref{tab:enron-accuracy-filtered-ranked} orthogonal sparse bigrams and gappy bigrams perform very well overall, with a traditional bigram making an entry at number five.  The best performing method-feature combination is liblinear OSB3 with a Web1t\% of 0.  The next three combinations are Naive Bayes classifiers using OSB3 with large Web1T\% vocabulary sizes.  The results are similiar for gappy bigrams, but at a reduced accuracy of approximately one percent.
+	
+	\paragraph*{} From Table \ref{tab:twitter-accuracy-filtered-ranked}, the top performing method-feature combination is Naive Bayes OSB3 with a Web1T \% of 0.  The next four positions are filled with gappy bigrams with sizable Web1T\% vocabularies.  Why Twitter responds better to Naive Bayes as opposed to email responding better to liblinear is left to future work.
+	
+	\paragraph*{} While the above table shows the best performing, accuracy is not always a solid measure of classification effectiveness.  A better measure is f-score.  As shown repeatedly by the tables in Appendix A through Appendix D, the relative performance of average f-score matched the relative performance of accuracy for each test set.  In all cases, f-score was lower than the average accuracy.  Even more telling about the results is every test set shows a minimum f-score of 0.  That means that at least one author had an f-score of zero in each test.  This accounts for the high standard deviation for f-scores across all tests.  For f-scores of approximately 0.65 the standard deviation was approximately .25.
+	
+	\paragraph*{} An examination of the confusion matrices for each test can provide insight into whether there was a "poison" author that never got selected or if there was an author who was a selection "magnet" always getting too many selections for documents.  Due to the large number of confusions matrices in this thesis ( nearly 19,782 confusion matrices created from 57 tests * 3 size groupings * 6 vocabulary sizes * 5 feature types * 2 corpora * 2 methods -  738 unusable LibLinear tests) the confusions matrices are not presented in this thesis, but are archived by the NPS Natural Language Processing lab in comma separated value files.
 
 \section{Impact of Author Relative Prolificity on Classification Effectivess}
-
+	\paragraph*{} While identifying the best accuracy results for method-feature combinations is important, these results could mask a weakness in the method-feature combinations.  Does the relative prolificity of each author drastically impact the results?  To answer this question, the tests in this thesis were conducted in three groupings: small-to-large, small-and-large, and random.  As explained fully in Chapter 3, these groupings were based on a rank-ordering by size for each author's total document collection.  For small-to-large, the least prolific authors are grouped together, the most prolific authors are grouped together. The idea behind the small-to-large group is to keep the differencein size between the authors to a minimum. For small-and-large, the opposite idea is employed.  The smallest authors are combined with the largest authors using a bucket strategy.  Each bucket contains rank-ordered by size authors of similar size.  One author is picked from each bucket to provide a maximum variety of author document collections sizes.  In the random group, the authors are grouped together using a pseudo-random number generator, where each author has been assigned a number.
+	\paragraph*{} The results of testing in this thesis for accuracy and f-score, broken out by small-to-large, small-and-large, and random are given in Appendix E through Appendix H.  The results from Appendix E, LibLinear Results for the ENRON Email Corpus, show the accuracy for small-to-large is always lower than the accuracy for small-and-large and random.  However, the f-score for small-to-large is always higher than the f-score for small-and-large and random.  This result shows how accuracy is dominated by the MLE author, since allowing a more prolific author into a group with less prolific authors tends to raise accuracy, but hurts f-score. % !!Should I put precision and recall tables into the appendices?  I previously noticed that precision was higher than recall, but I discounted this data since this was an average precision and an average recall!!.
 
 \section{Storage Requirements for Combinations of Classification Methods, Feature Types, and Vocabulary}
-	\paragraph*{} Author prolificity had little impact on model size for liblinear.  The overiding factor was the number of authors and the vocabulary size.  The average sizes are shown in Table (PUT REFERENCE HERE).  Any model over $2^30$ bytes is shown as INF meaning that for the intents of this thesis, the model size was infinite.  This was necessary since file I/O time to write these models to disk was prohibitive.  Also, writing these files to a Java OutputStreamByteArray was limite to $2^30$ bytes.
+	\paragraph*{} Author prolificity had little impact on model size for liblinear.  The overiding factor was the number of authors and the vocabulary size.  The average sizes are shown in Appendix .  Any model over $2^30$ bytes is shown as INF meaning that for the intents of this thesis, the model size was infinite.  This was necessary since file I/O time to write these models to disk was prohibitive.  Also, writing these files to a Java OutputStreamByteArray was limite to $2^30$ bytes.
 	
 	
 	

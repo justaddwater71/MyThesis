@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  16 MAR 2011 09:05
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  16 MAR 2011 14:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -422,9 +422,110 @@ Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
 \bx@HH=\insert218
 \bx@II=\insert217
 \bx@JJ=\insert216
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen139
+\Hy@linkcounter=\count123
+\Hy@pagecounter=\count124
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+LaTeX Info: Redefining \url on input line 3428.
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count125
+\Field@Width=\dimen140
+\Fld@charsize=\dimen141
+\Field@toks=\toks25
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count126
+\c@Item=\count127
+)
+*hyperref using default driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count128
 ) (./thesis.aux
-(./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux)
-(./chapter5.aux) (./appendixA.aux) (./appendixB.aux) (./appendixC.aux)
+(./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux
+
+LaTeX Warning: Label `tab:enron-accuracy-filtered-ranked' multiply defined.
+
+) (./chapter5.aux) (./appendixA.aux) (./appendixB.aux) (./appendixC.aux)
 (./appendixD.aux) (./appendixE.aux) (./appendixF.aux) (./appendixG.aux)
 (./appendixH.aux) (./appendixI.aux
 
@@ -1179,18 +1280,20 @@ LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-150' multiply defined.
 ))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 92.
-LaTeX Font Info:    ... okay on input line 92.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
+LaTeX Font Info:    ... okay on input line 93.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -1235,54 +1338,84 @@ driver: pdftex
 -----------------------
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count123
-\scratchdimen=\dimen139
+\scratchcounter=\count129
+\scratchdimen=\dimen142
 \scratchbox=\box57
-\nofMPsegments=\count124
-\nofMParguments=\count125
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count126
-\MPscratchDim=\dimen140
-\MPnumerator=\count127
-\everyMPtoPDFconversion=\toks26
+\nofMPsegments=\count130
+\nofMParguments=\count131
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count132
+\MPscratchDim=\dimen143
+\MPnumerator=\count133
+\everyMPtoPDFconversion=\toks27
 ) ABD: EveryShipout initializing macros
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+Package hyperref Info: Link coloring OFF on input line 93.
 
-<nps_logo_3clr_cymk.pdf, id=1, 222.8325pt x 153.57375pt>
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count134
+LaTeX Info: Redefining \Ref on input line 396.
+)
+LaTeX Info: Redefining \ref on input line 93.
+LaTeX Info: Redefining \pageref on input line 93.
+ (./thesis.out)
+(./thesis.out)
+\@outlinefile=\write4
+\openout4 = `thesis.out'.
+
+\AtBeginShipoutBox=\box58
+LaTeX Info: Redefining \Ref on input line 93.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
+ <nps_logo_3clr_cymk.pdf, id=194, 222.8325pt x 153.57375pt>
 File: nps_logo_3clr_cymk.pdf Graphic file (type pdf)
 
 <use nps_logo_3clr_cymk.pdf>
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
  (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 94.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
 [1.1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./nps_logo_3clr_cymk.pdf>]
  [2.2
 
 ]
-Overfull \hbox (51.98967pt too wide) in paragraph at lines 95--95
+Overfull \hbox (51.98967pt too wide) in paragraph at lines 96--96
 $[]$ 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
 
-Overfull \hbox (51.98967pt too wide) in paragraph at lines 95--95
+Overfull \hbox (51.98967pt too wide) in paragraph at lines 96--96
 $[]$ 
  []
 
 
-Overfull \hbox (52.94322pt too wide) in paragraph at lines 95--95
+Overfull \hbox (52.94322pt too wide) in paragraph at lines 96--96
 $[]$ 
  []
 
-[1.3] [2.4]
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96 \NPSsftne
+                                     % SF298 [1.3]pdfTeX warning (ext4): destin
+ation with the same identifier (name{page.ii}) has been already used, duplicate
+ ignored
+<to be read again> 
+                   \relax 
+l.96 \NPSsftne
+                                     % SF298 [2.4]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1293,39 +1426,39 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ] [5.7] [6.8
 
-] (./thesis.toc
-Overfull \hbox (10.86407pt too wide) in paragraph at lines 135--135
- []|| []\OT1/ptm/m/n/12 Most Ef-fec-tive Com-bi-na-tion of Clas-si-fi-ca-tion M
-eth-ods, Fea-ture Types, and Vocabulary| 
- []
-
-[7.9
+] (./thesis.toc [7.9
 
 ] [8.10])
-\tf@toc=\write4
-\openout4 = `thesis.toc'.
+\tf@toc=\write5
+\openout5 = `thesis.toc'.
 
  [9.11] [10.12
 
-] (./thesis.lof)
-\tf@lof=\write5
-\openout5 = `thesis.lof'.
+]
+(./thesis.lof)
+\tf@lof=\write6
+\openout6 = `thesis.lof'.
 
  [11.13
 
 ] [12.14
 
 ] (./thesis.lot
+Overfull \hbox (1.09386pt too wide) in paragraph at lines 13--13
+ [][] [][]\OT1/ptm/m/n/12 Higest Ac-cu-racy Method-Feature Type Com-bi-na-tions
+ for the Twit-ter Short 
+ []
+
 [13.15
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14.16]
+[15.17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15.17]
-[16.18]
+ [16.18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17.19]
@@ -1335,10 +1468,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19.21]
+[20.22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [20.22]
-[21.23]
+ [21.23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22.24]
@@ -1351,10 +1484,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25.27]
+[26.28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [26.28]
-[27.29]
+ [27.29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28.30]
@@ -1367,27 +1500,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31.33])
-\tf@lot=\write6
-\openout6 = `thesis.lot'.
+\tf@lot=\write7
+\openout7 = `thesis.lot'.
 
 
-[32.34] [33.35
+[32.34] [33.35] [34.36
 
+] [35.37
 
-] [34.36
+] [36.38
 
 ]
 \openout2 = `chapter1.aux'.
 
  (./chapter1.tex
 Chapter 1.
-) [1.37
+) [1.39
 
 
 ]
 \openout2 = `chapter2.aux'.
 
- (./chapter2.tex [2.38
+ (./chapter2.tex [2.40
 
 
 
@@ -1395,112 +1529,154 @@ Chapter 1.
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-[3.39] [4.40]
+[3.41] [4.42]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5.41]
-[6.42] [7.43] [8.44] [9.45]
+ [5.43]
+[6.44] [7.45] [8.46] [9.47]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10.46]
+[10.48]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11.47]
+[11.49]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[12.48] [13.49]
+[12.50] [13.51]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14.50] [15.51] [16.52] [17.53] [18.54] [19.55] [20.56] [21.57]
+[14.52] [15.53] [16.54] [17.55] [18.56] [19.57] [20.58] [21.59]
 Underfull \vbox (badness 2626) has occurred while \output is active []
 
- [22.58]
+ [22.60]
 
 LaTeX Warning: Citation `_method_????' on page 23 undefined on input line 328.
 
-) [23.59]
+) [23.61]
 \openout2 = `chapter3.aux'.
 
- (./chapter3.tex [24.60
+ (./chapter3.tex [24.62
 
 
 
 ]
 Chapter 3.
-[25.61] <Experiment_Design.pdf, id=215, 614.295pt x 578.16pt>
+[25.63] <Experiment_Design.pdf, id=1699, 614.295pt x 578.16pt>
 File: Experiment_Design.pdf Graphic file (type pdf)
 
-<use Experiment_Design.pdf> [26.62 <./Experiment_Design.pdf>] [27.63]
-<3_tier_explanation.pdf, id=228, 460.72125pt x 244.915pt>
+<use Experiment_Design.pdf> [26.64 <./Experiment_Design.pdf>] [27.65]
+<3_tier_explanation.pdf, id=1720, 460.72125pt x 244.915pt>
 File: 3_tier_explanation.pdf Graphic file (type pdf)
 
 <use 3_tier_explanation.pdf>
-<3_tier_example.pdf, id=229, 532.99126pt x 450.68375pt>
+<3_tier_example.pdf, id=1722, 532.99126pt x 450.68375pt>
 File: 3_tier_example.pdf Graphic file (type pdf)
 
-<use 3_tier_example.pdf> [28.64 <./3_tier_explanation.pdf>]
-<cmph_matrix.pdf, id=240, 473.77pt x 754.82pt>
+<use 3_tier_example.pdf> [28.66 <./3_tier_explanation.pdf>]
+<cmph_matrix.pdf, id=1736, 473.77pt x 754.82pt>
 File: cmph_matrix.pdf Graphic file (type pdf)
- <use cmph_matrix.pdf> [29.65 <./3_tier_example.pdf>] [30.66 <./cmph_matrix.pdf
->] [31.67]
-<small_to_large_grouping.pdf, id=263, 542.025pt x 361.35pt>
+ <use cmph_matrix.pdf> [29.67 <./3_tier_example.pdf>] [30.68 <./cmph_matrix.pdf
+>] [31.69]
+<small_to_large_grouping.pdf, id=1771, 542.025pt x 361.35pt>
 File: small_to_large_grouping.pdf Graphic file (type pdf)
 
-<use small_to_large_grouping.pdf> [32.68 <./small_to_large_grouping.pdf>]
-<small_and_large_grouping.pdf, id=273, 542.025pt x 361.35pt>
+<use small_to_large_grouping.pdf> [32.70 <./small_to_large_grouping.pdf>]
+<small_and_large_grouping.pdf, id=1786, 542.025pt x 361.35pt>
 File: small_and_large_grouping.pdf Graphic file (type pdf)
 
 <use small_and_large_grouping.pdf>
-<random_grouping.pdf, id=274, 542.025pt x 361.35pt>
+<random_grouping.pdf, id=1788, 542.025pt x 361.35pt>
 File: random_grouping.pdf Graphic file (type pdf)
  <use random_grouping.pdf>
-[33.69 <./small_and_large_grouping.pdf>]
-<svm_format.pdf, id=284, 624.3325pt x 88.33pt>
+[33.71 <./small_and_large_grouping.pdf>]
+<svm_format.pdf, id=1804, 624.3325pt x 88.33pt>
 File: svm_format.pdf Graphic file (type pdf)
- <use svm_format.pdf> [34.70 <./random_grouping.pdf>] [35.71 <./svm_format.pdf>
+ <use svm_format.pdf> [34.72 <./random_grouping.pdf>] [35.73 <./svm_format.pdf>
 ]
-<prediction_flow_chart.pdf, id=303, 614.295pt x 794.97pt>
+<prediction_flow_chart.pdf, id=1832, 614.295pt x 794.97pt>
 File: prediction_flow_chart.pdf Graphic file (type pdf)
 
-<use prediction_flow_chart.pdf> [36.72] [37.73 <./prediction_flow_chart.pdf>])
-[38.74]
+<use prediction_flow_chart.pdf> [36.74] [37.75 <./prediction_flow_chart.pdf>])
+[38.76]
 \openout2 = `chapter4.aux'.
 
  (./chapter4.tex
 Chapter 4.
-[39.75
+<FeatureVSsize.pdf, id=1857, 614.295pt x 794.97pt>
+File: FeatureVSsize.pdf Graphic file (type pdf)
+ <use FeatureVSsize.pdf>
+Overfull \hbox (158.99336pt too wide) in paragraph at lines 11--12
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 197.67554pt on input line 14.
+
+
+LaTeX Warning: Reference `' on page 39 undefined on input line 17.
+
+
+LaTeX Warning: Reference `' on page 39 undefined on input line 17.
+
+[39.77
 
 
 
 ]
-Overfull \hbox (0.35117pt too wide) in paragraph at lines 27--27
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<liblinear-enron-avg-by-group_size.pdf, id=1865, 614.295pt x 794.97pt>
+File: liblinear-enron-avg-by-group_size.pdf Graphic file (type pdf)
+
+<use liblinear-enron-avg-by-group_size.pdf>
+Overfull \hbox (158.99336pt too wide) in paragraph at lines 93--94
+ [][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 197.67554pt on input line 96.
+
+[40.78]
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 102.
+
+
+LaTeX Warning: Reference `' on page 41 undefined on input line 102.
+
+
+Underfull \vbox (badness 1917) has occurred while \output is active []
+
+ [41.79]
+Overfull \hbox (0.35117pt too wide) in paragraph at lines 122--122
  |[]\OT1/ptm/b/n/17.28 Classification Ef-fec-tive-ness Ver-sus Stor-age Re-quir
 e-ments| 
  []
 
-) [40.76]
+) [42.80] [43.81 <./FeatureVSsize.pdf>] [44.82 <./liblinear-enron-avg-by-group_
+size.pdf>]
 \openout2 = `chapter5.aux'.
 
  (./chapter5.tex
 Chapter 5.
-) [41.77
+) [45.83
 
 
 
-] (./thesis.bbl [42.78
+] (./thesis.bbl [46.84
 
 
 ]
@@ -1509,7 +1685,7 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
- [43.79]
+ [47.85]
 Overfull \hbox (90.80879pt too wide) in paragraph at lines 109--115
 \OT1/ptm/m/n/12 http://developer.apple.com/library/ios/#referencelibrary/Gettin
 gStarted/Creating[]an[]iPhone[]App/index.html. 
@@ -1525,19 +1701,19 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
-) [44.80]
+) [48.86]
 \openout2 = `appendixA.aux'.
 
  (./appendixA.tex
 Appendix A.
-[45.81
+[49.87
 
 
-] [46.82] [47.83]
+] [50.88] [51.89]
 Overfull \vbox (14.49998pt too high) detected at line 358
  []
 
-[48.84] [49.85]
+[52.90] [53.91]
 Overfull \vbox (14.49998pt too high) detected at line 500
  []
 
@@ -1553,20 +1729,20 @@ Overfull \vbox (14.49998pt too high) detected at line 536
 Overfull \vbox (14.49998pt too high) detected at line 554
  []
 
-) [50.86] [51.87] [52.88] [53.89] [54.90]
+) [54.92] [55.93] [56.94] [57.95] [58.96]
 \openout2 = `appendixB.aux'.
 
  (./appendixB.tex
 Appendix B.
-[55.91
+[59.97
 
 
 
-] [56.92]
+] [60.98]
 Overfull \vbox (14.49998pt too high) detected at line 335
  []
 
-[57.93]
+[61.99]
 Overfull \vbox (14.49998pt too high) detected at line 353
  []
 
@@ -1574,7 +1750,7 @@ Overfull \vbox (14.49998pt too high) detected at line 353
 Overfull \vbox (14.49998pt too high) detected at line 371
  []
 
-[58.94] [59.95]
+[62.100] [63.101]
 Overfull \vbox (14.49998pt too high) detected at line 492
  []
 
@@ -1582,7 +1758,7 @@ Overfull \vbox (14.49998pt too high) detected at line 492
 Overfull \vbox (14.49998pt too high) detected at line 551
  []
 
-[60.96]
+[64.102]
 Overfull \vbox (14.49998pt too high) detected at line 569
  []
 
@@ -1594,32 +1770,32 @@ Overfull \vbox (14.49998pt too high) detected at line 587
 Overfull \vbox (14.49998pt too high) detected at line 605
  []
 
-) [61.97] [62.98] [63.99] [64.100] [65.101]
+) [65.103] [66.104] [67.105] [68.106] [69.107]
 \openout2 = `appendixC.aux'.
 
- (./appendixC.tex [66.102
+ (./appendixC.tex [70.108
 
 
 
 ]
 Appendix C.
-[67.103] [68.104] [69.105] [70.106] [71.107]) [72.108] [73.109] [74.110]
-[75.111] [76.112] [77.113] [78.114]
+[71.109] [72.110] [73.111] [74.112] [75.113]) [76.114] [77.115] [78.116]
+[79.117] [80.118] [81.119] [82.120]
 \openout2 = `appendixD.aux'.
 
  (./appendixD.tex
 Appendix D.
-[79.115
+[83.121
 
 
 
-] [80.116] [81.117] [82.118] [83.119]) [84.120] [85.121] [86.122]
-[87.123] [88.124] [89.125] [90.126]
+] [84.122] [85.123] [86.124] [87.125]) [88.126] [89.127] [90.128]
+[91.129] [92.130] [93.131] [94.132]
 \openout2 = `appendixE.aux'.
 
  (./appendixE.tex
 Appendix E.
-[91.127
+[95.133
 
 
 
@@ -1628,15 +1804,15 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 175--203
 [][] 
  []
 
-[92.128] [93.129] [94.130] [95.131]) [96.132] [97.133] [98.134] [99.135]
-[100.136] [101.137] [102.138] [103.139] [104.140] [105.141] [106.142] [107.143]
-[108.144] [109.145] [110.146] [111.147] [112.148] [113.149] [114.150]
+[96.134] [97.135] [98.136] [99.137]) [100.138] [101.139] [102.140] [103.141]
+[104.142] [105.143] [106.144] [107.145] [108.146] [109.147] [110.148] [111.149]
+[112.150] [113.151] [114.152] [115.153] [116.154] [117.155] [118.156]
 \openout2 = `appendixF.aux'.
 
 
 (./appendixF.tex
 Appendix F.
-[115.151
+[119.157
 
 
 
@@ -1645,14 +1821,14 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 175--203
 [][] 
  []
 
-[116.152] [117.153] [118.154] [119.155]) [120.156] [121.157] [122.158] [123.159
-] [124.160] [125.161] [126.162] [127.163] [128.164] [129.165] [130.166]
-[131.167] [132.168] [133.169] [134.170] [135.171] [136.172] [137.173] [138.174]
+[120.158] [121.159] [122.160] [123.161]) [124.162] [125.163] [126.164] [127.165
+] [128.166] [129.167] [130.168] [131.169] [132.170] [133.171] [134.172]
+[135.173] [136.174] [137.175] [138.176] [139.177] [140.178] [141.179] [142.180]
 \openout2 = `appendixG.aux'.
 
 (./appendixG.tex
 Appendix G.
-[139.175
+[143.181
 
 
 
@@ -1666,30 +1842,30 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 379--407
 [][] 
  []
 
-[140.176]
+[144.182]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 583--611
 [][] 
  []
 
-[141.177]
+[145.183]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 787--815
 [][] 
  []
 
-[142.178]
+[146.184]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 985--1013
 [][] 
  []
 
-[143.179]) [144.180] [145.181] [146.182] [147.183] [148.184] [149.185] [150.186
-] [151.187] [152.188] [153.189] [154.190] [155.191] [156.192] [157.193]
-[158.194] [159.195] [160.196] [161.197] [162.198] [163.199] [164.200] [165.201]
-[166.202] [167.203] [168.204]
+[147.185]) [148.186] [149.187] [150.188] [151.189] [152.190] [153.191] [154.192
+] [155.193] [156.194] [157.195] [158.196] [159.197] [160.198] [161.199]
+[162.200] [163.201] [164.202] [165.203] [166.204] [167.205] [168.206] [169.207]
+[170.208] [171.209] [172.210]
 \openout2 = `appendixH.aux'.
 
  (./appendixH.tex
 Appendix H.
-[169.205
+[173.211
 
 
 
@@ -1703,42 +1879,42 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 379--407
 [][] 
  []
 
-[170.206]
+[174.212]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 583--611
 [][] 
  []
 
-[171.207]
+[175.213]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 787--815
 [][] 
  []
 
-[172.208]
+[176.214]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 991--1019
 [][] 
  []
 
-[173.209]) [174.210] [175.211] [176.212] [177.213] [178.214] [179.215] [180.216
-] [181.217] [182.218] [183.219] [184.220] [185.221] [186.222] [187.223]
-[188.224] [189.225] [190.226] [191.227] [192.228] [193.229] [194.230] [195.231]
-[196.232] [197.233] [198.234]
+[177.215]) [178.216] [179.217] [180.218] [181.219] [182.220] [183.221] [184.222
+] [185.223] [186.224] [187.225] [188.226] [189.227] [190.228] [191.229]
+[192.230] [193.231] [194.232] [195.233] [196.234] [197.235] [198.236] [199.237]
+[200.238] [201.239] [202.240]
 \openout2 = `appendixI.aux'.
 
  (./appendixI.tex
 Appendix I.
-[199.235
+[203.241
 
 
 
-] [200.236]
+] [204.242]
 Overfull \vbox (14.49998pt too high) detected at line 340
  []
 
-[201.237]
+[205.243]
 Overfull \vbox (14.49998pt too high) detected at line 475
  []
 
-[202.238]
+[206.244]
 Overfull \vbox (14.49998pt too high) detected at line 492
  []
 
@@ -1750,16 +1926,16 @@ Overfull \vbox (14.49998pt too high) detected at line 509
 Overfull \vbox (14.49998pt too high) detected at line 526
  []
 
-) [203.239] [204.240] [205.241] [206.242] [207.243]
+) [207.245] [208.246] [209.247] [210.248] [211.249]
 \openout2 = `appendixJ.aux'.
 
- (./appendixJ.tex [208.244
+ (./appendixJ.tex [212.250
 
 
 
 ]
 Appendix J.
-[209.245] [210.246]
+[213.251] [214.252]
 Overfull \vbox (14.49998pt too high) detected at line 319
  []
 
@@ -1771,11 +1947,11 @@ Overfull \vbox (14.49998pt too high) detected at line 336
 Overfull \vbox (14.49998pt too high) detected at line 353
  []
 
-[211.247]
+[215.253]
 Overfull \vbox (14.49998pt too high) detected at line 468
  []
 
-[212.248]
+[216.254]
 Overfull \vbox (14.49998pt too high) detected at line 524
  []
 
@@ -1783,7 +1959,7 @@ Overfull \vbox (14.49998pt too high) detected at line 524
 Overfull \vbox (14.49998pt too high) detected at line 541
  []
 
-[213.249]
+[217.255]
 Overfull \vbox (14.49998pt too high) detected at line 558
  []
 
@@ -1791,49 +1967,49 @@ Overfull \vbox (14.49998pt too high) detected at line 558
 Overfull \vbox (14.49998pt too high) detected at line 575
  []
 
-) [214.250] [215.251] [216.252] [217.253] [218.254]
+) [218.256] [219.257] [220.258] [221.259] [222.260]
 \openout2 = `appendixK.aux'.
 
  (./appendixK.tex
 Appendix K.
-[219.255
+[223.261
 
 
 
-] [220.256] [221.257] [222.258] [223.259]) [224.260] [225.261] [226.262] [227.2
-63] [228.264] [229.265] [230.266]
+] [224.262] [225.263] [226.264] [227.265]) [228.266] [229.267] [230.268] [231.2
+69] [232.270] [233.271] [234.272]
 \openout2 = `appendixL.aux'.
 
  (./appendixL.tex
 Appendix L.
-[231.267
+[235.273
 
 
 
-] [232.268] [233.269] [234.270] [235.271]) [236.272] [237.273] [238.274] [239.2
-75] [240.276] [241.277] [242.278]
+] [236.274] [237.275] [238.276] [239.277]) [240.278] [241.279] [242.280] [243.2
+81] [244.282] [245.283] [246.284]
 \openout2 = `appendixM.aux'.
 
  (./appendixM.tex
 Appendix M.
-[243.279
+[247.285
 
 
 
-] [244.280] [245.281] [246.282]
+] [248.286] [249.287] [250.288]
 Overfull \vbox (14.49998pt too high) detected at line 358
  []
 
-[247.283]) [248.284] [249.285] [250.286] [251.287] [252.288]
+[251.289]) [252.290] [253.291] [254.292] [255.293] [256.294]
 \openout2 = `appendixN.aux'.
 
  (./appendixN.tex
 Appendix N.
-[253.289
+[257.295
 
 
 
-] [254.290] [255.291] [256.292]
+] [258.296] [259.297] [260.298]
 Overfull \vbox (14.49998pt too high) detected at line 335
  []
 
@@ -1845,7 +2021,7 @@ Overfull \vbox (14.49998pt too high) detected at line 353
 Overfull \vbox (14.49998pt too high) detected at line 371
  []
 
-[257.293]
+[261.299]
 Overfull \vbox (14.49998pt too high) detected at line 492
  []
 
@@ -1857,7 +2033,7 @@ Overfull \vbox (14.49998pt too high) detected at line 551
 Overfull \vbox (14.49998pt too high) detected at line 569
  []
 
-[258.294]
+[262.300]
 Overfull \vbox (14.49998pt too high) detected at line 587
  []
 
@@ -1865,36 +2041,36 @@ Overfull \vbox (14.49998pt too high) detected at line 587
 Overfull \vbox (14.49998pt too high) detected at line 605
  []
 
-) [259.295] [260.296] [261.297] [262.298] [263.299] [264.300]
+) [263.301] [264.302] [265.303] [266.304] [267.305] [268.306]
 \openout2 = `appendixO.aux'.
 
  (./appendixO.tex
 Appendix O.
-[265.301
+[269.307
 
 
 
-] [266.302] [267.303] [268.304] [269.305] [270.306]) [271.307] [272.308] [273.3
-09] [274.310] [275.311] [276.312] [277.313] [278.314] [279.315]
+] [270.308] [271.309] [272.310] [273.311] [274.312]) [275.313] [276.314] [277.3
+15] [278.316] [279.317] [280.318] [281.319] [282.320] [283.321]
 \openout2 = `appendixP.aux'.
 
 
-(./appendixP.tex [280.316
+(./appendixP.tex [284.322
 
 
 
 ]
 Appendix P.
-[281.317] [282.318] [283.319] [284.320] [285.321] [286.322]) [287.323] [288.324
-] [289.325] [290.326] [291.327] [292.328] [293.329] [294.330] [295.331]
-[296.332
+[285.323] [286.324] [287.325] [288.326] [289.327] [290.328]) [291.329] [292.330
+] [293.331] [294.332] [295.333] [296.334] [297.335] [298.336] [299.337]
+[300.338
 
 
 ]
 No file thesis.ain.
-[297.333] [298.334
+[301.339] [302.340
 
-] [299.335] (./thesis.aux (./chapter1.aux) (./chapter2.aux)
+] [303.341] (./thesis.aux (./chapter1.aux) (./chapter2.aux)
 (./chapter3.aux) (./chapter4.aux) (./chapter5.aux) (./appendixA.aux)
 (./appendixB.aux) (./appendixC.aux) (./appendixD.aux) (./appendixE.aux)
 (./appendixF.aux) (./appendixG.aux) (./appendixH.aux) (./appendixI.aux)
@@ -1908,13 +2084,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5498 strings out of 495061
- 74873 string characters out of 1182621
- 564365 words of memory out of 3000000
- 8368 multiletter control sequences out of 15000+50000
+ 9543 strings out of 495061
+ 131665 string characters out of 1182621
+ 645347 words of memory out of 3000000
+ 11305 multiletter control sequences out of 15000+50000
  43906 words of font info for 78 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 35i,12n,45p,1422b,319s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,45p,1422b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
@@ -1930,9 +2106,9 @@ texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (335 pages, 1294314 bytes).
+Output written on thesis.pdf (341 pages, 1615991 bytes).
 PDF statistics:
- 1213 PDF objects out of 1440 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3281 PDF objects out of 3580 (max. 8388607)
+ 1041 named destinations out of 1200 (max. 500000)
+ 445 words of extra memory for PDF output out of 10000 (max. 10000000)
 
