@@ -133,37 +133,38 @@
 \contentsline {section}{\numberline {3.5}Intended Comparison}{38}{section.3.5}
 \contentsline {chapter}{\numberline {4}Results and Analysis}{39}{chapter.4}
 \contentsline {section}{\numberline {4.1}Most Effective Combination of Classification Methods, Feature Types, and Vocabulary}{39}{section.4.1}
-\contentsline {section}{\numberline {4.2}Impact of Author Relative Prolificity on Classification Effectivess}{42}{section.4.2}
-\contentsline {section}{\numberline {4.3}Storage Requirements for Combinations of Classification Methods, Feature Types, and Vocabulary}{42}{section.4.3}
-\contentsline {section}{\numberline {4.4}Classification Effectiveness Versus Storage Requirements}{42}{section.4.4}
-\contentsline {section}{\numberline {4.5}Ability to Execute on an Android Mobile Phone}{42}{section.4.5}
-\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{45}{chapter.5}
-\contentsline {section}{\numberline {5.1}Determine Accuracy and F-Score for Other Web1T Vocabulary Variations}{45}{section.5.1}
-\contentsline {paragraph}{}{45}{paragraph*.107}
-\contentsline {section}{\numberline {5.2}Apply Good Turing or Witten-Bell Smoothing to Naive Bayes}{45}{section.5.2}
-\contentsline {paragraph}{}{45}{paragraph*.108}
-\contentsline {section}{\numberline {5.3}Increase the Twitter Short Message Size}{45}{section.5.3}
-\contentsline {paragraph}{}{45}{paragraph*.109}
-\contentsline {section}{\numberline {5.4}Rewrite LibLinear Data Structures}{45}{section.5.4}
-\contentsline {section}{\numberline {5.5}Placement on the Mobile Device}{45}{section.5.5}
-\contentsline {paragraph}{}{45}{paragraph*.110}
-\contentsline {chapter}{List of References}{47}{chapter*.111}
-\contentsline {chapter}{Appendices}{48}{chapter*.111}
-\contentsline {chapter}{\numberline {A}LibLinear Accuracy and F-Score Results for the ENRON Email Corpus}{49}{appendix.A}
-\contentsline {chapter}{\numberline {B}LibLinear Accuracy and F-Score Results for the Twitter Short Message Corpus}{59}{appendix.B}
-\contentsline {chapter}{\numberline {C}Naive Bayes Accuracy and F-Score Results for the ENRON Email Corpus}{71}{appendix.C}
-\contentsline {chapter}{\numberline {D}Naive Bayes Accuracy and F-Score Results for the Twitter Short Message Corpus}{83}{appendix.D}
-\contentsline {chapter}{\numberline {E}Grouped Results LibLinear Results for the ENRON Email Corpus}{95}{appendix.E}
-\contentsline {chapter}{\numberline {F}Grouped LibLinear Results for the Twitter Short Message Corpus}{119}{appendix.F}
-\contentsline {chapter}{\numberline {G}Grouped Naive Bayes Results for the ENRON Email Corpus}{143}{appendix.G}
-\contentsline {chapter}{\numberline {H}Grouped Naive Bayes Results for the Twitter Short Message Corpus}{173}{appendix.H}
-\contentsline {chapter}{\numberline {I}Liblinear Scores (Accuracy / Size) for the ENRON Email Corpus}{203}{appendix.I}
-\contentsline {chapter}{\numberline {J}Liblinear Scores (Accuracy / Size) for the Twitter Short Message Corpus}{213}{appendix.J}
-\contentsline {chapter}{\numberline {K}Naive Bayes Scores (Accuracy / Size) for the ENRON Email Corpus}{223}{appendix.K}
-\contentsline {chapter}{\numberline {L}Naive Bayes Scores (Accuracy / Size) for the Twitter Short Message Corpus}{235}{appendix.L}
-\contentsline {chapter}{\numberline {M}Liblinear Storage Requirements for the ENRON Email Corpus}{247}{appendix.M}
-\contentsline {chapter}{\numberline {N}Liblinear Storage Requirements for the Twitter Short Message Corpus}{257}{appendix.N}
-\contentsline {chapter}{\numberline {O}Naive Bayes Storage Requirements for the ENRON Email Corpus}{269}{appendix.O}
-\contentsline {chapter}{\numberline {P}Naive Bayes Storage Requirements for the Twitter Short Message Corpus}{285}{appendix.P}
-\contentsline {chapter}{Initial Distribution List}{303}{appendix*.113}
+\contentsline {section}{\numberline {4.2}Impact of Author Relative Prolificity on Classifier Effectiveness}{43}{section.4.2}
+\contentsline {section}{\numberline {4.3}Storage Requirements for Combinations of Classification Methods, Feature Types, and Vocabulary}{44}{section.4.3}
+\contentsline {section}{\numberline {4.4}Classification Effectiveness Versus Storage Requirements}{47}{section.4.4}
+\contentsline {section}{\numberline {4.5}Ability to Execute on an Android Mobile Phone}{47}{section.4.5}
+\contentsline {chapter}{\numberline {5}Conclusions and Future Work}{49}{chapter.5}
+\contentsline {section}{\numberline {5.1}Determine Accuracy and F-Score for Other Web1T Vocabulary Variations}{49}{section.5.1}
+\contentsline {paragraph}{}{49}{paragraph*.107}
+\contentsline {section}{\numberline {5.2}Apply Good Turing or Witten-Bell Smoothing to Naive Bayes}{49}{section.5.2}
+\contentsline {paragraph}{}{49}{paragraph*.108}
+\contentsline {section}{\numberline {5.3}Increase the Twitter Short Message Size}{49}{section.5.3}
+\contentsline {paragraph}{}{49}{paragraph*.109}
+\contentsline {section}{\numberline {5.4}Rewrite LibLinear Data Structures}{49}{section.5.4}
+\contentsline {section}{\numberline {5.5}Why does Naive Bayes Perform Well on Twitter, but not on Email?}{49}{section.5.5}
+\contentsline {section}{\numberline {5.6}Placement on the Mobile Device}{49}{section.5.6}
+\contentsline {paragraph}{}{49}{paragraph*.110}
+\contentsline {chapter}{List of References}{51}{chapter*.111}
+\contentsline {chapter}{Appendices}{52}{chapter*.111}
+\contentsline {chapter}{\numberline {A}LibLinear Accuracy and F-Score Results for the ENRON Email Corpus}{53}{appendix.A}
+\contentsline {chapter}{\numberline {B}LibLinear Accuracy and F-Score Results for the Twitter Short Message Corpus}{63}{appendix.B}
+\contentsline {chapter}{\numberline {C}Naive Bayes Accuracy and F-Score Results for the ENRON Email Corpus}{75}{appendix.C}
+\contentsline {chapter}{\numberline {D}Naive Bayes Accuracy and F-Score Results for the Twitter Short Message Corpus}{87}{appendix.D}
+\contentsline {chapter}{\numberline {E}Grouped Results LibLinear Results for the ENRON Email Corpus}{99}{appendix.E}
+\contentsline {chapter}{\numberline {F}Grouped LibLinear Results for the Twitter Short Message Corpus}{123}{appendix.F}
+\contentsline {chapter}{\numberline {G}Grouped Naive Bayes Results for the ENRON Email Corpus}{147}{appendix.G}
+\contentsline {chapter}{\numberline {H}Grouped Naive Bayes Results for the Twitter Short Message Corpus}{177}{appendix.H}
+\contentsline {chapter}{\numberline {I}Liblinear Scores (Accuracy / Size) for the ENRON Email Corpus}{207}{appendix.I}
+\contentsline {chapter}{\numberline {J}Liblinear Scores (Accuracy / Size) for the Twitter Short Message Corpus}{217}{appendix.J}
+\contentsline {chapter}{\numberline {K}Naive Bayes Scores (Accuracy / Size) for the ENRON Email Corpus}{227}{appendix.K}
+\contentsline {chapter}{\numberline {L}Naive Bayes Scores (Accuracy / Size) for the Twitter Short Message Corpus}{239}{appendix.L}
+\contentsline {chapter}{\numberline {M}Liblinear Storage Requirements for the ENRON Email Corpus}{251}{appendix.M}
+\contentsline {chapter}{\numberline {N}Liblinear Storage Requirements for the Twitter Short Message Corpus}{261}{appendix.N}
+\contentsline {chapter}{\numberline {O}Naive Bayes Storage Requirements for the ENRON Email Corpus}{273}{appendix.O}
+\contentsline {chapter}{\numberline {P}Naive Bayes Storage Requirements for the Twitter Short Message Corpus}{289}{appendix.P}
+\contentsline {chapter}{Initial Distribution List}{307}{appendix*.113}
 \contentsfinish 

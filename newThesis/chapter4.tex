@@ -5,18 +5,20 @@
 
 	\paragraph*{} At this point, it would be natural to simply compare the highest accuracy for each method-feature-vocabulary combination in the thesis and determine which combination performed best.  This analysis would be flawed.  Due to the underlying data structure in the Liblinear model, there is an absolute maximum number, $2^{31}$ of elements allowed in the model.  There is one element created in the model for each feature-classifier combination.  This means that the number of authors multiplied by the number of features cannot exceed $2^{31}$.  Figure \ref{fig:FeatureVSsize} shows the value of each feature-vocabulary-group combination.  Cells highlighted in red cannot be used with the LibLinear model.  There will be no LibLinear results for these combinations.  
 	
+
+\begin{figure}[htbp!]
 	\begin{center}
-\begin{figure}[ht!]
 	\centering
-	\includegraphics[scale=1.00]{FeatureVSsize}
+	\includegraphics[scale=0.9]{FeatureVSsize}
 	\caption{Liblinear Limits Due to Vocabulary Size and Group Size}
 	\label{fig:FeatureVSsize}
+	\end{center}
 \end{figure}
-\end{center}
 
-	\paragraph*{} The impact of this hard maximum is large vocabularies show a higher accuracy and f-score than smaller vocabularies.  This is not necessarily because the large vocabularies are more effective, but because the the larger vocabularies do not have the lower accuracy and f-score outcomes of the large group sizes.  To illustrate this, the top ten feature-method combinations are show in Table \ref{} for the ENRON Email Corpus.  The performance of each Liblinear OSB3-vocabulary combination is shown in Figure \ref{fig:plot-liblinear-enron-accuracy}. Using Table \ref{} to evaluate effective would lead to a conclusion that LibLinear OSB3 has the best accuracy and f-score in this thesis.  However, plotting all OSB3 results for each Web1t \%  in \ref{fig:plot-liblinear-enron-accuracy} shows that all OSB3-vocabulary combinations perform along a similar curve.  The Web1T \% $= 0$ is actually able to perform against all group sizes (5, 10, 25, 50, 75, and 150) and, thus, appears to perform worse than other OSB3s in the table, but clearly performs similarly from Figure \ref{fig:plot-liblinear-enron-accuracy}.  From this example, it becomes clear that simply using the table values in Appendix A through Appendix D provides an insufficient analysis.  A better analysis is provided by examining the plots in Appendix Q through Appendix T.  
+
+	\paragraph*{} The impact of this hard maximum is large vocabularies show a higher accuracy and f-score than smaller vocabularies.  This is not necessarily because the large vocabularies are more effective, but because the the larger vocabularies do not have the lower accuracy and f-score outcomes of the large group sizes.  To illustrate this, the top ten feature-method combinations are show in Table \ref{tab:enron-accuracy-filtered-ranked} for the ENRON Email Corpus.  The performance of each Liblinear OSB3-vocabulary combination is shown in Figure \ref{fig:plot-liblinear-enron-accuracy}. Using Table \ref{tab:twitter-accuracy-filtered-ranked} to evaluate effective would lead to a conclusion that LibLinear OSB3 has the best accuracy and f-score in this thesis.  However, plotting all OSB3 results for each Web1t \%  in \ref{fig:plot-liblinear-enron-accuracy} shows that all OSB3-vocabulary combinations perform along a similar curve.  The Web1T \% $= 0$ is actually able to perform against all group sizes (5, 10, 25, 50, 75, and 150) and, thus, appears to perform worse than other OSB3s in the table, but clearly performs similarly from Figure \ref{fig:plot-liblinear-enron-accuracy}.  From this example, it becomes clear that simply using the table values in Appendix A through Appendix D provides an insufficient analysis.  A better analysis is provided by examining the plots in Appendix Q through Appendix T.  
 	
-\begin{figure}[ht]
+\begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=1.00]{liblinear-enron-avg-by-group_size}
 	\caption{Accuracy of LibLinear OSB3 for the ENRON Email Corpus}
@@ -25,13 +27,13 @@
 	
 	\paragraph*{}It is important to note that this is not an issue for combinations using Naive Bayes as a classification method.  However, Naive Bayes did not outperform Liblinear in these tests, so a careful analysis of LibLinear using the plots in Appendix Q through Appendix T is required.
 
-	\paragraph*{} By examining the plots in Appendix Q through Appendix T, a clear trend emerges that the bootstrapped models, meaning models that made no use of the Web1T corpus as a vocabulary reference) performed similarly for liblinear to Web1T vocabularies.  In all cases, the bootstrapped liblinear tests are usable for all group sizes.  In this case, a good comparison would be to drop all liblinear combinatons that are not usable for all group sizes, then compare these remaining liblinear tests against all Naive Bayes tests.  Since all Naive Bayes tests were usable for all group sizes, this makes the comparison fair.
+	\paragraph*{} By examining the plots in Appendix Q through Appendix T, a clear trend emerges that the bootstrapped models, meaning models that made no use of the Web1T corpus as a vocabulary reference) performed similarly for liblinear to Web1T vocabularies.  In all cases, the bootstrapped liblinear tests are usable for all group sizes.  In this case, a good comparison would be to drop all liblinear combinations that are not usable for all group sizes, then compare these remaining liblinear tests against all Naive Bayes tests.  Since all Naive Bayes tests were usable for all group sizes, this makes the comparison fair.
 	
-	\paragraph*{} After extracting out liblinear tests that were not usable against all groups sizes, the highest accuracy method-feature combination show the most accurate results for the ENRON Email Corpus in Table \ref{tab:enron-accuracy-filtered-ranked} below.  The highest accuracy method-feature combination show the most accurate resutls for the Twitter Short Message Corpus in Table \ref{tab:twitter-accuracy-filtered-ranked} below.
+	\paragraph*{} After extracting out liblinear tests that were not usable against all groups sizes, the highest accuracy method-feature combination show the most accurate results for the ENRON Email Corpus in Table \ref{tab:enron-accuracy-filtered-ranked} below.  The highest accuracy method-feature combination show the most accurate results for the Twitter Short Message Corpus in Table \ref{tab:twitter-accuracy-filtered-ranked} below.
 	
-	\begin{center}
-	\begin{table}[h]
-
+	
+	\begin{table}[htbp!]
+			\begin{center}
 			\begin{tabular}{ | r | r | r | r | r | r | r | }
 			\hline
 			\multicolumn{2}{|c|}{Combinations} & \multicolumn{5}{|c|}{Accuracy}\\
@@ -60,13 +62,15 @@
 			liblinear & GM1 & 0 & 0.7735 & 0.3776 & 0.9531 & 0.1222\\ \hline 
 
 			\end{tabular}
-		\caption{Higest Accuracy Method-Feature Type Combinations for the ENRON Email Corpus}
+		\caption{Highest Accuracy Method-Feature Type Combinations for the ENRON Email Corpus}
 		\label{tab:enron-accuracy-filtered-ranked}
+		\end{center}
 	\end{table}
-	\end{center}
+	
 
+	
+	\begin{table}[htbp!]
 	\begin{center}
-	\begin{table}[h]
 			\begin{tabular}{ | r | r | r | r | r | r | r | }
 			\hline
 			\multicolumn{2}{|c|}{Combinations} & \multicolumn{5}{|c|}{Accuracy}\\
@@ -95,35 +99,114 @@
 			nb & OSB3 & 8 & 0.4707 & 0.1787 & 0.7790 & 0.1373\\ \hline 
 
 			\end{tabular}
-		\caption{Higest Accuracy Method-Feature Type Combinations for the Twitter Short Message Corpus}
+		\caption{Highest Accuracy Method-Feature Type Combinations for the Twitter Short Message Corpus}
 		\label{tab:twitter-accuracy-filtered-ranked}
+		\end{center}	
 	\end{table}
-	\end{center}
 	
-%	Look at accuracy.  Look at f-score.  f-score is averaged over all authors.  confusion matrices number in the grunches, so that's why I used f-score averages.  the standard deviation on f-score is really high.  every test set has a minimum f-score of 0.00.  That shows that at least one author per test set had none of his documents classified.  This further indicates wonkiness in the off diagonal values of the confusion matrix.  As an example, one confusion matrix for a 10 X 10 liblinear run is included here.  Here is a 10 X 10 naive bayes run showing similar results.
 	
-%	\paragraph*{}First blush, we should rank the average accuracy.  The problem with this straightforward approach for liblinear results is the averages don't account for liblinear not working on larger group sizes.  This is caused by liblinear using an array as its data structure for holding the SVM model.  Arrays in Java are limited to a size of $2^31$ elements because Java uses an integer as the index to all arrays.  Integers in Java are 32 bit objects regardless of the operating system architecture.  So what does this mean?  $\text{liblinear model array size} = \text{\# features} * \text{\# classifiers}$.  So, for 150 authors, the maximum number of features is $2^31 / 150 = 14,316,557.65$.  The number of features in a data set like Gappy Bigrams 3 is much larger that 14,316,557.65.  Table (put reference here) shows which liblinear vocabulary set versus author size was feasible.  Shaded blocks in the table represent combinations that were too large to hold in a liblinear model.  This was not an issue for Naive Bayes models.	
-	
-	\paragraph*{} From Table \ref{tab:enron-accuracy-filtered-ranked} orthogonal sparse bigrams and gappy bigrams perform very well overall, with a traditional bigram making an entry at number five.  The best performing method-feature combination is liblinear OSB3 with a Web1t\% of 0.  The next three combinations are Naive Bayes classifiers using OSB3 with large Web1T\% vocabulary sizes.  The results are similiar for gappy bigrams, but at a reduced accuracy of approximately one percent.
+	\paragraph*{} From Table \ref{tab:enron-accuracy-filtered-ranked} orthogonal sparse bigrams and gappy bigrams perform very well overall, with a traditional bigram making an entry at number five.  The best performing method-feature combination is liblinear OSB3 with a Web1t\% of 0.  The next three combinations are Naive Bayes classifiers using OSB3 with large Web1T\% vocabulary sizes.  The results are similar for gappy bigrams, but at a reduced accuracy of approximately one percent.
 	
 	\paragraph*{} From Table \ref{tab:twitter-accuracy-filtered-ranked}, the top performing method-feature combination is Naive Bayes OSB3 with a Web1T \% of 0.  The next four positions are filled with gappy bigrams with sizable Web1T\% vocabularies.  Why Twitter responds better to Naive Bayes as opposed to email responding better to liblinear is left to future work.
 	
-	\paragraph*{} While the above table shows the best performing, accuracy is not always a solid measure of classification effectiveness.  A better measure is f-score.  As shown repeatedly by the tables in Appendix A through Appendix D, the relative performance of average f-score matched the relative performance of accuracy for each test set.  In all cases, f-score was lower than the average accuracy.  Even more telling about the results is every test set shows a minimum f-score of 0.  That means that at least one author had an f-score of zero in each test.  This accounts for the high standard deviation for f-scores across all tests.  For f-scores of approximately 0.65 the standard deviation was approximately .25.
+	\paragraph*{} While the above table shows the best performing, accuracy is not always a solid measure of classification effectiveness.  A better measure is f-score.  As shown repeatedly by the tables in Appendix A through Appendix D, the relative performance of average f-score matched the relative performance of accuracy for each test set.  In all cases, f-score was lower than the average accuracy.  Even more telling about the results is every test set shows a minimum f-score of 0.  That means that at least one author had an f-score of zero in each test.  This accounts for the high standard deviation for f-scores across all tests.  For f-scores of approximately 0.65 the standard deviation was approximately 0.25.
 	
 	\paragraph*{} An examination of the confusion matrices for each test can provide insight into whether there was a "poison" author that never got selected or if there was an author who was a selection "magnet" always getting too many selections for documents.  Due to the large number of confusions matrices in this thesis ( nearly 19,782 confusion matrices created from 57 tests * 3 size groupings * 6 vocabulary sizes * 5 feature types * 2 corpora * 2 methods -  738 unusable LibLinear tests) the confusions matrices are not presented in this thesis, but are archived by the NPS Natural Language Processing lab in comma separated value files.
 
-\section{Impact of Author Relative Prolificity on Classification Effectivess}
-	\paragraph*{} While identifying the best accuracy results for method-feature combinations is important, these results could mask a weakness in the method-feature combinations.  Does the relative prolificity of each author drastically impact the results?  To answer this question, the tests in this thesis were conducted in three groupings: small-to-large, small-and-large, and random.  As explained fully in Chapter 3, these groupings were based on a rank-ordering by size for each author's total document collection.  For small-to-large, the least prolific authors are grouped together, the most prolific authors are grouped together. The idea behind the small-to-large group is to keep the differencein size between the authors to a minimum. For small-and-large, the opposite idea is employed.  The smallest authors are combined with the largest authors using a bucket strategy.  Each bucket contains rank-ordered by size authors of similar size.  One author is picked from each bucket to provide a maximum variety of author document collections sizes.  In the random group, the authors are grouped together using a pseudo-random number generator, where each author has been assigned a number.
+\section{Impact of Author Relative Prolificity on Classifier Effectiveness}
+	\paragraph*{} While identifying the best accuracy results for method-feature combinations is important, these results could mask a weakness in the method-feature combinations.  Does the relative prolificity of each author drastically impact the results?  To answer this question, the tests in this thesis were conducted in three groupings: small-to-large, small-and-large, and random.  As explained fully in Chapter 3, these groupings were based on a rank-ordering by size for each author's total document collection.  For small-to-large, the least prolific authors are grouped together, the most prolific authors are grouped together. The idea behind the small-to-large group is to keep the difference in size between the authors to a minimum. For small-and-large, the opposite idea is employed.  The smallest authors are combined with the largest authors using a bucket strategy.  Each bucket contains rank-ordered by size authors of similar size.  One author is picked from each bucket to provide a maximum variety of author document collections sizes.  In the random group, the authors are grouped together using a pseudo-random number generator, where each author has been assigned a number.
 	\paragraph*{} The results of testing in this thesis for accuracy and f-score, broken out by small-to-large, small-and-large, and random are given in Appendix E through Appendix H.  The results from Appendix E, LibLinear Results for the ENRON Email Corpus, show the accuracy for small-to-large is always lower than the accuracy for small-and-large and random.  However, the f-score for small-to-large is always higher than the f-score for small-and-large and random.  This result shows how accuracy is dominated by the MLE author, since allowing a more prolific author into a group with less prolific authors tends to raise accuracy, but hurts f-score. % !!Should I put precision and recall tables into the appendices?  I previously noticed that precision was higher than recall, but I discounted this data since this was an average precision and an average recall!!.
 
 \section{Storage Requirements for Combinations of Classification Methods, Feature Types, and Vocabulary}
-	\paragraph*{} Author prolificity had little impact on model size for liblinear.  The overiding factor was the number of authors and the vocabulary size.  The average sizes are shown in Appendix .  Any model over $2^30$ bytes is shown as INF meaning that for the intents of this thesis, the model size was infinite.  This was necessary since file I/O time to write these models to disk was prohibitive.  Also, writing these files to a Java OutputStreamByteArray was limite to $2^30$ bytes.
+	\paragraph*{} While the effectiveness of the method-feature combinations are important, these tools are of no use on a mobile device unless the tool can actually fit on the mobile device.  An important fact about determining the size of classifier models is that the size of the model in RAM does not equal the size of the model when written to a file.  For instance, a Java long (primitive) of 1 uses 8 bytes of RAM, but is represented in a file using only 4 bytes.  Similarly, there is a disparity between the UTF-8 values byte size on disk and the object representation in RAM for many Java objects.  This is why heap size could not be used as an accurate measurement of model size.
+	\paragraph*{}To determine if any of these method-feature combinations will fit on a mobile device, a few combinations had exhaustive outputs of their model sizes computed.  After determining that the standard deviation for models with a vocabulary size greater than a Web1T\% of 0 was trivial, only a small sample of the remaining method-feature combinations were computed.  Due to the large size of many models, only one model size was calculated for many method-feature combinations.  
+	\paragraph*{} Actually writing out these models to disk would have been extremely time consuming and a load on the already taxed Hamming High Performance Cluster.  To conduct the size measurements, the liblinear models were written to a Java ByteArrayOutputStream.  Once the write was complete, the size of the ByteArrayOutputStream buffer was measured.  The worked well for models smaller than 2GB.  Models larger than 2GB caused the ByteArrayOutputStream to be "full" since the index for an ByteArrayOutputStream is limited to $2^31$ elements and each element in that array is a byte.  For any model larger than 2GB, the size for that model was not recorded and thus has no size record in Appendix M through Appendix P nor a score in the scoring tables in Appendix I through Appendix L.
+	\paragraph*{} What constitutes a storage requirement for the method-feature combinations in this thesis depends on the vocabulary size and method used.  A Web1T\% of 0 in liblinear requires no keys.mph or signature file, but does require a sizable vocabulary map file to functions.  For Naive Bayes, a Web1T\% of 0 does not require a keys.mph file, signature file, count file, nor logprobs file.  However a sizable vocabulary map is needed.  The sizes for each combination's keys.mph, signature, counts, logprobs, and average author size are included with totals in Appendix M through Appendix P.  To provide an intuition on the magnitude of sizes involved, Table \ref{tab:sample_vocab_reference_sizes} shows sizes for keys.mph, signature, counts, logprobs, and vocabmap for a few method-feature combinations.  Table \ref{tab:sample_vocab_reference_sizes} shows only the vocabmap size for the Web1T\% of 0.  This is because Web1T\% of 0 does not use keys.mph, signature, counts, or logprobs references, but does create it own vocabulary map.  Complete size tables are provided in Appendix M through Appendix P.
 	
+	\begin{table}[htbp!]
+	\begin{center}
+		\begin{tabular}{ | r | r | r | r | r | r | r | r | r | }
+			\hline
+			 &  &  & \multicolumn{6}{|c|}{Size (MB)}\\ \cline{4-9}
+			\begin{sideways}Method\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\%\end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Total\end{sideways}\\ \hline 
+			liblinear & GB3 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 54.31\\ \hline 
+			liblinear & GB3 & 1 & 3.21 & 12.11 & 0.00 & 0.00 & 0.00 & 15.32\\ \hline 
+			liblinear & GB3 & 2 & 6.41 & 24.22 & 0.00 & 0.00 & 0.00 & 30.63\\ \hline 
+			liblinear & GB3 & 4 & 12.82 & 48.44 & 0.00 & 0.00 & 0.00 & 61.27\\ \hline 
+			liblinear & GB3 & 8 & 25.64 & 96.89 & 0.00 & 0.00 & 0.00 & 122.53\\ \hline 
+			liblinear & GB3 & 16 & 51.31 & 193.85 & 0.00 & 0.00 & 0.00 & 245.15\\ \hline 
+			liblinear & GM1 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 1.40\\ \hline 
+			liblinear & GM1 & 1 & 0.07 & 0.27 & 0.00 & 0.00 & 0.00 & 0.34\\ \hline 
+			liblinear & GM1 & 2 & 0.14 & 0.54 & 0.00 & 0.00 & 0.00 & 0.69\\ \hline 
+			liblinear & GM1 & 4 & 0.29 & 1.09 & 0.00 & 0.00 & 0.00 & 1.37\\ \hline 
+			liblinear & GM1 & 8 & 0.58 & 2.17 & 0.00 & 0.00 & 0.00 & 2.75\\ \hline 
+			liblinear & GM1 & 16 & 1.15 & 4.35 & 0.00 & 0.00 & 0.00 & 5.50\\ \hline 
+			nb & GB3 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 54.31\\ \hline 
+			nb & GB3 & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 112.20\\ \hline 
+			nb & GB3 & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 224.39\\ \hline 
+			nb & GB3 & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 448.83\\ \hline 
+			nb & GB3 & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 897.64\\ \hline 
+			nb & GB3 & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 1795.94\\ \hline 
+			nb & GM1 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 1.40\\ \hline 
+			nb & GM1 & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 2.52\\ \hline 
+			nb & GM1 & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 5.04\\ \hline 
+			nb & GM1 & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 10.07\\ \hline 
+			nb & GM1 & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 20.14\\ \hline 
+			nb & GM1 & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 40.29\\ \hline
+		\end{tabular}
+		\caption{Sample of Vocabulary Reference File Sizes}
+		\label{tab:sample_vocab_reference_sizes}
+		\end{center}
+	\end{table}
 	
+
+	\paragraph*{} It is quickly apparent from this table that few of these files could be loaded into the RAM of a 16MB Dalvik VM.  If these files were to be used, they would have to be read directly from the microSD card, which is an expensive operation compared to reading from RAM.  A more thorough discussion of method-feature combinations is discussed in the last section of this chapter.
 	
-	\paragraph*{}  From the sizes in Table 1, it is apparent that very few model sizes would be appropriate for use on a mobile phone.  Using the standard Dalvik VM heap size of 16MB, only ...... would be good candidates for use on a mobile phone.
+	\paragraph*{} Apart from the vocabulary references needed for the method-feature combinations, each method-feature combination produces a different authors model size.  Unlike the vocabulary reference files, the authors model file sizes vary greatly.  The model constructed for liblinear consists of an array populated with the support vector values for each author.  The model for Naive Bayes consists of a Java hashmap.  That hashmap has an Integer object for a key and a Double object for its value.  The Integer object is the mapped integer value for a given token.  The Double object is the probability for that token during the training process.
+	
+	\paragraph*{} The impact of authors model size for a mobile device is important. Even if the vocabulary reference files can be accomodated by a mobile device, a large authors model can push the storage requirement beyond the 16MB Dalvik VM's capability or even the capacity of common microSD cards.  Table \ref{tab:sample_authors_model_sizes} shows a sample of author sizes for both liblinear and Naive Bayes authors models.  A complete list of average authors models sizes is provided in Appendix M through Appendix P.
+	
+	\begin{table}[htbp!]
+	\begin{center}
+		\begin{tabular}{ | r | r | r | r | r | r | r | r | r | }
+			\hline
+			 &  &  &  &  & \multicolumn{4}{|c|}{Size (MB)}\\ \cline{6-9}
+			\begin{sideways}Corpus\end{sideways} & \begin{sideways}Method\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T\%\end{sideways} & \begin{sideways}AVG\end{sideways} & \begin{sideways}MIN\end{sideways} & \begin{sideways}MAX\end{sideways} & \begin{sideways}STDDEV\end{sideways}\\ \hline
+enron & liblinear & OSB3 & 5 & 0 & 15.254 & 8.020 & 31.368 & 5.840\\ \hline 
+enron & liblinear & OSB3 & 5 & 1 & 259.320 & 211.231 & 262.991 & 7.944\\ \hline 
+enron & liblinear & OSB3 & 5 & 2 & 521.039 & 422.022 & 530.023 & 11.188\\ \hline 
+enron & liblinear & OSB3 & 5 & 4 & 1031.477 & 844.102 & 1039.616 & 26.316\\ \hline 
+enron & nb & OSB3 & 5 & 0 & 5.328 & 0.068 & 34.479 & 7.090\\ \hline 
+enron & nb & OSB3 & 5 & 1 & 8.528 & 0.075 & 54.680 & 11.243\\ \hline 
+enron & nb & OSB3 & 5 & 2 & 8.544 & 0.075 & 54.939 & 11.286\\ \hline 
+enron & nb & OSB3 & 5 & 4 & 8.550 & 0.075 & 55.054 & 11.305\\ \hline 
+enron & nb & OSB3 & 5 & 8 & 8.553 & 0.075 & 55.100 & 11.314\\ \hline 
+enron & nb & OSB3 & 5 & 16 & 8.554 & 0.075 & 55.121 & 11.317\\ \hline 
+twitter & liblinear & GM1 & 5 & 0 & 0.088 & 0.076 & 0.108 & 0.007\\ \hline 
+twitter & liblinear & GM1 & 5 & 1 & 1.568 & 1.546 & 1.614 & 0.013\\ \hline 
+twitter & liblinear & GM1 & 5 & 2 & 3.064 & 3.043 & 3.109 & 0.013\\ \hline 
+twitter & liblinear & GM1 & 5 & 4 & 6.050 & 6.013 & 6.099 & 0.015\\ \hline 
+twitter & liblinear & GM1 & 5 & 8 & 12.034 & 12.011 & 12.079 & 0.013\\ \hline 
+twitter & liblinear & GM1 & 5 & 16 & 23.952 & 23.869 & 24.038 & 0.037\\ \hline 
+twitter & nb & GM1 & 5 & 0 & 0.024 & 0.016 & 0.045 & 0.005\\ \hline 
+twitter & nb & GM1 & 5 & 1 & 0.040 & 0.034 & 0.050 & 0.003\\ \hline 
+twitter & nb & GM1 & 5 & 2 & 0.040 & 0.035 & 0.051 & 0.003\\ \hline 
+twitter & nb & GM1 & 5 & 4 & 0.040 & 0.036 & 0.052 & 0.003\\ \hline 
+twitter & nb & GM1 & 5 & 8 & 0.040 & 0.034 & 0.053 & 0.003\\ \hline 
+twitter & nb & GM1 & 5 & 16 & 0.040 & 0.035 & 0.050 & 0.003\\ \hline 
+\end{tabular}
+		\caption{Sample of Authors Model File Sizes}
+		\label{tab:sample_authors_model_sizes}
+		\end{center}
+	\end{table}
 
 \section{Classification Effectiveness Versus Storage Requirements}
+\paragraph*{} With the resource constraints of mobile devices and the author detection reqirements of this thesis, some method must be used to evaluate the tradeoff between accuracy and size.  For this thesis, effectivness will be divided by the full storage requiment for each method-feature combination.  The storage requirements will be computed as the sum of keys.mph, signature, counts, logprobs, vocabmap, and average authors model size for each method-feature combination.  The complete set of scores for this thesis are included in Appendix I through Appendix L.  It is important to note that there are no scores for any authors model size over 2GB.  This is due to the limitations of measuring on-disk size for authors models with a ByteArrayOutputStream, but this limitation will not adversely affect the conclusions of this thesis.  Any authors model larger than 2GB is impractical for current mobile devices.  Also a 2GB divisor for the score computation would put that method-feature combination out of contention for a top performer in this thesis.
+
+\paragraph*{}  The top performing method-feature combination was....  Table \ref{} shows the top XX scores along with accuracy and size information.  The accuracy of these combinations is XX.XX below the most accurate method-feature combinations.  XX of the top performing score combinations have a storage requirement of less than 16MB.
 
 
 \section{Ability to Execute on an Android Mobile Phone}
+\paragraph*{} With scores calculated alongside accuracy and storage requirements, feasibility on a mobile device must be determined.  Table \ref{} shows the highest scoring method-feature combinations that have storage requirements less than 16MB and then ordered by accuracy.  Table \ref{} shows that the best accuracy achievable using the tools of thesis is xxx.xxx.  The accompanying f-score, precision, recall do not provide a strong indication that the tools developed here provide a reliable tool for author detection, however, these tools could be used as a first pass filtering for more traditional analysis of text data.  Possibly these tools would trigger an exfiltration of data to a central facility to cut down on that facility's overall processing load.
+
+\paragraph*{} While the Enron Email Corpus has very few method-feature combinations that can be supported on a mobile device, the Twitter Short Message Corpus has 100 method-feature combinations that with a storage requirement under 16MB.  HEY!! think about this -- what size are these guys in RAM!!! That's the key issue here, not SD card storage so much. What heap size is required?

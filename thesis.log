@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  16 MAR 2011 09:34
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  16 MAR 2011 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -723,7 +723,7 @@ LaTeX Info: Redefining \pageref on input line 108.
 LaTeX Info: Redefining \Ref on input line 108.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 110.
- <nps_logo_3clr_cymk.pdf, id=89, 222.8325pt x 153.57375pt>
+ <nps_logo_3clr_cymk.pdf, id=93, 222.8325pt x 153.57375pt>
 File: nps_logo_3clr_cymk.pdf Graphic file (type pdf)
 
 <use nps_logo_3clr_cymk.pdf>
@@ -814,13 +814,13 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8.10
-
-] (./thesis.lof)
+[8.10] (./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [9.11]
+ [9.11
+
+]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -885,23 +885,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 Chapter 2.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-
-LaTeX Warning: Citation `love_attributing_2002' on page 3 undefined on input li
-ne 7.
-
-
-LaTeX Warning: Citation `alpaydin_introduction_2004' on page 3 undefined on inp
-ut line 10.
-
-
-LaTeX Warning: Citation `alpaydin_introduction_2004' on page 3 undefined on inp
-ut line 10.
-
 [3.19]
-
-LaTeX Warning: Citation `jurafsky_speech_2009' on page 4 undefined on input lin
-e 17.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -920,14 +904,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5.21]
 
-LaTeX Warning: Citation `vapnik_support-vector_1995' on page 6 undefined on inp
-ut line 34.
-
-
-LaTeX Warning: Citation `fisher_use_1936' on page 6 undefined on input line 42.
-
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -935,24 +911,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [6.22]
 
-LaTeX Warning: Citation `vapnik_support-vector_1995' on page 7 undefined on inp
-ut line 65.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [7.23]
-
-LaTeX Warning: Citation `vapnik_support-vector_1995' on page 8 undefined on inp
-ut line 73.
-
-
-LaTeX Warning: Citation `_multiclass_????' on page 8 undefined on input line 75
-.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1014,10 +978,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [13.29]
 
-LaTeX Warning: Citation `brants_web_2006' on page 14 undefined on input line 24
-2.
-
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
@@ -1035,10 +995,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [15.31]
 
-LaTeX Warning: Citation `belazzougui_hash_2009' on page 16 undefined on input l
-ine 275.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -1053,31 +1009,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [17.33]
 
-LaTeX Warning: Citation `_cmph_????' on page 18 undefined on input line 282.
-
-
-LaTeX Warning: Citation `belazzougui_hash_2009' on page 18 undefined on input l
-ine 282.
-
-
-LaTeX Warning: Citation `sokolova_beyond_2006' on page 18 undefined on input li
-ne 288.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [18.34]
-
-LaTeX Warning: Citation `sokolova_beyond_2006' on page 19 undefined on input li
-ne 292.
-
-
-LaTeX Warning: Citation `sokolova_beyond_2006' on page 19 undefined on input li
-ne 299.
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
@@ -1086,30 +1023,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [19.35]
 
-LaTeX Warning: Citation `_gartner_????' on page 20 undefined on input line 306.
-
-
-
-LaTeX Warning: Citation `_blackberry_????' on page 20 undefined on input line 3
-06.
-
-
-LaTeX Warning: Citation `_symbian_????' on page 20 undefined on input line 306.
-
-
-
-LaTeX Warning: Citation `murphy_android_2010' on page 20 undefined on input lin
-e 306.
-
-
-LaTeX Warning: Citation `_creating_????' on page 20 undefined on input line 306
-.
-
-
-LaTeX Warning: Citation `murphy_android_2010' on page 20 undefined on input lin
-e 309.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
@@ -1117,24 +1030,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [20.36]
 
-LaTeX Warning: Citation `murphy_busy_2010' on page 21 undefined on input line 3
-14.
-
-
-LaTeX Warning: Citation `_enron_????' on page 21 undefined on input line 319.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
 [21.37]
-
-LaTeX Warning: Citation `_streaming_????' on page 22 undefined on input line 32
-4.
-
-
 Underfull \vbox (badness 2626) has occurred while \output is active []
 
 
@@ -1171,7 +1072,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Chapter 3.
-[25.41] <Experiment_Design.pdf, id=472, 614.295pt x 578.16pt>
+[25.41] <Experiment_Design.pdf, id=520, 614.295pt x 578.16pt>
 File: Experiment_Design.pdf Graphic file (type pdf)
 
 <use Experiment_Design.pdf>
@@ -1188,11 +1089,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[27.43] <3_tier_explanation.pdf, id=494, 460.72125pt x 244.915pt>
+[27.43] <3_tier_explanation.pdf, id=542, 460.72125pt x 244.915pt>
 File: 3_tier_explanation.pdf Graphic file (type pdf)
 
 <use 3_tier_explanation.pdf>
-<3_tier_example.pdf, id=496, 532.99126pt x 450.68375pt>
+<3_tier_example.pdf, id=544, 532.99126pt x 450.68375pt>
 File: 3_tier_example.pdf Graphic file (type pdf)
 
 <use 3_tier_example.pdf>
@@ -1203,7 +1104,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [28.44 <./3_tier_explanation.pdf>]
-<cmph_matrix.pdf, id=510, 473.77pt x 754.82pt>
+<cmph_matrix.pdf, id=558, 473.77pt x 754.82pt>
 File: cmph_matrix.pdf Graphic file (type pdf)
  <use cmph_matrix.pdf>
 
@@ -1221,15 +1122,12 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 [30.46 <./cmph_matrix.pdf>]
 
-LaTeX Warning: Citation `bikel_if_2007' on page 31 undefined on input line 65.
-
-
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 14.49998pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[31.47] <small_to_large_grouping.pdf, id=543, 542.025pt x 361.35pt>
+[31.47] <small_to_large_grouping.pdf, id=592, 542.025pt x 361.35pt>
 File: small_to_large_grouping.pdf Graphic file (type pdf)
 
 <use small_to_large_grouping.pdf>
@@ -1240,11 +1138,11 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [32.48 <./small_to_large_grouping.pdf>]
-<small_and_large_grouping.pdf, id=558, 542.025pt x 361.35pt>
+<small_and_large_grouping.pdf, id=608, 542.025pt x 361.35pt>
 File: small_and_large_grouping.pdf Graphic file (type pdf)
 
 <use small_and_large_grouping.pdf>
-<random_grouping.pdf, id=560, 542.025pt x 361.35pt>
+<random_grouping.pdf, id=610, 542.025pt x 361.35pt>
 File: random_grouping.pdf Graphic file (type pdf)
  <use random_grouping.pdf>
 
@@ -1254,7 +1152,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [33.49 <./small_and_large_grouping.pdf>]
-<svm_format.pdf, id=576, 624.3325pt x 88.33pt>
+<svm_format.pdf, id=626, 624.3325pt x 88.33pt>
 File: svm_format.pdf Graphic file (type pdf)
  <use svm_format.pdf>
 
@@ -1271,7 +1169,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [35.51 <./svm_format.pdf>]
-<prediction_flow_chart.pdf, id=603, 614.295pt x 794.97pt>
+<prediction_flow_chart.pdf, id=653, 614.295pt x 794.97pt>
 File: prediction_flow_chart.pdf Graphic file (type pdf)
 
 <use prediction_flow_chart.pdf>
@@ -1498,15 +1396,12 @@ No file appendixA.tex.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 10267 strings out of 495061
- 145443 string characters out of 1182621
- 261243 words of memory out of 3000000
- 12895 multiletter control sequences out of 15000+50000
+ 10268 strings out of 495061
+ 145457 string characters out of 1182621
+ 261999 words of memory out of 3000000
+ 12896 multiletter control sequences out of 15000+50000
  43906 words of font info for 78 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
  38i,12n,45p,1447b,426s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1525,9 +1420,9 @@ texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (62 pages, 588797 bytes).
+Output written on thesis.pdf (62 pages, 594001 bytes).
 PDF statistics:
- 812 PDF objects out of 1000 (max. 8388607)
+ 842 PDF objects out of 1000 (max. 8388607)
  256 named destinations out of 1000 (max. 500000)
- 219 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 227 words of extra memory for PDF output out of 10000 (max. 10000000)
 
