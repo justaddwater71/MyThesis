@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  16 MAR 2011 23:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  18 MAR 2011 09:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1368,7 +1368,7 @@ LaTeX Info: Redefining \pageref on input line 93.
 LaTeX Info: Redefining \Ref on input line 93.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
- <nps_logo_3clr_cymk.pdf, id=198, 222.8325pt x 153.57375pt>
+ <nps_logo_3clr_cymk.pdf, id=214, 222.8325pt x 153.57375pt>
 File: nps_logo_3clr_cymk.pdf Graphic file (type pdf)
 
 <use nps_logo_3clr_cymk.pdf>
@@ -1425,17 +1425,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 ] (./thesis.toc [7.9
 
-]
-Underfull \vbox (badness 1852) has occurred while \output is active []
-
- [8.10])
+] [8.10])
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
+ [9.11] [10.12
 
-[9.11] [10.12
-
-] (./thesis.lof)
+]
+(./thesis.lof)
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
@@ -1449,42 +1446,50 @@ Overfull \hbox (7.09386pt too wide) in paragraph at lines 13--13
 s for the Twit-ter Short 
  []
 
+
+Overfull \hbox (9.09851pt too wide) in paragraph at lines 14--14
+ [][] [][]\OT1/ptm/m/n/12 Confusion Ma-trix for Small-To-Large Group-ing, Fea-t
+ure Type: GB3, Group 
+ []
+
 [13.15
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14.16]
-[15.17]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15.17]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [16.18]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [17.19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18.20]
+[18.20]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [19.21]
-[20.22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20.22]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21.23]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [22.24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23.25]
+[23.25]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [24.26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25.27]
-[26.28]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [26.28]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [27.29]
@@ -1494,17 +1499,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [29.31]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [30.32]
+[30.32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31.33]
-[32.34])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32.34])
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
- [33.35] [34.36
+
+[33.35] [34.36
 
 ] [35.37
 
@@ -1574,39 +1580,39 @@ LaTeX Warning: Citation `_method_????' on page 23 undefined on input line 328.
 
 ]
 Chapter 3.
-[25.63] <Experiment_Design.pdf, id=1709, 614.295pt x 578.16pt>
+[25.63] <Experiment_Design.pdf, id=1769, 614.295pt x 578.16pt>
 File: Experiment_Design.pdf Graphic file (type pdf)
 
 <use Experiment_Design.pdf> [26.64 <./Experiment_Design.pdf>] [27.65]
-<3_tier_explanation.pdf, id=1730, 460.72125pt x 244.915pt>
+<3_tier_explanation.pdf, id=1790, 460.72125pt x 244.915pt>
 File: 3_tier_explanation.pdf Graphic file (type pdf)
 
 <use 3_tier_explanation.pdf>
-<3_tier_example.pdf, id=1732, 532.99126pt x 450.68375pt>
+<3_tier_example.pdf, id=1792, 532.99126pt x 450.68375pt>
 File: 3_tier_example.pdf Graphic file (type pdf)
 
 <use 3_tier_example.pdf> [28.66 <./3_tier_explanation.pdf>]
-<cmph_matrix.pdf, id=1746, 473.77pt x 754.82pt>
+<cmph_matrix.pdf, id=1806, 473.77pt x 754.82pt>
 File: cmph_matrix.pdf Graphic file (type pdf)
  <use cmph_matrix.pdf> [29.67 <./3_tier_example.pdf>] [30.68 <./cmph_matrix.pdf
 >] [31.69]
-<small_to_large_grouping.pdf, id=1781, 542.025pt x 361.35pt>
+<small_to_large_grouping.pdf, id=1841, 542.025pt x 361.35pt>
 File: small_to_large_grouping.pdf Graphic file (type pdf)
 
 <use small_to_large_grouping.pdf> [32.70 <./small_to_large_grouping.pdf>]
-<small_and_large_grouping.pdf, id=1796, 542.025pt x 361.35pt>
+<small_and_large_grouping.pdf, id=1856, 542.025pt x 361.35pt>
 File: small_and_large_grouping.pdf Graphic file (type pdf)
 
 <use small_and_large_grouping.pdf>
-<random_grouping.pdf, id=1798, 542.025pt x 361.35pt>
+<random_grouping.pdf, id=1858, 542.025pt x 361.35pt>
 File: random_grouping.pdf Graphic file (type pdf)
  <use random_grouping.pdf>
 [33.71 <./small_and_large_grouping.pdf>]
-<svm_format.pdf, id=1814, 624.3325pt x 88.33pt>
+<svm_format.pdf, id=1874, 624.3325pt x 88.33pt>
 File: svm_format.pdf Graphic file (type pdf)
  <use svm_format.pdf> [34.72 <./random_grouping.pdf>] [35.73 <./svm_format.pdf>
 ]
-<prediction_flow_chart.pdf, id=1842, 614.295pt x 794.97pt>
+<prediction_flow_chart.pdf, id=1902, 614.295pt x 794.97pt>
 File: prediction_flow_chart.pdf Graphic file (type pdf)
 
 <use prediction_flow_chart.pdf> [36.74] [37.75 <./prediction_flow_chart.pdf>])
@@ -1615,10 +1621,10 @@ File: prediction_flow_chart.pdf Graphic file (type pdf)
 
  (./chapter4.tex
 Chapter 4.
-<FeatureVSsize.pdf, id=1867, 469.755pt x 415.5525pt>
+<FeatureVSsize.pdf, id=1927, 469.755pt x 415.5525pt>
 File: FeatureVSsize.pdf Graphic file (type pdf)
  <use FeatureVSsize.pdf>
-<liblinear-enron-avg-by-group_size.pdf, id=1873, 422.57875pt x 319.1925pt>
+<liblinear-enron-avg-by-group_size.pdf, id=1933, 422.57875pt x 319.1925pt>
 File: liblinear-enron-avg-by-group_size.pdf Graphic file (type pdf)
 
 <use liblinear-enron-avg-by-group_size.pdf> [39.77
@@ -1627,36 +1633,77 @@ File: liblinear-enron-avg-by-group_size.pdf Graphic file (type pdf)
 
 ] [40.78 <./FeatureVSsize.pdf>] [41.79 <./liblinear-enron-avg-by-group_size.pdf
 >] [42.80] [43.81] [44.82]
-Overfull \hbox (5.96396pt too wide) in paragraph at lines 165--166
+[45.83]
+<figure_liblinear_enron_grouping_compare.pdf, id=1990, 512.91624pt x 445.665pt>
+File: figure_liblinear_enron_grouping_compare.pdf Graphic file (type pdf)
+<use figure_liblinear_enron_grouping_compare.pdf>
+Overfull \hbox (57.61487pt too wide) in paragraph at lines 172--173
+ [] 
+ []
+
+
+<figure_liblinear_twitter_grouping_compare.pdf, id=1991, 512.91624pt x 445.665p
+t>
+File: figure_liblinear_twitter_grouping_compare.pdf Graphic file (type pdf)
+ <use figure_liblinear_twitter_grouping_compare.pdf>
+Overfull \hbox (57.61487pt too wide) in paragraph at lines 181--182
+ [] 
+ []
+
+
+Underfull \vbox (badness 7256) has occurred while \output is active []
+
+ [46.84 <./figure_liblinear_enron_grouping_compare.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47.85 <./figure_liblinear_twitter_grouping_compare.pdf>] [48.86] [49.87]
+Overfull \hbox (5.96396pt too wide) in paragraph at lines 237--238
 [] [][] \OT1/ptm/m/n/12 Apart from the vo-cab-u-lary ref-er-ences needed for th
 e method-feature com-bi-na-tions, each method-
  []
 
-[45.83] [46.84]
-Overfull \hbox (0.35117pt too wide) in paragraph at lines 203--203
+[50.88]
+Overfull \hbox (0.35117pt too wide) in paragraph at lines 275--275
  |[]\OT1/ptm/b/n/17.28 Classification Ef-fec-tive-ness Ver-sus Stor-age Re-quir
 e-ments| 
  []
 
-) [47.85]
+[51.89] [52.90] [53.91] [54.92] [55.93] [56.94]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57.95]
+<plot-accuracy-liblinear-enron-GM1.pdf, id=2078, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-enron-GM1.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-enron-GM1.pdf>
+<plot-accuracy-nb-twitter-GB3.pdf, id=2079, 578.16pt x 433.62pt>
+File: plot-accuracy-nb-twitter-GB3.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-twitter-GB3.pdf>) [58.96 <./plot-accuracy-liblinear-enron
+-GM1.pdf>] [59.97 <./plot-accuracy-nb-twitter-GB3.pdf>]
 \openout2 = `chapter5.aux'.
 
- (./chapter5.tex [48.86
+ (./chapter5.tex
+[60.98
 
 
 
 ]
 Chapter 5.
-) [49.87] (./thesis.bbl [50.88
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+ [61.99])
+[62.100] (./thesis.bbl
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 2.
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
- [51.89]
+ [63.101
+
+
+]
 Overfull \hbox (90.80879pt too wide) in paragraph at lines 109--115
 \OT1/ptm/m/n/12 http://developer.apple.com/library/ios/#referencelibrary/Gettin
 gStarted/Creating[]an[]iPhone[]App/index.html. 
@@ -1672,19 +1719,20 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no “ in font ptmr7t!
-) [52.90]
+) [64.102]
 \openout2 = `appendixA.aux'.
 
- (./appendixA.tex
+
+(./appendixA.tex
 Appendix A.
-[53.91
+[65.103
 
 
-] [54.92] [55.93]
+] [66.104] [67.105]
 Overfull \vbox (14.49998pt too high) detected at line 358
  []
 
-[56.94] [57.95]
+[68.106] [69.107]
 Overfull \vbox (14.49998pt too high) detected at line 500
  []
 
@@ -1700,20 +1748,20 @@ Overfull \vbox (14.49998pt too high) detected at line 536
 Overfull \vbox (14.49998pt too high) detected at line 554
  []
 
-) [58.96] [59.97] [60.98] [61.99] [62.100]
+) [70.108] [71.109] [72.110] [73.111] [74.112]
 \openout2 = `appendixB.aux'.
 
  (./appendixB.tex
 Appendix B.
-[63.101
+[75.113
 
 
 
-] [64.102]
+] [76.114]
 Overfull \vbox (14.49998pt too high) detected at line 335
  []
 
-[65.103]
+[77.115]
 Overfull \vbox (14.49998pt too high) detected at line 353
  []
 
@@ -1721,7 +1769,7 @@ Overfull \vbox (14.49998pt too high) detected at line 353
 Overfull \vbox (14.49998pt too high) detected at line 371
  []
 
-[66.104] [67.105]
+[78.116] [79.117]
 Overfull \vbox (14.49998pt too high) detected at line 492
  []
 
@@ -1729,7 +1777,7 @@ Overfull \vbox (14.49998pt too high) detected at line 492
 Overfull \vbox (14.49998pt too high) detected at line 551
  []
 
-[68.106]
+[80.118]
 Overfull \vbox (14.49998pt too high) detected at line 569
  []
 
@@ -1741,48 +1789,48 @@ Overfull \vbox (14.49998pt too high) detected at line 587
 Overfull \vbox (14.49998pt too high) detected at line 605
  []
 
-) [69.107] [70.108] [71.109] [72.110] [73.111]
+) [81.119] [82.120] [83.121] [84.122] [85.123]
 \openout2 = `appendixC.aux'.
 
- (./appendixC.tex [74.112
+ (./appendixC.tex [86.124
 
 
 
 ]
 Appendix C.
-[75.113] [76.114] [77.115] [78.116] [79.117]) [80.118] [81.119] [82.120]
-[83.121] [84.122] [85.123] [86.124]
+[87.125] [88.126] [89.127] [90.128] [91.129]) [92.130] [93.131] [94.132]
+[95.133] [96.134] [97.135] [98.136]
 \openout2 = `appendixD.aux'.
 
  (./appendixD.tex
 Appendix D.
-[87.125
-
-
-
-] [88.126] [89.127] [90.128] [91.129]) [92.130] [93.131] [94.132]
-[95.133] [96.134] [97.135] [98.136]
-\openout2 = `appendixE.aux'.
-
- (./appendixE.tex
-Appendix E.
 [99.137
 
 
 
+] [100.138] [101.139] [102.140] [103.141]) [104.142] [105.143] [106.144] [107.1
+45] [108.146] [109.147] [110.148]
+\openout2 = `appendixE.aux'.
+
+ (./appendixE.tex
+Appendix E.
+[111.149
+
+
+
 ]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 175--203
 [][] 
  []
 
-[100.138] [101.139] [102.140] [103.141]) [104.142] [105.143] [106.144] [107.145
-] [108.146] [109.147] [110.148] [111.149] [112.150] [113.151] [114.152]
-[115.153] [116.154] [117.155] [118.156] [119.157] [120.158] [121.159] [122.160]
+[112.150] [113.151] [114.152] [115.153]) [116.154] [117.155] [118.156] [119.157
+] [120.158] [121.159] [122.160] [123.161] [124.162] [125.163] [126.164]
+[127.165] [128.166] [129.167] [130.168] [131.169] [132.170] [133.171] [134.172]
 \openout2 = `appendixF.aux'.
 
 (./appendixF.tex
 Appendix F.
-[123.161
+[135.173
 
 
 
@@ -1791,14 +1839,14 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 175--203
 [][] 
  []
 
-[124.162] [125.163] [126.164] [127.165]) [128.166] [129.167] [130.168] [131.169
-] [132.170] [133.171] [134.172] [135.173] [136.174] [137.175] [138.176]
-[139.177] [140.178] [141.179] [142.180] [143.181] [144.182] [145.183] [146.184]
+[136.174] [137.175] [138.176] [139.177]) [140.178] [141.179] [142.180] [143.181
+] [144.182] [145.183] [146.184] [147.185] [148.186] [149.187] [150.188]
+[151.189] [152.190] [153.191] [154.192] [155.193] [156.194] [157.195] [158.196]
 \openout2 = `appendixG.aux'.
 
 (./appendixG.tex
 Appendix G.
-[147.185
+[159.197
 
 
 
@@ -1812,30 +1860,30 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 379--407
 [][] 
  []
 
-[148.186]
+[160.198]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 583--611
 [][] 
  []
 
-[149.187]
+[161.199]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 787--815
 [][] 
  []
 
-[150.188]
+[162.200]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 985--1013
 [][] 
  []
 
-[151.189]) [152.190] [153.191] [154.192] [155.193] [156.194] [157.195] [158.196
-] [159.197] [160.198] [161.199] [162.200] [163.201] [164.202] [165.203]
-[166.204] [167.205] [168.206] [169.207] [170.208] [171.209] [172.210] [173.211]
-[174.212] [175.213] [176.214]
+[163.201]) [164.202] [165.203] [166.204] [167.205] [168.206] [169.207] [170.208
+] [171.209] [172.210] [173.211] [174.212] [175.213] [176.214] [177.215]
+[178.216] [179.217] [180.218] [181.219] [182.220] [183.221] [184.222] [185.223]
+[186.224] [187.225] [188.226]
 \openout2 = `appendixH.aux'.
 
  (./appendixH.tex
 Appendix H.
-[177.215
+[189.227
 
 
 
@@ -1849,42 +1897,42 @@ Overfull \hbox (0.83179pt too wide) in paragraph at lines 379--407
 [][] 
  []
 
-[178.216]
+[190.228]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 583--611
 [][] 
  []
 
-[179.217]
+[191.229]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 787--815
 [][] 
  []
 
-[180.218]
+[192.230]
 Overfull \hbox (0.83179pt too wide) in paragraph at lines 991--1019
 [][] 
  []
 
-[181.219]) [182.220] [183.221] [184.222] [185.223] [186.224] [187.225] [188.226
-] [189.227] [190.228] [191.229] [192.230] [193.231] [194.232] [195.233]
-[196.234] [197.235] [198.236] [199.237] [200.238] [201.239] [202.240] [203.241]
-[204.242] [205.243] [206.244]
+[193.231]) [194.232] [195.233] [196.234] [197.235] [198.236] [199.237] [200.238
+] [201.239] [202.240] [203.241] [204.242] [205.243] [206.244] [207.245]
+[208.246] [209.247] [210.248] [211.249] [212.250] [213.251] [214.252] [215.253]
+[216.254] [217.255] [218.256]
 \openout2 = `appendixI.aux'.
 
  (./appendixI.tex
 Appendix I.
-[207.245
+[219.257
 
 
 
-] [208.246]
+] [220.258]
 Overfull \vbox (14.49998pt too high) detected at line 340
  []
 
-[209.247]
+[221.259]
 Overfull \vbox (14.49998pt too high) detected at line 475
  []
 
-[210.248]
+[222.260]
 Overfull \vbox (14.49998pt too high) detected at line 492
  []
 
@@ -1896,16 +1944,16 @@ Overfull \vbox (14.49998pt too high) detected at line 509
 Overfull \vbox (14.49998pt too high) detected at line 526
  []
 
-) [211.249] [212.250] [213.251] [214.252] [215.253]
+) [223.261] [224.262] [225.263] [226.264] [227.265]
 \openout2 = `appendixJ.aux'.
 
- (./appendixJ.tex [216.254
+ (./appendixJ.tex [228.266
 
 
 
 ]
 Appendix J.
-[217.255] [218.256]
+[229.267] [230.268]
 Overfull \vbox (14.49998pt too high) detected at line 319
  []
 
@@ -1917,11 +1965,11 @@ Overfull \vbox (14.49998pt too high) detected at line 336
 Overfull \vbox (14.49998pt too high) detected at line 353
  []
 
-[219.257]
+[231.269]
 Overfull \vbox (14.49998pt too high) detected at line 468
  []
 
-[220.258]
+[232.270]
 Overfull \vbox (14.49998pt too high) detected at line 524
  []
 
@@ -1929,7 +1977,7 @@ Overfull \vbox (14.49998pt too high) detected at line 524
 Overfull \vbox (14.49998pt too high) detected at line 541
  []
 
-[221.259]
+[233.271]
 Overfull \vbox (14.49998pt too high) detected at line 558
  []
 
@@ -1937,49 +1985,49 @@ Overfull \vbox (14.49998pt too high) detected at line 558
 Overfull \vbox (14.49998pt too high) detected at line 575
  []
 
-) [222.260] [223.261] [224.262] [225.263] [226.264]
+) [234.272] [235.273] [236.274] [237.275] [238.276]
 \openout2 = `appendixK.aux'.
 
  (./appendixK.tex
 Appendix K.
-[227.265
-
-
-
-] [228.266] [229.267] [230.268] [231.269]) [232.270] [233.271] [234.272] [235.2
-73] [236.274] [237.275] [238.276]
-\openout2 = `appendixL.aux'.
-
- (./appendixL.tex
-Appendix L.
 [239.277
 
 
 
 ] [240.278] [241.279] [242.280] [243.281]) [244.282] [245.283] [246.284] [247.2
 85] [248.286] [249.287] [250.288]
-\openout2 = `appendixM.aux'.
+\openout2 = `appendixL.aux'.
 
- (./appendixM.tex
-Appendix M.
+ (./appendixL.tex
+Appendix L.
 [251.289
 
 
 
-] [252.290] [253.291] [254.292]
+] [252.290] [253.291] [254.292] [255.293]) [256.294] [257.295] [258.296] [259.2
+97] [260.298] [261.299] [262.300]
+\openout2 = `appendixM.aux'.
+
+ (./appendixM.tex
+Appendix M.
+[263.301
+
+
+
+] [264.302] [265.303] [266.304]
 Overfull \vbox (14.49998pt too high) detected at line 358
  []
 
-[255.293]) [256.294] [257.295] [258.296] [259.297] [260.298]
+[267.305]) [268.306] [269.307] [270.308] [271.309] [272.310]
 \openout2 = `appendixN.aux'.
 
  (./appendixN.tex
 Appendix N.
-[261.299
+[273.311
 
 
 
-] [262.300] [263.301] [264.302]
+] [274.312] [275.313] [276.314]
 Overfull \vbox (14.49998pt too high) detected at line 335
  []
 
@@ -1991,7 +2039,7 @@ Overfull \vbox (14.49998pt too high) detected at line 353
 Overfull \vbox (14.49998pt too high) detected at line 371
  []
 
-[265.303]
+[277.315]
 Overfull \vbox (14.49998pt too high) detected at line 492
  []
 
@@ -2003,7 +2051,7 @@ Overfull \vbox (14.49998pt too high) detected at line 551
 Overfull \vbox (14.49998pt too high) detected at line 569
  []
 
-[266.304]
+[278.316]
 Overfull \vbox (14.49998pt too high) detected at line 587
  []
 
@@ -2011,36 +2059,36 @@ Overfull \vbox (14.49998pt too high) detected at line 587
 Overfull \vbox (14.49998pt too high) detected at line 605
  []
 
-) [267.305] [268.306] [269.307] [270.308] [271.309] [272.310]
+) [279.317] [280.318] [281.319] [282.320] [283.321] [284.322]
 \openout2 = `appendixO.aux'.
 
  (./appendixO.tex
 Appendix O.
-[273.311
+[285.323
 
 
 
-] [274.312] [275.313] [276.314] [277.315] [278.316]) [279.317] [280.318] [281.3
-19] [282.320] [283.321] [284.322] [285.323] [286.324] [287.325]
+] [286.324] [287.325] [288.326] [289.327] [290.328]) [291.329] [292.330] [293.3
+31] [294.332] [295.333] [296.334] [297.335] [298.336] [299.337]
 \openout2 = `appendixP.aux'.
 
 
-(./appendixP.tex [288.326
+(./appendixP.tex [300.338
 
 
 
 ]
 Appendix P.
-[289.327] [290.328] [291.329] [292.330] [293.331] [294.332]) [295.333] [296.334
-] [297.335] [298.336] [299.337] [300.338] [301.339] [302.340] [303.341]
-[304.342
+[301.339] [302.340] [303.341] [304.342] [305.343] [306.344]) [307.345] [308.346
+] [309.347] [310.348] [311.349] [312.350] [313.351] [314.352] [315.353]
+[316.354
 
 
 ]
 No file thesis.ain.
-[305.343] [306.344
+[317.355] [318.356
 
-] [307.345] (./thesis.aux (./chapter1.aux) (./chapter2.aux)
+] [319.357] (./thesis.aux (./chapter1.aux) (./chapter2.aux)
 (./chapter3.aux) (./chapter4.aux) (./chapter5.aux) (./appendixA.aux)
 (./appendixB.aux) (./appendixC.aux) (./appendixD.aux) (./appendixE.aux)
 (./appendixF.aux) (./appendixG.aux) (./appendixH.aux) (./appendixI.aux)
@@ -2054,13 +2102,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 9553 strings out of 495061
- 131841 string characters out of 1182621
- 645581 words of memory out of 3000000
- 11308 multiletter control sequences out of 15000+50000
+ 9619 strings out of 495061
+ 133488 string characters out of 1182621
+ 648940 words of memory out of 3000000
+ 11340 multiletter control sequences out of 15000+50000
  43906 words of font info for 78 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,12n,45p,1493b,436s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,45p,1493b,432s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
@@ -2076,9 +2124,9 @@ texmf-texlive/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fon
 ts/type1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/tim
 es/utmb8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/
 share/texmf-texlive/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (345 pages, 1628724 bytes).
+Output written on thesis.pdf (357 pages, 1756792 bytes).
 PDF statistics:
- 3319 PDF objects out of 3580 (max. 8388607)
- 1048 named destinations out of 1200 (max. 500000)
- 453 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3561 PDF objects out of 3580 (max. 8388607)
+ 1078 named destinations out of 1200 (max. 500000)
+ 505 words of extra memory for PDF output out of 10000 (max. 10000000)
 
