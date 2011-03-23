@@ -11,6 +11,28 @@
 	pages = {1035--1062}
 },
 
+@inproceedings{watanabe_succinct_2009,
+	address = {Stroudsburg, {PA,} {USA}},
+	series = {{ACLShort} '09},
+	title = {A succinct N-gram language model},
+	location = {Suntec, Singapore},
+	url = {http://portal.acm.org/citation.cfm?id=1667583.1667689},
+	abstract = {Efficient processing of tera-scale text data is an important research topic. This paper proposes lossless compression of N-gram language models based on {LOUDS,} a succinct data structure. {LOUDS} succinctly represents a trie with M nodes as a {2M} + 1 bit string. We compress it further for the N-gram language model structure. We also use 'variable length coding' and 'block-wise compression' to compress values associated with nodes. Experimental results for three large-scale N-gram compression tasks achieved a significant compression rate without any loss.},
+	booktitle = {Proceedings of the {ACL-IJCNLP} 2009 Conference Short Papers},
+	publisher = {Association for Computational Linguistics},
+	author = {Taro Watanabe and Hajime Tsukada and Hideki Isozaki},
+	year = {2009},
+	note = {{ACM} {ID:} 1667689},
+	keywords = {Algorithms, data compaction and compression, design, language models, languages, modeling methodologies, performance},
+	pages = {341–344}
+},
+
+@misc{_naive_????,
+	title = {Naive Bayes text classification},
+	url = {http://nlp.stanford.edu/IR-book/html/htmledition/naive-bayes-text-classification-1.html},
+	howpublished = {{http://nlp.stanford.edu/IR-book/html/htmledition/naive-bayes-text-classification-1.html}}
+},
+
 @book{murphy_android_2010,
 	title = {Android Beyond Java},
 	isbn = {9780981678047},
@@ -132,6 +154,22 @@
 	pages = {21–30}
 },
 
+@inproceedings{yuret_smoothing_2008,
+	address = {Stroudsburg, {PA,} {USA}},
+	series = {{HLT-Short} '08},
+	title = {Smoothing a tera-word language model},
+	location = {Columbus, Ohio},
+	url = {http://portal.acm.org/citation.cfm?id=1557690.1557727},
+	abstract = {Frequency counts from very large corpora, such as the Web {1T} dataset, have recently become available for language modeling. Omission of low frequency n-gram counts is a practical necessity for datasets of this size. Naive implementations of standard smoothing methods do not realize the full potential of such large datasets with missing counts. In this paper I present a new smoothing algorithm that combines the Dirichlet prior form of {(Mackay} and Peto, 1995) with the modified back-off estimates of {(Kneser} and Ney, 1995) that leads to a 31\% perplexity reduction on the Brown corpus compared to a baseline implementation of {Kneser-Ney} discounting.},
+	booktitle = {Proceedings of the 46th Annual Meeting of the Association for Computational Linguistics on Human Language Technologies: Short Papers},
+	publisher = {Association for Computational Linguistics},
+	author = {Deniz Yuret},
+	year = {2008},
+	note = {{ACM} {ID:} 1557727},
+	keywords = {Algorithms, design, modeling methodologies, natural language processing, theory},
+	pages = {141–144}
+},
+
 @book{jurafsky_speech_2009,
 	title = {Speech and language processing: an introduction to natural language processing, computational linguistics, and speech recognition},
 	isbn = {9780131873216},
@@ -176,6 +214,21 @@
 	author = {Douglas C. Schmidt},
 	year = {2000},
 	pages = {461--491}
+},
+
+@inproceedings{layton_authorship_2010,
+	address = {Los Alamitos, {CA,} {USA}},
+	title = {Authorship Attribution for Twitter in 140 Characters or Less},
+	volume = {0},
+	isbn = {978-0-7695-4186-0},
+	doi = {http://doi.ieeecomputersociety.org/10.1109/CTC.2010.17},
+	abstract = {Authorship attribution is a growing field, moving from beginnings in linguistics to recent advances in text mining. Through this change came an increase in the capability of authorship attribution methods both in their accuracy and the ability to consider more difficult problems. Research into authorship attribution in the 19th century considered it difficult to determine the authorship of a document of fewer than 1000 words. By the 1990s this values had decreased to less than 500 words and in the early 21st century it was considered possible to determine the authorship of a document in 250 words. The need for this ever decreasing limit is exemplified by the trend towards many shorter communications rather than fewer longer communications, such as the move from traditional multi-page handwritten letters to shorter, more focused emails. This trend has also been shown in online crime, where many attacks such as phishing or bullying are performed using very concise language. Cybercrime messages have long been hosted on Internet Relay Chats {(IRCs)} which have allowed members to hide behind screen names and connect anonymously. More recently, Twitter and other short message based web services have been used as a hosting ground for online crimes. This paper presents some evaluations of current techniques and identifies some new preprocessing methods that can be used to enable authorship to be determined at rates significantly better than chance for documents of 140 characters or less, a format popularised by the micro-blogging website Twitter1. We show that the {SCAP} methodology performs extremely well on twitter messages and even with restrictions on the types of information allowed, such as the recipient of directed messages, still perform significantly higher than chance. Further to this, we show that 120 tweets per user is an important threshold, at which point adding more tweets per user gives a small but non-significant increase in accuracy.},
+	booktitle = {Cybercrime and Trustworthy Computing, Workshop},
+	publisher = {{IEEE} Computer Society},
+	author = {Robert Layton and Paul Watters and Richard Dazeley},
+	year = {2010},
+	pages = {1--8},
+	annote = {Complete {PDF} document was either not available or accessible. Please make sure you're logged in to the digital library to retrieve the complete {PDF} document.}
 },
 
 @inproceedings{daoud_perfect_2007,
@@ -231,6 +284,22 @@
 	author = {{Rong-En} Fan and {Kai-Wei} Chang and {Cho-Jui} Hsieh and {Xiang-Rui} Wang and {Chih-Jen} Lin},
 	year = {2008},
 	pages = {1871--1874}
+},
+
+@article{mosteller_inference_1963,
+	title = {Inference in an Authorship Problem},
+	volume = {58},
+	issn = {01621459},
+	url = {http://www.jstor.org/stable/2283270},
+	doi = {10.2307/2283270},
+	abstract = {This study has four purposes: to provide a comparison of discrimination methods; to explore the problems presented by techniques based strongly on Bayes' theorem when they are used in a data analysis of large scale; to solve the authorship question of The Federalist papers; and to propose routine methods for solving other authorship problems. Word counts are the variables used for discrimination. Since the topic written about heavily influences the rate with which a word is used, care in selection of words is necessary. The filler words of the language such as an, of, and upon, and, more generally, articles, prepositions, and conjunctions provide fairly stable rates, whereas more meaningful words like war, executive, and legislature do not. After an investigation of the distribution of these counts, the authors execute an analysis employing the usual discriminant function and an analysis based on Bayesian methods. The conclusions about the authorship problem are that Madison rather than Hamilton wrote all 12 of the disputed papers. The findings about methods are presented in the closing section on conclusions. This report, summarizing and abbreviating a forthcoming monograph [8], gives some of the results but very little of their empirical and theoretical foundation. It treats two of the four main studies presented in the monograph, and none of the side studies.},
+	number = {302},
+	journal = {Journal of the American Statistical Association},
+	author = {Frederick Mosteller and David L. Wallace},
+	month = jun,
+	year = {1963},
+	note = {{ArticleType:} research-article / Full publication date: Jun., 1963 / Copyright © 1963 American Statistical Association},
+	pages = {275--309}
 },
 
 @misc{_enron_????,
@@ -357,6 +426,22 @@
 	pages = {179--188}
 },
 
+@inproceedings{koppel_authorship_2004,
+	address = {New York, {NY,} {USA}},
+	series = {{ICML} '04},
+	title = {Authorship verification as a one-class classification problem},
+	isbn = {1-58113-838-5},
+	location = {Banff, Alberta, Canada},
+	doi = {10.1145/1015330.1015448},
+	abstract = {In the authorship verification problem, we are given examples of the writing of a single author and are asked to determine if given long texts were or were not written by this author. We present a new learning-based method for adducing the "depth of difference" between two example sets and offer evidence that this method solves the authorship verification problem with very high accuracy. The underlying idea is to test the rate of degradation of the accuracy of learned models as the best features are iteratively dropped from the learning process.},
+	booktitle = {Proceedings of the twenty-first international conference on Machine learning},
+	publisher = {{ACM}},
+	author = {Moshe Koppel and Jonathan Schler},
+	year = {2004},
+	note = {{ACM} {ID:} 1015448},
+	pages = {62–}
+},
+
 @article{graf_parallel_????,
 	title = {Parallel support vector machines: The cascade svm},
 	shorttitle = {Parallel support vector machines},
@@ -369,6 +454,23 @@
 	author = {H. F Yu and C. J Hsieh and K. W Chang and C. J Lin},
 	year = {2010},
 	pages = {833–842}
+},
+
+@inproceedings{o_seaghdha_semantic_2008,
+	address = {Stroudsburg, {PA,} {USA}},
+	series = {{COLING} '08},
+	title = {Semantic classification with distributional kernels},
+	isbn = {978-1-905593-44-6},
+	location = {Manchester, United Kingdom},
+	url = {http://portal.acm.org/citation.cfm?id=1599081.1599163},
+	abstract = {Distributional measures of lexical similarity and kernel methods for classification are well-known tools in Natural Language Processing. We bring these two methods together by introducing distributional kernels that compare co-occurrence probability distributions. We demonstrate the effectiveness of these kernels by presenting state-of-the-art results on datasets for three semantic classification: compound noun interpretation, identification of semantic relations between nominals and semantic classification of verbs. Finally, we consider explanations for the impressive performance of distributional kernels and sketch some promising generalisations.},
+	booktitle = {Proceedings of the 22nd International Conference on Computational Linguistics - Volume 1},
+	publisher = {Association for Computational Linguistics},
+	author = {Diarmuid Ó Séaghdha and Ann Copestake},
+	year = {2008},
+	note = {{ACM} {ID:} 1599163},
+	keywords = {Algorithms, classifier design and evaluation, design, knowledge acquisition, modeling methodologies, natural language processing, performance, semantic networks},
+	pages = {649–656}
 },
 
 @article{germann_tightly_????,
@@ -431,6 +533,31 @@
 	url = {http://us.blackberry.com/developers/},
 	journal = {{BlackBerry} Developer Zone},
 	howpublished = {http://us.blackberry.com/developers/}
+},
+
+@inproceedings{islam_real-word_2009,
+	address = {Stroudsburg, {PA,} {USA}},
+	series = {{EMNLP} '09},
+	title = {Real-word spelling correction using Google Web {IT} 3-grams},
+	isbn = {978-1-932432-63-3},
+	location = {Singapore},
+	url = {http://portal.acm.org/citation.cfm?id=1699648.1699670},
+	abstract = {We present a method for detecting and correcting multiple real-word spelling errors using the Google Web {IT} 3-gram data set and a normalized and modified version of the Longest Common Subsequence {(LCS)} string matching algorithm. Our method is focused mainly on how to improve the detection recall (the fraction of errors correctly detected) and the correction recall (the fraction of errors correctly amended), while keeping the respective precisions (the fraction of detections or amendments that are correct) as high as possible. Evaluation results on a standard data set show that our method outperforms two other methods on the same task.},
+	booktitle = {Proceedings of the 2009 Conference on Empirical Methods in Natural Language Processing: Volume 3 - Volume 3},
+	publisher = {Association for Computational Linguistics},
+	author = {Aminul Islam and Diana Inkpen},
+	year = {2009},
+	note = {{ACM} {ID:} 1699670},
+	keywords = {Algorithms, design, language acquisition, language parsing and understanding, languages, linguistic processing, performance, performance evaluation},
+	pages = {1241–1249}
+},
+
+@article{talbot_randomized_2008,
+	title = {Randomized language models via perfect hash functions},
+	journal = {Proceedings of {ACL-08:} {HLT}},
+	author = {D. Talbot and T. Brants},
+	year = {2008},
+	pages = {505–513}
 },
 
 @inproceedings{botelho_external_2007,

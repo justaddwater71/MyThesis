@@ -27,6 +27,22 @@
 H.~Love, \emph{Attributing authorship: an introduction}.\hskip 1em plus 0.5em
   minus 0.4em\relax Cambridge University Press, Jun. 2002.
 
+\bibitem{mosteller_inference_1963}
+\BIBentryALTinterwordspacing
+F.~Mosteller and D.~L. Wallace, ``Inference in an authorship problem,''
+  \emph{Journal of the American Statistical Association}, vol.~58, no. 302, pp.
+  275--309, Jun. 1963, {ArticleType:} research-article / Full publication date:
+  Jun., 1963 / Copyright © 1963 American Statistical Association. [Online].
+  Available: \url{http://www.jstor.org/stable/2283270}
+\BIBentrySTDinterwordspacing
+
+\bibitem{koppel_authorship_2004}
+M.~Koppel and J.~Schler, ``Authorship verification as a one-class
+  classification problem,'' in \emph{Proceedings of the twenty-first
+  international conference on Machine learning}, ser. {ICML} '04.\hskip 1em
+  plus 0.5em minus 0.4em\relax New York, {NY,} {USA}: {ACM}, 2004, p. 62–,
+  {ACM} {ID:} 1015448.
+
 \bibitem{alpaydin_introduction_2004}
 E.~Alpaydin, \emph{Introduction to machine learning}.\hskip 1em plus 0.5em
   minus 0.4em\relax {MIT} Press, Oct. 2004.
@@ -37,16 +53,21 @@ D.~Jurafsky and J.~H. Martin, \emph{Speech and language processing: an
   speech recognition}.\hskip 1em plus 0.5em minus 0.4em\relax Prentice Hall,
   2009.
 
+\bibitem{_naive_????}
+\BIBentryALTinterwordspacing
+``Naive bayes text classification,''
+  {http://nlp.stanford.edu/IR-book/html/htmledition/naive-bayes-text-classific%
+ation-1.html}. [Online]. Available:
+  \url{http://nlp.stanford.edu/IR-book/html/htmledition/naive-bayes-text-class%
+ification-1.html}
+\BIBentrySTDinterwordspacing
+
 \bibitem{vapnik_support-vector_1995}
 \BIBentryALTinterwordspacing
 V.~Vapnik and C.~Cortes, ``{Support-Vector} networks,'' \emph{Machine
   Learning}, vol.~20, pp. 273--297, 1995, {10.1023/A:1022627411411}. [Online].
   Available: \url{http://dx.doi.org/10.1023/A:1022627411411}
 \BIBentrySTDinterwordspacing
-
-\bibitem{fisher_use_1936}
-R.~Fisher, ``{{The} use of multiple measurements in taxonomic problems},''
-  \emph{Annals of Eugenics}, vol.~7, no.~2, pp. 179--188, 1936.
 
 \bibitem{_multiclass_????}
 \BIBentryALTinterwordspacing
@@ -128,6 +149,81 @@ M.~L. Murphy, \emph{The Busy Coder's Guide to Android Development}.\hskip 1em
 ``Streaming {API} documentation {\textbar} dev.twitter.com,''
   http://dev.twitter.com/pages/streaming\_api. [Online]. Available:
   \url{http://dev.twitter.com/pages/streaming_api}
+\BIBentrySTDinterwordspacing
+
+\bibitem{talbot_randomized_2008}
+D.~Talbot and T.~Brants, ``Randomized language models via perfect hash
+  functions,'' \emph{Proceedings of {ACL-08:} {HLT}}, p. 505–513, 2008.
+
+\bibitem{watanabe_succinct_2009}
+\BIBentryALTinterwordspacing
+T.~Watanabe, H.~Tsukada, and H.~Isozaki, ``A succinct n-gram language model,''
+  in \emph{Proceedings of the {ACL-IJCNLP} 2009 Conference Short Papers}, ser.
+  {ACLShort} '09.\hskip 1em plus 0.5em minus 0.4em\relax Stroudsburg, {PA,}
+  {USA}: Association for Computational Linguistics, 2009, p. 341–344, {ACM}
+  {ID:} 1667689. [Online]. Available:
+  \url{http://portal.acm.org/citation.cfm?id=1667583.1667689}
+\BIBentrySTDinterwordspacing
+
+\bibitem{yuret_smoothing_2008}
+\BIBentryALTinterwordspacing
+D.~Yuret, ``Smoothing a tera-word language model,'' in \emph{Proceedings of the
+  46th Annual Meeting of the Association for Computational Linguistics on Human
+  Language Technologies: Short Papers}, ser. {HLT-Short} '08.\hskip 1em plus
+  0.5em minus 0.4em\relax Stroudsburg, {PA,} {USA}: Association for
+  Computational Linguistics, 2008, p. 141–144, {ACM} {ID:} 1557727. [Online].
+  Available: \url{http://portal.acm.org/citation.cfm?id=1557690.1557727}
+\BIBentrySTDinterwordspacing
+
+\bibitem{islam_real-word_2009}
+\BIBentryALTinterwordspacing
+A.~Islam and D.~Inkpen, ``Real-word spelling correction using google web {IT}
+  3-grams,'' in \emph{Proceedings of the 2009 Conference on Empirical Methods
+  in Natural Language Processing: Volume 3 - Volume 3}, ser. {EMNLP} '09.\hskip
+  1em plus 0.5em minus 0.4em\relax Stroudsburg, {PA,} {USA}: Association for
+  Computational Linguistics, 2009, p. 1241–1249, {ACM} {ID:} 1699670.
+  [Online]. Available:
+  \url{http://portal.acm.org/citation.cfm?id=1699648.1699670}
+\BIBentrySTDinterwordspacing
+
+\bibitem{o_seaghdha_semantic_2008}
+\BIBentryALTinterwordspacing
+D.~�. Séaghdha and A.~Copestake, ``Semantic classification with distributional
+  kernels,'' in \emph{Proceedings of the 22nd International Conference on
+  Computational Linguistics - Volume 1}, ser. {COLING} '08.\hskip 1em plus
+  0.5em minus 0.4em\relax Stroudsburg, {PA,} {USA}: Association for
+  Computational Linguistics, 2008, p. 649–656, {ACM} {ID:} 1599163. [Online].
+  Available: \url{http://portal.acm.org/citation.cfm?id=1599081.1599163}
+\BIBentrySTDinterwordspacing
+
+\bibitem{islam_managing_2009}
+A.~Islam and D.~Inkpen, ``Managing the google web {1T} 5-gram data set,'' in
+  \emph{Natural Language Processing and Knowledge Engineering, 2009. {NLP-KE}
+  2009. International Conference on}, 2009, pp. 1--5.
+
+\bibitem{layton_authorship_2010}
+R.~Layton, P.~Watters, and R.~Dazeley, ``Authorship attribution for twitter in
+  140 characters or less,'' in \emph{Cybercrime and Trustworthy Computing,
+  Workshop}, vol.~0.\hskip 1em plus 0.5em minus 0.4em\relax Los Alamitos, {CA,}
+  {USA}: {IEEE} Computer Society, 2010, pp. 1--8.
+
+\bibitem{yang_improved_2006}
+\BIBentryALTinterwordspacing
+J.~Yang, ``An improved cascade {SVM} training algorithm with crossed
+  feedbacks,'' in \emph{Proceedings of the First International
+  {Multi-Symposiums} on Computer and Computational Sciences - Volume 2
+  {(IMSCCS'06)} - Volume 02}.\hskip 1em plus 0.5em minus 0.4em\relax {IEEE}
+  Computer Society, 2006, pp. 735--738. [Online]. Available:
+  \url{http://portal.acm.org/citation.cfm?id=1136466}
+\BIBentrySTDinterwordspacing
+
+\bibitem{bordes_fast_2005}
+\BIBentryALTinterwordspacing
+A.~Bordes, S.~Ertekin, J.~Weston, and L.~Bottou, ``Fast kernel classifiers with
+  online and active learning,'' \emph{J. Mach. Learn. Res.}, vol.~6, pp.
+  1579--1619, 2005. [Online]. Available:
+  \url{http://portal.acm.org/citation.cfm?id=1046920.1194898&coll=ACM&dl=ACM&C%
+FID=96681423&CFTOKEN=43711541}
 \BIBentrySTDinterwordspacing
 
 \bibitem{bikel_if_2007}

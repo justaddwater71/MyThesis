@@ -6,7 +6,6 @@ A level-1 auxiliary file: chapter3.aux
 A level-1 auxiliary file: chapter4.aux
 A level-1 auxiliary file: chapter5.aux
 The style file: nps-plain-unsorted.bst
-A level-1 auxiliary file: appendixA.aux
 A level-1 auxiliary file: appendixB.aux
 A level-1 auxiliary file: appendixC.aux
 A level-1 auxiliary file: appendixD.aux
@@ -30,45 +29,45 @@ Warning--I didn't find a database entry for "_method_????"
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 19 entries,
+You've used 30 entries,
             4030 wiz_defined-function locations,
-            927 strings with 10514 characters,
-and the built_in function-call counts, 8871 in all, are:
-= -- 706
-> -- 114
-< -- 32
-+ -- 64
-- -- 19
-* -- 367
-:= -- 1439
-add.period$ -- 39
-call.type$ -- 19
-change.case$ -- 14
-chr.to.int$ -- 72
-cite$ -- 19
-duplicate$ -- 720
-empty$ -- 874
-format.name$ -- 25
-if$ -- 2003
+            1007 strings with 13488 characters,
+and the built_in function-call counts, 17475 in all, are:
+= -- 1494
+> -- 242
+< -- 70
++ -- 129
+- -- 42
+* -- 756
+:= -- 2741
+add.period$ -- 68
+call.type$ -- 30
+change.case$ -- 25
+chr.to.int$ -- 150
+cite$ -- 30
+duplicate$ -- 1410
+empty$ -- 1625
+format.name$ -- 57
+if$ -- 4041
 int.to.chr$ -- 0
-int.to.str$ -- 19
-missing$ -- 131
-newline$ -- 104
-num.names$ -- 11
-pop$ -- 395
+int.to.str$ -- 30
+missing$ -- 246
+newline$ -- 153
+num.names$ -- 21
+pop$ -- 660
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 721
+skip$ -- 1462
 stack$ -- 0
-substring$ -- 226
-swap$ -- 460
-text.length$ -- 8
+substring$ -- 535
+swap$ -- 981
+text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 19
+type$ -- 30
 warning$ -- 0
-while$ -- 25
-width$ -- 21
-write$ -- 197
+while$ -- 57
+width$ -- 32
+write$ -- 330
 (There was 1 warning)

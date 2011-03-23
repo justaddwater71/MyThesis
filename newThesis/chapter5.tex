@@ -1,29 +1,118 @@
 \chapter{Conclusions and Future Work}
 
-\section{Determine Accuracy and F-Score for Other Web1T Vocabulary Variations}
-\paragraph{} This thesis only used model 0.  Models such as 8 get rid of punctuation.  Other models get rid of sentence boundaries, capitalization, etc.  Reducing these allowed types reduces the total number of features, which could change accuracy and f-score.
+\section{Summary}
+\paragraph*{} This thesis asked one basic question: can author detection be accomplished on a mobile device?  To answer that question, several supporting questions had to be answered: 
+\begin{itemize}
+	\item For the two dominant mobile phone text mediums, short message and e-mail, what combination of classification method and feature type provides the best accuracy?
+	\item What is the storage requirement for each combination of method and feature type?
+	\item What is the relative value of classification accuracy versus storage requirement for each classification method and feature type?
+	\item Does the relative prolificity of each author in a detection group significantly affect the accuracy of each classification method and feature type?
+	\item Does a highly effective method-feature type combination exist with a small enough storage requirement to be executed on a mobile device?
+\end{itemize}
 
-\section{Apply Good Turing or Witten-Bell Smoothing to Naive Bayes}
-\paragraph{} Laplace smoothing using a +1 smoothing value for the bootstrap gave poor results.  The Web1T smoothing was to resource intensive.  Good Turing or Witten-Bell might improve Naive Bayes performance without the dramatic overhead of Web1T.
+	\paragraph*{} Two classification methods, naive Bayes and SVM using the Liblinear tool, were tested against five feature types: 1-grams (GM1), 2-grams (GM2), 5-grams (GM5), gappy bigrams of distance 3 (GB3), and orthogonal sparse bigrams of distance 3 (OSB3).  For each of these combinations, six vocabularies were used.  Five of the vocabularies were drawn from a specific percentage of the highest count features found in the Google Web1T corpus.  Specifically, the top 1\%, 2\%, 4\%, 8\%, and 16\% of Google Web1T were used as vocabularies.  The sixth vocabulary was a "bootstrapped" vocabulary that was drawn directly from the training corpus with no reference to a outside set of features.  This vocabulary was represented as Web1T\% 0 since the bootstrapped vocabulary used 0\% of the Google Web1T corpus as a vocabulary reference.
 
-\section{Increase the Twitter Short Message Size}
-	\paragraph{} The large difference in accuracy and F-Score between the ENRON Email Corpus and Twitter Short Message Corpus may be a function of how few tokens are present in the Twitter Corpus compared to the ENRON Email Corpus.  If the most prolific Tweeters could be recorded for several months, a large enough body of tokens could be created to put some Tweeter's token count on par with the average ENRON email author's token count.  That could clarify whether Twitter is inherently different from email or is simply less predictable when there is a smaller sample to analyze.
+	\paragraph*{} Testing was conducted using a 80/20 cross validation against each set of selected authors.  Each author was tested in group sizes of 5, 10, 25, 50, 75, and 150 authors.  The grouping of authors was selected in three ways, similarly prolific authors, dissimilarly prolific authors, and randomly chosen authors.  To determine prolificity, authors were put in rank order based on total size of all their documents.
 
-\section{Rewrite LibLinear Data Structures}
+	\paragraph*{} The testing of all these combinations resulted in 19,782 tests producing 286,050 measurements for f-score and 19,782 measurements for accuracy.  After analysis of these results:
+\begin{itemize} 
+	\item Author detection accuracy and f-score against the Enron E-mail Corpus was significantly higher than author detection accuracy and f-score against the Twitter Short Message Corpus.  	
+	\item Similarly prolific authors had lower accuracies, but higher f-scores than dissimilarly prolific authors.  
+	\item Very prolific authors were detected with greater accuracy and f-score than less prolific authors, even when a prolific author was in a group with other very prolific authors.  
+	\item Storage requirements for many of the model-feature combinations were too large for use on a mobile device.
+	\item There is a small number of method-feature combinations that can meet the storage limitations of a mobile device and still produce reasonable accuracy for author detection.
+	\item The method-feature type combination that suited mobile devices best for the Enron E-mail Corpus was SVM using GM1 and a Web1T\%=0.
+	\item The method-feature type combination that suited mobile devices best for the Twitter Short Message Corpus was SVM using GB3 and a Web1T\%=0.
+\end{itemize}
+	
+	\paragraph*{} These results show that author detection on a mobile device can be implemented and test knowing that .  A working author detection capability is worthy of future work.
 
-\section{Placement on the Mobile Device}
+\section{Future Work}
 
-\section{Study of how big a text/email social network usually is to appropriately size the to of the classifier group size}
+This thesis sets the stage for several future work efforts.  Some future work should focus specifically on implementation of mobile device author detection tools.  Other efforts could focus on the natural language processing impacts of the model-feature combinations. Specific items of future work are:
+\begin{itemize}
+	\item Actually Test the Top Scoring Method-Feature Combinations on Android Phones and other Java-Capable Mobile Platforms
+	\item Rewrite LibLinear Data Structures
+	\item Determine Accuracy and F-Score for Web1T Vocabulary Variations
+	\item Apply Good Turing and Witten-Bell Smoothing to naive Bayes
+	\item Increase Size of the Twitter Short Message Corpus
+	\item Deliver Author Detection Tools to Mobile Device
+	\item Determine Appropriate Group Size for Target Authors
+	\item Study "Stealthiness" for Author Detection Software 
+	\item Study Public Tweets of Former ENRON Employees
+	\item Study of Disk Storage to RAM Usage for Mobile Phones
+	\item Statistical Study of Small-To-Large Versus Small-And-Large Groupings Results
+	\item Conduct SVM and naive Bayes Tests Again with a Large "Noise" Group
+	\item Test Spoken Keyword Recognition Techniques
+\end{itemize}
 
-\section{Study of Disk Storage to RAM Usage for Mobile Phones to support sizing for Dalvik VM or other OS RAM limitations}
+\begin{singlespace}
+\subsection{Actually Test the Top Scoring Method-Feature Combinations on Android Phones and other Java-Capable Mobile Platforms}
+\end{singlespace}
+	\paragraph*{} As part of the preparation for this thesis, an Android application was written to record SMS messages as they were received on an Android phone.  This application had a rudimentary file browser to manage the captured SMS messages.  The tools for this thesis were all written in Java to make the transition to an Android phone seamless.  Even the libLinear version used was written in Java for use on an Android phone.
+	\paragraph*{} With these preparations and the results of this thesis, the only limiting factor to running author detection tests on a variety of Android phones is time.  Another researcher with access to a small number of Android phones or tablets could conduct these these tests in a few weeks.  The tests should span the range of Android versions from Android version 1.6 all the way up to Android version 3.0.  Underpowered phones such as the HTC ADP2 should be tested along with higher end phones like the Google ADP3 or the Motorola Xoom.  These tests could determine not only the feasibility of author detection on a mobile device, but the impact on CPU usage, battery life, and sdcard life.
 
-\section{Statistical Study of Small-To-Large Versus Small-And-Large Groupings Results}
-Could take the most prolific speaker as measured in tokens and compare with most prolific speaker in terms of documents.  Move each of those baseline speaker through different size groupings of other speakers.
+\subsection{Rewrite LibLinear Data Structures}
+	\paragraph*{} A limiting factor in testing method-feature combinations with libLinear was the maximum number of elements the libLinear model was able to hold.  Since the core of the libLinear model is an array of float values, that array is limited to $2^{31}$ elements.  When libLinear initializes the model, each author is combined with each feature and assigned an element in the array.  When $ \text{\# authors} * \text{\# features} > 2^{31}$, libLinear cannot process that method-feature combination.
+	\paragraph*{} To fix this situation, the array of integers in libLinear could be replaced with a vector of integers or list of integers.  Locating a value within the list or vector would be more complex than using an array, so an additional author-feature tracking mechanism might be needed.  Another options would be to change the one dimensional array of integers to a two dimensional array of integers and divide the expected index into the array by $2^{31}$ to determine what row of the two dimensional array should be accessed.
+	\paragraph*{} Simply changing the data structure of libLinear would not suffice for adapting libLinear to extremely large method-feature type combination.  The performance impact of using a more complex data structure would need to be measured.  A more complex data structure could slow libLinear to the point of being unusable, which would undermine the purpose of modifying libLinear in the first place.
 
-\section{Conduct LibLinear and Naive Bayes Tests Again with a Large "Noise" Group}
-For Enron, could have 5 identfied authors and all the rest of the authors with a single author ID acting as the noise group.  Cycle through all authors using the small-to-large and small-and-large grouping strategies.  Repeat these experiments for group sizes of 10, 25, 50, and 75.
+\begin{singlespace}
+\subsection{Determine Accuracy and F-Score for Other Web1T Vocabulary Variations}
+\end{singlespace}
+	\paragraph*{} To support this thesis, minimum perfect hash data structure files and hash signature files were created for every permutation of allowing punctuation, capitalization, sentence boundaries, and handling Web1T "unknown word" tag.  Each permutation was assigned a number between "0" and "15" to identify that permutation.  Only permutation "0", which allows punctuation, capitalization, sentence boundaries, and the Web1T unknown word tag was used in this thesis.  The remaining permutations of "1" through "15" could also be test to determine their accuracy, f-score, and storage requirements.
+	\paragraph*{} Handling punctuation, capitalization, and the Web1T "unknown word" tag is already coded into the Java code used for this thesis.  Sentence boundaries are more difficult to deal with.  Tools that use maximum entropy to find sentence boundaries are available, but were deemed to computationally expensive to use in the already processing and memory intensive environment of this thesis.  An efficient means of sentence boundary detection would need to be found before making actual use of sentence boundaries.  To that end, permutation "8" should give identical results to this thesis since this thesis allowed for sentence boundaries in the Web1T vocabulary, but had no mechanism to train to sentence boundaries.
 
-\section{Actually Test the Top Scoring Method-Feature Combinations on Android Phones}
-\paragraph{} 
+\subsection{Apply Good-Turing or Witten-Bell Smoothing to Naive Bayes}
+	\paragraph*{} Laplace Smoothing was used for naive Bayes in this thesis. In the case of Web1T\% of 1 and higher, the actual counts within the chosen Web1T\% corpus were used to smooth unseen words in the authors model. (There are lots of GB3 features, so the assigned value was relatively small.  There are relatively few GM1 features, so the value was relatively large.)  For Web1T\% of 0, a single value was assigned for smoothing based on the feature type used. In the scoring of accuracy versus size, the Web1T\% of 0 produced higher scores than it Web1T\% of 1 and higher.  
+	\paragraph*{} Since Web1T\% of 0 scored better relative to its more storage intensive counterparts, further exploration of the Web1T\% of 0 space is warranted.  Instead of the very basic Laplace Smoothing, Good-Turing or Witten-Bell could be used over the all the feature types for Web1T\% of 0 to see if performance is significantly improved.  Since Good-Turing and Witten-Bell would likely have little impact on the storage requirements for any given feature type, a higher accuracy would result in a higher score for that feature type.
 
+\subsection{Increase Size of the Twitter Short Message Corpus}
+	\paragraph*{} The large difference in accuracy and f-score between the ENRON E-mail Corpus and Twitter Short Message Corpus may be a function of how few tokens are present in the Twitter Corpus compared to the ENRON E-mail Corpus.  If the most prolific Tweeters could be recorded for several months, a large enough body of tokens could be created to put the token count of some Tweeter on par with the average ENRON e-mail author's token count.  Testing a Twitter corpus with a larger amount of text could clarify whether Twitter is inherently different from e-mail or is simply less predictable when there is a smaller sample to analyze.
+	\paragraph*{} A large Twitter corpus would need to find a few hundred Twitter authors who regularly create original content that is publicly accessible.  The Twitter Garden Hose would need to gather Tweets for a few weeks to identify these prolific Tweeters.  After the initial gathering, the identified prolific Tweeters would be collected on exclusively while screening out re-Tweets.  A good faith effort to identify if any of the prolific Tweeters was a corporation or public figure know to use group of writers for their Tweets would need to be made.  The analysis of Twitter only works if there is truly one person creating the content for each Twitter account tracked.
+	\paragraph*{} Once there are a few Twitter authors that have approximately 15MB of Twitter text and numerous Twitter authors with at least 500K of Twitter text, the Twitter corpus could be considered equivalent to the Enron E-mail Corpus for size of text and relative author prolificity.  At this point, this new Twitter corpus could be tested again using all the method-feature combinations of this thesis to determine if the new Twitter accuracy and f-score more closely resemble the Enron corpus.  If the Twitter results being to more closely resemble Enron results, then there may not be a significant signal difference between short message posts and e-mail messages.
+
+\subsection{Deliver Author Detection Tools to Mobile Device}
+	\paragraph*{} Having a working author detection tool is a step toward implementation, however, that tool still must be delivered to mobile devices.  There are different delivery methods for varying purposes.  Two major categories of delivery are deliberate and covert.
+	\paragraph*{}An example of a deliberate installation would be as a child predator detector on a teen's mobile phone. To support a parent's desire to know if a child predator is texting their teen, simply packaging author detection tools for the Android marketplace is only one step.  Text authored by local child predators would need to be gathered and trained into models.  This would be a non-trivial collections and organization effort. Finding an effective strategy for this collection and organization would be a valuable avenue of study.
+	\paragraph*{} An example of a covert installation would be saturating a combat operations area's mobile devices author detection tool containing models of high value enemies. This delivery to an unknowing device user poses many more difficulties than the deliberate installation. Many questions must be answered for a covert delivery:  Is the local cell tower controlled by an independent entity?  Are their popular applications used by the target demographic?  Can the author detection tools be joined with that popular application?  Is it easy to detect the tools once installed?
+	\paragraph*{} Each of these delivery categories is worthy of their study to determine feasibility and to develop methods to accomplish placement on a mobile device efficiently and reliably.  Each of these delivery categories would also need extensive legal and administrative review to ensure compliance with federal, state, and local laws as well as intelligence collection constraints.
+
+\subsection{Determine Appropriate Group Size for Target Authors}
+\paragraph*{}  Training to a large number of authors may not be necessary.  Do most mobile device users often have a social network of 150 people they routinely communicate with?  While a mobile device user may have hundreds of "friends" on Facebook, they may only send text messages and emails to a small number of people.  If a reasonable number can be determined for expected authors to be detected, then the choice of method-feature combination can be specifically refined to that number of people.  This would keep the authors model size minimized for disk storage as well.
+
+
+\subsection{Study "Stealthiness" for Author Detection Software}
+\paragraph*{} For a covert delivery of author detection tools, it is important to keep the presence of author detection tools unnoticed by the user.  If the author detection tool cause lag in the user interface, noticeably reduces batter time, consumes a large portion of storage, or increases a user's wireless bill, that tool will get noticed.
+\paragraph*{} Methods to conceal the author detection tools could be as simple as storing e-mail and short messages throughout the day, then process them only when the device is on a charger during night hours.  The covert mechanism could be very sophisticated and learn user patterns to find an optimal time to process.  The covert portion of the tools should cease operation if the user picks up the phone or receives a call.
+\paragraph*{} Even if the act of author detection process is concealed, alerting an outside facility that an author has been detected must avoid detection as well.  Sending an SMS could attract attention.  Creating a data connection over wireless unexpectedly could draw attention as well.  Using some covert channel to alert an outside facility would be an important part of using these author detection tools in a covert delivery environment.
+
+\subsection{Study Public Tweets of Former ENRON Employees}
+\paragraph*{} If former ENRON employees maintain public Twitter posts, their compiled Tweets could be tested against author detection models created from their Enron emails.  This could be a straightforward check of signal similarity between short messages and e-mail.
+
+\subsection{Study of Disk Storage to RAM Usage for Mobile Phones}
+\paragraph*{} The storage requirement measurement in this thesis focused heavily on the standard Dalvik VM limit of 16MB.  To reduce the impact of large vocabularies on the Dalvik VM, the vocabulary could be read directly from non-volatile storage like a microSD card.  This would slow processing of intercepted emails or short messages, but could greatly expand the number of mobile device appropriate method-feature combinations.
+\paragraph*{} Studying techniques of accessing vocabulary files direct from disk would entail more than just developing a random access file to hold the vocabulary objects.  The impact on processing time, stealthiness, and possible interruption of applications on the mobile device would need to be examined.  Also, the behavior of Liblinear and naive Bayes would need to be changed to handle a random access file instead of directly accessing RAM.
+
+\begin{singlespace}
+\subsection{Statistical Study of Small-To-Large Versus Small-And-Large Groupings Results}
+\end{singlespace}
+\paragraph*{} A detailed study of how much difference in author prolificity alters the accuracy and f-score for author detection could reveal important breakpoints between authors.  By this, a set of modeled authors who are all highly prolific put into an environment where authors are not prolific could produce an extremely high number of false positive.  By the same token, a set of modeled authors who are not prolific put into an environment of very prolific authors could produce a high number of false negatives.  Studying breakpoints in the variation between authors in prolificity and its impacts on the standard deviation of accuracy and f-score would all people building models of authors to determine if the collected documents of the target authors provide an appropriate amount of text compared to the amount of text in the detecting environment.
+\paragraph*{} This study would not necessarily need to be conducted by a natural language processing researcher.  An operations research analyst may be better suited to analyze the data already produced in this thesis using natural language processing techniques.
+
+\begin{singlespace}
+\subsection{Conduct LibLinear and Naive Bayes Tests Again with a Large "Noise" Group}
+\end{singlespace}
+\paragraph*{} One of the most important tests that could be run against the data in this thesis would be to create noise groups to test the accuracy and f-score of the author detection tools in this thesis.  To do this, the 150 author groups could have all but 5 authors relabeled as "author X".  This would create a six author test set where one author is actually a mix of 145 authors.  This would provide an indication of how well these tools work in an environment filled with many non-targets authors and a few target authors.
+\paragraph*{} This same test could be conducted with 10 authors and an "author X", 25 authors with an "author X", etc.  This is a more realistic test scenario than the 5 versus 5, 10 versus 10, etc tests conducted in this thesis.  
+\paragraph*{} These tests would likely be very time consuming.  Tests run as 150 versus 150 in this thesis often took hours to execute, though having a large number of documents to process against only six classifications of author would reduce the overall time required to process.  While time consuming, the noise group tests are an important next step towards implementation.
+
+\subsection{Test Spoken Keyword Recognition Techniques} 
+\paragraph*{}With text processing examined for use on mobile devices, a natural progression is to detect key words on a mobile device.  While conducting author detection using voice recognition is likely beyond the reach of current mobile devices, detecting key words or combinations of key words may not be.
+\paragraph*{} For example, detecting words often associated with an attack on a convoy could be incorporated on a mobile device which then sends a signal to a central alert center to warn nearby convoys.  A teenager's phone could recognize key words associated with drug use or other dangerous behaviors.  Parents could then receive an alert.
+\paragraph*{} Voice processing is much more difficult than text processing and would require a substantially different approach from this thesis.  Also, accounting for voice tenor and variation in phonemes between languages would be complex. In the end, the operations task of creating author text models may be more daunting than the complexity of keyword recognition from phonemes, buts making keyword recognition a viable path of research.
+
+
+\section{Concluding Remarks}
+\paragraph*{} With millions of mobile phones across the world, leveraging the power of those millions of processors to identify persons of interest could be of enormous use to governments, organizations, and families.  This thesis has shown that viable combinations of methods and feature types do exist as author detection tools for today's mobile devices.  With additional testing and engineering, the model of centralized analysis of data collected from distribute mobile devices could be changed dramatically.  This centralized model could be changed to distributed collection, distribute processing, and distributed notification.  This distributed model offers great promise for detecting persons of interest via mobile devices.
 

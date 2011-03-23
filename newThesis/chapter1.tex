@@ -1,1 +1,46 @@
 \chapter{Introduction}
+\paragraph*{} Mobile devices have become ubiquitous throughout the world.  Mobile phones, in particular, have evolved from large clumsy devices available to only a select few to miniature computers in the hands of millions of people.  Communications on mobile devices encompasses more than just phone calls.  Short messages using SMS and Twitter services are used in increasing numbers everyday.  E-mail, once solely reserved for personal computers and workstations, is now widely used from mobile phones and tablets.
+\paragraph*{} While the versatile and always-on communications provided by mobile devices have been a boost to society, it has also been a powerful tool for terrorists, child predators, and other criminals.  Disposable phones make nefarious communications anonymous and bad people more difficult to find.  To combat that, author detection tools capable of analyzing the preferred text communications, short messages and e-mail, of mobile devices is needed.
+
+\section{Using Mobile Devices to Locate Persons of Interest}
+\paragraph*{} Eavesdropping on text communications across millions of cell phones is difficult at best.  With an estimated 1.81 trillion SMS text messages sent in 20101, processing the massive amount of data created by such an eavesdropping capability is overwhelming for a central processing facility.  With the growth of other short message services like Twitter, text messaging on mobile devices is only growing more prevalent. Central processing of data this massive can create a severe bottleneck.
+\paragraph*{} A better approach could be to decentralize author detection against mobile text communications. In short, empower mobile phones to process text data for persons of interest on the mobile phone itself, not at a central processing facility.  Whether the intent is to screen the text messages of a teen for known child predators or to locate terrorists in a combat error using cell phones to coordinate attacks, the computing ability of millions of cell phone processors is a powerful resource to tap.
+\paragraph*{} The challenge with author detection on a mobile device is managing very limited resources.  Even though modern smart phones are much more powerful than their predecessors, CPU speed and quantity are not on par with a high performance computing facility.  RAM on a smart phone has grown as well, but many mobile operating systems like Android impose severe limits on the allowed heap space.  To detect authors on a mobile device the combination of classification methods, feature types, and vocabularies must be selected more than high accuracy in mind. Storage, processing, and even power requirements must be taken into account.  
+
+\section{Research Questions}
+\paragraph*{} This thesis asks one basic question: can author detection be accomplished on a mobile device?  To answer that question, several supporting questions must be answered first: 
+\begin{itemize}
+	\item For the two dominant mobile phone text mediums, short message and e-mail, what combination of classification method and feature type provides the best accuracy?
+	\item What is the storage requirement for each combination of method and feature type?
+	\item What is the relative value of classification accuracy versus storage requirement for each classification method and feature type?
+	\item Does the relative prolificity of each author in a detection group significantly affect the accuracy of each classification method and feature type?
+	\item Does a highly effective method-feature type combination exist with a small enough storage requirement to be executed on a mobile device?
+\end{itemize}
+
+\paragraph*{} To answer these research questions, two corpora will be used as test data: the Enron E-mail Corpus and the NPS Twitter Short Message Corpus.  The Enron E-mail Corpus will be treated as a representative sample of e-mail communications.  The NPS Twitter Short Message Corpus will be used as a representative sample of short messages.  Since Twitter has identical character limits to SMS messages, the NPS Twitter Short Message Corpus will be considered representative of both SMS and Twitter communications.
+
+\paragraph*{} To account for the widely varied nature of English language use in e-mail and short messages, the Google Web1T N-Grams corpus will be used as a vocabulary to build n-gram models for this thesis.  This will provide an a language reference populated with standard English as well as the evolving language habits on Internet and mobile device users.
+
+
+\section{Significant Findings}
+\paragraph*{} The testing of all classification method, feature type, and vocabulary combinations resulted in 19,782 tests producing 286,050 measurements for f-score and 19,782 measurements for accuracy.  After analysis of these results the following significant findings were made:
+\begin{itemize} 
+	\item The method-feature type combination that suited mobile devices best for the Enron E-mail Corpus was Support Vector Machine classification using 1-grams as a feature type and no reference to the Google Web1T Corpus for vocabulary.  This combination produced an average accuracy of 0.7735 and average f-score of .6257 requiring 4.83MB of storage on the device.
+	\item The method-feature type combination that suited mobile devices best for the Twitter Short Message Corpus was Support Vector Method using Gappy Bigrams with a word distance of 3 and no reference to the Google Web1T Corpus for vocabulary. This combination produce an average accuracy of 0.5203 and average f-score of 0.4820 requiring 3.59MB of storage on the device.
+	\item Very prolific authors were detected with greater accuracy and f-score than less prolific authors, even when a prolific author was in a group with other very prolific authors.
+	\item Author detection accuracy and f-score against the Enron E-mail Corpus was significantly higher than author detection accuracy and f-score against the Twitter Short Message Corpus. However, it was not clear from the results if this disparity in accuracy is due to language differences between e-mail and short message or due to having a large amount of e-mail text compared to the amount of short message text.
+	\item Similarly prolific authors had lower accuracies, but higher f-scores than dissimilarly prolific authors.    
+	\item Storage requirements for many of the model-feature combinations were too large for use on a mobile device.  The most powerful method-feature combinations often had storage requirements above 2GB.
+	\item There is a small number of method-feature combinations that can meet the storage limitations of a mobile device and still produce reasonable accuracy for author detection.
+\end{itemize}
+	
+
+\section{Thesis Structure}
+\paragraph*{} This thesis is organized as follows:
+\begin{itemize}
+\item Chapter I covers the motivation for this research, the research questions being answered in this thesis, and key findings of the research conducted.
+\item Chapter II discusses prior work in authorship detection, machine learning, the corpora used, details of the Google Web1T corpus, and hashing strategies for managing the Google Web1T corpus.
+\item Chapter III describes the combinations of classification methods, feature types, and vocabularies used during experimentation.  The limitations of the experimentation approach are discussed along with the metrics to be used to measure author detection performance.
+\item Chapter V contains conclusions drawn from the results and recommended future work.
+\end{itemize}
+

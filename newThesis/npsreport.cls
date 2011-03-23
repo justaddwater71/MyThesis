@@ -429,13 +429,13 @@
 	        {\titlerule*[1pc]{.}\contentspage}        % filler and page
 
   \newcommand{\NPSend}{
-    \ifnpsauthorindex
-      \chapter*{Referenced Authors}
+    %\ifnpsauthorindex
+    %  \chapter*{Referenced Authors}
       %\addcontentsline{toc}{chapter}{Referenced Authors}
-      \begin{multicols}{3}
-        \printauthorindex
-      \end{multicols}
-    \fi
+    %  \begin{multicols}{3}
+    %    \printauthorindex
+     % \end{multicols}
+    %\fi
    }
 
   % Sections will still be capped, but not in bold
@@ -444,9 +444,11 @@
                 
 
 \newcommand{\NPSappendix}{
+\clearpage
   \appendix                       % Appendices follow
   \addcontentsline{toc}{chapter}{Appendices}  % Insert ``Appendices''
   \def\chaptername{Appendix}  % not sure why this is needed, but it is
+  
 }
 
 
@@ -894,7 +896,7 @@
   \thispagestyle{fancy}\input{#1}\cleardoublepage
 }
 
-\def\bibname{\textbf{REFERENCES\ULABEL}}
+\def\bibname{\textbf{LIST OF REFERENCES\ULABEL}}
 
 
 

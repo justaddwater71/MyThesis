@@ -22,6 +22,7 @@
 
 % And here is the main thesis
 
+\usepackage{verbatim}
 \usepackage{amstext} %added by JHG to support \text in an equation
 \usepackage{amsmath} %added by JHG to support more equation options
 \usepackage{rotating} %add by JHG to allow sideways table labels
@@ -29,6 +30,7 @@
 \reserveinserts{18}
 \usepackage{morefloats}
 \usepackage{hyperref}
+\hypersetup{pdfborder={0 0 0 } }
 
 
 \securitybanner{}
@@ -37,12 +39,12 @@
 \degree{Master of Science in Computer Science}
 \degreeabbreviation{MS}
 \department{Department of Computer Science}
-\thesisadvisor{Dr. Rob Beverly}
-\secondreader{Dr. Craig Martell}
-\departmentchair{Dr. Peter Denning}
-\rank{Commander}
-\prevdegrees{Bachelor of Engineering in Aerospace Engineering}
-\degreedate{March 25, 2011} 
+\thesisadvisor{Rob Beverly}
+\secondreader{Craig Martell}
+\departmentchair{Peter Denning}
+\rank{Commander, United States Navy}
+\prevdegrees{B.E. in Aerospace Engineering, Georgia Institute of Technology}
+\degreedate{March 2011} 
 \distribution{Approved for public release; distribution is unlimited}
 \RPTpreparedFor{}
 \abstract{
@@ -61,7 +63,7 @@ Traditional author detection is conducted on powerful computers using documents 
 \SupplementaryNotes{ The views expressed in this thesis are those of
   the author and do not reflect the official policy or position of the
   Department of Defense or the U.S. Government. \textbf{\footnotesize
-    IRB Protocol Number: XXXX}}
+    IRB Protocol Number: NA}}
 
 % These are optional:
 %\ContractNumber{}
@@ -140,7 +142,9 @@ Traditional author detection is conducted on powerful computers using documents 
 %[APPENDIX BODY]
 
 %\include{appendixDummy}
-\include{appendixA} %LibLinear Accuracy for ENRON
+%past all of appendix A directly into thesis.tex HERE to fix the TOC issue
+%\include{appendixA} %LibLinear Accuracy for ENRON
+\input{appendixA.tex}
 \include{appendixB} %LibLinear Accuracy for Twitter
 \include{appendixC} %Naive Bayes Accuracy for ENRON
 \include{appendixD} %Naive Bayes Accuracy for Twitter

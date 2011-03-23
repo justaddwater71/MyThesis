@@ -1,9 +1,14 @@
 \chapter{Results and Analysis}
 
-\section{Most Effective Combination of Classification Methods, Feature Types, and Vocabulary}
-	\paragraph*{} Two measurements of effectiveness were used in this thesis: accuracy and f-score.  Since the accuracy for each author is not the focus of this thesis, but rather the overall effectiveness of each classifier, feature type, and vocabulary combination, f-score is averaged for each combination.  In each test set, average accuracy was higher then MLE.  Likewise, average f-score was always lower than average accuracy.
+	\paragraph*{} After 19,782 tests producing 286,050 measurements for f-score and 19,782 measurements for accuracy, several notable results emerged.  Most importantly, a small number of method-feature combinations do exist that both provide a reasonable author detection accuracy and have a storage requirement of less than 16MB.  Further, in studying the effects of using the Google Web1T Corpus, Web1T did not provide enough benefit to accuracy to justify its large storage requirement.  This does not mean that Web1T did not have a positive impact on accuracy, especially for the Enron corpus and naive Bayes.  It was also found that Web1T had different impacts on dissimilarly prolific authors than on similarly prolific authors. This chapter provides specific details about usable method-feature combinations and the impacts of Web1T.
+	\paragraph*{} There is one notation convention used in this chapter that requires explanation.  The notation Web1T\% refers to the top percentage of the Web1T corpus used as the vocabulary in testing.  For instance, Web1T\% of 1 for OSB3 means that the top 1\% of orthogonal sparse bigrams of distance three (OSB3) were used as the vocabulary.  Web1T\% of 2 for GB3 means that the top 2\% of gappy bigrams of distance three (GB3) are used.  This pattern continues for Web1T\% of 4, 8, and 16 and feature types of 1-grams (GM1), 2-grams (GM2), and 5-grams (GM5).  The only special case is for Web1T\% of 0.  In this case, there was no reference to the Google Web1T Corpus at all in constructing the vocabulary.  The vocabulary is built using any and all tokens found in the training set.
 
-	\paragraph*{} At this point, it would be natural to simply compare the highest accuracy for each method-feature-vocabulary combination in the thesis and determine which combination performed best.  This analysis would be flawed.  Due to the underlying data structure in the Liblinear model, there is an absolute maximum number, $2^{31}$ of elements allowed in the model.  There is one element created in the model for each feature-classifier combination.  This means that the number of authors multiplied by the number of features cannot exceed $2^{31}$.  Figure \ref{fig:FeatureVSsize} shows the value of each feature-vocabulary-group combination.  Cells highlighted in red cannot be used with the LibLinear model.  There will be no LibLinear results for these combinations.  
+\begin{singlespace}
+\section{Most Effective Combination of Classification Methods, Feature Types, and Vocabulary}
+\end{singlespace}
+	\paragraph*{} Two measurements of effectiveness were used in this thesis: accuracy and f-score.  Since the accuracy for each author is not the focus of this thesis, but rather the overall effectiveness of each classifier, feature type, and vocabulary combination, f-score is averaged, over the set of authors, for each combination.  In each test set, average accuracy was higher than MLE.  Likewise, average f-score was always lower than average accuracy.
+
+	\paragraph*{} At this point, it would be natural to simply compare the highest accuracy for each method-feature-vocabulary combination in the thesis and determine which combination performed best.  This analysis would be flawed.  Due to the underlying data structure in the libLinear model, there is an absolute maximum number, $2^{31}$, of elements allowed.  The libLinear tool creates one element created in its model for each feature-classifier combination.  This means that the number of for each author, there is a dedicated cell for each feature.  The data structure impact for the libLinear tool is array size become the number of authors multiplied by the number of features.  Array size in Java cannot exceed $2^{31}$. This limits the of features that can be used with libLinear for a given number of authors. Figure \ref{fig:FeatureVSsize} shows the value of each feature-vocabulary-group combination.  Cells highlighted in red cannot be used with the LibLinear model.  If only the top $2^{31}$ features from each Web1T\% was used, then large Web1T\% values would have identical features.  For instance, two very large set are OSB3 for Web1T\% of 8 and Web1T\% of 16.  If only the top $2^{31}$ features were used from each of these features sets, then both of these sets, which far exceed $2^{31}$ features, would hold the same $2^{31}$ features.  This would create identical results and provide no additional insight into the true performance of that vocabulary. Therefore, due to the data structure limitation of the libLinear tool, there will be no LibLinear results for feature-author combinations that require an array larger than $2^{31}$ elements in the libLinear model.  
 	
 
 \begin{figure}[htbp!]
@@ -16,20 +21,22 @@
 \end{figure}
 
 
-	\paragraph*{} The impact of this hard maximum is large vocabularies show a higher accuracy and f-score than smaller vocabularies.  This is not necessarily because the large vocabularies are more effective, but because the the larger vocabularies do not have the lower accuracy and f-score outcomes of the large group sizes.  To illustrate this, the top ten feature-method combinations are show in Table \ref{tab:enron-accuracy-filtered-ranked} for the ENRON Email Corpus.  The performance of each Liblinear OSB3-vocabulary combination is shown in Figure \ref{fig:plot-liblinear-enron-accuracy}. Using Table \ref{tab:twitter-accuracy-filtered-ranked} to evaluate effective would lead to a conclusion that LibLinear OSB3 has the best accuracy and f-score in this thesis.  However, plotting all OSB3 results for each Web1t \%  in \ref{fig:plot-liblinear-enron-accuracy} shows that all OSB3-vocabulary combinations perform along a similar curve.  The Web1T \% $= 0$ is actually able to perform against all group sizes (5, 10, 25, 50, 75, and 150) and, thus, appears to perform worse than other OSB3s in the table, but clearly performs similarly from Figure \ref{fig:plot-liblinear-enron-accuracy}.  From this example, it becomes clear that simply using the table values in Appendix A through Appendix D provides an insufficient analysis.  A better analysis is provided by examining the plots in Appendix Q through Appendix T.  
+	\paragraph*{}  While libLinear is the chosen SVM tool for this thesis, the classifier method being test is SVM.  For the rest of this chapter, results will be analyzied by method instead of by tool.  For this reason, results will be discussed in terms of SVM and naive Bayes instead of in terms of libLinear and naive Bayes.
+
+	\paragraph*{} The impact of this hard maximum is large vocabularies show a higher accuracy and f-score than smaller vocabularies.  This is not necessarily because the large vocabularies are more effective, but because the larger vocabularies do not have the lower accuracy and f-score outcomes of the large group sizes.  To illustrate this, the top twenty feature-method combinations are show in Table \ref{tab:enron-accuracy-filtered-ranked} for the ENRON E-mail Corpus.  The performance of each SVM OSB3-vocabulary combination is shown in Figure \ref{fig:plot-liblinear-enron-accuracy}. Using Table \ref{tab:twitter-accuracy-filtered-ranked} to evaluate accuracy would lead to a conclusion that SVM OSB3 has the best accuracy and f-score in this thesis.  However, plotting all OSB3 results for each Web1t \%  in \ref{fig:plot-liblinear-enron-accuracy} shows that all OSB3-vocabulary combinations perform along a similar curve.  The Web1T \% $ of 0$ is actually able to perform against all group sizes (5, 10, 25, 50, 75, and 150) and, thus, appears to perform worse than other OSB3s in the table, but clearly performs similarly from Figure \ref{fig:plot-liblinear-enron-accuracy}.  From this example, it becomes clear that simply using the table values in Appendix A through Appendix D provides an insufficient analysis.  A better analysis is provided by examining the plots in Appendix Q through Appendix T.  
 	
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.75]{liblinear-enron-avg-by-group_size}
-	\caption{Accuracy of LibLinear OSB3 for the ENRON Email Corpus}
+	\caption{Accuracy of SVM OSB3 for the ENRON E-mail Corpus}
 	\label{fig:plot-liblinear-enron-accuracy}
 \end{figure}
 	
-	\paragraph*{}It is important to note that this is not an issue for combinations using Naive Bayes as a classification method.  However, Naive Bayes did not outperform Liblinear in these tests, so a careful analysis of LibLinear using the plots in Appendix Q through Appendix T is required.
+	\paragraph*{}It is important to note that this is not an issue for combinations using naive Bayes as a classification method.  However, naive Bayes did not outperform SVM in these tests, so a careful analysis of SVM using the plots in Appendix Q through Appendix T is required.
 
-	\paragraph*{} By examining the plots in Appendix Q through Appendix T, a clear trend emerges that the bootstrapped models, meaning models that made no use of the Web1T corpus as a vocabulary reference) performed similarly for liblinear to Web1T vocabularies.  In all cases, the bootstrapped liblinear tests are usable for all group sizes.  In this case, a good comparison would be to drop all liblinear combinations that are not usable for all group sizes, then compare these remaining liblinear tests against all Naive Bayes tests.  Since all Naive Bayes tests were usable for all group sizes, this makes the comparison fair.
+	\paragraph*{} By examining the plots in Appendix Q through Appendix T, a clear trend emerges that the bootstrapped models, meaning models that made no use of the Web1T corpus as a vocabulary reference) performed similarly for SVM to Web1T vocabularies.  In all cases, the bootstrapped SVM tests are usable for all group sizes.  In this case, a good comparison would be to drop all SVM combinations that are not usable for all group sizes, then compare these remaining SVM tests against all naive Bayes tests.  Since all naive Bayes tests were usable for all group sizes, this makes the comparison fair.
 	
-	\paragraph*{} After extracting out liblinear tests that were not usable against all groups sizes, the highest accuracy method-feature combination show the most accurate results for the ENRON Email Corpus in Table \ref{tab:enron-accuracy-filtered-ranked} below.  The highest accuracy method-feature combination show the most accurate results for the Twitter Short Message Corpus in Table \ref{tab:twitter-accuracy-filtered-ranked} below.
+	\paragraph*{} After extracting out SVM tests that were not usable against all groups sizes, the highest accuracy method-feature combination show the most accurate results for the ENRON E-mail Corpus in Table \ref{tab:enron-accuracy-filtered-ranked}.  The highest accuracy method-feature combination show the most accurate results for the Twitter Short Message Corpus in Table \ref{tab:twitter-accuracy-filtered-ranked}.
 	
 	
 	\begin{table}[htbp!]
@@ -39,30 +46,30 @@
 			\multicolumn{2}{|c|}{Combinations} & \multicolumn{5}{|c|}{Accuracy}\\
 			\hline
 			Method & Feature Type & Web1T \% & AVG & MIN & MAX & STDDEV\\ \hline 
-			liblinear & OSB3 & 0 & 0.8362 & 0.5106 & 0.9732 & 0.1043\\ \hline 
-			nb & OSB3 & 16 & 0.8325 & 0.5213 & 0.9823 & 0.0890\\ \hline 
-			nb & OSB3 & 8 & 0.8315 & 0.5213 & 0.9714 & 0.0893\\ \hline 
-			nb & OSB3 & 4 & 0.8274 & 0.5197 & 0.9587 & 0.0924\\ \hline 
-			liblinear & GM2 & 0 & 0.8262 & 0.4824 & 0.9753 & 0.1087\\ \hline 
-			liblinear & GB3 & 0 & 0.8212 & 0.4787 & 0.9835 & 0.1121\\ \hline 
-			nb & GB3 & 16 & 0.8195 & 0.5201 & 0.9674 & 0.0947\\ \hline 
-			nb & GB3 & 4 & 0.8194 & 0.5340 & 0.9522 & 0.0941\\ \hline 
-			liblinear & GB3 & 1 & 0.8191 & 0.4731 & 0.9673 & 0.1110\\ \hline 
-			liblinear & GB3 & 2 & 0.8184 & 0.4765 & 0.9805 & 0.1113\\ \hline 
-			nb & GB3 & 8 & 0.8172 & 0.5255 & 0.9782 & 0.0935\\ \hline 
-			nb & OSB3 & 1 & 0.8126 & 0.3615 & 0.9574 & 0.1185\\ \hline 
-			nb & OSB3 & 2 & 0.8095 & 0.3526 & 0.9575 & 0.1283\\ \hline 
-			nb & OSB3 & 0 & 0.8058 & 0.5185 & 0.9592 & 0.0970\\ \hline 
-			liblinear & GM5 & 16 & 0.7918 & 0.3908 & 0.9676 & 0.1204\\ \hline 
-			liblinear & GM5 & 8 & 0.7872 & 0.3908 & 0.9513 & 0.1193\\ \hline 
-			nb & GB3 & 2 & 0.7857 & 0.4790 & 0.9669 & 0.1166\\ \hline 
-			liblinear & GM5 & 4 & 0.7755 & 0.3908 & 0.9455 & 0.1241\\ \hline 
-			liblinear & GM1 & 4 & 0.7742 & 0.4006 & 0.9590 & 0.1212\\ \hline 
-			liblinear & GM1 & 8 & 0.7740 & 0.4074 & 0.9570 & 0.1223\\ \hline 
-			liblinear & GM1 & 0 & 0.7735 & 0.3776 & 0.9531 & 0.1222\\ \hline 
+			SVM & OSB3 & 0 & 0.8362 & 0.5106 & 0.9732 & 0.1043\\ \hline 
+			NB & OSB3 & 16 & 0.8325 & 0.5213 & 0.9823 & 0.0890\\ \hline 
+			NB & OSB3 & 8 & 0.8315 & 0.5213 & 0.9714 & 0.0893\\ \hline 
+			NB & OSB3 & 4 & 0.8274 & 0.5197 & 0.9587 & 0.0924\\ \hline 
+			SVM & GM2 & 0 & 0.8262 & 0.4824 & 0.9753 & 0.1087\\ \hline 
+			SVM & GB3 & 0 & 0.8212 & 0.4787 & 0.9835 & 0.1121\\ \hline 
+			NB & GB3 & 16 & 0.8195 & 0.5201 & 0.9674 & 0.0947\\ \hline 
+			NB & GB3 & 4 & 0.8194 & 0.5340 & 0.9522 & 0.0941\\ \hline 
+			SVM & GB3 & 1 & 0.8191 & 0.4731 & 0.9673 & 0.1110\\ \hline 
+			SVM & GB3 & 2 & 0.8184 & 0.4765 & 0.9805 & 0.1113\\ \hline 
+			NB & GB3 & 8 & 0.8172 & 0.5255 & 0.9782 & 0.0935\\ \hline 
+			NB & OSB3 & 1 & 0.8126 & 0.3615 & 0.9574 & 0.1185\\ \hline 
+			NB & OSB3 & 2 & 0.8095 & 0.3526 & 0.9575 & 0.1283\\ \hline 
+			NB & OSB3 & 0 & 0.8058 & 0.5185 & 0.9592 & 0.0970\\ \hline 
+			SVM & GM5 & 16 & 0.7918 & 0.3908 & 0.9676 & 0.1204\\ \hline 
+			SVM & GM5 & 8 & 0.7872 & 0.3908 & 0.9513 & 0.1193\\ \hline 
+			NB & GB3 & 2 & 0.7857 & 0.4790 & 0.9669 & 0.1166\\ \hline 
+			SVM & GM5 & 4 & 0.7755 & 0.3908 & 0.9455 & 0.1241\\ \hline 
+			SVM & GM1 & 4 & 0.7742 & 0.4006 & 0.9590 & 0.1212\\ \hline 
+			SVM & GM1 & 8 & 0.7740 & 0.4074 & 0.9570 & 0.1223\\ \hline 
+			SVM & GM1 & 0 & 0.7735 & 0.3776 & 0.9531 & 0.1222\\ \hline 
 
 			\end{tabular}
-		\caption{Highest Accuracy Method-Feature Type Combinations for the ENRON Email Corpus}
+		\caption{Highest Accuracy Method-Feature Type Combinations for the ENRON E-mail Corpus}
 		\label{tab:enron-accuracy-filtered-ranked}
 		\end{center}
 	\end{table}
@@ -76,27 +83,27 @@
 			\multicolumn{2}{|c|}{Combinations} & \multicolumn{5}{|c|}{Accuracy}\\
 			\hline
 			Method & Feature Type & Web1t \% & AVG & MIN & MAX & STDDEV\\ \hline 
-			nb & OSB3 & 0 & 0.5525 & 0.2320 & 0.8164 & 0.1339\\ \hline 
-			nb & GB3 & 16 & 0.5327 & 0.2216 & 0.8216 & 0.1351\\ \hline 
-			nb & GB3 & 4 & 0.5271 & 0.2190 & 0.8546 & 0.1375\\ \hline 
-			nb & GB3 & 8 & 0.5256 & 0.2176 & 0.8474 & 0.1362\\ \hline 
-			nb & GB3 & 2 & 0.5249 & 0.2186 & 0.7823 & 0.1324\\ \hline 
-			liblinear & GM2 & 4 & 0.5228 & 0.1809 & 0.8210 & 0.1477\\ \hline 
-			nb & GB3 & 1 & 0.5204 & 0.2148 & 0.8125 & 0.1319\\ \hline 
-			nb & GB3 & 0 & 0.5203 & 0.1973 & 0.8021 & 0.1389\\ \hline 
-			liblinear & GM2 & 1 & 0.5197 & 0.1882 & 0.8454 & 0.1483\\ \hline 
-			liblinear & GM1 & 8 & 0.5187 & 0.1743 & 0.9026 & 0.1525\\ \hline 
-			liblinear & GM2 & 2 & 0.5186 & 0.1830 & 0.8232 & 0.1495\\ \hline 
-			liblinear & GM1 & 1 & 0.5159 & 0.1768 & 0.8211 & 0.1494\\ \hline 
-			liblinear & GM1 & 4 & 0.5149 & 0.1874 & 0.8546 & 0.1485\\ \hline 
-			liblinear & GM1 & 0 & 0.5141 & 0.1802 & 0.8089 & 0.1485\\ \hline 
-			nb & GM1 & 0 & 0.5140 & 0.1247 & 0.7714 & 0.1631\\ \hline 
-			liblinear & GM1 & 16 & 0.5134 & 0.1865 & 0.8324 & 0.1483\\ \hline 
-			liblinear & GM1 & 2 & 0.5131 & 0.1818 & 0.8966 & 0.1487\\ \hline 
-			liblinear & GM5 & 1 & 0.4768 & 0.1398 & 0.8362 & 0.1521\\ \hline 
-			nb & GM2 & 0 & 0.4750 & 0.1630 & 0.7890 & 0.1406\\ \hline 
-			nb & OSB3 & 2 & 0.4739 & 0.1790 & 0.7734 & 0.1370\\ \hline 
-			nb & OSB3 & 8 & 0.4707 & 0.1787 & 0.7790 & 0.1373\\ \hline 
+			NB & OSB3 & 0 & 0.5525 & 0.2320 & 0.8164 & 0.1339\\ \hline 
+			NB & GB3 & 16 & 0.5327 & 0.2216 & 0.8216 & 0.1351\\ \hline 
+			NB & GB3 & 4 & 0.5271 & 0.2190 & 0.8546 & 0.1375\\ \hline 
+			NB & GB3 & 8 & 0.5256 & 0.2176 & 0.8474 & 0.1362\\ \hline 
+			NB & GB3 & 2 & 0.5249 & 0.2186 & 0.7823 & 0.1324\\ \hline 
+			SVM & GM2 & 4 & 0.5228 & 0.1809 & 0.8210 & 0.1477\\ \hline 
+			NB & GB3 & 1 & 0.5204 & 0.2148 & 0.8125 & 0.1319\\ \hline 
+			NB & GB3 & 0 & 0.5203 & 0.1973 & 0.8021 & 0.1389\\ \hline 
+			SVM & GM2 & 1 & 0.5197 & 0.1882 & 0.8454 & 0.1483\\ \hline 
+			SVM & GM1 & 8 & 0.5187 & 0.1743 & 0.9026 & 0.1525\\ \hline 
+			SVM & GM2 & 2 & 0.5186 & 0.1830 & 0.8232 & 0.1495\\ \hline 
+			SVM & GM1 & 1 & 0.5159 & 0.1768 & 0.8211 & 0.1494\\ \hline 
+			SVM & GM1 & 4 & 0.5149 & 0.1874 & 0.8546 & 0.1485\\ \hline 
+			SVM & GM1 & 0 & 0.5141 & 0.1802 & 0.8089 & 0.1485\\ \hline 
+			NB & GM1 & 0 & 0.5140 & 0.1247 & 0.7714 & 0.1631\\ \hline 
+			SVM & GM1 & 16 & 0.5134 & 0.1865 & 0.8324 & 0.1483\\ \hline 
+			SVM & GM1 & 2 & 0.5131 & 0.1818 & 0.8966 & 0.1487\\ \hline 
+			SVM & GM5 & 1 & 0.4768 & 0.1398 & 0.8362 & 0.1521\\ \hline 
+			NB & GM2 & 0 & 0.4750 & 0.1630 & 0.7890 & 0.1406\\ \hline 
+			NB & OSB3 & 2 & 0.4739 & 0.1790 & 0.7734 & 0.1370\\ \hline 
+			NB & OSB3 & 8 & 0.4707 & 0.1787 & 0.7790 & 0.1373\\ \hline 
 
 			\end{tabular}
 		\caption{Highest Accuracy Method-Feature Type Combinations for the Twitter Short Message Corpus}
@@ -105,17 +112,19 @@
 	\end{table}
 	
 	
-	\paragraph*{} From Table \ref{tab:enron-accuracy-filtered-ranked} orthogonal sparse bigrams and gappy bigrams perform very well overall, with a traditional bigram making an entry at number five.  The best performing method-feature combination is liblinear OSB3 with a Web1t\% of 0.  The next three combinations are Naive Bayes classifiers using OSB3 with large Web1T\% vocabulary sizes.  The results are similar for gappy bigrams, but at a reduced accuracy of approximately one percent.
+	\paragraph*{} From Table \ref{tab:enron-accuracy-filtered-ranked} orthogonal sparse bigrams and gappy bigrams perform very well overall, with a traditional bigram making an entry at number five.  The best performing method-feature combination is SVM OSB3 with a Web1t\% of 0.  The next three combinations are naive Bayes classifiers using OSB3 with large Web1T\% vocabulary sizes.  The results are similar for gappy bigrams, but at a reduced accuracy of approximately one percent.
 	
-	\paragraph*{} From Table \ref{tab:twitter-accuracy-filtered-ranked}, the top performing method-feature combination is Naive Bayes OSB3 with a Web1T \% of 0.  The next four positions are filled with gappy bigrams with sizable Web1T\% vocabularies.  Why Twitter responds better to Naive Bayes as opposed to email responding better to liblinear is left to future work.
+	\paragraph*{} From Table \ref{tab:twitter-accuracy-filtered-ranked}, the top performing method-feature combination is naive Bayes OSB3 with a Web1T \% of 0.  The next four positions are filled with gappy bigrams with sizable Web1T\% vocabularies.  Why Twitter responds better to naive Bayes as opposed to e-mail responding better to SVM is left to future work.
 	
 	\paragraph*{} While the above table shows the best performing, accuracy is not always a solid measure of classification effectiveness.  A better measure is f-score.  As shown repeatedly by the tables in Appendix A through Appendix D, the relative performance of average f-score matched the relative performance of accuracy for each test set.  In all cases, f-score was lower than the average accuracy.  Even more telling about the results is every test set shows a minimum f-score of 0.  That means that at least one author had an f-score of zero in each test.  This accounts for the high standard deviation for f-scores across all tests.  For f-scores of approximately 0.65 the standard deviation was approximately 0.25.
 	
-	\paragraph*{} An examination of the confusion matrices for each test can provide insight into whether there was a "poison" author that never got selected or if there was an author who was a selection "magnet" always getting too many selections for documents.  Due to the large number of confusions matrices in this thesis ( nearly 19,782 confusion matrices created from 57 tests * 3 size groupings * 6 vocabulary sizes * 5 feature types * 2 corpora * 2 methods -  738 unusable LibLinear tests) the confusions matrices are not presented in this thesis, but are archived by the NPS Natural Language Processing lab in comma separated value files.
+	\paragraph*{} An examination of the confusion matrices for each test can provide insight into whether there was a "poison" author that never got selected or if there was an author who was a selection "magnet" always getting too many selections for documents.  Due to the large number of confusions matrices in this thesis ( nearly 19,782 confusion matrices created from 57 tests * 3 size groupings * 6 vocabulary sizes * 5 feature types * 2 corpora * 2 methods -  738 unusable SVM tests) the confusions matrices are not presented in this thesis, but are archived by the NPS Natural Language Processing lab in comma separated value files.
 
+\begin{singlespace}
 \section{Impact of Author Relative Prolificity on Classifier Effectiveness}
-	\paragraph*{} While identifying the best accuracy results for method-feature combinations is important, these results could mask a weakness in the method-feature combinations.  Does the relative prolificity of each author drastically impact the results?  To answer this question, the tests in this thesis were conducted in three groupings: small-to-large, small-and-large, and random.  As explained fully in Chapter 3, these groupings were based on a rank-ordering by size for each author's total document collection.  For small-to-large, the least prolific authors are grouped together, the most prolific authors are grouped together. The idea behind the small-to-large group is to keep the difference in size between the authors to a minimum. For small-and-large, the opposite idea is employed.  The smallest authors are combined with the largest authors using a bucket strategy.  Each bucket contains rank-ordered by size authors of similar size.  One author is picked from each bucket to provide a maximum variety of author document collections sizes.  In the random group, the authors are grouped together using a pseudo-random number generator, where each author has been assigned a number.
-	\paragraph*{} The results of testing in this thesis for accuracy and f-score, broken out by small-to-large, small-and-large, and random are given in Appendix E through Appendix H.  The results from Appendix E, LibLinear Results for the ENRON Email Corpus, show the accuracy for small-to-large is always lower than the accuracy for small-and-large and random.  However, the f-score for small-to-large is always higher than the f-score for small-and-large and random.  This result shows how accuracy is dominated by the MLE author, since allowing a more prolific author into a group with less prolific authors tends to raise accuracy, but hurts f-score. To illustrate the effect of author prolificity on accuracy and f-score Table \ref{tab:enron-stl-confusionmatrix} shows the confusion matrix for a small-to-large grouping of size 10 for GB3, Web1T\%=0.  Table \ref{tab:enron-sal-confusionmatrix} shows the confusion matrix for a small-and-large grouping of size 10 for GB3, Web1T\%=0. 
+\end{singlespace}
+	\paragraph*{} While identifying the best accuracy results for method-feature combinations is important, these results could mask a weakness in the method-feature combinations.  Does the relative prolificity of each author impact the results?  To answer this question, the tests in this thesis were conducted in three groupings: small-to-large, small-and-large, and random.  As explained fully in Chapter 3, these groupings were based on a rank-ordering by size for each author's total document collection.  For small-to-large, the least prolific authors are grouped together, while the most prolific authors are grouped together. The idea behind the small-to-large group is to keep the difference in total documents size between the authors to a minimum. For small-and-large, the opposite idea is employed.  The smallest authors are combined with the largest authors using a bucket strategy.  Each bucket contains rank-ordered by size authors of similar size.  One author is picked from each bucket to provide a maximum variety of author document collections sizes.  In the random group, the authors are grouped together using a pseudo-random number generator, where each author has been assigned a number.
+	\paragraph*{} The results of testing in this thesis for accuracy and f-score, broken out by small-to-large, small-and-large, and random are given in Appendix E through Appendix H.  The results from Appendix E, SVM Results for the ENRON E-mail Corpus, show the accuracy for small-to-large is always lower than the accuracy for small-and-large and random.  However, the f-score for small-to-large is always higher than the f-score for small-and-large and random.  This result shows how accuracy is dominated by the MLE author, since allowing a more prolific author into a group with less prolific authors tends to raise accuracy, but hurts f-score. To illustrate the effect of author prolificity on accuracy and f-score Table \ref{tab:enron-stl-confusionmatrix} shows the confusion matrix for a small-to-large grouping of size 10 for GB3, Web1T\%=0.  Table \ref{tab:enron-sal-confusionmatrix} shows the confusion matrix for a small-and-large grouping of size 10 for GB3, Web1T\%=0. 
 	
 	\begin{table}[htbp!]
 	\begin{center}
@@ -161,16 +170,16 @@
 		\end{center}	
 	\end{table}
 	
-	\paragraph*{} Table \ref{tab:enron-stl-confusionmatrix} represents a group of similarly prolfic authors.  One author, author 91, not only has the highest number of true positives, 17, but has a large number of false positives.  The combined false positives for all other authors is 21, compared to author 91's 29 false postives.  That counts as 29 false negatives spread across the other 9 authors, impacting their false negative value.  For calculating f-score, a higher false negative rate decreases recall and, since true postives remain constant, false postives fall, increasing precision.  In the small-to-large grouping, one author has very few false postives, creating a high precision.  The other authors end up with a high recall.  As the f-score for each author is average for the group, these unbalanced numbers drive the f-score higher while maintaining a lower accuracy.
-	\paragraph*{} Table \ref{tab:enron-sal-confusionmatrix} represents a group of dissimilarly prolific authors.  In this grouping, one author does not dominate the number of false positives.  This more evenly spread set of false positives and false negatives keeps the overal f-score lower, while maintaining a higher accuracy.  The bottom line is the high outlier precision score for one author in the small-to-large group gives a higher f-score, but lower accuracy.  A median measurement of f-score might provide a better picture of overall f-score behavior than an average f-score.
+	\paragraph*{} Table \ref{tab:enron-stl-confusionmatrix} represents a group of similarly prolific authors.  One author, author 91, not only has the highest number of true positives, 17, but has a large number of false positives.  The combined false positives for all other authors is 21, compared to author 91's 29 false positives.  That counts as 29 false negatives spread across the other 9 authors, impacting their false negative value.  For calculating f-score, a higher false negative rate decreases recall and, since true positives remain constant, false positives fall, increasing precision.  In the small-to-large grouping, one author has very few false positives, creating a high precision.  The other authors end up with a high recall.  As the f-score for each author is average for the group, these unbalanced numbers drive the f-score higher while maintaining a lower accuracy.
+	\paragraph*{} Table \ref{tab:enron-sal-confusionmatrix} represents a group of dissimilarly prolific authors.  In this grouping, one author does not dominate the number of false positives.  This more evenly spread set of false positives and false negatives keeps the overall f-score lower, while maintaining a higher accuracy.  The bottom line is the high outlier precision score for one author in the small-to-large group gives a higher f-score, but lower accuracy.  A median measurement of f-score might provide a better picture of overall f-score behavior than an average f-score.
 	\paragraph*{} The other issue that arises from the f-score average is the small-to-large f-score has a smaller standard deviation than the small-and-large f-score.  This points to a tighter grouping of values.  This arises from all but one author having similar f-score values.  The small-and-large group has no single outlier f-score to drag the f-score higher, but the values do have greater variation among all points.
-	\paragraph*{}The above paragraphs make use of a cursory examination of the behavior of author detection due to author prolificity.  An in depth statistical analysis of the difference between the author groupings is warranted as future work.  The goal of using these different groupings was to ensure that the tools chosen in this thesis behaved predictably with respect to varying author prolificity within a detection group.  To examine that behavior, plots of accuracy, average f-score, MLE, precision, and recall for each method-feature combination across all usable Web1T\% vocabularies is included in Appendix Q thorugh Appendix U.  To illustrate that the impact of author prolificity is predictable across method-feature combinations and corpora, Figure \ref{fig:liblinear-enron-GB3-10-measures} and Figure \ref{fig:liblinear-twitter-GB3-10-measures} are show as representative samples of overall classifer and corpora results.
+	\paragraph*{}The above paragraphs make use of a cursory examination of the behavior of author detection due to author prolificity.  An in-depth statistical analysis of the difference between the author groupings is warranted as future work.  The goal of using these different groupings was to ensure that the tools chosen in this thesis behaved predictably with respect to varying author prolificity within a detection group.  To examine that behavior, plots of accuracy, average f-score, MLE, precision, and recall for each method-feature combination across all usable Web1T\% vocabularies is included in Appendix Q through Appendix U.  To illustrate that the impact of author prolificity is predictable across method-feature combinations and corpora, Figure \ref{fig:liblinear-enron-GB3-10-measures} and Figure \ref{fig:liblinear-twitter-GB3-10-measures} are shown as representative samples of overall classifier and corpora results.
 	
 \begin{figure}[htbp!]
 	\begin{center}
 	\centering
 	\includegraphics[scale=1.00]{figure_liblinear_enron_grouping_compare}
-	\caption{Liblinear Limits Due to Vocabulary Size and Group Size}
+	\caption{SVM Limits Due to Vocabulary Size and Group Size}
 	\label{fig:liblinear-enron-GB3-10-measures}
 	\end{center}
 \end{figure}
@@ -179,21 +188,38 @@
 	\begin{center}
 	\centering
 	\includegraphics[scale=1.00]{figure_liblinear_twitter_grouping_compare}
-	\caption{Liblinear Limits Due to Vocabulary Size and Group Size}
+	\caption{SVM Limits Due to Vocabulary Size and Group Size}
 	\label{fig:liblinear-twitter-GB3-10-measures}
 	\end{center}
 \end{figure}
 	
-	\paragraph*{} From Figure \ref{fig:liblinear-enron-GB3-10-measures} some trends become apparent.  As the small-to-large graph for the Enron corpus moves from left to right, the accuracy, f-score, precision, and recall all increase in tight agreement.  This correlates to the wide variation in proflificity between the least prolific group on the far left, file 000\_009, and the last file on the far right, file 140\_149.  In the Enron corpus, the least prolific author's document total size is measured in a few kilobytes where the most prolfic author's document total size is measured in megabytes.  Most striking is that the trend holds for both Liblinear and Naive Bayes.  Also, with a group size of 10, the most prolific authors have a high accuracy, high f-score, high precision, and high recall.  The impact of prolificity is predictable and significant for the Enron Corpus.
-	\paragraph*{} The results for the Enron corpus small-and-large group are largely flat as the graph moves from left to right.  This shows that in a mixed group of varying prolificity, both liblinear and Naive Bayes maintain fairly consistent results.  Clearly, having an author who is significantly more prolific than other authors in his detection group hurts the average f-score for that group while raising the accuracy.  This raise is accuracy is not a good indicator of improved performance.  For the Enron Email Corpus, proflific authors are more detectable than less prolific authors, even in the presence of other prolific authors.
+	\paragraph*{} From Figure \ref{fig:liblinear-enron-GB3-10-measures} some trends become apparent.  As the small-to-large graph for the Enron corpus moves from left to right, the accuracy, f-score, precision, and recall all increase in tight agreement.  This correlates to the wide variation in prolificity between the least prolific group on the far left, file 000\_009, and the last file on the far right, file 140\_149.  In the Enron corpus, the least prolific author's document total size is measured in a few kilobytes where the most prolific author's document total size is measured in megabytes.  Most striking is that the trend holds for both SVM and naive Bayes.  Also, with a group size of 10, the most prolific authors have a high accuracy, high f-score, high precision, and high recall.  The impact of prolificity is predictable and significant for the Enron Corpus.
+	\paragraph*{} The results for the Enron corpus small-and-large group are largely flat as the graph moves from left to right.  This shows that in a mixed group of varying prolificity, both SVM and naive Bayes maintain fairly consistent results.  Clearly, having an author who is significantly more prolific than other authors in his detection group hurts the average f-score for that group while raising the accuracy.  This rise in accuracy is not a good indicator of improved performance.  For the Enron E-mail Corpus, prolific authors are more detectable than less prolific authors, even in the presence of other prolific authors.
 	\paragraph*{} In the Enron small-and-large figures, precision and accuracy are close in value where f-score and recall are always close in value.  The accuracy and precision values are also always above the f-score and recall values.  Investigation into the underlying reasons for this pattern warrants future work in an in-depth statistical analysis of the effects of grouping on author detection.
-	\paragraph*{} The story from Figure \ref{fig:liblinear-twitter-GB3-10-measures} is markedly different than the story from Figure \ref{fig:liblinear-enron-GB3-10-measures}.  All results are lower for the Twitter Short Message Corpus than for the Enron Email Corpus, as indicated by the top value on for graphs in Figure \ref{fig:liblinear-twitter-GB3-10-measures} being 0.7 versus 1.0 for Figure \ref{fig:liblinear-enron-GB3-10-measures}.  The relative flatness of measures in the Twitter corpus compared to the Enron corpus can be explained by the difference in relative sizes of an author in the Twitter corpus and an author in the Enron corpus.  The most prolific author in the Twitter corpus has only 15.2KB of text as opposed to 2.5MB for the most prolific Enron author.  Future work of gathering a larger Twitter corpus of original, not re-tweeted, short messages could supply a similiar size and variation of the Enron corpus.
+	\paragraph*{} The story from Figure \ref{fig:liblinear-twitter-GB3-10-measures} is markedly different than the story from Figure \ref{fig:liblinear-enron-GB3-10-measures}.  All results are lower for the Twitter Short Message Corpus than for the Enron E-mail Corpus, as indicated by the top value on for graphs in Figure \ref{fig:liblinear-twitter-GB3-10-measures} being 0.7 versus 1.0 for Figure \ref{fig:liblinear-enron-GB3-10-measures}.  The relative flatness of measures in the Twitter corpus compared to the Enron corpus can be explained by the difference in relative sizes of an author in the Twitter corpus and an author in the Enron corpus.  The most prolific author in the Twitter corpus has only 15.2KB of text as opposed to 2.5MB for the most prolific Enron author.  Future work of gathering a larger Twitter corpus of original, not re-tweeted, short messages could supply a similar size and variation of the Enron corpus.
+	
+	\paragraph*{} Impact of CDF? Twitter was barely on the scene in 2006 when the Google Web1T snapshot was taken.  There was no significant Twitter corpus for Google to crawl.  Twiiter language has evolved significantly since its inception and may differ appreciably from standard English or even standard web verbiage.  Could a new Web1T built from a Google database that has crawled Twitter term................
+	
+	Going from Web1T\% of 0 to 1 makes naive Bayes for Enron have improved CDF for SAL and RAN, but does not harm STL.  Going beyond Web1T\% of 1 does little additional good.
+	For Twitter GM2 with naive Bayes, applying Web1T\% of 1 makes STL worse, but leaves SAL and RAN intact.  Additional Web1T\% makes the damage to STL less severe, but does not get back to STL results of Web1T\% of 0.
+	An example of how bad the 150 s are ...compare nb-enron, nb twitter, svm enron, svm twitter on a four plot of Web1T\% of 0 and another four plot of Web1T\% of 1.  See how that goes?
+	
+	\begin{figure}[htbp!]
+		\begin{center}
+		\centering
+		\includegraphics[angle=270, scale=0.6]{plot-tiled-cdf-summary-liblinear-enron-gb3-10}
+		\caption{Effect of Web1T\% Size on Accuracy for Small-To-Large, Small-And-Large, and Random Author Groupings.}
+		\label{fig:plot-tiled-cdf-summary-liblinear-enron-gb3-10}
+		\end{center}
+	\end{figure}
 
+\begin{singlespace}
 \section{Storage Requirements for Combinations of Classification Methods, Feature Types, and Vocabulary}
-	\paragraph*{} While the effectiveness of the method-feature combinations are important, these tools are of no use on a mobile device unless the tool can actually fit on the mobile device.  An important fact about determining the size of classifier models is that the size of the model in RAM does not equal the size of the model when written to a file.  For instance, a Java long (primitive) of 1 uses 8 bytes of RAM, but is represented in a file using only 4 bytes.  Similarly, there is a disparity between the UTF-8 values byte size on disk and the object representation in RAM for many Java objects.  This is why heap size could not be used as an accurate measurement of model size.
+\end{singlespace}
+	\paragraph*{} While the effectiveness of the method-feature combinations are important, these tools are of no use on a mobile device unless the tool can actually fit on the disk and within the RAM on the mobile device.  An important fact about determining the size of classifier models is that the size of the model in RAM does not equal the size of the model when written to a file.  For instance, a Java long (primitive) of 1 uses 8 bytes of RAM, but is represented in a file using only 4 bytes.  Similarly, there is a disparity between the UTF-8 values byte size on disk and the object representation in RAM for many Java objects.  This is why heap size could not be used as an accurate measurement of model size.
 	\paragraph*{}To determine if any of these method-feature combinations will fit on a mobile device, a few combinations had exhaustive outputs of their model sizes computed.  After determining that the standard deviation for models with a vocabulary size greater than a Web1T\% of 0 was trivial, only a small sample of the remaining method-feature combinations were computed.  Due to the large size of many models, only one model size was calculated for many method-feature combinations.  
-	\paragraph*{} Actually writing out these models to disk would have been extremely time consuming and a load on the already taxed Hamming High Performance Cluster.  To conduct the size measurements, the liblinear models were written to a Java ByteArrayOutputStream.  Once the write was complete, the size of the ByteArrayOutputStream buffer was measured.  The worked well for models smaller than 2GB.  Models larger than 2GB caused the ByteArrayOutputStream to be "full" since the index for an ByteArrayOutputStream is limited to $2^{31}$ elements and each element in that array is a byte.  For any model larger than 2GB, the size for that model was not recorded and thus has no size record in Appendix M through Appendix P nor a score in the scoring tables in Appendix I through Appendix L.
-	\paragraph*{} What constitutes a storage requirement for the method-feature combinations in this thesis depends on the vocabulary size and method used.  A Web1T\% of 0 in liblinear requires no keys.mph or signature file, but does require a sizable vocabulary map file to functions.  For Naive Bayes, a Web1T\% of 0 does not require a keys.mph file, signature file, count file, nor logprobs file.  However a sizable vocabulary map is needed.  The sizes for each combination's keys.mph, signature, counts, logprobs, and average author size are included with totals in Appendix M through Appendix P.  To provide an intuition on the magnitude of sizes involved, Table \ref{tab:sample_vocab_reference_sizes} shows sizes for keys.mph, signature, counts, logprobs, and vocabmap for a few method-feature combinations.  Table \ref{tab:sample_vocab_reference_sizes} shows only the vocabmap size for the Web1T\% of 0.  This is because Web1T\% of 0 does not use keys.mph, signature, counts, or logprobs references, but does create it own vocabulary map.  Complete size tables are provided in Appendix M through Appendix P.
+	\paragraph*{} Actually writing out these models to disk would have been extremely time consuming and a load on the already taxed Hamming High Performance Cluster.  To conduct the size measurements, the SVM models were written to a Java ByteArrayOutputStream.  Once the write was complete, the size of the ByteArrayOutputStream buffer was measured.  The worked well for models smaller than 2GB.  Models larger than 2GB caused the ByteArrayOutputStream to be "full" since the index for an ByteArrayOutputStream is limited to $2^{31}$ elements and each element in that array is a byte.  For any model larger than 2GB, the size for that model was not recorded and thus has no size record in Appendix M through Appendix P nor a score in the scoring tables in Appendix I through Appendix L.
+	\paragraph*{} What constitutes a storage requirement for the method-feature combinations in this thesis depends on the vocabulary size and method used.  A Web1T\% of 0 in SVM requires no keys.mph or signature file, but does require a sizable vocabulary map.  For naive Bayes, a Web1T\% of 0 does not require a keys.mph file, signature file, count file, nor logprobs file.  However a sizable vocabulary map is needed.  The sizes for each combination's keys.mph, signature, counts, logprobs, and average author size are included with totals in Appendix M through Appendix P.  To provide an intuition on the magnitude of sizes involved, Table \ref{tab:sample_vocab_reference_sizes} shows sizes for keys.mph, signature, counts, logprobs, and vocabmap for a few method-feature combinations.  Table \ref{tab:sample_vocab_reference_sizes} shows only the vocabmap size for the Web1T\% of 0.  This is because Web1T\% of 0 does not use keys.mph, signature, counts, or logprobs references, but does create it own vocabulary map.  Complete size tables are provided in Appendix M through Appendix P.
 	
 	\begin{table}[htbp!]
 	\begin{center}
@@ -201,30 +227,30 @@
 			\hline
 			 &  &  & \multicolumn{6}{|c|}{Size (MB)}\\ \cline{4-9}
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\%\end{sideways} & \begin{sideways}keys.mph\end{sideways} & \begin{sideways}signature\end{sideways} & \begin{sideways}counts\end{sideways} & \begin{sideways}logprobs\end{sideways} & \begin{sideways}vocabmap\end{sideways} & \begin{sideways}Total\end{sideways}\\ \hline 
-			liblinear & GB3 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 54.31\\ \hline 
-			liblinear & GB3 & 1 & 3.21 & 12.11 & 0.00 & 0.00 & 0.00 & 15.32\\ \hline 
-			liblinear & GB3 & 2 & 6.41 & 24.22 & 0.00 & 0.00 & 0.00 & 30.63\\ \hline 
-			liblinear & GB3 & 4 & 12.82 & 48.44 & 0.00 & 0.00 & 0.00 & 61.27\\ \hline 
-			liblinear & GB3 & 8 & 25.64 & 96.89 & 0.00 & 0.00 & 0.00 & 122.53\\ \hline 
-			liblinear & GB3 & 16 & 51.31 & 193.85 & 0.00 & 0.00 & 0.00 & 245.15\\ \hline 
-			liblinear & GM1 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 1.40\\ \hline 
-			liblinear & GM1 & 1 & 0.07 & 0.27 & 0.00 & 0.00 & 0.00 & 0.34\\ \hline 
-			liblinear & GM1 & 2 & 0.14 & 0.54 & 0.00 & 0.00 & 0.00 & 0.69\\ \hline 
-			liblinear & GM1 & 4 & 0.29 & 1.09 & 0.00 & 0.00 & 0.00 & 1.37\\ \hline 
-			liblinear & GM1 & 8 & 0.58 & 2.17 & 0.00 & 0.00 & 0.00 & 2.75\\ \hline 
-			liblinear & GM1 & 16 & 1.15 & 4.35 & 0.00 & 0.00 & 0.00 & 5.50\\ \hline 
-			nb & GB3 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 54.31\\ \hline 
-			nb & GB3 & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 112.20\\ \hline 
-			nb & GB3 & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 224.39\\ \hline 
-			nb & GB3 & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 448.83\\ \hline 
-			nb & GB3 & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 897.64\\ \hline 
-			nb & GB3 & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 1795.94\\ \hline 
-			nb & GM1 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 1.40\\ \hline 
-			nb & GM1 & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 2.52\\ \hline 
-			nb & GM1 & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 5.04\\ \hline 
-			nb & GM1 & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 10.07\\ \hline 
-			nb & GM1 & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 20.14\\ \hline 
-			nb & GM1 & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 40.29\\ \hline
+			SVM & GB3 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 54.31\\ \hline 
+			SVM & GB3 & 1 & 3.21 & 12.11 & 0.00 & 0.00 & 0.00 & 15.32\\ \hline 
+			SVM & GB3 & 2 & 6.41 & 24.22 & 0.00 & 0.00 & 0.00 & 30.63\\ \hline 
+			SVM & GB3 & 4 & 12.82 & 48.44 & 0.00 & 0.00 & 0.00 & 61.27\\ \hline 
+			SVM & GB3 & 8 & 25.64 & 96.89 & 0.00 & 0.00 & 0.00 & 122.53\\ \hline 
+			SVM & GB3 & 16 & 51.31 & 193.85 & 0.00 & 0.00 & 0.00 & 245.15\\ \hline 
+			SVM & GM1 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 1.40\\ \hline 
+			SVM & GM1 & 1 & 0.07 & 0.27 & 0.00 & 0.00 & 0.00 & 0.34\\ \hline 
+			SVM & GM1 & 2 & 0.14 & 0.54 & 0.00 & 0.00 & 0.00 & 0.69\\ \hline 
+			SVM & GM1 & 4 & 0.29 & 1.09 & 0.00 & 0.00 & 0.00 & 1.37\\ \hline 
+			SVM & GM1 & 8 & 0.58 & 2.17 & 0.00 & 0.00 & 0.00 & 2.75\\ \hline 
+			SVM & GM1 & 16 & 1.15 & 4.35 & 0.00 & 0.00 & 0.00 & 5.50\\ \hline 
+			NB & GB3 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 54.31 & 54.31\\ \hline 
+			NB & GB3 & 1 & 3.21 & 12.11 & 48.44 & 48.44 & 0.00 & 112.20\\ \hline 
+			NB & GB3 & 2 & 6.41 & 24.22 & 96.88 & 96.88 & 0.00 & 224.39\\ \hline 
+			NB & GB3 & 4 & 12.82 & 48.44 & 193.78 & 193.78 & 0.00 & 448.83\\ \hline 
+			NB & GB3 & 8 & 25.64 & 96.89 & 387.55 & 387.55 & 0.00 & 897.64\\ \hline 
+			NB & GB3 & 16 & 51.31 & 193.85 & 775.39 & 775.39 & 0.00 & 1795.94\\ \hline 
+			NB & GM1 & 0 & 0.00 & 0.00 & 0.00 & 0.00 & 1.40 & 1.40\\ \hline 
+			NB & GM1 & 1 & 0.07 & 0.27 & 1.09 & 1.09 & 0.00 & 2.52\\ \hline 
+			NB & GM1 & 2 & 0.14 & 0.54 & 2.17 & 2.17 & 0.00 & 5.04\\ \hline 
+			NB & GM1 & 4 & 0.29 & 1.09 & 4.35 & 4.35 & 0.00 & 10.07\\ \hline 
+			NB & GM1 & 8 & 0.58 & 2.17 & 8.70 & 8.70 & 0.00 & 20.14\\ \hline 
+			NB & GM1 & 16 & 1.15 & 4.35 & 17.40 & 17.40 & 0.00 & 40.29\\ \hline
 		\end{tabular}
 		\caption{Sample of Vocabulary Reference File Sizes}
 		\label{tab:sample_vocab_reference_sizes}
@@ -234,9 +260,9 @@
 
 	\paragraph*{} It is quickly apparent from this table that few of these files could be loaded into the RAM of a 16MB Dalvik VM.  If these files were to be used, they would have to be read directly from the microSD card, which is an expensive operation compared to reading from RAM.  A more thorough discussion of method-feature combinations is discussed in the last section of this chapter.
 	
-	\paragraph*{} Apart from the vocabulary references needed for the method-feature combinations, each method-feature combination produces a different authors model size.  Unlike the vocabulary reference files, the authors model file sizes vary greatly.  The model constructed for liblinear consists of an array populated with the support vector values for each author.  The model for Naive Bayes consists of a Java hashmap.  That hashmap has an Integer object for a key and a Double object for its value.  The Integer object is the mapped integer value for a given token.  The Double object is the probability for that token during the training process.
+	\paragraph*{} Apart from the vocabulary references needed for the method-feature combinations, each method-feature combination produces a different authors model size.  Unlike the vocabulary reference files, the authors model file sizes vary greatly.  The model constructed for SVM consists of an array populated with the support vector values for each author.  The model for naive Bayes consists of a Java hashmap.  That hashmap has an Integer object for a key and a Double object for its value.  The Integer object is the mapped integer value for a given token.  The Double object is the probability for that token during the training process.
 	
-	\paragraph*{} The impact of authors model size for a mobile device is important. Even if the vocabulary reference files can be accomodated by a mobile device, a large authors model can push the storage requirement beyond the 16MB Dalvik VM's capability or even the capacity of common microSD cards.  It is important to note here that size on a file only provides a relative indicator of size in RAM for a given method-feature combination.  Actually measuring the impact of Dalvik VM in terms of RAM used versus storage requirements is left to future work as this study involves how model referencing is handled and how values on the file are converted to objects in memory. Table \ref{tab:sample_authors_model_sizes} shows a sample of author sizes for both liblinear and Naive Bayes authors models.  A complete list of average authors models sizes is provided in Appendix M through Appendix P.
+	\paragraph*{} The impact of authors model size for a mobile device is important. Even if the vocabulary reference files can be accommodate by a mobile device, a large authors model can push the storage requirement beyond the 16MB Dalvik VMs capability or even the capacity of common microSD cards.  It is important to note here that size on a file only provides a relative indicator of size in RAM for a given method-feature combination.  Actually measuring the impact of Dalvik VM in terms of RAM used versus storage requirements is left to future work as this study involves how model referencing is handled and how values on the file are converted to objects in memory. Table \ref{tab:sample_authors_model_sizes} shows a sample of author sizes for both SVM and naive Bayes authors models.  A complete list of average authors models sizes is provided in Appendix M through Appendix P.
 	
 	\begin{table}[htbp!]
 	\begin{center}
@@ -244,28 +270,28 @@
 			\hline
 			 &  &  &  &  & \multicolumn{4}{|c|}{Size (MB)}\\ \cline{6-9}
 			\begin{sideways}Corpus\end{sideways} & \begin{sideways}Method\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T\%\end{sideways} & \begin{sideways}AVG\end{sideways} & \begin{sideways}MIN\end{sideways} & \begin{sideways}MAX\end{sideways} & \begin{sideways}STDDEV\end{sideways}\\ \hline
-		enron & liblinear & OSB3 & 5 & 0 & 15.254 & 8.020 & 31.368 & 5.840\\ \hline 
-		enron & liblinear & OSB3 & 5 & 1 & 259.320 & 211.231 & 262.991 & 7.944\\ \hline 
-		enron & liblinear & OSB3 & 5 & 2 & 521.039 & 422.022 & 530.023 & 11.188\\ \hline 
-		enron & liblinear & OSB3 & 5 & 4 & 1031.477 & 844.102 & 1039.616 & 26.316\\ \hline 
-		enron & nb & OSB3 & 5 & 0 & 5.328 & 0.068 & 34.479 & 7.090\\ \hline 
-		enron & nb & OSB3 & 5 & 1 & 8.528 & 0.075 & 54.680 & 11.243\\ \hline 
-		enron & nb & OSB3 & 5 & 2 & 8.544 & 0.075 & 54.939 & 11.286\\ \hline 
-		enron & nb & OSB3 & 5 & 4 & 8.550 & 0.075 & 55.054 & 11.305\\ \hline 
-		enron & nb & OSB3 & 5 & 8 & 8.553 & 0.075 & 55.100 & 11.314\\ \hline 
-		enron & nb & OSB3 & 5 & 16 & 8.554 & 0.075 & 55.121 & 11.317\\ \hline 
-		twitter & liblinear & GM1 & 5 & 0 & 0.088 & 0.076 & 0.108 & 0.007\\ \hline 
-		twitter & liblinear & GM1 & 5 & 1 & 1.568 & 1.546 & 1.614 & 0.013\\ \hline 
-		twitter & liblinear & GM1 & 5 & 2 & 3.064 & 3.043 & 3.109 & 0.013\\ \hline 
-		twitter & liblinear & GM1 & 5 & 4 & 6.050 & 6.013 & 6.099 & 0.015\\ \hline 
-		twitter & liblinear & GM1 & 5 & 8 & 12.034 & 12.011 & 12.079 & 0.013\\ \hline 
-		twitter & liblinear & GM1 & 5 & 16 & 23.952 & 23.869 & 24.038 & 0.037\\ \hline 
-		twitter & nb & GM1 & 5 & 0 & 0.024 & 0.016 & 0.045 & 0.005\\ \hline 
-		twitter & nb & GM1 & 5 & 1 & 0.040 & 0.034 & 0.050 & 0.003\\ \hline 
-		twitter & nb & GM1 & 5 & 2 & 0.040 & 0.035 & 0.051 & 0.003\\ \hline 
-		twitter & nb & GM1 & 5 & 4 & 0.040 & 0.036 & 0.052 & 0.003\\ \hline 
-		twitter & nb & GM1 & 5 & 8 & 0.040 & 0.034 & 0.053 & 0.003\\ \hline 
-		twitter & nb & GM1 & 5 & 16 & 0.040 & 0.035 & 0.050 & 0.003\\ \hline 
+		enron & SVM & OSB3 & 5 & 0 & 15.254 & 8.020 & 31.368 & 5.840\\ \hline 
+		enron & SVM & OSB3 & 5 & 1 & 259.320 & 211.231 & 262.991 & 7.944\\ \hline 
+		enron & SVM & OSB3 & 5 & 2 & 521.039 & 422.022 & 530.023 & 11.188\\ \hline 
+		enron & SVM & OSB3 & 5 & 4 & 1031.477 & 844.102 & 1039.616 & 26.316\\ \hline 
+		enron & NB & OSB3 & 5 & 0 & 5.328 & 0.068 & 34.479 & 7.090\\ \hline 
+		enron & NB & OSB3 & 5 & 1 & 8.528 & 0.075 & 54.680 & 11.243\\ \hline 
+		enron & NB & OSB3 & 5 & 2 & 8.544 & 0.075 & 54.939 & 11.286\\ \hline 
+		enron & NB & OSB3 & 5 & 4 & 8.550 & 0.075 & 55.054 & 11.305\\ \hline 
+		enron & NB & OSB3 & 5 & 8 & 8.553 & 0.075 & 55.100 & 11.314\\ \hline 
+		enron & NB & OSB3 & 5 & 16 & 8.554 & 0.075 & 55.121 & 11.317\\ \hline 
+		twitter & SVM & GM1 & 5 & 0 & 0.088 & 0.076 & 0.108 & 0.007\\ \hline 
+		twitter & SVM & GM1 & 5 & 1 & 1.568 & 1.546 & 1.614 & 0.013\\ \hline 
+		twitter & SVM & GM1 & 5 & 2 & 3.064 & 3.043 & 3.109 & 0.013\\ \hline 
+		twitter & SVM & GM1 & 5 & 4 & 6.050 & 6.013 & 6.099 & 0.015\\ \hline 
+		twitter & SVM & GM1 & 5 & 8 & 12.034 & 12.011 & 12.079 & 0.013\\ \hline 
+		twitter & SVM & GM1 & 5 & 16 & 23.952 & 23.869 & 24.038 & 0.037\\ \hline 
+		twitter & NB & GM1 & 5 & 0 & 0.024 & 0.016 & 0.045 & 0.005\\ \hline 
+		twitter & NB & GM1 & 5 & 1 & 0.040 & 0.034 & 0.050 & 0.003\\ \hline 
+		twitter & NB & GM1 & 5 & 2 & 0.040 & 0.035 & 0.051 & 0.003\\ \hline 
+		twitter & NB & GM1 & 5 & 4 & 0.040 & 0.036 & 0.052 & 0.003\\ \hline 
+		twitter & NB & GM1 & 5 & 8 & 0.040 & 0.034 & 0.053 & 0.003\\ \hline 
+		twitter & NB & GM1 & 5 & 16 & 0.040 & 0.035 & 0.050 & 0.003\\ \hline 
 		\end{tabular}
 		\caption{Sample of Authors Model File Sizes}
 		\label{tab:sample_authors_model_sizes}
@@ -273,11 +299,11 @@
 	\end{table}
 
 \section{Classification Effectiveness Versus Storage Requirements}
-\paragraph*{} With the resource constraints of mobile devices and the author detection reqirements of this thesis, some method must be used to evaluate the tradeoff between accuracy and size.  For this thesis, effectivness will be divided by the full storage requiment for each method-feature combination.  The storage requirements will be computed as the sum of keys.mph, signature, counts, logprobs, vocabmap, and average authors model size for each method-feature combination.  The complete set of scores for this thesis are included in Appendix I through Appendix L.  
+\paragraph*{} With the resource constraints of mobile devices and the author detection requirements of this thesis, some method must be used to evaluate the tradeoff between accuracy and size.  For this thesis, effectiveness will be divided by the full storage requirement for each method-feature combination.  The storage requirements will be computed as the sum of keys.mph, signature, counts, logprobs, vocabmap, and average authors model size for each method-feature combination.  The complete set of scores for this thesis are included in Appendix I through Appendix L.  
 
 \paragraph{}*It is important to note that there are no scores for any authors model size over 2GB.  This is due to the limitations of measuring on-disk size for authors models with a ByteArrayOutputStream, but this limitation will not adversely affect the conclusions of this thesis.  Any authors model larger than 2GB is impractical for current mobile devices.  Also a 2GB divisor for the score computation would put that method-feature combination out of contention for a top performer in this thesis.
 
-\paragraph*{}  The top performing method-feature combination for the Enron Email Corpus was Naive Bayes method using GM1 for group size 5 with a score of 0.4495.  Table \ref{tab:top_enron_by_score} shows the top 20 scores along with accuracy and size information for the Enron Email Corpus.  All of these top performers use the GM1 feature type. The accuracy of these combinations is in the same range as the most accurate method-feature combinations. However, these accuracies are mostly for group sizes of 5, 10, and 25, which limits the applicability of the tools in this thesis.  There is only one combination for group size 50 and only one combination of group size 75.  All of these top 20 scores have storage requirements under 16MB.
+\paragraph*{}  The top performing method-feature combination for the Enron E-mail Corpus was naive Bayes method using GM1 for group size 5 with a score of 0.4495.  Table \ref{tab:top_enron_by_score} shows the top 20 scores along with accuracy and size information for the Enron E-mail Corpus.  All of these top performers use the GM1 feature type. The accuracy of these combinations is in the same range as the most accurate method-feature combinations. However, these accuracies are mostly for group sizes of 5, 10, and 25, which limits the applicability of the tools in this thesis.  There is only one combination for group size 50 and only one combination of group size 75.  All of these top 20 scores have storage requirements under 16MB.
 
 \begin{table}[htbp!]
 	\begin{center}
@@ -285,36 +311,34 @@
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways}\\ \hline 
 			
-			nb & enron & GM1 & 5 & 0 & 0.4495 & 0.7215 & 1.60\\ \hline 
-			liblinear & enron & GM1 & 5 & 0 & 0.4374 & 0.8269 & 1.89\\ \hline 
-			liblinear & enron & GM1 & 5 & 1 & 0.3685 & 0.8233 & 2.23\\ \hline 
-			nb & enron & GM1 & 10 & 0 & 0.3186 & 0.5768 & 1.81\\ \hline 
-			liblinear & enron & GM1 & 10 & 0 & 0.2789 & 0.7611 & 2.73\\ \hline 
-			nb & enron & GM1 & 5 & 1 & 0.2262 & 0.6441 & 2.85\\ \hline 
-			liblinear & enron & GM1 & 5 & 2 & 0.2017 & 0.8216 & 4.07\\ \hline 
-			liblinear & enron & GM1 & 10 & 1 & 0.1800 & 0.7610 & 4.23\\ \hline 
-			nb & enron & GM1 & 25 & 0 & 0.1683 & 0.4083 & 2.43\\ \hline 
-			nb & enron & GM1 & 10 & 1 & 0.1634 & 0.5189 & 3.18\\ \hline 
-			nb & enron & GM1 & 5 & 2 & 0.1212 & 0.6505 & 5.37\\ \hline 
-			liblinear & enron & GM1 & 25 & 0 & 0.1124 & 0.6845 & 6.09\\ \hline 
-			liblinear & enron & GM1 & 5 & 4 & 0.1071 & 0.8298 & 7.75\\ \hline 
-			liblinear & enron & GM1 & 10 & 2 & 0.1024 & 0.7594 & 7.42\\ \hline 
-			nb & enron & GM1 & 25 & 1 & 0.0950 & 0.3956 & 4.16\\ \hline 
-			nb & enron & GM1 & 10 & 2 & 0.0915 & 0.5215 & 5.70\\ \hline 
-			nb & enron & GM1 & 50 & 0 & 0.0903 & 0.3126 & 3.46\\ \hline 
-			liblinear & enron & GM1 & 25 & 1 & 0.0648 & 0.6847 & 10.56\\ \hline 
-			nb & enron & GM1 & 75 & 0 & 0.0648 & 0.2912 & 4.50\\ \hline 
-			nb & enron & GM1 & 5 & 4 & 0.0635 & 0.6610 & 10.40\\ \hline 
+			NB & enron & GM1 & 5 & 0 & 0.4495 & 0.7215 & 1.60\\ \hline 
+			SVM & enron & GM1 & 5 & 0 & 0.4374 & 0.8269 & 1.89\\ \hline 
+			SVM & enron & GM1 & 5 & 1 & 0.3685 & 0.8233 & 2.23\\ \hline 
+			NB & enron & GM1 & 10 & 0 & 0.3186 & 0.5768 & 1.81\\ \hline 
+			SVM & enron & GM1 & 10 & 0 & 0.2789 & 0.7611 & 2.73\\ \hline 
+			NB & enron & GM1 & 5 & 1 & 0.2262 & 0.6441 & 2.85\\ \hline 
+			SVM & enron & GM1 & 5 & 2 & 0.2017 & 0.8216 & 4.07\\ \hline 
+			SVM & enron & GM1 & 10 & 1 & 0.1800 & 0.7610 & 4.23\\ \hline 
+			NB & enron & GM1 & 25 & 0 & 0.1683 & 0.4083 & 2.43\\ \hline 
+			NB & enron & GM1 & 10 & 1 & 0.1634 & 0.5189 & 3.18\\ \hline 
+			NB & enron & GM1 & 5 & 2 & 0.1212 & 0.6505 & 5.37\\ \hline 
+			SVM & enron & GM1 & 25 & 0 & 0.1124 & 0.6845 & 6.09\\ \hline 
+			SVM & enron & GM1 & 5 & 4 & 0.1071 & 0.8298 & 7.75\\ \hline 
+			SVM & enron & GM1 & 10 & 2 & 0.1024 & 0.7594 & 7.42\\ \hline 
+			NB & enron & GM1 & 25 & 1 & 0.0950 & 0.3956 & 4.16\\ \hline 
+			NB & enron & GM1 & 10 & 2 & 0.0915 & 0.5215 & 5.70\\ \hline 
+			NB & enron & GM1 & 50 & 0 & 0.0903 & 0.3126 & 3.46\\ \hline 
+			SVM & enron & GM1 & 25 & 1 & 0.0648 & 0.6847 & 10.56\\ \hline 
+			NB & enron & GM1 & 75 & 0 & 0.0648 & 0.2912 & 4.50\\ \hline 
+			NB & enron & GM1 & 5 & 4 & 0.0635 & 0.6610 & 10.40\\ \hline 
 
 		\end{tabular}
-		\caption{Highest Scoring Method-Feature Combinations for the Enron Email Corpus}
+		\caption{Highest Scoring Method-Feature Combinations for the Enron E-mail Corpus}
 		\label{tab:top_enron_by_score}
 	\end{center}
 \end{table}
 
-\paragraph*{}  The top performing method-feature combination for the Twitter Short Message Corpus was Naive Bayes using feature type GM1 for a group size of 5.  Table \ref{tab:top_twitter_by_score} shows the top 20 scores along with accuracy and size information for the Twitter Short Message Corpus.  The accuracy of these combinations is in the same range as the most accurate method-feature combinations. The range of groups sizes that made the top 20 scores is much larger than for the ENRON Email Corpus.  There are three combinations for group size 50, two combinations of group size 75, and two combinations of group size 150. All of the top 20 performing score combinations have a storage requirement of less than 16MB.
-
-
+\paragraph*{}  The top performing method-feature combination for the Twitter Short Message Corpus was naive Bayes using feature type GM1 for a group size of 5.  Table \ref{tab:top_twitter_by_score} shows the top 20 scores along with accuracy and size information for the Twitter Short Message Corpus.  The accuracy of these combinations is in the same range as the most accurate method-feature combinations. The range of groups sizes that made the top 20 scores is much larger than for the ENRON E-mail Corpus.  There are three combinations for group size 50, two combinations of group size 75, and two combinations of group size 150. All of the top 20 performing score combinations have a storage requirement of less than 16MB.
 
 \begin{table}[htbp!]
 	\begin{center}
@@ -322,26 +346,26 @@
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways}\\ \hline 
 			
-			nb & twitter & GM1 & 5 & 0 & 2.8233 & 0.6264 & 0.22\\ \hline 
-			nb & twitter & GM1 & 10 & 0 & 1.9815 & 0.4869 & 0.25\\ \hline 
-			liblinear & twitter & GM1 & 5 & 0 & 2.1731 & 0.6212 & 0.29\\ \hline 
-			nb & twitter & GM1 & 25 & 0 & 1.0593 & 0.3357 & 0.32\\ \hline 
-			nb & twitter & GM1 & 50 & 0 & 0.5347 & 0.2326 & 0.43\\ \hline 
-			liblinear & twitter & GM1 & 10 & 0 & 1.0850 & 0.4762 & 0.44\\ \hline 
-			nb & twitter & GM1 & 75 & 0 & 0.3291 & 0.1820 & 0.55\\ \hline 
-			nb & twitter & GM1 & 150 & 0 & 0.1375 & 0.1252 & 0.91\\ \hline 
-			liblinear & twitter & GM1 & 25 & 0 & 0.3301 & 0.3461 & 1.05\\ \hline 
-			nb & twitter & GM2 & 5 & 0 & 0.4866 & 0.5711 & 1.17\\ \hline 
-			nb & twitter & GM2 & 10 & 0 & 0.3644 & 0.4439 & 1.22\\ \hline 
-			nb & twitter & GM2 & 25 & 0 & 0.2380 & 0.3215 & 1.35\\ \hline 
-			liblinear & twitter & GM2 & 5 & 0 & 0.3503 & 0.4844 & 1.38\\ \hline 
-			nb & twitter & GM2 & 50 & 0 & 0.1598 & 0.2509 & 1.57\\ \hline 
-			nb & twitter & GM2 & 75 & 0 & 0.1207 & 0.2162 & 1.79\\ \hline 
-			liblinear & twitter & GM1 & 5 & 1 & 0.3257 & 0.6228 & 1.91\\ \hline 
-			liblinear & twitter & GM2 & 10 & 0 & 0.1911 & 0.3700 & 1.94\\ \hline 
-			liblinear & twitter & GM1 & 50 & 0 & 0.1153 & 0.2693 & 2.34\\ \hline 
-			nb & twitter & GM2 & 150 & 0 & 0.0696 & 0.1709 & 2.46\\ \hline 
-			nb & twitter & GM1 & 5 & 1 & 0.1945 & 0.4974 & 2.56\\ \hline 
+			NB & twitter & GM1 & 5 & 0 & 2.8233 & 0.6264 & 0.22\\ \hline 
+			NB & twitter & GM1 & 10 & 0 & 1.9815 & 0.4869 & 0.25\\ \hline 
+			SVM & twitter & GM1 & 5 & 0 & 2.1731 & 0.6212 & 0.29\\ \hline 
+			NB & twitter & GM1 & 25 & 0 & 1.0593 & 0.3357 & 0.32\\ \hline 
+			NB & twitter & GM1 & 50 & 0 & 0.5347 & 0.2326 & 0.43\\ \hline 
+			SVM & twitter & GM1 & 10 & 0 & 1.0850 & 0.4762 & 0.44\\ \hline 
+			NB & twitter & GM1 & 75 & 0 & 0.3291 & 0.1820 & 0.55\\ \hline 
+			NB & twitter & GM1 & 150 & 0 & 0.1375 & 0.1252 & 0.91\\ \hline 
+			SVM & twitter & GM1 & 25 & 0 & 0.3301 & 0.3461 & 1.05\\ \hline 
+			NB & twitter & GM2 & 5 & 0 & 0.4866 & 0.5711 & 1.17\\ \hline 
+			NB & twitter & GM2 & 10 & 0 & 0.3644 & 0.4439 & 1.22\\ \hline 
+			NB & twitter & GM2 & 25 & 0 & 0.2380 & 0.3215 & 1.35\\ \hline 
+			SVM & twitter & GM2 & 5 & 0 & 0.3503 & 0.4844 & 1.38\\ \hline 
+			NB & twitter & GM2 & 50 & 0 & 0.1598 & 0.2509 & 1.57\\ \hline 
+			NB & twitter & GM2 & 75 & 0 & 0.1207 & 0.2162 & 1.79\\ \hline 
+			SVM & twitter & GM1 & 5 & 1 & 0.3257 & 0.6228 & 1.91\\ \hline 
+			SVM & twitter & GM2 & 10 & 0 & 0.1911 & 0.3700 & 1.94\\ \hline 
+			SVM & twitter & GM1 & 50 & 0 & 0.1153 & 0.2693 & 2.34\\ \hline 
+			NB & twitter & GM2 & 150 & 0 & 0.0696 & 0.1709 & 2.46\\ \hline 
+			NB & twitter & GM1 & 5 & 1 & 0.1945 & 0.4974 & 2.56\\ \hline 
 
 		\end{tabular}
 		\caption{Highest Scoring Method-Feature Combinations for the Twitter Short Message Corpus}
@@ -349,7 +373,7 @@
 	\end{center}
 \end{table}
 
-\paragraph{} With the scores measure for each method-feature combination in hand, the shortcoming of using $score = \frac{accuracy}{size}$ become apparent.  Table \ref{tab:top_enron_by_score} indicates that Naive Bayes using GM1 for group size 5 is the best feature-combination to choose for a mobile device.  However, the second highest score, liblinear using GM1 for group size 5 has an accuracy of 0.8269 where the top scoring combination has an accuracy of 0.7215, a full 0.1 worse than the second top scorer.  An even more important limitation to this approach if the heavy bias of group size on the scoring process.  To address this, Table \ref{tab:top_enron_by_score_all_groups} for the Enron Email Corpus and Table \ref{tab:top_twitter_by_score_all_groups} for the Twitter Short Message Corpus were constructed to show the score for each feature-method-percentage combination that could cover all group sizes with score averaged over all group sizes.
+\paragraph{} With the scores measure for each method-feature combination in hand, the shortcoming of using $score = \frac{accuracy}{size}$ become apparent.  Table \ref{tab:top_enron_by_score} indicates that naive Bayes using GM1 for group size 5 is the best feature-combination to choose for a mobile device.  However, the second highest score, SVM using GM1 for group size 5 has an accuracy of 0.8269 where the top scoring combination has an accuracy of 0.7215, a full 0.1 worse than the second top scorer.  An even more important limitation to this approach if the heavy bias of group size on the scoring process.  To address this, Table \ref{tab:top_enron_by_score_all_groups} for the Enron E-mail Corpus and Table \ref{tab:top_twitter_by_score_all_groups} for the Twitter Short Message Corpus were constructed to show the score for each feature-method-percentage combination that could cover all group sizes with score averaged over all group sizes.
 
 \begin{table}[htbp!]
 	\begin{center}
@@ -357,30 +381,30 @@
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways}\\ \hline 
 
-		nb & enron & GM1 & 0 & 0.3998 & 0.6792 & 1.6986\\ \hline 
-		liblinear & enron & GM1 & 0 & 0.3388 & 0.8076 & 2.3840\\ \hline 
-		liblinear & enron & GM1 & 1 & 0.2528 & 0.8047 & 3.1834\\ \hline 
-		nb & enron & GM1 & 1 & 0.2030 & 0.6083 & 2.9969\\ \hline 
-		liblinear & enron & GM1 & 2 & 0.1424 & 0.8033 & 5.6421\\ \hline 
-		nb & enron & GM1 & 2 & 0.1113 & 0.6140 & 5.5165\\ \hline 
-		liblinear & enron & GM1 & 4 & 0.0776 & 0.8097 & 10.4301\\ \hline 
-		nb & enron & GM1 & 4 & 0.0593 & 0.6260 & 10.5528\\ \hline 
-		nb & enron & GM2 & 0 & 0.0437 & 0.7804 & 17.8759\\ \hline 
-		liblinear & enron & GM1 & 8 & 0.0397 & 0.8092 & 20.3672\\ \hline 
-		liblinear & enron & GM2 & 0 & 0.0383 & 0.8477 & 22.1173\\ \hline 
-		nb & enron & GM1 & 8 & 0.0300 & 0.6192 & 20.6262\\ \hline 
-		liblinear & enron & GM1 & 16 & 0.0203 & 0.8057 & 39.6953\\ \hline 
-		nb & enron & GM1 & 16 & 0.0154 & 0.6298 & 40.7717\\ \hline 
-		liblinear & enron & GM2 & 1 & 0.0142 & 0.8007 & 56.5585\\ \hline 
-		nb & enron & GB3 & 0 & 0.0131 & 0.7631 & 58.1904\\ \hline 
-		liblinear & enron & GB3 & 0 & 0.0119 & 0.8413 & 70.6541\\ \hline 
-		nb & enron & GM2 & 1 & 0.0106 & 0.6206 & 58.8138\\ \hline 
-		liblinear & enron & GB3 & 1 & 0.0083 & 0.8429 & 101.9446\\ \hline 
-		liblinear & enron & GM2 & 2 & 0.0072 & 0.8011 & 111.2368\\ \hline 
+		NB & enron & GM1 & 0 & 0.3998 & 0.6792 & 1.6986\\ \hline 
+		SVM & enron & GM1 & 0 & 0.3388 & 0.8076 & 2.3840\\ \hline 
+		SVM & enron & GM1 & 1 & 0.2528 & 0.8047 & 3.1834\\ \hline 
+		NB & enron & GM1 & 1 & 0.2030 & 0.6083 & 2.9969\\ \hline 
+		SVM & enron & GM1 & 2 & 0.1424 & 0.8033 & 5.6421\\ \hline 
+		NB & enron & GM1 & 2 & 0.1113 & 0.6140 & 5.5165\\ \hline 
+		SVM & enron & GM1 & 4 & 0.0776 & 0.8097 & 10.4301\\ \hline 
+		NB & enron & GM1 & 4 & 0.0593 & 0.6260 & 10.5528\\ \hline 
+		NB & enron & GM2 & 0 & 0.0437 & 0.7804 & 17.8759\\ \hline 
+		SVM & enron & GM1 & 8 & 0.0397 & 0.8092 & 20.3672\\ \hline 
+		SVM & enron & GM2 & 0 & 0.0383 & 0.8477 & 22.1173\\ \hline 
+		NB & enron & GM1 & 8 & 0.0300 & 0.6192 & 20.6262\\ \hline 
+		SVM & enron & GM1 & 16 & 0.0203 & 0.8057 & 39.6953\\ \hline 
+		NB & enron & GM1 & 16 & 0.0154 & 0.6298 & 40.7717\\ \hline 
+		SVM & enron & GM2 & 1 & 0.0142 & 0.8007 & 56.5585\\ \hline 
+		NB & enron & GB3 & 0 & 0.0131 & 0.7631 & 58.1904\\ \hline 
+		SVM & enron & GB3 & 0 & 0.0119 & 0.8413 & 70.6541\\ \hline 
+		NB & enron & GM2 & 1 & 0.0106 & 0.6206 & 58.8138\\ \hline 
+		SVM & enron & GB3 & 1 & 0.0083 & 0.8429 & 101.9446\\ \hline 
+		SVM & enron & GM2 & 2 & 0.0072 & 0.8011 & 111.2368\\ \hline 
 
 
 		\end{tabular}
-		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Enron Email Corpus}
+		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Enron E-mail Corpus}
 		\label{tab:top_enron_by_score_all_groups}
 	\end{center}
 \end{table}
@@ -391,35 +415,107 @@
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways}\\ \hline 
 			
-		nb & twitter & GM1 & 0 & 2.5176 & 0.5858 & 0.2327\\ \hline 
-		liblinear & twitter & GM1 & 0 & 1.5509 & 0.5806 & 0.3744\\ \hline 
-		nb & twitter & GM2 & 0 & 0.4482 & 0.5351 & 1.1939\\ \hline 
-		liblinear & twitter & GM2 & 0 & 0.2607 & 0.4524 & 1.7353\\ \hline 
-		liblinear & twitter & GM1 & 1 & 0.2244 & 0.5827 & 2.5972\\ \hline 
-		nb & twitter & GM1 & 1 & 0.1772 & 0.4565 & 2.5758\\ \hline 
-		nb & twitter & GB3 & 0 & 0.1729 & 0.5822 & 3.3669\\ \hline 
-		liblinear & twitter & GM1 & 2 & 0.1142 & 0.5773 & 5.0542\\ \hline 
-		nb & twitter & GM5 & 0 & 0.1006 & 0.3167 & 3.1482\\ \hline 
-		liblinear & twitter & GB3 & 0 & 0.0995 & 0.5074 & 5.0984\\ \hline 
-		nb & twitter & GM1 & 2 & 0.0927 & 0.4721 & 5.0936\\ \hline 
-		nb & twitter & OSB3 & 0 & 0.0797 & 0.6127 & 7.6833\\ \hline 
-		liblinear & twitter & GM5 & 0 & 0.0599 & 0.2488 & 4.1559\\ \hline 
-		liblinear & twitter & GM1 & 4 & 0.0581 & 0.5792 & 9.9645\\ \hline 
-		nb & twitter & GM1 & 4 & 0.0467 & 0.4728 & 10.1292\\ \hline 
-		liblinear & twitter & OSB3 & 0 & 0.0449 & 0.5100 & 11.3466\\ \hline 
-		liblinear & twitter & GM1 & 8 & 0.0296 & 0.5862 & 19.8001\\ \hline 
-		nb & twitter & GM1 & 8 & 0.0239 & 0.4823 & 20.2023\\ \hline 
-		liblinear & twitter & GM1 & 16 & 0.0147 & 0.5789 & 39.4154\\ \hline 
-		nb & twitter & GM1 & 16 & 0.0116 & 0.4694 & 40.3477\\ \hline 
+		NB & twitter & GM1 & 0 & 2.5176 & 0.5858 & 0.2327\\ \hline 
+		SVM & twitter & GM1 & 0 & 1.5509 & 0.5806 & 0.3744\\ \hline 
+		NB & twitter & GM2 & 0 & 0.4482 & 0.5351 & 1.1939\\ \hline 
+		SVM & twitter & GM2 & 0 & 0.2607 & 0.4524 & 1.7353\\ \hline 
+		SVM & twitter & GM1 & 1 & 0.2244 & 0.5827 & 2.5972\\ \hline 
+		NB & twitter & GM1 & 1 & 0.1772 & 0.4565 & 2.5758\\ \hline 
+		NB & twitter & GB3 & 0 & 0.1729 & 0.5822 & 3.3669\\ \hline 
+		SVM & twitter & GM1 & 2 & 0.1142 & 0.5773 & 5.0542\\ \hline 
+		NB & twitter & GM5 & 0 & 0.1006 & 0.3167 & 3.1482\\ \hline 
+		SVM & twitter & GB3 & 0 & 0.0995 & 0.5074 & 5.0984\\ \hline 
+		NB & twitter & GM1 & 2 & 0.0927 & 0.4721 & 5.0936\\ \hline 
+		NB & twitter & OSB3 & 0 & 0.0797 & 0.6127 & 7.6833\\ \hline 
+		SVM & twitter & GM5 & 0 & 0.0599 & 0.2488 & 4.1559\\ \hline 
+		SVM & twitter & GM1 & 4 & 0.0581 & 0.5792 & 9.9645\\ \hline 
+		NB & twitter & GM1 & 4 & 0.0467 & 0.4728 & 10.1292\\ \hline 
+		SVM & twitter & OSB3 & 0 & 0.0449 & 0.5100 & 11.3466\\ \hline 
+		SVM & twitter & GM1 & 8 & 0.0296 & 0.5862 & 19.8001\\ \hline 
+		NB & twitter & GM1 & 8 & 0.0239 & 0.4823 & 20.2023\\ \hline 
+		SVM & twitter & GM1 & 16 & 0.0147 & 0.5789 & 39.4154\\ \hline 
+		NB & twitter & GM1 & 16 & 0.0116 & 0.4694 & 40.3477\\ \hline 
 		\end{tabular}
 		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Twitter Short Message Corpus}
 		\label{tab:top_twitter_by_score_all_groups}
 	\end{center}
 \end{table}
 
-\paragraph*{} The top method-feature combinations in Table \ref{tab:top_enron_by_score_all_groups} are still dominated by GM1 as a feature type.  Naive Bayes using GM1 and a Web1T\%=0 had a higher score than Liblinear using GM1 and a Web1T\%=0, but the liblinear accuracy is 0.1284 higher than the Naive Bayes accuracy.  This shows again that this scoring method by itself does not produce an optimal feature-method combination on its own.
+\paragraph*{} The top method-feature combinations in Table \ref{tab:top_enron_by_score_all_groups} are still dominated by GM1 as a feature type.  naive Bayes using GM1 and a Web1T\%=0 had a higher score than SVM using GM1 and a Web1T\%=0, but the SVM accuracy is 0.1284 higher than the naive Bayes accuracy.  This shows again that this scoring method by itself does not produce an optimal feature-method combination on its own.
 
-\paragraph*{} Similarly, the top method-feature combinations for the Twitter Short Message Corpus in Table \ref{tab:top_twitter_by_score_all_groups} are GM1.  However, there is a much wider mix of feature types in the Twitter Corpus than was seen in the Enron Corpus.  Also, Naive Bayes outperforms its liblinear counterparts in some situations.  Just like with Enron, the highest scoring method-feature combination is not necessarily the most appropriate combination for deployment on a mobile phone.  For the Twitter Corpus, liblinear using OSB3 and a Web1T\%=0 has a .6127 accuracy with a size of 11.3466MB.  This is the highest accuracy on the top 20 list that is still below 16MB.  There are several accuracyies above 0.5 that have significantly smaller storage requirements.
+\paragraph*{} Similarly, the top method-feature combinations for the Twitter Short Message Corpus in Table \ref{tab:top_twitter_by_score_all_groups} are GM1.  However, there is a much wider mix of feature types in the Twitter Corpus than was seen in the Enron Corpus.  Also, naive Bayes outperforms its SVM counterparts in some situations.  Just like with Enron, the highest scoring method-feature combination is not necessarily the most appropriate combination for deployment on a mobile phone.  For the Twitter Corpus, SVM using OSB3 and a Web1T\%=0 has a .6127 accuracy with a size of 11.3466MB.  This is the highest accuracy on the top 20 list that is still below 16MB.  There are several accuracies above 0.5 that have significantly smaller storage requirements.
+
+\paragraph*{} To more clearly illustrate the results of accuracy and storage size on the Enron E-mail Corpus and the Twitter Short Message Corpus, Figures \ref{fig:plot-scatter-enron} and \ref{fig:plot-scatter-twitter} were generated.  In these figures:
+	\begin{itemize}
+		\item Circles are tests using SVM
+		\item Triangles are test using naive Bayes
+		\item Red symbols are tests using GM1
+		\item Cyan symbols are tests using GM2
+		\item Yellow symbols are tests using GM5
+		\item Green symbols are tests using GB3
+		\item Blue symbols are tests using OSB3
+		\item The smallest symbols are for a group size of 5
+		\item The largest symbols are for a group size of 150
+		\item The x-axis, Storage Size (MB), is a logarithmic scale to better distinguish items on the left of the graph
+		\item The more accurate method-feature combinations are higher in the graph
+		\item The method-feature combinations with a smaller storage requirement are further left on the graph
+	\end{itemize}
+		
+\paragraph*{}
+	\begin{sidewaysfigure}[htbp!]
+		\begin{center}
+		\centering
+		\includegraphics[scale=1.1]{plot-scatter-size-accuracy-enron}
+		\caption{Scatter-Plot of Enron Email Corpus Tests}
+		\label{fig:plot-scatter-enron}
+		\end{center}
+	\end{sidewaysfigure}
+	
+\paragraph*{} Figure \ref{fig:plot-scatter-enron} shows several notable trends for accuracy in the Enron E-Mail Corpus.  These are:
+	\begin{itemize}
+		\item There is little white space at the top of the graph.  While the graph tops out at 0.9, the bulk of symbols in the graph are toward the top of the graph.  This shows that both naive Bayes and SVM performed well against the Enron E-Mail Corpus.
+		\item The upper leftmost point represent SVM using GM1 with Web1T\% of 0.  The trail of red circles to the right of this point represent SVM using GM1 with Web1T\% values of 1,2,4,8, and 16.  The points provide roughly the same accuracy at an increasing cost of storage.  This could be represented as a horizontal line through the Web1T\% values for SVM for GM1.  This pattern repeats itself for most symbols to the left of $2^6$MB.
+		\item The upper leftmost point is not the highest accuracy point on the graph.  There are numerous light blue (GM2), dark blue (OSB3), and green (GB3) circles with higher accuracies.  Also there are some dark blue (OSB3) and green (GB3) triangles with higher accuracies.  However, the storage requirement for the first point encountered with a higher accuracy than the upper leftmost point is 16 times large than the upper leftmost red circle.  This is a significant storage cost compared to the increase in accuracy.  The size penalty versus improved accuracy only gets worse as this line of maximum values moves right.
+		\item All of the highest accuracy points are dark blue (OSB3) and green (GB3) symbols.  Both triangles (naive Bayes) and circles (SVM) are represented.  This shows that OSB3 and GB3 give high accuracies using both SVM and naive Bayes.  This shows the potential of more complex feature types like GB3 and OSB3 for author detection.
+		\item There are numerous symbols to the left of $2^4$MB.  $2^4$MB is an important line because the default heap size limit for a Dalvik VM is 16MB.  While it is true that a storage size of 16MB does not necessarily equate to 16MB of heap, 16MB is still a good relative indicator of how well a model could fit into a Dalvik VM.
+		\item The circles (SVM) generally hold higher positions in the plot while triangles (naive Bayes) generally hold lower positions in the graph. These relative positions show that SVM generally outperforms naive Bayes for the Enron E-mail corpus.
+		\item There are diagonal lines, from upper left to lower right, of same shape, same color, different size symbols representing the fall in accuracy and increase in size for a method-feature combination as the group size increase from 5 to 150.  For example, there is a clear line of increasingly large, red circles from the uppermost red circle at (accuracy=0.82, size=$2^0$MB) fall successively to the large red circle at (accuracy=0.61, size=$2^4$MB).  This pattern is repeated through the graph with the slope becoming steeper as the graph progresses to the right.  As an example of a steep slope for this line, take the small light blue triangle at (accuracy=0.6, size=$2^4$MB).  There is a steep line of increasingly large, light blue triangles down to (accuracy=0.45, size=$2^5$MB).  The increasing slope is due to the logarithmic scale of the graph, but shows that increasing group size has an adverse effect on accuracy.
+		\item The triangles (naive Bayes), do not get into the upper part of the graph until after $2^7$MB.  Also, these more accurate naive Bayes points are competing well with their SVM counterparts for accuracy, but carry a lot more size as there are no circles past $2^{11}$MB, but there are triangles all the way out to $2^{13}$.  This is an artifact of naive Bayes for Web1T\% $\ge$ 1 having to carry a large keys.mph file, large signature file, as well as large counts and logprob files. It is important to remember that any storage model with an authors model size of $\ge$ 2GB did not get plotted on this graph, which explains the lack of large blue triangle continuing down the $2^{13}$MB line.
+		\item One symbol stands out on the graph, the light blue, large circle at (accuracy=0.74, size=$2^9$MB).  This is circle represents a group size of 150 with a very high accuracy compared to other circles representing a group size of 150.  At $2^9$MB, this method-feature combination is by no means, light on storage, but produces an accuracy of over 0.70 for a group size of 150 authors.  that is a standout achievement compared to the other symbols with a group size of 150.
+		\item There are fewer circles than triangles on the graph.  This is due to the internal model limitations of libLinear.  Naive Bayes is able to handle all sizes of authors and models where the libLinear limit of author-feature pairs is $2^31$ pairs.
+		\item No symbols, circle or triangle, sit on the bottom line of the graph.  The worst accuracy shown is just below 0.2. No symbol made it to the top of the graph meaning no accuracy equaled 1.0.
+	\end{itemize}
+		
+\paragraph*{}
+	\begin{sidewaysfigure}[htbp!]
+		\begin{center}
+		\centering
+		\includegraphics[scale=1.1]{plot-scatter-size-accuracy-twitter}
+		\caption{Scatter-Plot of Twitter Short Message Corpus Tests}
+		\label{fig:plot-scatter-twitter}
+		\end{center}
+	\end{sidewaysfigure}
+
+\paragraph*{} Figure \ref{fig:plot-scatter-twitter} shows several notable trends for accuracy in the Twitter Short Message Corpus.  These are:
+	\begin{itemize}
+		\item There is significant whitespace at the top of the graph.  This shows that both naive Bayes and SVM produced lower accuracies against the Twitter Short Message Corpus than against the Enron Email Corpus.
+		\item The upper leftmost point is SVM for GM1 using Web1T\% of 0.  This leftmost point is not the highest accuracy on the graph.  The highest accuracy belongs to the dark blue triangle, representing naive Bayes for OSB3.  While there is still a line of red circles extending right from the left most red circle, there is also a line of dark blue and green triangles as well light blue circles extending to the right.  This indicates that multiple feature type, GM1, GM2, OSB3, and GB3 all performed similarly well for group sizes of 5.
+		\item There are many symbols to the left of $2^4$MB. $2^4$MB is an important line because the default heap size limit for a Dalvik VM is 16MB.  While it is true that a storage size of 16MB does not necessarily equate to 16MB of heap, 16MB is still a good relative indicator of how well a model could fit into a Dalvik VM.
+		\item No symbols on the Twitter graph stand out as unusual or noteworthy.  The entire graph progresses downward by group size.
+		\item There is no clear grouping of triangle and circles in any portion of the Twitter graph. This show that neither SVM nor naive Bayes held a clear accuracy advantage at any part of the graph.
+		
+	\end{itemize}
+
+\paragraph*{} Comparing the performance of the method-feature combinations in this thesis against the Enron E-Mail Corpus and the Twitter Short Message Corpus yields some significant differences:
+	\begin{itemize}
+		\item The symbols in the Enron graph tend higher in accuracy than the symbols in the Twitter graph.  This shows that the method-feature combinations in this thesis produced higher accuracies for an email corpus than against a short message corpus.
+		\item There is significant mixture of colors of different shapes and sizes at the top of the right side of the Enron graph.  The large, light blue circle  at (accuracy=0.74, size=$2^9$MB) is a notable data point showing high accuracy for a group size of 150.  The Twitter graph has no such exceptional data points.  The data in the Twitter graph is very regular.  Accuracies fall as group sizes fall nearly identically across all method-feature combinations.  This result means that the test either had too little Twitter text to train on, the wrong types of feature types to use against the 140 character limited structure of short messages, or the compact language of Twitter was not well represented by Web1T or sample well by the bootstrapping (Web1T\% of 0) method.
+		\item There is no clear grouping of triangle and circles in the Twitter graph.  On the left side of the Enron graph, there was a clear delination between circles at the top of the graph and triangles at the bottom of the graph.  This show that neither SVM nor naive Bayes held a clear accuracy advantage at any part of the graph.  The top performing method-feature combinations all fell in a nearly straight line across the the 0.62 accuracy line for Twitter.  This is noticeably different than the top performance line for Enron of 0.85.
+
+
+		\item There are fewer circles than triangles on the graph.  This is due to the internal model limitations of libLinear.  Naive Bayes is able to handle all sizes of authors and models where the libLinear limit of author-feature pairs is $2^31$ pairs.
+		\item There are symbols, circles and triangles, sitting on the bottom line of the graph.  The worst accuracies shown are on the 0.1 line. 
+	\end{itemize}
 
 \section{Ability to Execute on an Android Mobile Phone}
 \paragraph*{} With scores calculated alongside accuracy and storage requirements, feasibility on a mobile device must be determined.  The previous section clearly showed that $score = \frac{accuracy}{size}$ by itself does not provide an optimal solution for choosing an author detection method-feature combination on a mobile device. Tables \ref{tab:top_enron_by_score_all_groups_under_16mb} and \ref{tab:top_twitter_by_score_all_groups_under_16mb} show the highest scoring method-feature combinations that have storage requirements less than 16MB and then ordered by accuracy.  For the Enron Corpus Table \ref{tab:top_twitter_by_score_all_groups_under_16mb} shows that the best accuracy achievable using the tools of thesis is 0.7735.  For the Twitter Corpus, Table \ref{tab:top_twitter_by_score_all_groups_under_16mb} shows that the best accuracy achievable using the tools of this thesis is 0.5525. 
@@ -430,16 +526,16 @@
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways} &\begin{sideways}MLE\end{sideways} & \begin{sideways}F-Score\end{sideways}\\ \hline
 
-liblinear & enron & GM1 & 0 & 0.1601 & 0.7735 & 4.83 & 0.3842 & 0.6257\\ \hline 
-liblinear & enron & GM1 & 1 & 0.1113 & 0.7710 & 6.93 & 0.3859 & 0.6235\\ \hline 
-liblinear & enron & GM1 & 2 & 0.0658 & 0.7704 & 11.71 & 0.3849 & 0.6255\\ \hline 
-nb & enron & GM1 & 0 & 0.2954 & 0.6055 & 2.05 & 0.3842 & 0.3399\\ \hline 
-nb & enron & GM1 & 4 & 0.0507 & 0.5640 & 11.12 & 0.3793 & 0.4771\\ \hline 
-nb & enron & GM1 & 2 & 0.0908 & 0.5520 & 6.08 & 0.3849 & 0.4719\\ \hline 
-nb & enron & GM1 & 1 & 0.1536 & 0.5462 & 3.56 & 0.3859 & 0.4649\\ \hline 
+SVM & enron & GM1 & 0 & 0.1601 & 0.7735 & 4.83 & 0.3842 & 0.6257\\ \hline 
+SVM & enron & GM1 & 1 & 0.1113 & 0.7710 & 6.93 & 0.3859 & 0.6235\\ \hline 
+SVM & enron & GM1 & 2 & 0.0658 & 0.7704 & 11.71 & 0.3849 & 0.6255\\ \hline 
+NB & enron & GM1 & 0 & 0.2954 & 0.6055 & 2.05 & 0.3842 & 0.3399\\ \hline 
+NB & enron & GM1 & 4 & 0.0507 & 0.5640 & 11.12 & 0.3793 & 0.4771\\ \hline 
+NB & enron & GM1 & 2 & 0.0908 & 0.5520 & 6.08 & 0.3849 & 0.4719\\ \hline 
+NB & enron & GM1 & 1 & 0.1536 & 0.5462 & 3.56 & 0.3859 & 0.4649\\ \hline 
 
 \end{tabular}
-		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Enron Email Corpus}
+		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Enron E-mail Corpus}
 		\label{tab:top_enron_by_score_all_groups_under_16mb}
 	\end{center}
 \end{table}
@@ -450,20 +546,20 @@ nb & enron & GM1 & 1 & 0.1536 & 0.5462 & 3.56 & 0.3859 & 0.4649\\ \hline
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways} &\begin{sideways}MLE\end{sideways} & \begin{sideways}F-Score\end{sideways}\\ \hline
 
-nb & twitter & OSB3 & 0 & 0.0680 & 0.5525 & 8.13 & 0.1978 & 0.5338\\ \hline 
-nb & twitter & GB3 & 0 & 0.1451 & 0.5203 & 3.59 & 0.1990 & 0.4820\\ \hline 
-liblinear & twitter & GM1 & 1 & 0.0992 & 0.5159 & 5.20 & 0.1960 & 0.4953\\ \hline 
-liblinear & twitter & GM1 & 0 & 0.6402 & 0.5141 & 0.80 & 0.1975 & 0.4934\\ \hline 
-nb & twitter & GM1 & 0 & 1.8823 & 0.5140 & 0.27 & 0.1975 & 0.4708\\ \hline 
-liblinear & twitter & GM1 & 2 & 0.0515 & 0.5131 & 9.97 & 0.1944 & 0.4915\\ \hline 
-nb & twitter & GM2 & 0 & 0.3743 & 0.4750 & 1.27 & 0.1978 & 0.4350\\ \hline 
-liblinear & twitter & GB3 & 0 & 0.0411 & 0.4522 & 11.01 & 0.1990 & 0.4207\\ \hline 
-nb & twitter & GM1 & 4 & 0.0399 & 0.4070 & 10.20 & 0.1957 & 0.3838\\ \hline 
-nb & twitter & GM1 & 2 & 0.0786 & 0.4059 & 5.16 & 0.1944 & 0.3833\\ \hline 
-liblinear & twitter & GM2 & 0 & 0.1121 & 0.4002 & 3.57 & 0.1978 & 0.3726\\ \hline 
-nb & twitter & GM1 & 1 & 0.1484 & 0.3922 & 2.64 & 0.1960 & 0.3672\\ \hline 
-nb & twitter & GM5 & 0 & 0.0845 & 0.2726 & 3.22 & 0.1995 & 0.1902\\ \hline 
-liblinear & twitter & GM5 & 0 & 0.0240 & 0.2095 & 8.73 & 0.1995 & 0.1547\\ \hline 
+NB & twitter & OSB3 & 0 & 0.0680 & 0.5525 & 8.13 & 0.1978 & 0.5338\\ \hline 
+NB & twitter & GB3 & 0 & 0.1451 & 0.5203 & 3.59 & 0.1990 & 0.4820\\ \hline 
+SVM & twitter & GM1 & 1 & 0.0992 & 0.5159 & 5.20 & 0.1960 & 0.4953\\ \hline 
+SVM & twitter & GM1 & 0 & 0.6402 & 0.5141 & 0.80 & 0.1975 & 0.4934\\ \hline 
+NB & twitter & GM1 & 0 & 1.8823 & 0.5140 & 0.27 & 0.1975 & 0.4708\\ \hline 
+SVM & twitter & GM1 & 2 & 0.0515 & 0.5131 & 9.97 & 0.1944 & 0.4915\\ \hline 
+NB & twitter & GM2 & 0 & 0.3743 & 0.4750 & 1.27 & 0.1978 & 0.4350\\ \hline 
+SVM & twitter & GB3 & 0 & 0.0411 & 0.4522 & 11.01 & 0.1990 & 0.4207\\ \hline 
+NB & twitter & GM1 & 4 & 0.0399 & 0.4070 & 10.20 & 0.1957 & 0.3838\\ \hline 
+NB & twitter & GM1 & 2 & 0.0786 & 0.4059 & 5.16 & 0.1944 & 0.3833\\ \hline 
+SVM & twitter & GM2 & 0 & 0.1121 & 0.4002 & 3.57 & 0.1978 & 0.3726\\ \hline 
+NB & twitter & GM1 & 1 & 0.1484 & 0.3922 & 2.64 & 0.1960 & 0.3672\\ \hline 
+NB & twitter & GM5 & 0 & 0.0845 & 0.2726 & 3.22 & 0.1995 & 0.1902\\ \hline 
+SVM & twitter & GM5 & 0 & 0.0240 & 0.2095 & 8.73 & 0.1995 & 0.1547\\ \hline 
 
 \end{tabular}
 		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Twitter Short Message Corpus}
@@ -471,17 +567,17 @@ liblinear & twitter & GM5 & 0 & 0.0240 & 0.2095 & 8.73 & 0.1995 & 0.1547\\ \hlin
 	\end{center}
 \end{table}
 
-\paragraph*{} The Enron Email Corpus has 7 method-feature combinations with a storage requirement of less than 16MB. The Twitter Short Message Corpus has 14 method-feature combinations across all group sizes with a storage requirement under 16MB.  Looking closely at the values of size and accuracy, there is little difference between the three highest accuracies in Table \ref{tab:top_enron_by_score_all_groups_under_16mb} but the third highest accuracy is more than double the size of the highest accuracy.  That makes the choice of liblinear GM1 0 clearly the most appropriate choice for a mobile device. For the Twitter corpus, the top accuracy of .5525 for Naive Bayes using OSB3 is only slightly higher than 0.5203 for Naive Bayes using GB3 with a size that is which is less than half of OSB3.  Naive Bayes using GB3 would be more appropriate for a mobile device.
+\paragraph*{} The Enron E-mail Corpus has 7 method-feature combinations with a storage requirement of less than 16MB. The Twitter Short Message Corpus has 14 method-feature combinations across all group sizes with a storage requirement under 16MB.  Looking closely at the values of size and accuracy, there is little difference between the three highest accuracies in Table \ref{tab:top_enron_by_score_all_groups_under_16mb} but the third highest accuracy is more than double the size of the highest accuracy.  That makes the choice of SVM GM1 0 clearly the most appropriate choice for a mobile device. For the Twitter corpus, the top accuracy of .5525 for naive Bayes using OSB3 is only slightly higher than 0.5203 for naive Bayes using GB3 with a size that is which is less than half of OSB3.  naive Bayes using GB3 would be more appropriate for a mobile device.
 
-\paragraph*{} The only remaining question is whether these method-feature combinations are stable performers across the group sizes.  While standard deviation is one indicator, a plot of the accuracy, f-score, and MLE for each of these choice would be informative for consistent performance across group sizes.  These plots can be compared to other method-feature combinations that have similiar accuracy and size values.
+\paragraph*{} The only remaining question is whether these method-feature combinations are stable performers across the group sizes.  While standard deviation is one indicator, a plot of the accuracy, f-score, and MLE for each of these choices would be informative for consistent performance across group sizes.  These plots can be compared to other method-feature combinations that have similar accuracy and size values.
 
-\paragraph*{} Figure \ref{fig:accuracy-liblinear-enron-GM1-over-groups} shows that liblinear GM1 has a steady decline from just above 0.8 to 0.6 from a groups size of 5 to a group size of 75.  The accuracy for liblinear GM1 for the Enron corpus is virtually identical for groups sizes of 75 and 150. Figure \ref{fig:accuracy-liblinear-twitter-OSB3-over-groups} below shows that liblinear OSB3 for Twitter has declining accuracy from just above 0.6 to slightly above 0.2 as group size increases from 5 authors to 150 authors.  
+\paragraph*{} Figure \ref{fig:accuracy-liblinear-enron-GM1-over-groups} shows that SVM GM1 has a steady decline from just above 0.8 to 0.6 from a groups size of 5 to a group size of 75.  The accuracy for SVM GM1 for the Enron corpus is virtually identical for groups sizes of 75 and 150. Figure \ref{fig:accuracy-liblinear-twitter-OSB3-over-groups} shows that SVM OSB3 for Twitter has declining accuracy from just above 0.6 to slightly above 0.2 as group size increases from 5 authors to 150 authors.  
 
 \begin{figure}[htbp!]
 	\begin{center}
 	\centering
 	\includegraphics[scale=0.5]{plot-accuracy-liblinear-enron-GM1}
-	\caption{Accuracy Results over Group Size Using Liblinear GM1 for the Enron Email Corpus}
+	\caption{Accuracy Results over Group Size Using SVM GM1 for the Enron E-mail Corpus}
 	\label{fig:accuracy-liblinear-enron-GM1-over-groups}
 	\end{center}
 \end{figure}
@@ -490,9 +586,9 @@ liblinear & twitter & GM5 & 0 & 0.0240 & 0.2095 & 8.73 & 0.1995 & 0.1547\\ \hlin
 	\begin{center}
 	\centering
 	\includegraphics[scale=0.5]{plot-accuracy-nb-twitter-GB3}
-	\caption{Accuracy Results over Group Size Using Liblinear OSB3 for the Twitter Short Message Corpus}
+	\caption{Accuracy Results over Group Size Using SVM OSB3 for the Twitter Short Message Corpus}
 	\label{fig:accuracy-liblinear-twitter-OSB3-over-groups}
 	\end{center}
 \end{figure}
 
-\paragraph*{} The results for author detection over the Enron Email Corpus are far higher than for the Twitter Short Message Corpus for the selected method-feature combinations.  This is not unexpected since results for the Enron Email Corpus have been higher than the Twitter Short Message Corpus across all test sets.  With both selections having storage requirements of less than 1MB, execution of actual author detection on a mobile phone is practical as a next stage in future work.
+\paragraph*{} The results for author detection over the Enron E-mail Corpus are far higher than for the Twitter Short Message Corpus for the selected method-feature combinations.  This is not unexpected since results for the Enron E-mail Corpus have been higher than the Twitter Short Message Corpus across all test sets.  With both selections having storage requirements of less than 1MB, execution of actual author detection on a mobile phone is practical as a next stage in future work.
