@@ -16,11 +16,19 @@
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Accuracy of SVM OSB3 for the ENRON E-mail Corpus}}{48}{figure.4.2}
 \contentsline {figure}{\numberline {4.3}{\ignorespaces SVM Limits Due to Vocabulary Size and Group Size}}{53}{figure.4.3}
 \contentsline {figure}{\numberline {4.4}{\ignorespaces SVM Limits Due to Vocabulary Size and Group Size}}{54}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Effect of Web1T\% Size on Accuracy for Small-To-Large, Small-And-Large, and Random Author Groupings.}}{56}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Scatter-Plot of Enron Email Corpus Tests}}{66}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Scatter-Plot of Twitter Short Message Corpus Tests}}{69}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Accuracy Results over Group Size Using SVM GM1 for the Enron E-mail Corpus}}{72}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Accuracy Results over Group Size Using SVM OSB3 for the Twitter Short Message Corpus}}{73}{figure.4.9}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces plot-tiled-cdf-summary-liblinear-enron-gb3-10}}{57}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces plot-tiled-cdf-summary-nb-enron-gb3-10}}{58}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces plot-tiled-cdf-summary-liblinear-twitter-gb3-10}}{59}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces plot-tiled-cdf-summary-nb-twitter-gb3-10}}{59}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0}}{60}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces plot-tiled-cdf-summary-nb-enron-GB3-ALL-0}}{61}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces plot-tiled-cdf-summary-nb-enron-GB3-ALL-1}}{62}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0}}{63}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0}}{64}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Scatter-Plot of Enron Email Corpus Tests}}{73}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Scatter-Plot of Twitter Short Message Corpus Tests}}{76}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Accuracy Results over Group Size Using SVM GM1 for the Enron E-mail Corpus}}{80}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Accuracy Results over Group Size Using SVM OSB3 for the Twitter Short Message Corpus}}{81}{figure.4.17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
