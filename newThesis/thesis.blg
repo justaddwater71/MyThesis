@@ -21,53 +21,52 @@ A level-1 auxiliary file: appendixM.aux
 A level-1 auxiliary file: appendixN.aux
 A level-1 auxiliary file: appendixO.aux
 A level-1 auxiliary file: appendixP.aux
+A level-1 auxiliary file: appendixQ.aux
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: thesis.bib
-Warning--I didn't find a database entry for "_method_????"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 30 entries,
+You've used 33 entries,
             4030 wiz_defined-function locations,
-            1007 strings with 13488 characters,
-and the built_in function-call counts, 17475 in all, are:
-= -- 1494
-> -- 242
-< -- 70
-+ -- 129
-- -- 42
-* -- 756
-:= -- 2741
-add.period$ -- 68
-call.type$ -- 30
-change.case$ -- 25
-chr.to.int$ -- 150
-cite$ -- 30
-duplicate$ -- 1410
-empty$ -- 1625
-format.name$ -- 57
-if$ -- 4041
+            1014 strings with 13823 characters,
+and the built_in function-call counts, 19197 in all, are:
+= -- 1732
+> -- 231
+< -- 66
++ -- 126
+- -- 40
+* -- 760
+:= -- 2927
+add.period$ -- 73
+call.type$ -- 33
+change.case$ -- 28
+chr.to.int$ -- 138
+cite$ -- 33
+duplicate$ -- 1590
+empty$ -- 1727
+format.name$ -- 53
+if$ -- 4500
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 246
-newline$ -- 153
+int.to.str$ -- 33
+missing$ -- 257
+newline$ -- 166
 num.names$ -- 21
-pop$ -- 660
+pop$ -- 697
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1462
+skip$ -- 1690
 stack$ -- 0
-substring$ -- 535
-swap$ -- 981
+substring$ -- 640
+swap$ -- 1132
 text.length$ -- 20
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 30
+type$ -- 33
 warning$ -- 0
-while$ -- 57
-width$ -- 32
-write$ -- 330
-(There was 1 warning)
+while$ -- 53
+width$ -- 35
+write$ -- 355

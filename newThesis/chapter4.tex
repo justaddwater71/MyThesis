@@ -298,7 +298,7 @@
 		\end{center}
 	\end{figure}
 
-\paragraph*{}
+\paragraph*{} Both Figures \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0} and \ref{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0} show the cumulative distribution graphs for Twitter.  Figure \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0} show SVM and Figure \ref{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0} shows naive Bayes.  The shape, grouping, and curvature for both panels in nearly identical.  In both figures, the first and second panels show a "S" shape indicative of few authors with low f-scores and few authors with high f-scores.  Both figures show a steady progression from the second panel to the sixth panel of the "S" shape becoming more of an up and left curve, indicating increasing low f-scores for more authors.  This clearly demonstrates the worsening performance of both SVM and naive Bayes against the Twitter Short Message Corpus over all Web1T\% values. These graphs are typical for all feature types using SVM and naive Bayes against the Twitter Short Message Corpus.
 
 	\begin{figure}[htbp!]
 		\begin{center}
@@ -308,9 +308,8 @@
 		\label{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0}
 		\end{center}
 	\end{figure}
-	For Twitter GM2 with naive Bayes, applying Web1T\% of 1 makes STL worse, but leaves SAL and RAN intact.  Additional Web1T\% makes the damage to STL less severe, but does not get back to STL results of Web1T\% of 0.
 	
-		\paragraph*{} Impact of CDF? Twitter was barely on the scene in 2006 when the Google Web1T snapshot was taken.  There was no significant Twitter corpus for Google to crawl.  Twiiter language has evolved significantly since its inception and may differ appreciably from standard English or even standard web verbiage.  Could a new Web1T built from a Google database that has crawled Twitter term................
+		\paragraph*{} Twitter was barely on the scene in 2006 when the Google Web1T snapshot was taken.  There was no significant Twitter corpus for Google to crawl.  Twitter language has evolved significantly since its inception and may differ appreciably from standard English or even standard web verbiage.  If a new Web1T built from a Google database that has crawled Twitter terms regulary was available, then an increase in accuracy and cumulative distribution for f-scores would indicate that the poor performance of Twitter was due to a lack of appropriate types in the 2006 Web1T Corpus.  If an e-mail corpus became available from 2010, then these same tests, using the 2006 Web1T Corpus, could be run against that newer email corpus to see if accuracy and cumulative distribution worsened.  If accuracy and cumulative distribution worsened, then the age of the Web1T Corpus is impacting results by not evolving as language evolves.  To make a more rigourous comparison between e-mail and short message requires an e-mail corpus created at approximately the same time as the short message corpus with a vocabulary created from a database snapshot from approximately the same time.
 
 \begin{singlespace}
 \section{Storage Requirements for Combinations of Classification Methods, Feature Types, and Vocabulary}
@@ -560,11 +559,24 @@
 		\item The method-feature combinations with a smaller storage requirement are further left on the graph
 	\end{itemize}
 		
+\definecolor{MyDarkYellow}{rgb}{0.75,0.65,0.0}	
+\definecolor{MyOliveGreen}{rgb}{0,0.4,0}
+		
 \paragraph*{}
 	\begin{sidewaysfigure}[htbp!]
 		\begin{center}
 		\centering
 		\includegraphics[scale=1.1]{plot-scatter-size-accuracy-enron-crop}
+			
+		\begin{tabular}{cccccc}
+			
+			  	& GM1	& GM2	& GM5	& GB3	& OSB3	\\
+			NB	& $ \color{red} \blacktriangle$ & $\color{cyan} \blacktriangle$ & $\color{MyDarkYellow} \blacktriangle$ & $\color{MyOliveGreen} \blacktriangle$ & $\color{blue} \blacktriangle$ \\ 					
+			SVM	& $ \color{red} \CIRCLE$ & $\color{cyan} \CIRCLE$ & $\color{MyDarkYellow} \CIRCLE$ & $\color{MyOliveGreen} \CIRCLE$ & $\color{blue} \CIRCLE$ \\
+		\end{tabular}
+		\begin{singlespace}
+		Symbol size represents group size.  Smallest = group size 5.  Largest = group size 150.  
+		\end{singlespace}
 		\caption{Scatter-Plot of Enron Email Corpus Tests}
 		\label{fig:plot-scatter-enron}
 		\end{center}
@@ -585,11 +597,38 @@
 		\item No symbols, circle or triangle, sit on the bottom line of the graph.  The worst accuracy shown is just below 0.2. No symbol made it to the top of the graph meaning no accuracy equaled 1.0.
 	\end{itemize}
 		
+	
+\definecolor{MyDarkYellow}{rgb}{0.75,0.65,0.0}	
+\definecolor{MyOliveGreen}{rgb}{0,0.4,0}
+				
 \paragraph*{}
 	\begin{sidewaysfigure}[htbp!]
 		\begin{center}
 		\centering
 		\includegraphics[scale=1.1]{plot-scatter-size-accuracy-twitter-crop}
+
+		\begin{tabular}{cccccc}
+			
+			  	& GM1	& GM2	& GM5	& GB3	& OSB3	\\
+			NB	& $ \color{red} \blacktriangle$ & $\color{cyan} \blacktriangle$ & $\color{MyDarkYellow} \blacktriangle$ & $\color{MyOliveGreen} \blacktriangle$ & $\color{blue} \blacktriangle$ \\ 					
+			SVM	& $ \color{red} \CIRCLE$ & $\color{cyan} \CIRCLE$ & $\color{MyDarkYellow} \CIRCLE$ & $\color{MyOliveGreen} \CIRCLE$ & $\color{blue} \CIRCLE$ \\	
+			
+		\end{tabular}
+		\begin{comment}	
+		\begin{tabular}{ccc}
+			& NB 					& SVM 					\\
+		GM1 	& $\color{red} \blacktriangle$		& $\color{red} \CIRCLE$			\\
+		GM2 	& $\color{cyan} \blacktriangle$		& $\color{cyan} \CIRCLE$		\\
+		GM5 	& $\color{MyDarkYellow} \blacktriangle$	& $\color{MyDarkYellow} \CIRCLE$	\\
+		GB3 	& $\color{MyOliveGreen} \blacktriangle$	& $\color{MyOliveGreen} \CIRCLE$	\\
+		OSB3 	& $\color{red} \blacktriangle$		& $\color{red} \CIRCLE$			\\
+		\end{tabular}
+		
+		\end{comment}
+		\begin{singlespace}
+		Symbol size represents group size.  Smallest = group size 5.  Largest = group size 150.  
+		\end{singlespace}
+		
 		\caption{Scatter-Plot of Twitter Short Message Corpus Tests}
 		\label{fig:plot-scatter-twitter}
 		\end{center}
