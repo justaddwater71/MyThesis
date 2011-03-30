@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  28 MAR 2011 19:01
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2010.8.26)  30 MAR 2011 14:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -571,202 +571,176 @@ File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
 (./appendixE.aux) (./appendixF.aux) (./appendixG.aux) (./appendixH.aux)
 (./appendixI.aux
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-25' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-75' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-150' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-150' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-25' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-75' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-150' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-150' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-25' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-75' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-25' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-75' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-OSB3-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-OSB3-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-25' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-OSB3-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-OSB3-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-75' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-OSB3-ALL-ALL-75' multiply defined.
 
 ) (./appendixJ.aux
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-10' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-25' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-25' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-75' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-150' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-75' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-150' multiply defined
-.
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-50' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-75' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-25' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-150' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-5' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-10' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-75' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-150' multiply defined
-.
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-150' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-5' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-25' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-25' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-50' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-75' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-150' multiply defined
-.
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-150' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-10' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-25' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-25' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-75' multiply defined.
 
 
-
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-75' multiply defined.
-
-
-
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-150' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-5' multiply defined.
-
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-10' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-25' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-50' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-75' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-150' multiply define
-d.
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-150' multiply defined.
 
 ) (./appendixK.aux
 
@@ -952,190 +926,164 @@ LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-150' multiply defined.
 
 ) (./appendixM.aux
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-25' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-75' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM1-ALL-ALL-150' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM1-ALL-ALL-150' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-25' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-75' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM2-ALL-ALL-150' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM2-ALL-ALL-150' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-25' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GM5-ALL-ALL-75' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GM5-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-25' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-GB3-ALL-ALL-75' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-GB3-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-enron-OSB3-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-enron-OSB3-ALL-ALL-5' multiply defined.
 
 ) (./appendixN.aux
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-10' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-25' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-25' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-75' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GM1-ALL-ALL-150' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-75' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM1-ALL-ALL-150' multiply defined
-.
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-50' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-75' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-25' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GM2-ALL-ALL-150' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-5' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-10' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-75' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-25' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM2-ALL-ALL-150' multiply defined
-.
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GM5-ALL-ALL-150' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-5' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-25' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-10' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-25' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-50' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-75' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-75' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GM5-ALL-ALL-150' multiply defined
-.
+LaTeX Warning: Label `table:SVM-twitter-GB3-ALL-ALL-150' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-5' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-5' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-10' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-10' multiply defined.
 
 
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-25' multiply defined.
 
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-25' multiply defined.
 
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-50' multiply defined.
 
 
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-50' multiply defined.
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-75' multiply defined.
 
 
-
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-75' multiply defined.
-
-
-
-LaTeX Warning: Label `table:liblinear-twitter-GB3-ALL-ALL-150' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-5' multiply defined.
-
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-10' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-25' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-50' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-75' multiply defined
-.
-
-
-LaTeX Warning: Label `table:liblinear-twitter-OSB3-ALL-ALL-150' multiply define
-d.
+LaTeX Warning: Label `table:SVM-twitter-OSB3-ALL-ALL-150' multiply defined.
 
 ) (./appendixO.aux
 
@@ -1319,23 +1267,24 @@ LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-75' multiply defined.
 
 LaTeX Warning: Label `table:nb-twitter-OSB3-ALL-ALL-150' multiply defined.
 
-) (./appendixQ.aux))
+) (./appendixQ.aux) (./appendixR.aux) (./appendixS.aux) (./appendixT.aux)
+(./appendixU.aux) (./appendixV.aux) (./appendixW.aux) (./appendixX.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 97.
-LaTeX Font Info:    ... okay on input line 97.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 100.
+LaTeX Font Info:    ... okay on input line 100.
 
 *geometry auto-detecting driver*
 *geometry detected driver: pdftex*
@@ -1391,7 +1340,7 @@ driver: pdftex
 \MPnumerator=\count133
 \everyMPtoPDFconversion=\toks30
 ) ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring OFF on input line 97.
+Package hyperref Info: Link coloring OFF on input line 100.
 
 (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
@@ -1402,50 +1351,57 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 \c@section@level=\count134
 LaTeX Info: Redefining \Ref on input line 396.
 )
-LaTeX Info: Redefining \ref on input line 97.
-LaTeX Info: Redefining \pageref on input line 97.
+LaTeX Info: Redefining \ref on input line 100.
+LaTeX Info: Redefining \pageref on input line 100.
  (./thesis.out)
 (./thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
 \AtBeginShipoutBox=\box58
-LaTeX Info: Redefining \Ref on input line 97.
+LaTeX Info: Redefining \Ref on input line 100.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
- <nps_logo_3clr_cymk.pdf, id=194, 222.8325pt x 153.57375pt>
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
+ <nps_logo_3clr_cymk.pdf, id=238, 222.8325pt x 153.57375pt>
 File: nps_logo_3clr_cymk.pdf Graphic file (type pdf)
 
 <use nps_logo_3clr_cymk.pdf>
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
  (/usr/share/texmf-texlive/tex/latex/base/ulasy.fd) (/usr/share/texmf-texlive/t
 ex/latex/wasysym/uwasy.fd)
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd)
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd)
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 102.
  [1.1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./nps_logo_3clr_cymk.pdf>]
  [2.2
 
 ]
-Overfull \hbox (51.98967pt too wide) in paragraph at lines 100--100
+Overfull \hbox (51.98967pt too wide) in paragraph at lines 103--103
 $[]$ 
  []
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 100.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
 
-Overfull \hbox (51.98967pt too wide) in paragraph at lines 100--100
+Overfull \hbox (51.98967pt too wide) in paragraph at lines 103--103
 $[]$ 
  []
 
 
-Overfull \hbox (52.94322pt too wide) in paragraph at lines 100--100
+Overfull \hbox (52.94322pt too wide) in paragraph at lines 103--103
+$[]$ 
+ []
+
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¯ in font ptmr7t!
+
+Overfull \hbox (52.94322pt too wide) in paragraph at lines 103--103
 $[]$ 
  []
 
@@ -1453,13 +1409,13 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.100 \NPSsftne
+l.103 \NPSsftne
                                       % SF298 [1.3]pdfTeX warning (ext4): desti
 nation with the same identifier (name{page.ii}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.100 \NPSsftne
+l.103 \NPSsftne
                                       % SF298 [2.4]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1480,19 +1436,42 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  [9.11] [10.12
 
 ]
-(./thesis.lof [11.13
+(./thesis.lof
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11.13
 
 ]
-Underfull \vbox (badness 5711) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12.14]
-[13.15] [14.16] [15.17] [16.18])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13.15]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14.16]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15.17]
+[16.18]
+Underfull \vbox (badness 1412) has occurred while \output is active []
+
+ [17.19]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [18.20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19.21]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [20.22]
+[21.23])
 \tf@lof=\write6
 \openout6 = `thesis.lof'.
 
- [17.19] [18.20
-
-] (./thesis.lot
+ [22.24] (./thesis.lot
 Overfull \hbox (7.09386pt too wide) in paragraph at lines 13--13
  [][] [][]\OT1/ptm/m/n/12 Highest Ac-cu-racy Method-Feature Type Com-bi-na-tion
 s for the Twit-ter Short 
@@ -1504,64 +1483,65 @@ Overfull \hbox (9.09851pt too wide) in paragraph at lines 14--14
 ure Type: GB3, Group 
  []
 
-[19.21
+[23.25
 
-] [20.22]
+
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21.23]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [22.24]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [23.25]
-[24.26]
+ [24.26]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25.27]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [26.28]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [27.29]
+[27.29]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [28.30]
-[29.31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29.31]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [30.32]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31.33]
+[32.34] [33.35]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32.34]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [33.35]
-[34.36]
+ [34.36]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [35.37]
-[36.38]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36.38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [37.39]
+[38.40]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [38.40])
+ [39.41]
+[40.42]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41.43]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42.44])
 \tf@lot=\write7
 \openout7 = `thesis.lot'.
 
 
-[39.41] [40.42
+[43.45] [44.46
 
-] [41.43
+] [45.47
 
-] [42.44
+] [46.48
 
 ]
 \openout2 = `chapter1.aux'.
@@ -1570,7 +1550,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 5.
-[1.45
+[1.49
 
 
 ]
@@ -1580,17 +1560,17 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 14.
- [2.46] [3.47]
-[4.48]) [5.49]
+ [2.50] [3.51]
+[4.52]) [5.53]
 \openout2 = `chapter2.aux'.
 
- (./chapter2.tex [6.50
+ (./chapter2.tex [6.54
 
 
 
 ]
 Chapter 2.
-[7.51] [8.52] [9.53]
+[7.55] [8.56] [9.57]
 
 LaTeX Warning: Reference `eqn:strong_independence' on page 10 undefined on inpu
 t line 45.
@@ -1598,2088 +1578,2352 @@ t line 45.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10.54]
-<naive_bayes_algorithm.png, id=1843, 460.72125pt x 387.4475pt>
+ [10.58]
+<naive_bayes_algorithm.png, id=2096, 460.72125pt x 387.4475pt>
 File: naive_bayes_algorithm.png Graphic file (type png)
 
 <use naive_bayes_algorithm.png>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [11.55]
+ [11.59]
 Underfull \vbox (badness 1675) has occurred while \output is active []
 
- [12.56 <./naive_bayes_algorithm.png>] [13.57] [14.58] [15.59] [16.60]
+ [12.60 <./naive_bayes_algorithm.png>] [13.61] [14.62] [15.63] [16.64]
 
 LaTeX Warning: Characters dropped after `\end{comment}' on input line 197.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[17.61]
+[17.65]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18.62]
+[18.66]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19.63] [20.64] [21.65] [22.66] [23.67] [24.68]
+[19.67] [20.68] [21.69] [22.70] [23.71] [24.72]
 
 LaTeX Warning: Characters dropped after `\end{comment}' on input line 411.
 
-[25.69] [26.70] [27.71]) [28.72]
+[25.73] [26.74] [27.75]) [28.76]
 \openout2 = `chapter3.aux'.
 
  (./chapter3.tex
 Chapter 3.
-[29.73
+[29.77
 
 
 
-]
-Overfull \hbox (2.77171pt too wide) in paragraph at lines 10--11
-\OT1/ptm/m/n/12 The clas-si-fi-ca-tion meth-ods to be com-pared are naive Bayes
- and Sup-port Vec-tor ma-chines (SVM).
- []
-
-<Experiment_Design.pdf, id=2076, 614.295pt x 578.16pt>
+] <Experiment_Design.pdf, id=2328, 604.2575pt x 532.99126pt>
 File: Experiment_Design.pdf Graphic file (type pdf)
 
-<use Experiment_Design.pdf> [30.74] [31.75 <./Experiment_Design.pdf>]
+<use Experiment_Design.pdf> [30.78 <./Experiment_Design.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [32.76]
-[33.77] <3_tier_explanation.pdf, id=2121, 460.72125pt x 244.915pt>
+ [31.79]
+Overfull \hbox (16.9695pt too wide) in paragraph at lines 48--49
+\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 l[]; l[]; :::l[]\OMS/cmsy/m/n/12 g$ \OT1/ptm
+/m/n/12 where $\OML/cmm/m/it/12 l[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 a[]$\OT1
+/ptm/m/n/12 , $\OML/cmm/m/it/12 l[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 a[]$\OT1
+/ptm/m/n/12 , and $\OML/cmm/m/it/12 l[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 a[]$
+\OT1/ptm/m/n/12 . 
+ []
+
+
+Underfull \vbox (badness 3646) has occurred while \output is active []
+
+ [32.80]
+[33.81] <3_tier_explanation.pdf, id=2377, 460.72125pt x 244.915pt>
 File: 3_tier_explanation.pdf Graphic file (type pdf)
 
-<use 3_tier_explanation.pdf> [34.78]
-<3_tier_example.pdf, id=2129, 532.99126pt x 450.68375pt>
+<use 3_tier_explanation.pdf> [34.82]
+<3_tier_example.pdf, id=2385, 532.99126pt x 450.68375pt>
 File: 3_tier_example.pdf Graphic file (type pdf)
 
 <use 3_tier_example.pdf>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [35.79 <./3_tier_explanation.pdf>] [36.80 <./3_tier_example.pdf>]
-<cmph_matrix.pdf, id=2153, 482.80376pt x 754.82pt>
+ [35.83 <./3_tier_explanation.pdf>] [36.84 <./3_tier_example.pdf>] [37.85]
+<cmph_matrix.pdf, id=2413, 482.80376pt x 754.82pt>
 File: cmph_matrix.pdf Graphic file (type pdf)
  <use cmph_matrix.pdf>
-[37.81] [38.82 <./cmph_matrix.pdf>] [39.83]
-<small_to_large_grouping.pdf, id=2180, 542.025pt x 361.35pt>
+[38.86]
+Underfull \vbox (badness 2799) has occurred while \output is active []
+
+ [39.87 <./cmph_matrix.pdf>] [40.88]
+<small_to_large_grouping.pdf, id=2441, 542.025pt x 361.35pt>
 File: small_to_large_grouping.pdf Graphic file (type pdf)
 
-<use small_to_large_grouping.pdf> [40.84 <./small_to_large_grouping.pdf>]
-<small_and_large_grouping.pdf, id=2195, 542.025pt x 361.35pt>
+<use small_to_large_grouping.pdf>
+<small_and_large_grouping.pdf, id=2443, 542.025pt x 361.35pt>
 File: small_and_large_grouping.pdf Graphic file (type pdf)
 
 <use small_and_large_grouping.pdf>
-<random_grouping.pdf, id=2197, 542.025pt x 361.35pt>
+<random_grouping.pdf, id=2445, 542.025pt x 361.35pt>
 File: random_grouping.pdf Graphic file (type pdf)
  <use random_grouping.pdf>
-[41.85 <./small_and_large_grouping.pdf>]
-<svm_format.pdf, id=2214, 624.3325pt x 88.33pt>
+[41.89 <./small_to_large_grouping.pdf>] [42.90 <./small_and_large_grouping.pdf>
+ <./random_grouping.pdf>] <svm_format.pdf, id=2479, 624.3325pt x 88.33pt>
 File: svm_format.pdf Graphic file (type pdf)
- <use svm_format.pdf> [42.86 <./random_grouping.pdf>] [43.87 <./svm_format.pdf>
-]
-<prediction_flow_chart.pdf, id=2241, 614.295pt x 794.97pt>
+
+<use svm_format.pdf> [43.91 <./svm_format.pdf>] [44.92]
+<prediction_flow_chart.pdf, id=2502, 614.295pt x 794.97pt>
 File: prediction_flow_chart.pdf Graphic file (type pdf)
 
-<use prediction_flow_chart.pdf> [44.88] [45.89 <./prediction_flow_chart.pdf>])
-[46.90]
+<use prediction_flow_chart.pdf> [45.93]
+Underfull \vbox (badness 2772) has occurred while \output is active []
+
+ [46.94 <./prediction_flow_chart.pdf>]) [47.95]
 \openout2 = `chapter4.aux'.
 
- (./chapter4.tex
+ (./chapter4.tex [48.96
+
+
+
+]
 Chapter 4.
-[47.91
-
-
-
-] <FeatureVSsize.pdf, id=2270, 469.755pt x 415.5525pt>
+[49.97] <FeatureVSsize.pdf, id=2535, 469.755pt x 415.5525pt>
 File: FeatureVSsize.pdf Graphic file (type pdf)
 
-<use FeatureVSsize.pdf>
-<liblinear-enron-avg-by-group_size.pdf, id=2276, 422.57875pt x 319.1925pt>
+<use FeatureVSsize.pdf> [50.98]
+<liblinear-enron-avg-by-group_size.pdf, id=2545, 422.57875pt x 319.1925pt>
 File: liblinear-enron-avg-by-group_size.pdf Graphic file (type pdf)
 
-<use liblinear-enron-avg-by-group_size.pdf> [48.92] [49.93 <./FeatureVSsize.pdf
->] [50.94 <./liblinear-enron-avg-by-group_size.pdf>] [51.95]
-Underfull \vbox (badness 1019) has occurred while \output is active []
+<use liblinear-enron-avg-by-group_size.pdf> [51.99 <./FeatureVSsize.pdf>]
+[52.100 <./liblinear-enron-avg-by-group_size.pdf>] [53.101] [54.102]
+<plot-accuracy-liblinear-enron-GM1.pdf, id=2587, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-enron-GM1.pdf Graphic file (type pdf)
 
- [52.96]
-[53.97] [54.98]
-<figure_liblinear_enron_grouping_compare.pdf, id=2333, 512.91624pt x 445.665pt>
+<use plot-accuracy-liblinear-enron-GM1.pdf>
+<plot-accuracy-nb-twitter-GB3.pdf, id=2588, 578.16pt x 433.62pt>
+File: plot-accuracy-nb-twitter-GB3.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-twitter-GB3.pdf> [55.103 <./plot-accuracy-liblinear-enron
+-GM1.pdf> <./plot-accuracy-nb-twitter-GB3.pdf>] [56.104] [57.105]
+<figure_liblinear_enron_grouping_compare.pdf, id=2692, 483.8075pt x 419.5675pt>
 File: figure_liblinear_enron_grouping_compare.pdf Graphic file (type pdf)
 <use figure_liblinear_enron_grouping_compare.pdf>
-Overfull \hbox (57.61487pt too wide) in paragraph at lines 181--182
+Overfull \hbox (4.31439pt too wide) in paragraph at lines 205--206
  [] 
  []
 
 
-<figure_liblinear_twitter_grouping_compare.pdf, id=2334, 512.91624pt x 445.665p
-t>
+<figure_liblinear_twitter_grouping_compare.pdf, id=2693, 490.83376pt x 415.5525
+pt>
 File: figure_liblinear_twitter_grouping_compare.pdf Graphic file (type pdf)
  <use figure_liblinear_twitter_grouping_compare.pdf>
-Overfull \hbox (57.61487pt too wide) in paragraph at lines 190--191
+Overfull \hbox (10.98929pt too wide) in paragraph at lines 214--215
  [] 
  []
 
-[55.99 <./figure_liblinear_enron_grouping_compare.pdf>]
+[58.106]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [56.100 <./figure_liblinear_twitter_grouping_compare.pdf>] [57.101]
-<plot-tiled-cdf-summary-liblinear-enron-gb3-10-crop.pdf, id=2369, 350.30875pt x
+ [59.107 <./figure_liblinear_enron_grouping_compare.pdf>] [60.108 <./figure_lib
+linear_twitter_grouping_compare.pdf>] [61.109]
+<plot-tiled-cdf-summary-liblinear-enron-gb3-10-crop.pdf, id=2742, 350.30875pt x
  592.2125pt>
 File: plot-tiled-cdf-summary-liblinear-enron-gb3-10-crop.pdf Graphic file (type
  pdf)
  <use plot-tiled-cdf-summary-liblinear-enron-gb3-10-crop.pdf>
-<plot-tiled-cdf-summary-nb-enron-gb3-10-crop.pdf, id=2371, 455.7025pt x 725.711
+[62.110]
+<plot-tiled-cdf-summary-nb-enron-gb3-10-crop.pdf, id=2749, 455.7025pt x 725.711
 24pt>
 File: plot-tiled-cdf-summary-nb-enron-gb3-10-crop.pdf Graphic file (type pdf)
- <use plot-tiled-cdf-summary-nb-enron-gb3-10-crop.pdf> [58.102] [59.103 <./plot
--tiled-cdf-summary-liblinear-enron-gb3-10-crop.pdf>]
-<plot-tiled-cdf-summary-liblinear-twitter-gb3-10-crop.pdf, id=2429, 350.30875pt
+ <use plot-tiled-cdf-summary-nb-enron-gb3-10-crop.pdf> [63.111 <./plot-tiled-cd
+f-summary-liblinear-enron-gb3-10-crop.pdf>]
+Underfull \vbox (badness 3148) has occurred while \output is active []
+
+ [64.112 <./plot-tiled-cdf-summary-nb-enron-gb3-10-crop.pdf>]
+Overfull \hbox (0.43094pt too wide) in paragraph at lines 283--284
+[]\OT1/ptm/m/n/12 First, mov-ing from a boot-strap naive Bayes us-ing Laplace p
+lus one smooth-ing to a Laplace
+ []
+
+
+<plot-tiled-cdf-summary-liblinear-twitter-gb3-10-crop.pdf, id=2854, 350.30875pt
  x 592.2125pt>
 File: plot-tiled-cdf-summary-liblinear-twitter-gb3-10-crop.pdf Graphic file (ty
 pe pdf)
  <use plot-tiled-cdf-summary-liblinear-twitter-gb3-10-crop.pdf>
-<plot-tiled-cdf-summary-nb-twitter-gb3-10-crop.pdf, id=2430, 350.30875pt x 592.
+<plot-tiled-cdf-summary-nb-twitter-gb3-10-crop.pdf, id=2855, 350.30875pt x 592.
 2125pt>
 File: plot-tiled-cdf-summary-nb-twitter-gb3-10-crop.pdf Graphic file (type pdf)
 
- <use plot-tiled-cdf-summary-nb-twitter-gb3-10-crop.pdf> [60.104 <./plot-tiled-
-cdf-summary-nb-enron-gb3-10-crop.pdf>]
-
-LaTeX Warning: Text page 61 contains only floats.
-
-
-Overfull \vbox (2.32063pt too high) has occurred while \output is active []
-
-
-[61.105 <./plot-tiled-cdf-summary-liblinear-twitter-gb3-10-crop.pdf> <./plot-ti
-led-cdf-summary-nb-twitter-gb3-10-crop.pdf>]
-<plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0-crop.pdf, id=2588, 350.30875p
+ <use plot-tiled-cdf-summary-nb-twitter-gb3-10-crop.pdf> [65.113]
+[66.114 <./plot-tiled-cdf-summary-liblinear-twitter-gb3-10-crop.pdf>] [67.115 <
+./plot-tiled-cdf-summary-nb-twitter-gb3-10-crop.pdf>] [68.116]
+<plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0-crop.pdf, id=2979, 350.30875p
 t x 592.2125pt>
 File: plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0-crop.pdf Graphic file (t
 ype pdf)
 
-<use plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0-crop.pdf> [62.106 <./plot
--tiled-cdf-summary-liblinear-enron-GB3-ALL-0-crop.pdf>]
-<plot-tiled-cdf-summary-nb-enron-GB3-ALL-0-crop.pdf, id=2653, 350.30875pt x 592
+<use plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0-crop.pdf> [69.117]
+<plot-tiled-cdf-summary-nb-enron-GB3-ALL-0-crop.pdf, id=2985, 350.30875pt x 592
 .2125pt>
 File: plot-tiled-cdf-summary-nb-enron-GB3-ALL-0-crop.pdf Graphic file (type pdf
 )
  <use plot-tiled-cdf-summary-nb-enron-GB3-ALL-0-crop.pdf>
-<plot-tiled-cdf-summary-nb-enron-GB3-ALL-1-crop.pdf, id=2654, 350.30875pt x 592
+<plot-tiled-cdf-summary-nb-enron-GB3-ALL-1-crop.pdf, id=2986, 350.30875pt x 592
 .2125pt>
 File: plot-tiled-cdf-summary-nb-enron-GB3-ALL-1-crop.pdf Graphic file (type pdf
 )
- <use plot-tiled-cdf-summary-nb-enron-GB3-ALL-1-crop.pdf> [63.107 <./plot-tiled
--cdf-summary-nb-enron-GB3-ALL-0-crop.pdf>]
-Overfull \hbox (17.0755pt too wide) in paragraph at lines 290--291
-[] [][] \OT1/ptm/m/n/12 Figurefig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1 be-
-gins with all three line cloesly grouped.
- []
+ <use plot-tiled-cdf-summary-nb-enron-GB3-ALL-1-crop.pdf> [70.118 <./plot-tiled
+-cdf-summary-liblinear-enron-GB3-ALL-0-crop.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-<plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0-crop.pdf, id=2721, 350.3087
+ [71.119 <./plot-tiled-cdf-summary-nb-enron-GB3-ALL-0-crop.pdf>] [72.120 <./plo
+t-tiled-cdf-summary-nb-enron-GB3-ALL-1-crop.pdf>] [73.121]
+<plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0-crop.pdf, id=3188, 350.3087
 5pt x 592.2125pt>
 File: plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0-crop.pdf Graphic file 
 (type pdf)
 
-<use plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0-crop.pdf> [64.108 <./pl
-ot-tiled-cdf-summary-nb-enron-GB3-ALL-1-crop.pdf>]
-<plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0-crop.pdf, id=2788, 350.30875pt x 5
+<use plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0-crop.pdf> [74.122 <./pl
+ot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0-crop.pdf>]
+<plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0-crop.pdf, id=3258, 350.30875pt x 5
 92.2125pt>
 File: plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0-crop.pdf Graphic file (type p
 df)
- <use plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0-crop.pdf> [65.109 <./plot-til
-ed-cdf-summary-liblinear-twitter-GB3-ALL-0-crop.pdf>] [66.110 <./plot-tiled-cdf
--summary-nb-twitter-GB3-ALL-0-crop.pdf>] [67.111]
-Overfull \hbox (5.96396pt too wide) in paragraph at lines 361--362
+ <use plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0-crop.pdf> [75.123]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76.124 <./plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0-crop.pdf>]
+Overfull \hbox (5.96396pt too wide) in paragraph at lines 476--477
 [] [][] \OT1/ptm/m/n/12 Apart from the vo-cab-u-lary ref-er-ences needed for th
 e method-feature com-bi-na-tions, each method-
  []
 
-[68.112]
-Overfull \hbox (0.35117pt too wide) in paragraph at lines 399--399
+[77.125]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [78.126]
+Overfull \hbox (0.35117pt too wide) in paragraph at lines 514--514
  |[]\OT1/ptm/b/n/17.28 Classification Ef-fec-tive-ness Ver-sus Stor-age Re-quir
 e-ments| 
  []
 
-[69.113] [70.114] [71.115] [72.116] [73.117] [74.118]
-<plot-scatter-size-accuracy-enron-crop.pdf, id=2963, 486.81876pt x 401.5pt>
+[79.127] [80.128] [81.129] [82.130] [83.131] [84.132]
+<plot-scatter-size-accuracy-enron-crop.pdf, id=3375, 486.81876pt x 401.5pt>
 File: plot-scatter-size-accuracy-enron-crop.pdf Graphic file (type pdf)
 
-<use plot-scatter-size-accuracy-enron-crop.pdf> [75.119] [76.120 <./plot-scatte
-r-size-accuracy-enron-crop.pdf>]
-Overfull \hbox (22.44363pt too wide) in paragraph at lines 595--596
-[]\OT1/ptm/m/n/12 One sym-bol stands out on the graph, the light blue, large ci
-r-cle at (ac-cu-racy=0.74, size=$\OT1/cmr/m/n/12 2[]$\OT1/ptm/m/n/12 MB).
- []
-
-[77.121]
-<plot-scatter-size-accuracy-twitter-crop.pdf, id=3020, 486.81876pt x 401.5pt>
+<use plot-scatter-size-accuracy-enron-crop.pdf> [85.133] [86.134] [87.135 <./pl
+ot-scatter-size-accuracy-enron-crop.pdf>] [88.136]
+<plot-scatter-size-accuracy-twitter-crop.pdf, id=3436, 486.81876pt x 401.5pt>
 File: plot-scatter-size-accuracy-twitter-crop.pdf Graphic file (type pdf)
 
-<use plot-scatter-size-accuracy-twitter-crop.pdf> [78.122] [79.123 <./plot-scat
-ter-size-accuracy-twitter-crop.pdf>] [80.124] [81.125]
-<plot-accuracy-liblinear-enron-GM1.pdf, id=3085, 578.16pt x 433.62pt>
-File: plot-accuracy-liblinear-enron-GM1.pdf Graphic file (type pdf)
-
-<use plot-accuracy-liblinear-enron-GM1.pdf>
-<plot-accuracy-nb-twitter-GB3.pdf, id=3086, 578.16pt x 433.62pt>
-File: plot-accuracy-nb-twitter-GB3.pdf Graphic file (type pdf)
-
-<use plot-accuracy-nb-twitter-GB3.pdf>) [82.126] [83.127 <./plot-accuracy-libli
-near-enron-GM1.pdf> <./plot-accuracy-nb-twitter-GB3.pdf>]
+<use plot-scatter-size-accuracy-twitter-crop.pdf> [89.137] [90.138 <./plot-scat
+ter-size-accuracy-twitter-crop.pdf>] [91.139] [92.140]) [93.141]
 \openout2 = `chapter5.aux'.
 
- (./chapter5.tex
-[84.128
+
+(./chapter5.tex [94.142
 
 
 
 ]
 Chapter 5.
-[85.129] [86.130] [87.131]
-Overfull \hbox (5.09242pt too wide) in paragraph at lines 61--61
+[95.143] [96.144] [97.145] [98.146] [99.147]
+Overfull \hbox (5.09242pt too wide) in paragraph at lines 83--83
  |[]\OT1/ptm/b/n/14.4 Determine Ac-cu-racy and F-Score for Other Web1T Vo-cab-u
 -lary Vari-
  []
 
-[88.132] [89.133] [90.134] [91.135]
-Overfull \hbox (11.39946pt too wide) in paragraph at lines 98--98
+[100.148] [101.149] [102.150]
+Overfull \hbox (4.19946pt too wide) in paragraph at lines 121--121
  |[]\OT1/ptm/b/n/14.4 Statistical Study of Small-To-Large Ver-sus Small-And-Lar
 ge Group-
  []
 
-[92.136] [93.137]) [94.138] (./thesis.bbl
+[103.151] [104.152]) [105.153] (./thesis.bbl [106.154
+
+
+]
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 2.
- [95.139
-
-
-] [96.140] [97.141]) [98.142]
-(./appendixA.tex
+ [107.155] [108.156]
+[109.157]) [110.158] (./appendixA.tex
 Appendix A.
 
-Overfull \vbox (14.49998pt too high) detected at line 391
+Overfull \vbox (14.49998pt too high) detected at line 432
  []
 
-
-Overfull \vbox (14.49998pt too high) detected at line 547
- []
-
-
-Overfull \vbox (14.49998pt too high) detected at line 567
- []
-
-[99.143
+[111.159
 
 
 ]
-Overfull \vbox (14.49998pt too high) detected at line 587
+Overfull \vbox (14.49998pt too high) detected at line 588
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 607
+Overfull \vbox (14.49998pt too high) detected at line 608
  []
 
-) [100.144] [101.145] [102.146] [103.147] [104.148] [105.149] [106.150]
-[107.151]
+
+Overfull \vbox (14.49998pt too high) detected at line 628
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 648
+ []
+
+) [112.160] [113.161] [114.162] [115.163] [116.164] [117.165] [118.166]
+[119.167] [120.168]
 \openout2 = `appendixB.aux'.
 
- (./appendixB.tex [108.152
-
-
-]
+ (./appendixB.tex
 Appendix B.
 
-Overfull \vbox (14.49998pt too high) detected at line 366
+Overfull \vbox (14.49998pt too high) detected at line 405
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 386
+Overfull \vbox (14.49998pt too high) detected at line 425
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 406
+Overfull \vbox (14.49998pt too high) detected at line 445
  []
 
-
-Overfull \vbox (14.49998pt too high) detected at line 539
- []
-
-[109.153]
-Overfull \vbox (14.49998pt too high) detected at line 604
- []
-
-
-Overfull \vbox (14.49998pt too high) detected at line 624
- []
-
-
-Overfull \vbox (14.49998pt too high) detected at line 644
- []
-
-
-Overfull \vbox (14.49998pt too high) detected at line 664
- []
-
-) [110.154] [111.155] [112.156] [113.157] [114.158] [115.159] [116.160]
-[117.161]
-\openout2 = `appendixC.aux'.
-
- (./appendixC.tex [118.162
-
+[121.169
 
 
 ]
+Overfull \vbox (14.49998pt too high) detected at line 578
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 643
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 663
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 683
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 703
+ []
+
+) [122.170] [123.171] [124.172] [125.173] [126.174] [127.175] [128.176]
+[129.177] [130.178]
+\openout2 = `appendixC.aux'.
+
+ (./appendixC.tex
 Appendix C.
-[119.163]) [120.164] [121.165] [122.166] [123.167] [124.168] [125.169] [126.170
-] [127.171] [128.172] [129.173]
+[131.179
+
+
+
+]) [132.180] [133.181] [134.182] [135.183] [136.184] [137.185] [138.186] [139.1
+87] [140.188] [141.189]
 \openout2 = `appendixD.aux'.
 
- (./appendixD.tex [130.174
+ (./appendixD.tex [142.190
 
 
 
 ]
 Appendix D.
-[131.175]) [132.176] [133.177] [134.178] [135.179] [136.180] [137.181] [138.182
-] [139.183] [140.184] [141.185]
+[143.191]) [144.192] [145.193] [146.194] [147.195] [148.196] [149.197] [150.198
+] [151.199] [152.200] [153.201]
 \openout2 = `appendixE.aux'.
 
- (./appendixE.tex [142.186
+ (./appendixE.tex [154.202
 
 
 
 ]
 Appendix E.
 
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 186--214
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 225--253
  [] 
  []
 
-[143.187]) [144.188] [145.189] [146.190] [147.191] [148.192] [149.193] [150.194
-] [151.195] [152.196] [153.197] [154.198] [155.199] [156.200] [157.201]
-[158.202] [159.203] [160.204] [161.205] [162.206] [163.207] [164.208] [165.209]
-[166.210]
+[155.203]) [156.204] [157.205] [158.206] [159.207] [160.208] [161.209] [162.210
+] [163.211] [164.212] [165.213] [166.214] [167.215] [168.216] [169.217]
+[170.218] [171.219] [172.220] [173.221] [174.222] [175.223] [176.224] [177.225]
+[178.226] [179.227]
 \openout2 = `appendixF.aux'.
 
- (./appendixF.tex
+ (./appendixF.tex [180.228
+
+
+
+]
 Appendix F.
 
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 186--214
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 225--253
  [] 
  []
 
-[167.211
-
-
-
-]) [168.212] [169.213] [170.214] [171.215] [172.216] [173.217] [174.218] [175.2
-19] [176.220] [177.221] [178.222] [179.223] [180.224] [181.225]
-[182.226] [183.227] [184.228] [185.229] [186.230] [187.231] [188.232] [189.233]
-[190.234]
+[181.229]) [182.230] [183.231] [184.232] [185.233] [186.234] [187.235] [188.236
+] [189.237] [190.238] [191.239] [192.240] [193.241] [194.242] [195.243]
+[196.244] [197.245] [198.246] [199.247] [200.248] [201.249] [202.250] [203.251]
+[204.252] [205.253]
 \openout2 = `appendixG.aux'.
 
- (./appendixG.tex
+ (./appendixG.tex [206.254
+
+
+
+]
 Appendix G.
 
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 186--214
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 226--254
  [] 
  []
 
 
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 402--430
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 442--470
  [] 
  []
 
 
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 618--646
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 658--686
+ [] 
+ []
+
+[207.255]
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 874--902
  [] 
  []
 
 
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 834--862
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 1084--1112
  [] 
  []
 
-[191.235
-
-
-
-]
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 1044--1072
- [] 
- []
-
-) [192.236] [193.237] [194.238] [195.239] [196.240] [197.241] [198.242]
-[199.243] [200.244] [201.245] [202.246] [203.247] [204.248] [205.249] [206.250]
-[207.251] [208.252] [209.253] [210.254] [211.255] [212.256] [213.257] [214.258]
-[215.259] [216.260] [217.261] [218.262] [219.263] [220.264]
+) [208.256] [209.257] [210.258] [211.259] [212.260] [213.261] [214.262]
+[215.263] [216.264] [217.265] [218.266] [219.267] [220.268] [221.269] [222.270]
+[223.271] [224.272] [225.273] [226.274] [227.275] [228.276] [229.277] [230.278]
+[231.279] [232.280] [233.281] [234.282] [235.283] [236.284] [237.285]
 \openout2 = `appendixH.aux'.
 
- (./appendixH.tex
-Appendix H.
 
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 186--214
- [] 
- []
-
-
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 402--430
- [] 
- []
-
-
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 618--646
- [] 
- []
-
-
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 834--862
- [] 
- []
-
-[221.265
+(./appendixH.tex [238.286
 
 
 
 ]
-Overfull \hbox (0.83179pt too wide) in paragraph at lines 1050--1078
+Appendix H.
+
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 225--253
  [] 
  []
 
-) [222.266] [223.267] [224.268] [225.269] [226.270] [227.271] [228.272]
-[229.273] [230.274] [231.275] [232.276] [233.277] [234.278] [235.279] [236.280]
-[237.281] [238.282] [239.283] [240.284] [241.285] [242.286] [243.287] [244.288]
-[245.289] [246.290] [247.291] [248.292] [249.293] [250.294]
+
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 441--469
+ [] 
+ []
+
+
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 657--685
+ [] 
+ []
+
+[239.287]
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 873--901
+ [] 
+ []
+
+
+Overfull \hbox (0.83179pt too wide) in paragraph at lines 1089--1117
+ [] 
+ []
+
+) [240.288] [241.289] [242.290] [243.291] [244.292] [245.293] [246.294]
+[247.295] [248.296] [249.297] [250.298] [251.299] [252.300] [253.301] [254.302]
+[255.303] [256.304] [257.305] [258.306] [259.307] [260.308] [261.309] [262.310]
+[263.311] [264.312] [265.313] [266.314] [267.315] [268.316] [269.317]
 \openout2 = `appendixI.aux'.
 
- (./appendixI.tex
+
+(./appendixI.tex [270.318
+
+
+
+]
 Appendix I.
 
-Overfull \vbox (14.49998pt too high) detected at line 373
+Overfull \vbox (14.49998pt too high) detected at line 415
+ []
+
+[271.319]
+Overfull \vbox (14.49998pt too high) detected at line 564
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 522
+Overfull \vbox (14.49998pt too high) detected at line 583
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 541
+Overfull \vbox (14.49998pt too high) detected at line 602
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 560
+Overfull \vbox (14.49998pt too high) detected at line 621
  []
 
-
-Overfull \vbox (14.49998pt too high) detected at line 579
- []
-
-) [251.295
-
-
-
-] [252.296] [253.297] [254.298] [255.299] [256.300] [257.301]
-[258.302]
+) [272.320] [273.321] [274.322] [275.323] [276.324] [277.325] [278.326]
+[279.327]
 \openout2 = `appendixJ.aux'.
 
- (./appendixJ.tex
+ (./appendixJ.tex [280.328
+
+
+
+]
 Appendix J.
 
-Overfull \vbox (14.49998pt too high) detected at line 350
+Overfull \vbox (14.49998pt too high) detected at line 389
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 369
+Overfull \vbox (14.49998pt too high) detected at line 408
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 388
+Overfull \vbox (14.49998pt too high) detected at line 427
+ []
+
+[281.329]
+Overfull \vbox (14.49998pt too high) detected at line 554
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 515
+Overfull \vbox (14.49998pt too high) detected at line 616
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 577
+Overfull \vbox (14.49998pt too high) detected at line 635
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 596
+Overfull \vbox (14.49998pt too high) detected at line 654
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 615
+Overfull \vbox (14.49998pt too high) detected at line 673
  []
 
-
-Overfull \vbox (14.49998pt too high) detected at line 634
- []
-
-) [259.303
-
-
-
-] [260.304] [261.305] [262.306] [263.307] [264.308] [265.309]
-[266.310] [267.311]
+) [282.330] [283.331] [284.332] [285.333] [286.334] [287.335] [288.336]
+[289.337]
 \openout2 = `appendixK.aux'.
 
- (./appendixK.tex [268.312
+ (./appendixK.tex [290.338
 
 
 
 ]
 Appendix K.
-) [269.313] [270.314] [271.315] [272.316] [273.317] [274.318] [275.319]
-[276.320] [277.321] [278.322] [279.323]
+[291.339]) [292.340] [293.341] [294.342] [295.343] [296.344] [297.345] [298.346
+] [299.347] [300.348] [301.349]
 \openout2 = `appendixL.aux'.
 
- (./appendixL.tex [280.324
+ (./appendixL.tex [302.350
 
 
 
 ]
 Appendix L.
-) [281.325] [282.326] [283.327] [284.328] [285.329] [286.330] [287.331]
-[288.332] [289.333] [290.334] [291.335]
+[303.351]) [304.352] [305.353] [306.354] [307.355] [308.356] [309.357] [310.358
+] [311.359] [312.360] [313.361]
 \openout2 = `appendixM.aux'.
 
- (./appendixM.tex [292.336
+ (./appendixM.tex [314.362
 
 
 
 ]
 Appendix M.
 
-Overfull \vbox (14.49998pt too high) detected at line 391
+Overfull \vbox (14.49998pt too high) detected at line 430
  []
 
-[293.337]) [294.338] [295.339] [296.340] [297.341] [298.342] [299.343] [300.344
-] [301.345]
+[315.363]) [316.364] [317.365] [318.366] [319.367] [320.368] [321.369] [322.370
+] [323.371] [324.372]
 \openout2 = `appendixN.aux'.
 
- (./appendixN.tex [302.346
-
-
-
-]
+ (./appendixN.tex
 Appendix N.
 
-Overfull \vbox (14.49998pt too high) detected at line 366
+Overfull \vbox (14.49998pt too high) detected at line 405
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 386
+Overfull \vbox (14.49998pt too high) detected at line 425
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 406
+Overfull \vbox (14.49998pt too high) detected at line 445
  []
 
-[303.347]
-Overfull \vbox (14.49998pt too high) detected at line 539
- []
+[325.373
 
 
-Overfull \vbox (14.49998pt too high) detected at line 604
- []
 
-
-Overfull \vbox (14.49998pt too high) detected at line 624
+]
+Overfull \vbox (14.49998pt too high) detected at line 578
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 644
+Overfull \vbox (14.49998pt too high) detected at line 643
  []
 
 
-Overfull \vbox (14.49998pt too high) detected at line 664
+Overfull \vbox (14.49998pt too high) detected at line 663
  []
 
-) [304.348] [305.349] [306.350] [307.351] [308.352] [309.353] [310.354]
-[311.355] [312.356] [313.357]
+
+Overfull \vbox (14.49998pt too high) detected at line 683
+ []
+
+
+Overfull \vbox (14.49998pt too high) detected at line 703
+ []
+
+) [326.374] [327.375] [328.376] [329.377] [330.378] [331.379] [332.380]
+[333.381] [334.382] [335.383] [336.384]
 \openout2 = `appendixO.aux'.
 
- (./appendixO.tex [314.358
-
-
-
-]
+ (./appendixO.tex
 Appendix O.
-[315.359]) [316.360] [317.361] [318.362] [319.363] [320.364] [321.365] [322.366
-] [323.367] [324.368] [325.369] [326.370] [327.371] [328.372] [329.373]
+[337.385
+
+
+
+]) [338.386] [339.387] [340.388] [341.389] [342.390] [343.391] [344.392] [345.3
+93] [346.394] [347.395] [348.396] [349.397] [350.398] [351.399]
+[352.400]
 \openout2 = `appendixP.aux'.
 
-
-(./appendixP.tex [330.374
-
-
-
-]
+ (./appendixP.tex
 Appendix P.
-[331.375]) [332.376] [333.377] [334.378] [335.379] [336.380] [337.381] [338.382
-] [339.383] [340.384] [341.385] [342.386] [343.387] [344.388] [345.389]
+[353.401
+
+
+
+]) [354.402] [355.403] [356.404] [357.405] [358.406] [359.407] [360.408] [361.4
+09] [362.410] [363.411] [364.412] [365.413] [366.414] [367.415]
+[368.416]
 \openout2 = `appendixQ.aux'.
 
-
-(./appendixQ.tex [346.390
+ (./appendixQ.tex
+Appendix Q.
+File: plot-accuracy-liblinear-enron-GM1.pdf Graphic file (type pdf)
+<use plot-accuracy-liblinear-enron-GM1.pdf> [369.417
 
 
 
 ]
-Appendix Q.
+<plot-accuracy-liblinear-enron-GM2.pdf, id=4696, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-enron-GM2.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-enron-GM2.pdf> [370.418
+
+ <./plot-accuracy-liblinear-enron-GM2.pdf>]
+<plot-accuracy-liblinear-enron-GM5.pdf, id=4742, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-enron-GM5.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-enron-GM5.pdf> [371.419
+
+ <./plot-accuracy-liblinear-enron-GM5.pdf>]
+<plot-accuracy-liblinear-enron-GB3.pdf, id=4788, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-enron-GB3.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-enron-GB3.pdf> [372.420
+
+ <./plot-accuracy-liblinear-enron-GB3.pdf>]
+<plot-accuracy-liblinear-enron-OSB3.pdf, id=4834, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-enron-OSB3.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-enron-OSB3.pdf> [373.421
+
+ <./plot-accuracy-liblinear-enron-OSB3.pdf>])
+\openout2 = `appendixR.aux'.
+
+ (./appendixR.tex [374.422
+
+
+
+
+]
+Appendix R.
+<plot-accuracy-nb-enron-GM1.pdf, id=4886, 578.16pt x 433.62pt>
+File: plot-accuracy-nb-enron-GM1.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-enron-GM1.pdf> [375.423 <./plot-accuracy-nb-enron-GM1.pdf
+>] <plot-accuracy-nb-enron-GM2.pdf, id=4932, 578.16pt x 433.62pt>
+File: plot-accuracy-nb-enron-GM2.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-enron-GM2.pdf> [376.424
+
+ <./plot-accuracy-nb-enron-GM2.pdf>] <plot-accuracy-nb-enron-GM5.pdf, id=4978, 
+578.16pt x 433.62pt>
+File: plot-accuracy-nb-enron-GM5.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-enron-GM5.pdf> [377.425
+
+ <./plot-accuracy-nb-enron-GM5.pdf>] <plot-accuracy-nb-enron-GB3.pdf, id=5024, 
+578.16pt x 433.62pt>
+File: plot-accuracy-nb-enron-GB3.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-enron-GB3.pdf> [378.426
+
+ <./plot-accuracy-nb-enron-GB3.pdf>] <plot-accuracy-nb-enron-OSB3.pdf, id=5070,
+ 578.16pt x 433.62pt>
+File: plot-accuracy-nb-enron-OSB3.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-enron-OSB3.pdf> [379.427
+
+ <./plot-accuracy-nb-enron-OSB3.pdf>])
+\openout2 = `appendixS.aux'.
+
+ (./appendixS.tex [380.428
+
+
+
+
+]
+Appendix S.
+<plot-accuracy-liblinear-twitter-GM1.pdf, id=5122, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-twitter-GM1.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-twitter-GM1.pdf> [381.429 <./plot-accuracy-libline
+ar-twitter-GM1.pdf>]
+<plot-accuracy-liblinear-twitter-GM2.pdf, id=5170, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-twitter-GM2.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-twitter-GM2.pdf> [382.430
+
+ <./plot-accuracy-liblinear-twitter-GM2.pdf>]
+<plot-accuracy-liblinear-twitter-GM5.pdf, id=5218, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-twitter-GM5.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-twitter-GM5.pdf> [383.431
+
+ <./plot-accuracy-liblinear-twitter-GM5.pdf>]
+<plot-accuracy-liblinear-twitter-GB3.pdf, id=5266, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-twitter-GB3.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-twitter-GB3.pdf> [384.432
+
+ <./plot-accuracy-liblinear-twitter-GB3.pdf>]
+<plot-accuracy-liblinear-twitter-OSB3.pdf, id=5314, 578.16pt x 433.62pt>
+File: plot-accuracy-liblinear-twitter-OSB3.pdf Graphic file (type pdf)
+
+<use plot-accuracy-liblinear-twitter-OSB3.pdf> [385.433
+
+ <./plot-accuracy-liblinear-twitter-OSB3.pdf>])
+\openout2 = `appendixT.aux'.
+
+ (./appendixT.tex [386.434
+
+
+
+
+]
+Appendix T.
+<plot-accuracy-nb-twitter-GM1.pdf, id=5368, 578.16pt x 433.62pt>
+File: plot-accuracy-nb-twitter-GM1.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-twitter-GM1.pdf> [387.435 <./plot-accuracy-nb-twitter-GM1
+.pdf>] <plot-accuracy-nb-twitter-GM2.pdf, id=5416, 578.16pt x 433.62pt>
+File: plot-accuracy-nb-twitter-GM2.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-twitter-GM2.pdf> [388.436
+
+ <./plot-accuracy-nb-twitter-GM2.pdf>] <plot-accuracy-nb-twitter-GM5.pdf, id=54
+64, 578.16pt x 433.62pt>
+File: plot-accuracy-nb-twitter-GM5.pdf Graphic file (type pdf)
+
+<use plot-accuracy-nb-twitter-GM5.pdf> [389.437
+
+ <./plot-accuracy-nb-twitter-GM5.pdf>]
+File: plot-accuracy-nb-twitter-GB3.pdf Graphic file (type pdf)
+ <use plot-accuracy-nb-twitter-GB3.pdf> [390.438
+
+])
+\openout2 = `appendixU.aux'.
+
+ (./appendixU.tex
+Appendix U.
 
 
 pdfTeX warning: pdflatex (file ./1_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<1_pdfsam_A9ROSMXY6s-crop.pdf, id=4313, 455.7025pt x 725.71124pt>
+<1_pdfsam_A9ROSMXY6s-crop.pdf, id=5516, 455.7025pt x 725.71124pt>
 File: 1_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 1_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 6--7
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 44--45
  [] 
  []
 
-[347.391] [348.392 <./1_pdfsam_A9ROSMXY6s-crop.pdf>]
+[391.439
+
+
+
+
+
+] [392.440 <./1_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./2_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<2_pdfsam_A9ROSMXY6s-crop.pdf, id=4370, 455.7025pt x 725.71124pt>
+<2_pdfsam_A9ROSMXY6s-crop.pdf, id=5573, 455.7025pt x 725.71124pt>
 File: 2_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 2_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 16--17
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 54--55
  [] 
  []
 
-[349.393 <./2_pdfsam_A9ROSMXY6s-crop.pdf>]
+[393.441 <./2_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./3_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<3_pdfsam_A9ROSMXY6s-crop.pdf, id=4421, 455.7025pt x 725.71124pt>
+<3_pdfsam_A9ROSMXY6s-crop.pdf, id=5624, 455.7025pt x 725.71124pt>
 File: 3_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 3_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 26--27
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 64--65
  [] 
  []
 
-[350.394 <./3_pdfsam_A9ROSMXY6s-crop.pdf>]
+[394.442 <./3_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./4_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<4_pdfsam_A9ROSMXY6s-crop.pdf, id=4473, 455.7025pt x 725.71124pt>
+<4_pdfsam_A9ROSMXY6s-crop.pdf, id=5676, 455.7025pt x 725.71124pt>
 File: 4_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 4_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 36--37
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 74--75
  [] 
  []
 
-[351.395 <./4_pdfsam_A9ROSMXY6s-crop.pdf>]
+[395.443 <./4_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./5_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<5_pdfsam_A9ROSMXY6s-crop.pdf, id=4525, 455.7025pt x 725.71124pt>
+<5_pdfsam_A9ROSMXY6s-crop.pdf, id=5728, 455.7025pt x 725.71124pt>
 File: 5_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 5_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 46--47
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 84--85
  [] 
  []
 
-[352.396 <./5_pdfsam_A9ROSMXY6s-crop.pdf>]
+[396.444 <./5_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./6_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<6_pdfsam_A9ROSMXY6s-crop.pdf, id=4578, 455.7025pt x 725.71124pt>
+<6_pdfsam_A9ROSMXY6s-crop.pdf, id=5781, 455.7025pt x 725.71124pt>
 File: 6_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 6_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 56--57
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 94--95
  [] 
  []
 
-[353.397 <./6_pdfsam_A9ROSMXY6s-crop.pdf>]
+[397.445 <./6_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./7_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<7_pdfsam_A9ROSMXY6s-crop.pdf, id=4631, 455.7025pt x 725.71124pt>
+<7_pdfsam_A9ROSMXY6s-crop.pdf, id=5834, 455.7025pt x 725.71124pt>
 File: 7_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 7_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 66--67
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 104--105
  [] 
  []
 
-[354.398 <./7_pdfsam_A9ROSMXY6s-crop.pdf>]
+[398.446 <./7_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./8_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<8_pdfsam_A9ROSMXY6s-crop.pdf, id=4682, 455.7025pt x 725.71124pt>
+<8_pdfsam_A9ROSMXY6s-crop.pdf, id=5885, 455.7025pt x 725.71124pt>
 File: 8_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 8_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 76--77
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 114--115
  [] 
  []
 
-[355.399 <./8_pdfsam_A9ROSMXY6s-crop.pdf>]
+[399.447 <./8_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./9_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion: 
 found PDF version <1.5>, but at most version <1.4> allowed
-<9_pdfsam_A9ROSMXY6s-crop.pdf, id=4732, 455.7025pt x 725.71124pt>
+<9_pdfsam_A9ROSMXY6s-crop.pdf, id=5935, 455.7025pt x 725.71124pt>
 File: 9_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 9_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 86--87
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 124--125
  [] 
  []
 
-[356.400 <./9_pdfsam_A9ROSMXY6s-crop.pdf>]
+[400.448 <./9_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./10_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<10_pdfsam_A9ROSMXY6s-crop.pdf, id=4783, 455.7025pt x 725.71124pt>
+<10_pdfsam_A9ROSMXY6s-crop.pdf, id=5986, 455.7025pt x 725.71124pt>
 File: 10_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 10_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 96--97
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 134--135
  [] 
  []
 
-[357.401 <./10_pdfsam_A9ROSMXY6s-crop.pdf>]
+[401.449 <./10_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./11_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<11_pdfsam_A9ROSMXY6s-crop.pdf, id=4834, 455.7025pt x 725.71124pt>
+<11_pdfsam_A9ROSMXY6s-crop.pdf, id=6037, 455.7025pt x 725.71124pt>
 File: 11_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 11_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 106--107
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 144--145
  [] 
  []
 
-[358.402 <./11_pdfsam_A9ROSMXY6s-crop.pdf>]
+[402.450 <./11_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./12_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<12_pdfsam_A9ROSMXY6s-crop.pdf, id=4886, 455.7025pt x 725.71124pt>
+<12_pdfsam_A9ROSMXY6s-crop.pdf, id=6089, 455.7025pt x 725.71124pt>
 File: 12_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 12_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 116--117
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 154--155
  [] 
  []
 
-[359.403 <./12_pdfsam_A9ROSMXY6s-crop.pdf>]
+[403.451 <./12_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./13_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<13_pdfsam_A9ROSMXY6s-crop.pdf, id=4938, 455.7025pt x 725.71124pt>
+<13_pdfsam_A9ROSMXY6s-crop.pdf, id=6141, 455.7025pt x 725.71124pt>
 File: 13_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 13_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 126--127
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 164--165
  [] 
  []
 
-[360.404 <./13_pdfsam_A9ROSMXY6s-crop.pdf>]
+[404.452 <./13_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./14_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<14_pdfsam_A9ROSMXY6s-crop.pdf, id=4989, 455.7025pt x 725.71124pt>
+<14_pdfsam_A9ROSMXY6s-crop.pdf, id=6192, 455.7025pt x 725.71124pt>
 File: 14_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 14_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 136--137
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 174--175
  [] 
  []
 
-[361.405 <./14_pdfsam_A9ROSMXY6s-crop.pdf>]
+[405.453 <./14_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./15_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<15_pdfsam_A9ROSMXY6s-crop.pdf, id=5039, 455.7025pt x 725.71124pt>
+<15_pdfsam_A9ROSMXY6s-crop.pdf, id=6242, 455.7025pt x 725.71124pt>
 File: 15_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 15_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 146--147
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 184--185
  [] 
  []
 
-[362.406 <./15_pdfsam_A9ROSMXY6s-crop.pdf>]
+[406.454 <./15_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./16_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<16_pdfsam_A9ROSMXY6s-crop.pdf, id=5090, 455.7025pt x 725.71124pt>
+<16_pdfsam_A9ROSMXY6s-crop.pdf, id=6293, 455.7025pt x 725.71124pt>
 File: 16_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 16_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 156--157
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 194--195
  [] 
  []
 
-[363.407 <./16_pdfsam_A9ROSMXY6s-crop.pdf>]
+[407.455 <./16_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./17_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<17_pdfsam_A9ROSMXY6s-crop.pdf, id=5141, 455.7025pt x 725.71124pt>
+<17_pdfsam_A9ROSMXY6s-crop.pdf, id=6344, 455.7025pt x 725.71124pt>
 File: 17_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 17_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 166--167
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 204--205
  [] 
  []
 
-[364.408 <./17_pdfsam_A9ROSMXY6s-crop.pdf>]
+[408.456 <./17_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./18_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<18_pdfsam_A9ROSMXY6s-crop.pdf, id=5193, 455.7025pt x 725.71124pt>
+<18_pdfsam_A9ROSMXY6s-crop.pdf, id=6396, 455.7025pt x 725.71124pt>
 File: 18_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 18_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 176--177
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 214--215
  [] 
  []
 
-[365.409 <./18_pdfsam_A9ROSMXY6s-crop.pdf>]
+[409.457 <./18_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./19_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<19_pdfsam_A9ROSMXY6s-crop.pdf, id=5245, 455.7025pt x 725.71124pt>
+<19_pdfsam_A9ROSMXY6s-crop.pdf, id=6448, 455.7025pt x 725.71124pt>
 File: 19_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 19_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 186--187
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 224--225
  [] 
  []
 
-[366.410 <./19_pdfsam_A9ROSMXY6s-crop.pdf>]
+[410.458 <./19_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./20_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<20_pdfsam_A9ROSMXY6s-crop.pdf, id=5296, 455.7025pt x 725.71124pt>
+<20_pdfsam_A9ROSMXY6s-crop.pdf, id=6499, 455.7025pt x 725.71124pt>
 File: 20_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 20_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 196--197
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 234--235
  [] 
  []
 
-[367.411 <./20_pdfsam_A9ROSMXY6s-crop.pdf>]
+[411.459 <./20_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./21_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<21_pdfsam_A9ROSMXY6s-crop.pdf, id=5347, 455.7025pt x 725.71124pt>
+<21_pdfsam_A9ROSMXY6s-crop.pdf, id=6550, 455.7025pt x 725.71124pt>
 File: 21_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 21_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 206--207
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 244--245
  [] 
  []
 
-[368.412 <./21_pdfsam_A9ROSMXY6s-crop.pdf>]
+[412.460 <./21_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./22_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<22_pdfsam_A9ROSMXY6s-crop.pdf, id=5398, 455.7025pt x 725.71124pt>
+<22_pdfsam_A9ROSMXY6s-crop.pdf, id=6601, 455.7025pt x 725.71124pt>
 File: 22_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 22_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 216--217
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 254--255
  [] 
  []
 
-[369.413 <./22_pdfsam_A9ROSMXY6s-crop.pdf>]
+[413.461 <./22_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./23_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<23_pdfsam_A9ROSMXY6s-crop.pdf, id=5449, 455.7025pt x 725.71124pt>
+<23_pdfsam_A9ROSMXY6s-crop.pdf, id=6652, 455.7025pt x 725.71124pt>
 File: 23_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 23_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 226--227
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 264--265
  [] 
  []
 
-[370.414 <./23_pdfsam_A9ROSMXY6s-crop.pdf>]
+[414.462 <./23_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./24_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<24_pdfsam_A9ROSMXY6s-crop.pdf, id=5501, 455.7025pt x 725.71124pt>
+<24_pdfsam_A9ROSMXY6s-crop.pdf, id=6704, 455.7025pt x 725.71124pt>
 File: 24_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 24_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 236--237
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 274--275
  [] 
  []
 
-[371.415 <./24_pdfsam_A9ROSMXY6s-crop.pdf>]
+[415.463 <./24_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./25_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<25_pdfsam_A9ROSMXY6s-crop.pdf, id=5553, 455.7025pt x 725.71124pt>
+<25_pdfsam_A9ROSMXY6s-crop.pdf, id=6756, 455.7025pt x 725.71124pt>
 File: 25_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 25_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 246--247
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 284--285
  [] 
  []
 
-[372.416 <./25_pdfsam_A9ROSMXY6s-crop.pdf>]
+[416.464 <./25_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./26_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<26_pdfsam_A9ROSMXY6s-crop.pdf, id=5606, 455.7025pt x 725.71124pt>
+<26_pdfsam_A9ROSMXY6s-crop.pdf, id=6809, 455.7025pt x 725.71124pt>
 File: 26_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 26_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 256--257
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 294--295
  [] 
  []
 
-[373.417 <./26_pdfsam_A9ROSMXY6s-crop.pdf>]
+[417.465 <./26_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./27_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<27_pdfsam_A9ROSMXY6s-crop.pdf, id=5656, 455.7025pt x 725.71124pt>
+<27_pdfsam_A9ROSMXY6s-crop.pdf, id=6859, 455.7025pt x 725.71124pt>
 File: 27_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 27_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 266--267
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 304--305
  [] 
  []
 
-[374.418 <./27_pdfsam_A9ROSMXY6s-crop.pdf>]
+[418.466 <./27_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./28_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<28_pdfsam_A9ROSMXY6s-crop.pdf, id=5707, 455.7025pt x 725.71124pt>
+<28_pdfsam_A9ROSMXY6s-crop.pdf, id=6910, 455.7025pt x 725.71124pt>
 File: 28_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 28_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 276--277
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 314--315
  [] 
  []
 
-[375.419 <./28_pdfsam_A9ROSMXY6s-crop.pdf>]
+[419.467 <./28_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./29_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<29_pdfsam_A9ROSMXY6s-crop.pdf, id=5758, 455.7025pt x 725.71124pt>
+<29_pdfsam_A9ROSMXY6s-crop.pdf, id=6961, 455.7025pt x 725.71124pt>
 File: 29_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 29_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 286--287
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 324--325
  [] 
  []
 
-[376.420 <./29_pdfsam_A9ROSMXY6s-crop.pdf>]
+[420.468 <./29_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./30_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<30_pdfsam_A9ROSMXY6s-crop.pdf, id=5810, 455.7025pt x 725.71124pt>
+<30_pdfsam_A9ROSMXY6s-crop.pdf, id=7013, 455.7025pt x 725.71124pt>
 File: 30_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 30_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 296--297
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 334--335
  [] 
  []
 
-[377.421 <./30_pdfsam_A9ROSMXY6s-crop.pdf>]
+[421.469 <./30_pdfsam_A9ROSMXY6s-crop.pdf>])
+\openout2 = `appendixV.aux'.
+
+ (./appendixV.tex [422.470
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+Appendix V.
+
 
 pdfTeX warning: pdflatex (file ./31_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<31_pdfsam_A9ROSMXY6s-crop.pdf, id=5862, 455.7025pt x 725.71124pt>
+<31_pdfsam_A9ROSMXY6s-crop.pdf, id=7069, 455.7025pt x 725.71124pt>
 File: 31_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 31_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 306--307
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 44--45
  [] 
  []
 
-[378.422 <./31_pdfsam_A9ROSMXY6s-crop.pdf>]
+[423.471] [424.472 <./31_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./32_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<32_pdfsam_A9ROSMXY6s-crop.pdf, id=5915, 455.7025pt x 725.71124pt>
+<32_pdfsam_A9ROSMXY6s-crop.pdf, id=7126, 455.7025pt x 725.71124pt>
 File: 32_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 32_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 316--317
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 54--55
  [] 
  []
 
-[379.423 <./32_pdfsam_A9ROSMXY6s-crop.pdf>]
+[425.473 <./32_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./33_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<33_pdfsam_A9ROSMXY6s-crop.pdf, id=5967, 455.7025pt x 725.71124pt>
+<33_pdfsam_A9ROSMXY6s-crop.pdf, id=7178, 455.7025pt x 725.71124pt>
 File: 33_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 33_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 326--327
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 64--65
  [] 
  []
 
-[380.424 <./33_pdfsam_A9ROSMXY6s-crop.pdf>]
+[426.474 <./33_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./34_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<34_pdfsam_A9ROSMXY6s-crop.pdf, id=6020, 455.7025pt x 725.71124pt>
+<34_pdfsam_A9ROSMXY6s-crop.pdf, id=7231, 455.7025pt x 725.71124pt>
 File: 34_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 34_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 336--337
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 74--75
  [] 
  []
 
-[381.425 <./34_pdfsam_A9ROSMXY6s-crop.pdf>]
+[427.475 <./34_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./35_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<35_pdfsam_A9ROSMXY6s-crop.pdf, id=6073, 455.7025pt x 725.71124pt>
+<35_pdfsam_A9ROSMXY6s-crop.pdf, id=7285, 455.7025pt x 725.71124pt>
 File: 35_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 35_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 346--347
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 84--85
  [] 
  []
 
-[382.426 <./35_pdfsam_A9ROSMXY6s-crop.pdf>]
+[428.476 <./35_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./36_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<36_pdfsam_A9ROSMXY6s-crop.pdf, id=6127, 455.7025pt x 725.71124pt>
+<36_pdfsam_A9ROSMXY6s-crop.pdf, id=7339, 455.7025pt x 725.71124pt>
 File: 36_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 36_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 356--357
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 94--95
  [] 
  []
 
-[383.427 <./36_pdfsam_A9ROSMXY6s-crop.pdf>]
+[429.477 <./36_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./37_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<37_pdfsam_A9ROSMXY6s-crop.pdf, id=6181, 455.7025pt x 725.71124pt>
+<37_pdfsam_A9ROSMXY6s-crop.pdf, id=7392, 455.7025pt x 725.71124pt>
 File: 37_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 37_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 366--367
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 104--105
  [] 
  []
 
-[384.428 <./37_pdfsam_A9ROSMXY6s-crop.pdf>]
+[430.478 <./37_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./38_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<38_pdfsam_A9ROSMXY6s-crop.pdf, id=6233, 455.7025pt x 725.71124pt>
+<38_pdfsam_A9ROSMXY6s-crop.pdf, id=7444, 455.7025pt x 725.71124pt>
 File: 38_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 38_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 376--377
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 114--115
  [] 
  []
 
-[385.429 <./38_pdfsam_A9ROSMXY6s-crop.pdf>]
+[431.479 <./38_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./39_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<39_pdfsam_A9ROSMXY6s-crop.pdf, id=6284, 455.7025pt x 725.71124pt>
+<39_pdfsam_A9ROSMXY6s-crop.pdf, id=7495, 455.7025pt x 725.71124pt>
 File: 39_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 39_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 386--387
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 124--125
  [] 
  []
 
-[386.430 <./39_pdfsam_A9ROSMXY6s-crop.pdf>]
+[432.480 <./39_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./40_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<40_pdfsam_A9ROSMXY6s-crop.pdf, id=6336, 455.7025pt x 725.71124pt>
+<40_pdfsam_A9ROSMXY6s-crop.pdf, id=7547, 455.7025pt x 725.71124pt>
 File: 40_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 40_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 396--397
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 134--135
  [] 
  []
 
-[387.431 <./40_pdfsam_A9ROSMXY6s-crop.pdf>]
+[433.481 <./40_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./41_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<41_pdfsam_A9ROSMXY6s-crop.pdf, id=6388, 455.7025pt x 725.71124pt>
+<41_pdfsam_A9ROSMXY6s-crop.pdf, id=7600, 455.7025pt x 725.71124pt>
 File: 41_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 41_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 406--407
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 144--145
  [] 
  []
 
-[388.432 <./41_pdfsam_A9ROSMXY6s-crop.pdf>]
+[434.482 <./41_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./42_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<42_pdfsam_A9ROSMXY6s-crop.pdf, id=6441, 455.7025pt x 725.71124pt>
+<42_pdfsam_A9ROSMXY6s-crop.pdf, id=7653, 455.7025pt x 725.71124pt>
 File: 42_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 42_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 416--417
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 154--155
  [] 
  []
 
-[389.433 <./42_pdfsam_A9ROSMXY6s-crop.pdf>]
+[435.483 <./42_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./43_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<43_pdfsam_A9ROSMXY6s-crop.pdf, id=6494, 455.7025pt x 725.71124pt>
+<43_pdfsam_A9ROSMXY6s-crop.pdf, id=7705, 455.7025pt x 725.71124pt>
 File: 43_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 43_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 426--427
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 164--165
  [] 
  []
 
-[390.434 <./43_pdfsam_A9ROSMXY6s-crop.pdf>]
+[436.484 <./43_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./44_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<44_pdfsam_A9ROSMXY6s-crop.pdf, id=6546, 455.7025pt x 725.71124pt>
+<44_pdfsam_A9ROSMXY6s-crop.pdf, id=7757, 455.7025pt x 725.71124pt>
 File: 44_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 44_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 436--437
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 174--175
  [] 
  []
 
-[391.435 <./44_pdfsam_A9ROSMXY6s-crop.pdf>]
+[437.485 <./44_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./45_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<45_pdfsam_A9ROSMXY6s-crop.pdf, id=6597, 455.7025pt x 725.71124pt>
+<45_pdfsam_A9ROSMXY6s-crop.pdf, id=7808, 455.7025pt x 725.71124pt>
 File: 45_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 45_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 446--447
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 184--185
  [] 
  []
 
-[392.436 <./45_pdfsam_A9ROSMXY6s-crop.pdf>]
+[438.486 <./45_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./46_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<46_pdfsam_A9ROSMXY6s-crop.pdf, id=6649, 455.7025pt x 725.71124pt>
+<46_pdfsam_A9ROSMXY6s-crop.pdf, id=7860, 455.7025pt x 725.71124pt>
 File: 46_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 46_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 456--457
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 194--195
  [] 
  []
 
-[393.437 <./46_pdfsam_A9ROSMXY6s-crop.pdf>]
+[439.487 <./46_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./47_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<47_pdfsam_A9ROSMXY6s-crop.pdf, id=6701, 455.7025pt x 725.71124pt>
+<47_pdfsam_A9ROSMXY6s-crop.pdf, id=7913, 455.7025pt x 725.71124pt>
 File: 47_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 47_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 466--467
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 204--205
  [] 
  []
 
-[394.438 <./47_pdfsam_A9ROSMXY6s-crop.pdf>]
+[440.488 <./47_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./48_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<48_pdfsam_A9ROSMXY6s-crop.pdf, id=6754, 455.7025pt x 725.71124pt>
+<48_pdfsam_A9ROSMXY6s-crop.pdf, id=7966, 455.7025pt x 725.71124pt>
 File: 48_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 48_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 476--477
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 214--215
  [] 
  []
 
-[395.439 <./48_pdfsam_A9ROSMXY6s-crop.pdf>]
+[441.489 <./48_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./49_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<49_pdfsam_A9ROSMXY6s-crop.pdf, id=6807, 455.7025pt x 725.71124pt>
+<49_pdfsam_A9ROSMXY6s-crop.pdf, id=8018, 455.7025pt x 725.71124pt>
 File: 49_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 49_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 486--487
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 224--225
  [] 
  []
 
-[396.440 <./49_pdfsam_A9ROSMXY6s-crop.pdf>]
+[442.490 <./49_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./50_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<50_pdfsam_A9ROSMXY6s-crop.pdf, id=6861, 455.7025pt x 725.71124pt>
+<50_pdfsam_A9ROSMXY6s-crop.pdf, id=8072, 455.7025pt x 725.71124pt>
 File: 50_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 50_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 496--497
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 234--235
  [] 
  []
 
-[397.441 <./50_pdfsam_A9ROSMXY6s-crop.pdf>]
+[443.491 <./50_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./51_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<51_pdfsam_A9ROSMXY6s-crop.pdf, id=6913, 455.7025pt x 725.71124pt>
+<51_pdfsam_A9ROSMXY6s-crop.pdf, id=8124, 455.7025pt x 725.71124pt>
 File: 51_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 51_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 506--507
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 244--245
  [] 
  []
 
-[398.442 <./51_pdfsam_A9ROSMXY6s-crop.pdf>]
+[444.492 <./51_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./52_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<52_pdfsam_A9ROSMXY6s-crop.pdf, id=6965, 455.7025pt x 725.71124pt>
+<52_pdfsam_A9ROSMXY6s-crop.pdf, id=8176, 455.7025pt x 725.71124pt>
 File: 52_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 52_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 516--517
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 254--255
  [] 
  []
 
-[399.443 <./52_pdfsam_A9ROSMXY6s-crop.pdf>]
+[445.493 <./52_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./53_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<53_pdfsam_A9ROSMXY6s-crop.pdf, id=7017, 455.7025pt x 725.71124pt>
+<53_pdfsam_A9ROSMXY6s-crop.pdf, id=8229, 455.7025pt x 725.71124pt>
 File: 53_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 53_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 526--527
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 264--265
  [] 
  []
 
-[400.444 <./53_pdfsam_A9ROSMXY6s-crop.pdf>]
+[446.494 <./53_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./54_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<54_pdfsam_A9ROSMXY6s-crop.pdf, id=7070, 455.7025pt x 725.71124pt>
+<54_pdfsam_A9ROSMXY6s-crop.pdf, id=8282, 455.7025pt x 725.71124pt>
 File: 54_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 54_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 536--537
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 274--275
  [] 
  []
 
-[401.445 <./54_pdfsam_A9ROSMXY6s-crop.pdf>]
+[447.495 <./54_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./55_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<55_pdfsam_A9ROSMXY6s-crop.pdf, id=7123, 455.7025pt x 725.71124pt>
+<55_pdfsam_A9ROSMXY6s-crop.pdf, id=8334, 455.7025pt x 725.71124pt>
 File: 55_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 55_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 546--547
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 284--285
  [] 
  []
 
-[402.446 <./55_pdfsam_A9ROSMXY6s-crop.pdf>]
+[448.496 <./55_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./56_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<56_pdfsam_A9ROSMXY6s-crop.pdf, id=7175, 455.7025pt x 725.71124pt>
+<56_pdfsam_A9ROSMXY6s-crop.pdf, id=8386, 455.7025pt x 725.71124pt>
 File: 56_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 56_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 556--557
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 294--295
  [] 
  []
 
-[403.447 <./56_pdfsam_A9ROSMXY6s-crop.pdf>]
+[449.497 <./56_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./57_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<57_pdfsam_A9ROSMXY6s-crop.pdf, id=7226, 455.7025pt x 725.71124pt>
+<57_pdfsam_A9ROSMXY6s-crop.pdf, id=8437, 455.7025pt x 725.71124pt>
 File: 57_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 57_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 566--567
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 304--305
  [] 
  []
 
-[404.448 <./57_pdfsam_A9ROSMXY6s-crop.pdf>]
+[450.498 <./57_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./58_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<58_pdfsam_A9ROSMXY6s-crop.pdf, id=7278, 455.7025pt x 725.71124pt>
+<58_pdfsam_A9ROSMXY6s-crop.pdf, id=8489, 455.7025pt x 725.71124pt>
 File: 58_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 58_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 576--577
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 314--315
  [] 
  []
 
-[405.449 <./58_pdfsam_A9ROSMXY6s-crop.pdf>]
+[451.499 <./58_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./59_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<59_pdfsam_A9ROSMXY6s-crop.pdf, id=7330, 455.7025pt x 725.71124pt>
+<59_pdfsam_A9ROSMXY6s-crop.pdf, id=8542, 455.7025pt x 725.71124pt>
 File: 59_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 59_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 586--587
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 324--325
  [] 
  []
 
-[406.450 <./59_pdfsam_A9ROSMXY6s-crop.pdf>]
+[452.500 <./59_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./60_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<60_pdfsam_A9ROSMXY6s-crop.pdf, id=7383, 455.7025pt x 725.71124pt>
+<60_pdfsam_A9ROSMXY6s-crop.pdf, id=8595, 455.7025pt x 725.71124pt>
 File: 60_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 60_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 596--597
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 334--335
  [] 
  []
 
-[407.451 <./60_pdfsam_A9ROSMXY6s-crop.pdf>]
+[453.501 <./60_pdfsam_A9ROSMXY6s-crop.pdf>])
+\openout2 = `appendixW.aux'.
+
+ (./appendixW.tex [454.502
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+Appendix W.
+
 
 pdfTeX warning: pdflatex (file ./61_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<61_pdfsam_A9ROSMXY6s-crop.pdf, id=7436, 455.7025pt x 725.71124pt>
+<61_pdfsam_A9ROSMXY6s-crop.pdf, id=8651, 455.7025pt x 725.71124pt>
 File: 61_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 61_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 606--607
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 44--45
  [] 
  []
 
-[408.452 <./61_pdfsam_A9ROSMXY6s-crop.pdf>]
+[455.503] [456.504 <./61_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./62_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<62_pdfsam_A9ROSMXY6s-crop.pdf, id=7488, 455.7025pt x 725.71124pt>
+<62_pdfsam_A9ROSMXY6s-crop.pdf, id=8707, 455.7025pt x 725.71124pt>
 File: 62_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 62_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 616--617
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 54--55
  [] 
  []
 
-[409.453 <./62_pdfsam_A9ROSMXY6s-crop.pdf>]
+[457.505 <./62_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./63_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<63_pdfsam_A9ROSMXY6s-crop.pdf, id=7539, 455.7025pt x 725.71124pt>
+<63_pdfsam_A9ROSMXY6s-crop.pdf, id=8759, 455.7025pt x 725.71124pt>
 File: 63_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 63_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 626--627
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 64--65
  [] 
  []
 
-[410.454 <./63_pdfsam_A9ROSMXY6s-crop.pdf>]
+[458.506 <./63_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./64_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<64_pdfsam_A9ROSMXY6s-crop.pdf, id=7591, 455.7025pt x 725.71124pt>
+<64_pdfsam_A9ROSMXY6s-crop.pdf, id=8811, 455.7025pt x 725.71124pt>
 File: 64_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 64_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 636--637
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 74--75
  [] 
  []
 
-[411.455 <./64_pdfsam_A9ROSMXY6s-crop.pdf>]
+[459.507 <./64_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./65_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<65_pdfsam_A9ROSMXY6s-crop.pdf, id=7643, 455.7025pt x 725.71124pt>
+<65_pdfsam_A9ROSMXY6s-crop.pdf, id=8863, 455.7025pt x 725.71124pt>
 File: 65_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 65_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 646--647
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 84--85
  [] 
  []
 
-[412.456 <./65_pdfsam_A9ROSMXY6s-crop.pdf>]
+[460.508 <./65_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./66_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<66_pdfsam_A9ROSMXY6s-crop.pdf, id=7696, 455.7025pt x 725.71124pt>
+<66_pdfsam_A9ROSMXY6s-crop.pdf, id=8916, 455.7025pt x 725.71124pt>
 File: 66_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 66_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 656--657
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 94--95
  [] 
  []
 
-[413.457 <./66_pdfsam_A9ROSMXY6s-crop.pdf>]
+[461.509 <./66_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./67_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<67_pdfsam_A9ROSMXY6s-crop.pdf, id=7749, 455.7025pt x 725.71124pt>
+<67_pdfsam_A9ROSMXY6s-crop.pdf, id=8968, 455.7025pt x 725.71124pt>
 File: 67_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 67_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 666--667
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 104--105
  [] 
  []
 
-[414.458 <./67_pdfsam_A9ROSMXY6s-crop.pdf>]
+[462.510 <./67_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./68_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<68_pdfsam_A9ROSMXY6s-crop.pdf, id=7800, 455.7025pt x 725.71124pt>
+<68_pdfsam_A9ROSMXY6s-crop.pdf, id=9019, 455.7025pt x 725.71124pt>
 File: 68_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 68_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 676--677
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 114--115
  [] 
  []
 
-[415.459 <./68_pdfsam_A9ROSMXY6s-crop.pdf>]
+[463.511 <./68_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./69_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<69_pdfsam_A9ROSMXY6s-crop.pdf, id=7850, 455.7025pt x 725.71124pt>
+<69_pdfsam_A9ROSMXY6s-crop.pdf, id=9070, 455.7025pt x 725.71124pt>
 File: 69_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 69_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 686--687
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 124--125
  [] 
  []
 
-[416.460 <./69_pdfsam_A9ROSMXY6s-crop.pdf>]
+[464.512 <./69_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./70_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<70_pdfsam_A9ROSMXY6s-crop.pdf, id=7901, 455.7025pt x 725.71124pt>
+<70_pdfsam_A9ROSMXY6s-crop.pdf, id=9121, 455.7025pt x 725.71124pt>
 File: 70_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 70_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 696--697
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 134--135
  [] 
  []
 
-[417.461 <./70_pdfsam_A9ROSMXY6s-crop.pdf>]
+[465.513 <./70_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./71_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<71_pdfsam_A9ROSMXY6s-crop.pdf, id=7952, 455.7025pt x 725.71124pt>
+<71_pdfsam_A9ROSMXY6s-crop.pdf, id=9172, 455.7025pt x 725.71124pt>
 File: 71_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 71_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 706--707
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 144--145
  [] 
  []
 
-[418.462 <./71_pdfsam_A9ROSMXY6s-crop.pdf>]
+[466.514 <./71_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./72_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<72_pdfsam_A9ROSMXY6s-crop.pdf, id=8004, 455.7025pt x 725.71124pt>
+<72_pdfsam_A9ROSMXY6s-crop.pdf, id=9224, 455.7025pt x 725.71124pt>
 File: 72_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 72_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 716--717
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 154--155
  [] 
  []
 
-[419.463 <./72_pdfsam_A9ROSMXY6s-crop.pdf>]
+[467.515 <./72_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./73_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<73_pdfsam_A9ROSMXY6s-crop.pdf, id=8056, 455.7025pt x 725.71124pt>
+<73_pdfsam_A9ROSMXY6s-crop.pdf, id=9275, 455.7025pt x 725.71124pt>
 File: 73_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 73_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 726--727
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 164--165
  [] 
  []
 
-[420.464 <./73_pdfsam_A9ROSMXY6s-crop.pdf>]
+[468.516 <./73_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./74_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<74_pdfsam_A9ROSMXY6s-crop.pdf, id=8107, 455.7025pt x 725.71124pt>
+<74_pdfsam_A9ROSMXY6s-crop.pdf, id=9326, 455.7025pt x 725.71124pt>
 File: 74_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 74_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 736--737
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 174--175
  [] 
  []
 
-[421.465 <./74_pdfsam_A9ROSMXY6s-crop.pdf>]
+[469.517 <./74_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./75_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<75_pdfsam_A9ROSMXY6s-crop.pdf, id=8159, 455.7025pt x 725.71124pt>
+<75_pdfsam_A9ROSMXY6s-crop.pdf, id=9379, 455.7025pt x 725.71124pt>
 File: 75_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 75_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 746--747
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 184--185
  [] 
  []
 
-[422.466 <./75_pdfsam_A9ROSMXY6s-crop.pdf>]
+[470.518 <./75_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./76_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<76_pdfsam_A9ROSMXY6s-crop.pdf, id=8210, 455.7025pt x 725.71124pt>
+<76_pdfsam_A9ROSMXY6s-crop.pdf, id=9430, 455.7025pt x 725.71124pt>
 File: 76_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 76_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 756--757
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 194--195
  [] 
  []
 
-[423.467 <./76_pdfsam_A9ROSMXY6s-crop.pdf>]
+[471.519 <./76_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./77_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<77_pdfsam_A9ROSMXY6s-crop.pdf, id=8261, 455.7025pt x 725.71124pt>
+<77_pdfsam_A9ROSMXY6s-crop.pdf, id=9481, 455.7025pt x 725.71124pt>
 File: 77_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 77_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 766--767
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 204--205
  [] 
  []
 
-[424.468 <./77_pdfsam_A9ROSMXY6s-crop.pdf>]
+[472.520 <./77_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./78_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<78_pdfsam_A9ROSMXY6s-crop.pdf, id=8313, 455.7025pt x 725.71124pt>
+<78_pdfsam_A9ROSMXY6s-crop.pdf, id=9533, 455.7025pt x 725.71124pt>
 File: 78_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 78_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 776--777
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 214--215
  [] 
  []
 
-[425.469 <./78_pdfsam_A9ROSMXY6s-crop.pdf>]
+[473.521 <./78_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./79_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<79_pdfsam_A9ROSMXY6s-crop.pdf, id=8365, 455.7025pt x 725.71124pt>
+<79_pdfsam_A9ROSMXY6s-crop.pdf, id=9584, 455.7025pt x 725.71124pt>
 File: 79_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 79_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 786--787
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 224--225
  [] 
  []
 
-[426.470 <./79_pdfsam_A9ROSMXY6s-crop.pdf>]
+[474.522 <./79_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./80_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<80_pdfsam_A9ROSMXY6s-crop.pdf, id=8416, 455.7025pt x 725.71124pt>
+<80_pdfsam_A9ROSMXY6s-crop.pdf, id=9635, 455.7025pt x 725.71124pt>
 File: 80_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 80_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 796--797
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 234--235
  [] 
  []
 
-[427.471 <./80_pdfsam_A9ROSMXY6s-crop.pdf>]
+[475.523 <./80_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./81_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<81_pdfsam_A9ROSMXY6s-crop.pdf, id=8467, 455.7025pt x 725.71124pt>
+<81_pdfsam_A9ROSMXY6s-crop.pdf, id=9687, 455.7025pt x 725.71124pt>
 File: 81_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 81_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 806--807
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 244--245
  [] 
  []
 
-[428.472 <./81_pdfsam_A9ROSMXY6s-crop.pdf>]
+[476.524 <./81_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./82_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<82_pdfsam_A9ROSMXY6s-crop.pdf, id=8518, 455.7025pt x 725.71124pt>
+<82_pdfsam_A9ROSMXY6s-crop.pdf, id=9738, 455.7025pt x 725.71124pt>
 File: 82_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 82_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 816--817
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 254--255
  [] 
  []
 
-[429.473 <./82_pdfsam_A9ROSMXY6s-crop.pdf>]
+[477.525 <./82_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./83_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<83_pdfsam_A9ROSMXY6s-crop.pdf, id=8569, 455.7025pt x 725.71124pt>
+<83_pdfsam_A9ROSMXY6s-crop.pdf, id=9789, 455.7025pt x 725.71124pt>
 File: 83_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 83_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 826--827
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 264--265
  [] 
  []
 
-[430.474 <./83_pdfsam_A9ROSMXY6s-crop.pdf>]
+[478.526 <./83_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./84_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<84_pdfsam_A9ROSMXY6s-crop.pdf, id=8621, 455.7025pt x 725.71124pt>
+<84_pdfsam_A9ROSMXY6s-crop.pdf, id=9841, 455.7025pt x 725.71124pt>
 File: 84_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 84_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 836--837
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 274--275
  [] 
  []
 
-[431.475 <./84_pdfsam_A9ROSMXY6s-crop.pdf>]
+[479.527 <./84_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./85_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<85_pdfsam_A9ROSMXY6s-crop.pdf, id=8673, 455.7025pt x 725.71124pt>
+<85_pdfsam_A9ROSMXY6s-crop.pdf, id=9892, 455.7025pt x 725.71124pt>
 File: 85_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 85_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 846--847
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 284--285
  [] 
  []
 
-[432.476 <./85_pdfsam_A9ROSMXY6s-crop.pdf>]
+[480.528 <./85_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./86_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<86_pdfsam_A9ROSMXY6s-crop.pdf, id=8724, 455.7025pt x 725.71124pt>
+<86_pdfsam_A9ROSMXY6s-crop.pdf, id=9943, 455.7025pt x 725.71124pt>
 File: 86_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 86_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 856--857
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 294--295
  [] 
  []
 
-[433.477 <./86_pdfsam_A9ROSMXY6s-crop.pdf>]
+[481.529 <./86_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./87_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<87_pdfsam_A9ROSMXY6s-crop.pdf, id=8774, 455.7025pt x 725.71124pt>
+<87_pdfsam_A9ROSMXY6s-crop.pdf, id=9994, 455.7025pt x 725.71124pt>
 File: 87_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 87_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 866--867
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 304--305
  [] 
  []
 
-[434.478 <./87_pdfsam_A9ROSMXY6s-crop.pdf>]
+[482.530 <./87_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./88_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<88_pdfsam_A9ROSMXY6s-crop.pdf, id=8825, 455.7025pt x 725.71124pt>
+<88_pdfsam_A9ROSMXY6s-crop.pdf, id=10045, 455.7025pt x 725.71124pt>
 File: 88_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 88_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 876--877
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 314--315
  [] 
  []
 
-[435.479 <./88_pdfsam_A9ROSMXY6s-crop.pdf>]
+[483.531 <./88_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./89_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<89_pdfsam_A9ROSMXY6s-crop.pdf, id=8876, 455.7025pt x 725.71124pt>
+<89_pdfsam_A9ROSMXY6s-crop.pdf, id=10096, 455.7025pt x 725.71124pt>
 File: 89_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 89_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 886--887
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 324--325
  [] 
  []
 
-[436.480 <./89_pdfsam_A9ROSMXY6s-crop.pdf>]
+[484.532 <./89_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./90_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<90_pdfsam_A9ROSMXY6s-crop.pdf, id=8928, 455.7025pt x 725.71124pt>
+<90_pdfsam_A9ROSMXY6s-crop.pdf, id=10148, 455.7025pt x 725.71124pt>
 File: 90_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 90_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 896--897
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 334--335
  [] 
  []
 
-[437.481 <./90_pdfsam_A9ROSMXY6s-crop.pdf>]
+[485.533 <./90_pdfsam_A9ROSMXY6s-crop.pdf>])
+\openout2 = `appendixX.aux'.
+
+ (./appendixX.tex [486.534
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
+Appendix X.
+
 
 pdfTeX warning: pdflatex (file ./91_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<91_pdfsam_A9ROSMXY6s-crop.pdf, id=8980, 455.7025pt x 725.71124pt>
+<91_pdfsam_A9ROSMXY6s-crop.pdf, id=10203, 455.7025pt x 725.71124pt>
 File: 91_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 91_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 906--907
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 44--45
  [] 
  []
 
-[438.482 <./91_pdfsam_A9ROSMXY6s-crop.pdf>]
+[487.535] [488.536 <./91_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./92_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<92_pdfsam_A9ROSMXY6s-crop.pdf, id=9033, 455.7025pt x 725.71124pt>
+<92_pdfsam_A9ROSMXY6s-crop.pdf, id=10261, 455.7025pt x 725.71124pt>
 File: 92_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 92_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 916--917
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 54--55
  [] 
  []
 
-[439.483 <./92_pdfsam_A9ROSMXY6s-crop.pdf>]
+[489.537 <./92_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./93_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<93_pdfsam_A9ROSMXY6s-crop.pdf, id=9085, 455.7025pt x 725.71124pt>
+<93_pdfsam_A9ROSMXY6s-crop.pdf, id=10313, 455.7025pt x 725.71124pt>
 File: 93_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 93_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 926--927
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 64--65
  [] 
  []
 
-[440.484 <./93_pdfsam_A9ROSMXY6s-crop.pdf>]
+[490.538 <./93_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./94_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<94_pdfsam_A9ROSMXY6s-crop.pdf, id=9138, 455.7025pt x 725.71124pt>
+<94_pdfsam_A9ROSMXY6s-crop.pdf, id=10366, 455.7025pt x 725.71124pt>
 File: 94_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 94_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 936--937
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 74--75
  [] 
  []
 
-[441.485 <./94_pdfsam_A9ROSMXY6s-crop.pdf>]
+[491.539 <./94_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./95_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<95_pdfsam_A9ROSMXY6s-crop.pdf, id=9191, 455.7025pt x 725.71124pt>
+<95_pdfsam_A9ROSMXY6s-crop.pdf, id=10419, 455.7025pt x 725.71124pt>
 File: 95_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 95_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 946--947
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 84--85
  [] 
  []
 
-[442.486 <./95_pdfsam_A9ROSMXY6s-crop.pdf>]
+[492.540 <./95_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./96_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<96_pdfsam_A9ROSMXY6s-crop.pdf, id=9245, 455.7025pt x 725.71124pt>
+<96_pdfsam_A9ROSMXY6s-crop.pdf, id=10473, 455.7025pt x 725.71124pt>
 File: 96_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 96_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 956--957
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 94--95
  [] 
  []
 
-[443.487 <./96_pdfsam_A9ROSMXY6s-crop.pdf>]
+[493.541 <./96_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./97_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<97_pdfsam_A9ROSMXY6s-crop.pdf, id=9299, 455.7025pt x 725.71124pt>
+<97_pdfsam_A9ROSMXY6s-crop.pdf, id=10527, 455.7025pt x 725.71124pt>
 File: 97_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 97_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 966--967
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 104--105
  [] 
  []
 
-[444.488 <./97_pdfsam_A9ROSMXY6s-crop.pdf>]
+[494.542 <./97_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./98_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<98_pdfsam_A9ROSMXY6s-crop.pdf, id=9351, 455.7025pt x 725.71124pt>
+<98_pdfsam_A9ROSMXY6s-crop.pdf, id=10579, 455.7025pt x 725.71124pt>
 File: 98_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 98_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 976--977
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 114--115
  [] 
  []
 
-[445.489 <./98_pdfsam_A9ROSMXY6s-crop.pdf>]
+[495.543 <./98_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./99_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion:
  found PDF version <1.5>, but at most version <1.4> allowed
-<99_pdfsam_A9ROSMXY6s-crop.pdf, id=9402, 455.7025pt x 725.71124pt>
+<99_pdfsam_A9ROSMXY6s-crop.pdf, id=10630, 455.7025pt x 725.71124pt>
 File: 99_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 99_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 986--987
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 124--125
  [] 
  []
 
-[446.490 <./99_pdfsam_A9ROSMXY6s-crop.pdf>]
+[496.544 <./99_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./100_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<100_pdfsam_A9ROSMXY6s-crop.pdf, id=9456, 455.7025pt x 725.71124pt>
+<100_pdfsam_A9ROSMXY6s-crop.pdf, id=10684, 455.7025pt x 725.71124pt>
 File: 100_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 100_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 996--997
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 134--135
  [] 
  []
 
-[447.491 <./100_pdfsam_A9ROSMXY6s-crop.pdf>]
+[497.545 <./100_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./101_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<101_pdfsam_A9ROSMXY6s-crop.pdf, id=9508, 455.7025pt x 725.71124pt>
+<101_pdfsam_A9ROSMXY6s-crop.pdf, id=10736, 455.7025pt x 725.71124pt>
 File: 101_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 101_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1006--1007
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 144--145
  [] 
  []
 
-[448.492 <./101_pdfsam_A9ROSMXY6s-crop.pdf>]
+[498.546 <./101_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./102_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<102_pdfsam_A9ROSMXY6s-crop.pdf, id=9561, 455.7025pt x 725.71124pt>
+<102_pdfsam_A9ROSMXY6s-crop.pdf, id=10789, 455.7025pt x 725.71124pt>
 File: 102_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 102_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1016--1017
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 154--155
  [] 
  []
 
-[449.493 <./102_pdfsam_A9ROSMXY6s-crop.pdf>]
+[499.547 <./102_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./103_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<103_pdfsam_A9ROSMXY6s-crop.pdf, id=9614, 455.7025pt x 725.71124pt>
+<103_pdfsam_A9ROSMXY6s-crop.pdf, id=10842, 455.7025pt x 725.71124pt>
 File: 103_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 103_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1026--1027
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 164--165
  [] 
  []
 
-[450.494 <./103_pdfsam_A9ROSMXY6s-crop.pdf>]
+[500.548 <./103_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./104_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<104_pdfsam_A9ROSMXY6s-crop.pdf, id=9666, 455.7025pt x 725.71124pt>
+<104_pdfsam_A9ROSMXY6s-crop.pdf, id=10894, 455.7025pt x 725.71124pt>
 File: 104_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 104_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1036--1037
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 174--175
  [] 
  []
 
-[451.495 <./104_pdfsam_A9ROSMXY6s-crop.pdf>]
+[501.549 <./104_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./105_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<105_pdfsam_A9ROSMXY6s-crop.pdf, id=9717, 455.7025pt x 725.71124pt>
+<105_pdfsam_A9ROSMXY6s-crop.pdf, id=10945, 455.7025pt x 725.71124pt>
 File: 105_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 105_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1046--1047
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 184--185
  [] 
  []
 
-[452.496 <./105_pdfsam_A9ROSMXY6s-crop.pdf>]
+[502.550 <./105_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./106_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<106_pdfsam_A9ROSMXY6s-crop.pdf, id=9769, 455.7025pt x 725.71124pt>
+<106_pdfsam_A9ROSMXY6s-crop.pdf, id=10997, 455.7025pt x 725.71124pt>
 File: 106_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 106_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1056--1057
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 194--195
  [] 
  []
 
-[453.497 <./106_pdfsam_A9ROSMXY6s-crop.pdf>]
+[503.551 <./106_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./107_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<107_pdfsam_A9ROSMXY6s-crop.pdf, id=9821, 455.7025pt x 725.71124pt>
+<107_pdfsam_A9ROSMXY6s-crop.pdf, id=11049, 455.7025pt x 725.71124pt>
 File: 107_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 107_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1066--1067
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 204--205
  [] 
  []
 
-[454.498 <./107_pdfsam_A9ROSMXY6s-crop.pdf>]
+[504.552 <./107_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./108_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<108_pdfsam_A9ROSMXY6s-crop.pdf, id=9874, 455.7025pt x 725.71124pt>
+<108_pdfsam_A9ROSMXY6s-crop.pdf, id=11102, 455.7025pt x 725.71124pt>
 File: 108_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 108_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1076--1077
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 214--215
  [] 
  []
 
-[455.499 <./108_pdfsam_A9ROSMXY6s-crop.pdf>]
+[505.553 <./108_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./109_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<109_pdfsam_A9ROSMXY6s-crop.pdf, id=9927, 455.7025pt x 725.71124pt>
+<109_pdfsam_A9ROSMXY6s-crop.pdf, id=11155, 455.7025pt x 725.71124pt>
 File: 109_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 109_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1086--1087
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 224--225
  [] 
  []
 
-[456.500 <./109_pdfsam_A9ROSMXY6s-crop.pdf>]
+[506.554 <./109_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./110_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<110_pdfsam_A9ROSMXY6s-crop.pdf, id=9979, 455.7025pt x 725.71124pt>
+<110_pdfsam_A9ROSMXY6s-crop.pdf, id=11207, 455.7025pt x 725.71124pt>
 File: 110_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 110_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1096--1097
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 234--235
  [] 
  []
 
-[457.501 <./110_pdfsam_A9ROSMXY6s-crop.pdf>]
+[507.555 <./110_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./111_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<111_pdfsam_A9ROSMXY6s-crop.pdf, id=10031, 455.7025pt x 725.71124pt>
+<111_pdfsam_A9ROSMXY6s-crop.pdf, id=11259, 455.7025pt x 725.71124pt>
 File: 111_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 111_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1106--1107
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 244--245
  [] 
  []
 
-[458.502 <./111_pdfsam_A9ROSMXY6s-crop.pdf>]
+[508.556 <./111_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./112_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<112_pdfsam_A9ROSMXY6s-crop.pdf, id=10083, 455.7025pt x 725.71124pt>
+<112_pdfsam_A9ROSMXY6s-crop.pdf, id=11311, 455.7025pt x 725.71124pt>
 File: 112_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 112_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1116--1117
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 254--255
  [] 
  []
 
-[459.503 <./112_pdfsam_A9ROSMXY6s-crop.pdf>]
+[509.557 <./112_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./113_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<113_pdfsam_A9ROSMXY6s-crop.pdf, id=10135, 455.7025pt x 725.71124pt>
+<113_pdfsam_A9ROSMXY6s-crop.pdf, id=11363, 455.7025pt x 725.71124pt>
 File: 113_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 113_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1126--1127
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 264--265
  [] 
  []
 
-[460.504 <./113_pdfsam_A9ROSMXY6s-crop.pdf>]
+[510.558 <./113_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./114_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<114_pdfsam_A9ROSMXY6s-crop.pdf, id=10188, 455.7025pt x 725.71124pt>
+<114_pdfsam_A9ROSMXY6s-crop.pdf, id=11416, 455.7025pt x 725.71124pt>
 File: 114_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 114_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1136--1137
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 274--275
  [] 
  []
 
-[461.505 <./114_pdfsam_A9ROSMXY6s-crop.pdf>]
+[511.559 <./114_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./115_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<115_pdfsam_A9ROSMXY6s-crop.pdf, id=10241, 455.7025pt x 725.71124pt>
+<115_pdfsam_A9ROSMXY6s-crop.pdf, id=11469, 455.7025pt x 725.71124pt>
 File: 115_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 115_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1146--1147
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 284--285
  [] 
  []
 
-[462.506 <./115_pdfsam_A9ROSMXY6s-crop.pdf>]
+[512.560 <./115_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./116_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<116_pdfsam_A9ROSMXY6s-crop.pdf, id=10293, 455.7025pt x 725.71124pt>
+<116_pdfsam_A9ROSMXY6s-crop.pdf, id=11521, 455.7025pt x 725.71124pt>
 File: 116_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 116_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1156--1157
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 294--295
  [] 
  []
 
-[463.507 <./116_pdfsam_A9ROSMXY6s-crop.pdf>]
+[513.561 <./116_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./117_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<117_pdfsam_A9ROSMXY6s-crop.pdf, id=10344, 455.7025pt x 725.71124pt>
+<117_pdfsam_A9ROSMXY6s-crop.pdf, id=11572, 455.7025pt x 725.71124pt>
 File: 117_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 117_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1166--1167
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 304--305
  [] 
  []
 
-[464.508 <./117_pdfsam_A9ROSMXY6s-crop.pdf>]
+[514.562 <./117_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./118_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<118_pdfsam_A9ROSMXY6s-crop.pdf, id=10396, 455.7025pt x 725.71124pt>
+<118_pdfsam_A9ROSMXY6s-crop.pdf, id=11624, 455.7025pt x 725.71124pt>
 File: 118_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 118_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1176--1177
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 314--315
  [] 
  []
 
-[465.509 <./118_pdfsam_A9ROSMXY6s-crop.pdf>]
+[515.563 <./118_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./119_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<119_pdfsam_A9ROSMXY6s-crop.pdf, id=10448, 455.7025pt x 725.71124pt>
+<119_pdfsam_A9ROSMXY6s-crop.pdf, id=11676, 455.7025pt x 725.71124pt>
 File: 119_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 119_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1186--1187
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 324--325
  [] 
  []
 
-[466.510 <./119_pdfsam_A9ROSMXY6s-crop.pdf>]
+[516.564 <./119_pdfsam_A9ROSMXY6s-crop.pdf>]
 
 pdfTeX warning: pdflatex (file ./120_pdfsam_A9ROSMXY6s-crop.pdf): PDF inclusion
 : found PDF version <1.5>, but at most version <1.4> allowed
-<120_pdfsam_A9ROSMXY6s-crop.pdf, id=10501, 455.7025pt x 725.71124pt>
+<120_pdfsam_A9ROSMXY6s-crop.pdf, id=11729, 455.7025pt x 725.71124pt>
 File: 120_pdfsam_A9ROSMXY6s-crop.pdf Graphic file (type pdf)
 
 <use 120_pdfsam_A9ROSMXY6s-crop.pdf>
-Overfull \hbox (2.56247pt too wide) in paragraph at lines 1196--1197
+Overfull \hbox (2.56247pt too wide) in paragraph at lines 334--335
  [] 
  []
 
-[467.511 <./120_pdfsam_A9ROSMXY6s-crop.pdf>]) [468.512
+[517.565 <./120_pdfsam_A9ROSMXY6s-crop.pdf>]) [518.566
 
 
 
@@ -3712,103 +3956,14 @@ Overfull \hbox (2.56247pt too wide) in paragraph at lines 1196--1197
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-] [469.513] (./thesis.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (.
+] [519.567] (./thesis.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (.
 /chapter4.aux)
 (./chapter5.aux) (./appendixB.aux) (./appendixC.aux) (./appendixD.aux)
 (./appendixE.aux) (./appendixF.aux) (./appendixG.aux) (./appendixH.aux)
 (./appendixI.aux) (./appendixJ.aux) (./appendixK.aux) (./appendixL.aux)
 (./appendixM.aux) (./appendixN.aux) (./appendixO.aux) (./appendixP.aux)
-(./appendixQ.aux))
+(./appendixQ.aux) (./appendixR.aux) (./appendixS.aux) (./appendixT.aux)
+(./appendixU.aux) (./appendixV.aux) (./appendixW.aux) (./appendixX.aux))
 
 LaTeX Warning: There were undefined references.
 
@@ -3817,13 +3972,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 11350 strings out of 495061
- 172602 string characters out of 1182621
- 720444 words of memory out of 3000000
- 12594 multiletter control sequences out of 15000+50000
+ 11610 strings out of 495061
+ 177920 string characters out of 1182621
+ 770397 words of memory out of 3000000
+ 12701 multiletter control sequences out of 15000+50000
  45782 words of font info for 87 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 38i,12n,45p,1740b,430s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,12n,45p,1753b,434s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
 ve/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/fonts/ty
 pe1/public/amsfonts/cm/cmbx8.pfb></usr/share/texmf-texlive/fonts/type1/public/a
@@ -3841,9 +3996,9 @@ e1/urw/helvetic/uhvro8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utm
 b8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/times/utmr8a.pfb></usr/share/
 texmf-texlive/fonts/type1/urw/times/utmri8a.pfb></usr/share/texmf-texlive/fonts
 /type1/public/wasy/wasy10.pfb>
-Output written on thesis.pdf (513 pages, 13412254 bytes).
+Output written on thesis.pdf (567 pages, 13773792 bytes).
 PDF statistics:
- 10925 PDF objects out of 12825 (max. 8388607)
- 1392 named destinations out of 1440 (max. 500000)
- 1125 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 12172 PDF objects out of 12825 (max. 8388607)
+ 1479 named destinations out of 1728 (max. 500000)
+ 1298 words of extra memory for PDF output out of 10000 (max. 10000000)
 

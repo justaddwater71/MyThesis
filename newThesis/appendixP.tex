@@ -1,5 +1,44 @@
 \chapter{Naive Bayes Storage Requirements for the Twitter Short Message Corpus}
 
+The tables in this appendix use an abbreviated naming convention to describe the combination of method, corpus, feature type, Web1T\%, and group size.  The key to this naming convention is:
+
+\begin{center}
+\begin{table}[htbp!]
+	\begin{center}
+	\begin{tabular}{ll}
+	SVM & Support Vector Machine\\
+	liblinera & Support Vector Machine\\
+	NB & Naive Bayes\\
+	nb & Naive Bayes\\
+	
+	Enron & The Enron E-mail Corpus\\
+	Twitter & The NPS Twitter Short Message Corpus\\
+	
+	GM1 & 1-Grams (Unigrams)\\
+	GM2 & 2-Grams (Bigrams)\\
+	GM5 & 5-Grams\\
+	GB3 & Gappy Bigrams of Maximum Distance 3\\
+	OSB3 & Orthogonal Sparse Bigrams of Maximum Distance 3\\
+		
+	5 & Group Size of 5 Authors\\
+	10 & Group Size of 10 Authors\\
+	25 & Group Size of 25 Authors\\
+	50 & Group Size of 50 Authors\\
+	75 & Group Size of 75 Authors\\
+	150 & Group Size of 150 Authors\\
+	
+	0 & No Web1T Corpus Used To Build Model Vocabulary\\
+	1 & The top 1\% of the Web1T Used To Buld Model Vocabulary\\
+	2 & The top 2\% of the Web1T Used To Buld Model Vocabulary\\
+	4 & The top 4\% of the Web1T Used To Buld Model Vocabulary\\
+	8 & The top 8\% of the Web1T Used To Buld Model Vocabulary\\
+	16 & The top 16\% of the Web1T Used To Buld Model Vocabulary\\
+	\end{tabular}
+	\end{center}
+\end{table}
+\end{center}
+
+
 \begin{center}
 \begin{table}[htbp] 
  \begin{center}

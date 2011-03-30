@@ -27,7 +27,8 @@
 \usepackage{verbatim}
 \usepackage{amstext} %added by JHG to support \text in an equation
 \usepackage{amsmath} %added by JHG to support more equation options
-\usepackage{rotating} %add by JHG to allow sideways table labels
+\usepackage[figuresright]{rotating} %add by JHG to allow sideways table labels
+%\usepackage{rotfloat}
 \usepackage{etex} %added by JHG to fix too many floats issue with tables in appendices
 \reserveinserts{72}
 \usepackage{morefloats}
@@ -50,14 +51,16 @@
 \distribution{Approved for public release; distribution is unlimited}
 \RPTpreparedFor{}
 \abstract{
-Traditional author detection is conducted on powerful computers using documents such as books and articles.  With the explosion of mobile phone computing use, modern author detection needs to be lean enough to operate on a resource restrained mobile phone and robust enough to handle the terse and non-standard wording in text messages, Tweets, and emails.  By testing natural language and machine learning techniques for size and speed, not just effectiveness, this thesis identifies feature and technique combinations appropriate for author detection on a mobile phone.  Specifically this thesis will examine effectiveness versus storage size for word grams of size 1, 2, and 5 as well as Gappy Bigrams and Orthogonal Sparse Bigrams.  To deal with the robust nature of Tweets and text message, the Google Web1T corpus will be tested for size versus effectiveness in combination with the word grams.  Once appropriate feature and technique combinations are found, those combinations will be tested on actual Android mobile phones to gauge how effective the chosen techniques are on a real mobile phone.
+Traditional author detection is conducted on powerful computers using documents such as books and articles.  With the explosion of mobile phone computing use, modern author detection needs to be lean enough to operate on a resource restrained mobile phone and robust enough to handle the terse and non-standard wording in text messages, Tweets, and e-mails.  By testing natural language and machine learning techniques for size and speed, not just effectiveness, this thesis identifies feature and technique combinations appropriate for author detection on a mobile phone.  Specifically this thesis will examine effectiveness versus storage size for word grams of size 1, 2, and 5 as well as Gappy Bigrams and Orthogonal Sparse Bigrams.  To deal with the robust nature of Tweets and text message, the Google Web1T corpus will be tested for size versus effectiveness in combination with the word grams.  Once appropriate feature and technique combinations are found, those combinations will be tested on actual Android mobile phones to gauge how effective the chosen techniques are on a real mobile phone.
 }
 
 % Information for the SF298.
 % These are mandatory:
 \ReportType{Master's Thesis}
+\ReportDate{25-3-2011}
 \DatesCovered{2009-03-01 - 2011-03-25}
 \SponsoringAgency{Department of the Navy}
+\SubjectTerms{Machine Learning, Natural Language Processing, Support Vector Machine, Naïve Bayes, Gappy Bigrams, Orthogonal Sparse Bigrams, Google Web1T, Mobile Device, Mobile Phone}
 \ReportClassification{Unclassified}
 \AbstractClassification{Unclassified}
 \PageClassification{Unclassified}
@@ -144,7 +147,7 @@ Traditional author detection is conducted on powerful computers using documents 
 %[APPENDIX BODY]
 
 %\include{appendixDummy}
-%past all of appendix A directly into thesis.tex HERE to fix the TOC issue
+%paste all of appendix A directly into thesis.tex HERE to fix the TOC issue
 %\include{appendixA} %LibLinear Accuracy for ENRON
 \input{appendixA.tex}
 \include{appendixB} %LibLinear Accuracy for Twitter
@@ -162,13 +165,14 @@ Traditional author detection is conducted on powerful computers using documents 
 \include{appendixN} %Liblinear Sizes for Twitter
 \include{appendixO} %Naive Bayes Sizes for ENRON
 \include{appendixP} %Naive Bayes Sizes for Twitter
-%\include{appendixQ} %Liblinear Enron Plot of Grouping Behavior
-%\include{appendixR} %Liblinear Enron Plot of Grouping Behavior
-%\include{appendixS} %Liblinear Enron Plot of Grouping Behavior
-%\include{appendixT} %Liblinear Enron Plot of Grouping Behavior
-%\include{appendixU} %Liblinear Enron Plot of Grouping Behavior
-\include{appendixQ} %Cumulative Distribution Plots of Twitter and Enron
-
+\include{appendixQ} %Liblinear Enron Plot of Accuracy VS Group Size
+\include{appendixR} %Liblinear Twitter Plot of Accuracy VS Group Size
+\include{appendixS} %Naive Bayes Enron Plot of Accuracy VS Group Size
+\include{appendixT} %Naive Bayes Twitter Plot of Accuracy VS Group Size
+\include{appendixU} %Cumulative Distribution Plots of SVM Enron
+\include{appendixV} %Cumulative Distribution Plots of SVM Twitter
+\include{appendixW} %Cumulative Distribution Plots of Naive Bayes Enron
+\include{appendixX} %Cumulative Distribution Plots of Naive Bayes Twitter
 
 % This is the official end of the thesis
 \NPSend         

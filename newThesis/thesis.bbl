@@ -254,4 +254,13 @@ D.~M. Bikel and J.~Sorensen, ``If we want your opinion,'' in \emph{Proceedings
   \url{http://portal.acm.org/citation.cfm?id=1304608.1306375}
 \BIBentrySTDinterwordspacing
 
+\bibitem{fan_liblinear:_2008}
+\BIBentryALTinterwordspacing
+R.~Fan, K.~Chang, C.~Hsieh, X.~Wang, and C.~Lin, ``{LIBLINEAR:} a library for
+  large linear classification,'' \emph{J. Mach. Learn. Res.}, vol.~9, pp.
+  1871--1874, 2008. [Online]. Available:
+  \url{http://portal.acm.org/citation.cfm?id=1390681.1442794&coll=ACM&dl=ACM&C%
+FID=96681423&CFTOKEN=43711541}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

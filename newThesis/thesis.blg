@@ -22,6 +22,13 @@ A level-1 auxiliary file: appendixN.aux
 A level-1 auxiliary file: appendixO.aux
 A level-1 auxiliary file: appendixP.aux
 A level-1 auxiliary file: appendixQ.aux
+A level-1 auxiliary file: appendixR.aux
+A level-1 auxiliary file: appendixS.aux
+A level-1 auxiliary file: appendixT.aux
+A level-1 auxiliary file: appendixU.aux
+A level-1 auxiliary file: appendixV.aux
+A level-1 auxiliary file: appendixW.aux
+A level-1 auxiliary file: appendixX.aux
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: thesis.bib
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
@@ -29,44 +36,44 @@ Database file #1: thesis.bib
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 
 Done.
-You've used 33 entries,
+You've used 34 entries,
             4030 wiz_defined-function locations,
-            1014 strings with 13823 characters,
-and the built_in function-call counts, 19197 in all, are:
-= -- 1732
-> -- 231
-< -- 66
-+ -- 126
-- -- 40
-* -- 760
-:= -- 2927
-add.period$ -- 73
-call.type$ -- 33
-change.case$ -- 28
-chr.to.int$ -- 138
-cite$ -- 33
-duplicate$ -- 1590
-empty$ -- 1727
-format.name$ -- 53
-if$ -- 4500
+            1026 strings with 14190 characters,
+and the built_in function-call counts, 20282 in all, are:
+= -- 1823
+> -- 262
+< -- 78
++ -- 144
+- -- 45
+* -- 816
+:= -- 3083
+add.period$ -- 75
+call.type$ -- 34
+change.case$ -- 29
+chr.to.int$ -- 168
+cite$ -- 34
+duplicate$ -- 1659
+empty$ -- 1799
+format.name$ -- 59
+if$ -- 4750
 int.to.chr$ -- 0
-int.to.str$ -- 33
-missing$ -- 257
-newline$ -- 166
-num.names$ -- 21
-pop$ -- 697
+int.to.str$ -- 34
+missing$ -- 268
+newline$ -- 171
+num.names$ -- 22
+pop$ -- 721
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1690
+skip$ -- 1773
 stack$ -- 0
-substring$ -- 640
-swap$ -- 1132
-text.length$ -- 20
+substring$ -- 711
+swap$ -- 1198
+text.length$ -- 22
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 33
+type$ -- 34
 warning$ -- 0
-while$ -- 53
-width$ -- 35
-write$ -- 355
+while$ -- 58
+width$ -- 36
+write$ -- 368

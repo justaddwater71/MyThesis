@@ -2,35 +2,33 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Standford Naive Bayes Classifier Algorithm}}{12}{figure.2.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Parameter Combinations for Testing}}{31}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Three Tiered Hashing Scheme Structure}}{35}{figure.3.2}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Three Tiered Hashing Scheme Example}}{36}{figure.3.3}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Matrix of CMPH Models by Artifacts Included}}{38}{figure.3.4}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Small-To-Large Group for Group Size 5, 25 Authors}}{40}{figure.3.5}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Small-And-Large Group for Group Size 5, 25 Authors}}{41}{figure.3.6}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Parameter Combinations for Testing}}{30}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Three-Tiered Hashing Scheme Structure}}{35}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Three-Tiered Hashing Scheme Example: The hash value 465 is checked against the signature hash value. If it matches, the CMPH index provides an index to the count array, giving type count.}}{36}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Matrix of CMPH Models by Artifacts Included}}{39}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Small-To-Large Group for Group Size 5, 25 Authors}}{41}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Small-And-Large Group for Group Size 5, 25 Authors}}{42}{figure.3.6}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Random Group for Group Size 5, 25 Authors}}{42}{figure.3.7}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces LibSVM File Format}}{43}{figure.3.8}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Naive Bayes Hashmap and Smoothing Array Flow Chart}}{45}{figure.3.9}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Naive Bayes Hashmap and Smoothing Array Flow Chart}}{46}{figure.3.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Liblinear Limits Due to Vocabulary Size and Group Size}}{49}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Accuracy of SVM OSB3 for the ENRON E-mail Corpus}}{50}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces SVM Limits Due to Vocabulary Size and Group Size}}{55}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces SVM Limits Due to Vocabulary Size and Group Size}}{56}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces plot-tiled-cdf-summary-liblinear-enron-gb3-10}}{59}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces plot-tiled-cdf-summary-nb-enron-gb3-10}}{60}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces plot-tiled-cdf-summary-liblinear-twitter-gb3-10}}{61}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces plot-tiled-cdf-summary-nb-twitter-gb3-10}}{61}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0}}{62}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces plot-tiled-cdf-summary-nb-enron-GB3-ALL-0}}{63}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces plot-tiled-cdf-summary-nb-enron-GB3-ALL-1}}{64}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0}}{65}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0}}{66}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Scatter-Plot of Enron Email Corpus Tests}}{76}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Scatter-Plot of Twitter Short Message Corpus Tests}}{79}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Accuracy Results over Group Size Using SVM GM1 for the Enron E-mail Corpus}}{83}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Accuracy Results over Group Size Using SVM OSB3 for the Twitter Short Message Corpus}}{83}{figure.4.17}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Liblinear Limits Due to Vocabulary Size and Group Size}}{51}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Accuracy of SVM OSB3 for the ENRON E-mail Corpus}}{52}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Accuracy Results over Group Size Using SVM GM1 for the Enron E-mail Corpus}}{55}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Accuracy Results over Group Size Using SVM OSB3 for the Twitter Short Message Corpus}}{55}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces SVM Limits Due to Vocabulary Size and Group Size for the Enron E-mail Corpus. The X-axis shows the filenames for each test, not a range of numbers. For Small-To-Large, the file 000\_009 holds the least prolific authors. The file 140\_149 holds the most prolific authors. For small-and-large, each file holds a collection of dissimilarly prolific authors.}}{59}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces SVM Limits Due to Vocabulary Size and Group Size for the NPS Twitter Short Message Corpus. The X-axis shows the filenames for each test, not a range of numbers. For Small-To-Large, the file 000\_009 holds the least prolific authors. The file 140\_149 holds the most prolific authors. For small-and-large, each file holds a collection of dissimilarly prolific authors.}}{60}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using SVM. Each panel in this figure shows SVM using GB3 for the Enron E-mail Corpus. Each panel represents a different Web1T\% value. From top-left to bottom-right, those Web1T\% values are 0, 1, 2, 4, 8, and 16. The blank graph in the sixth panel represents a author-feature pairing that was too large for libLinear to execute as described in Section 3.2.2 and Section 4.1. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN). STL represents groups of similarly prolific authors. SAL represents groups of dissimilarly prolific authors. RAN represents authors of random prolificity grouped together. Curves with down and right curvature indicate better performance that curves with up and left curvature. Curves positioned further to the right indicate better performance that curves positioned further to the left. Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}}{63}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 for the Enron E-mail Corpus. Each panel represents a different Web1T\% value. From top-left to bottom-right, those Web1T\% values are 0, 1, 2, 4, 8, and 16. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN). STL represents groups of similarly prolific authors. SAL represents groups of dissimilarly prolific authors. RAN represents authors of random prolificity grouped together. Curves with down and right curvature indicate better performance that curves with up and left curvature. Curves positioned further to the right indicate better performance that curves positioned further to the left. Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}}{64}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Graphs of the Cumulative Distribution of Authors Over F-Score for the NPS Twitter Short Message Corpus using SVM. Each panel in this figure shows SVM using GB3 for the Enron E-mail Corpus. Each panel represents a different Web1T\% value. From top-left to bottom-right, those Web1T\% values are 0, 1, 2, 4, 8, and 16. The blank graph in the sixth panel represents a author-feature pairing that was too large for libLinear to execute as described in Section 3.2.2 and Section 4.1. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN). STL represents groups of similarly prolific authors. SAL represents groups of dissimilarly prolific authors. RAN represents authors of random prolificity grouped together. Curves with down and right curvature indicate better performance that curves with up and left curvature. Curves positioned further to the right indicate better performance that curves positioned further to the left. Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}}{66}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Graphs of the Cumulative Distribution of Authors Over F-Score for the NPS Twitter Short Message Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 for the Enron E-mail Corpus. Each panel represents a different Web1T\% value. From top-left to bottom-right, those Web1T\% values are 0, 1, 2, 4, 8, and 16. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN). STL represents groups of similarly prolific authors. SAL represents groups of dissimilarly prolific authors. RAN represents authors of random prolificity grouped together. Curves with down and right curvature indicate better performance that curves with up and left curvature. Curves positioned further to the right indicate better performance that curves positioned further to the left. Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}}{67}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using SVM. Each panel in this figure shows SVM using GB3 for the Enron E-mail Corpus. Each panel represents a different group size. From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150. The blank graph in the sixth panel represents a author-feature pairing that was too large for libLinear to execute as described in Section 3.2.2 and Section 4.1. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN). STL represents groups of similarly prolific authors. SAL represents groups of dissimilarly prolific authors. RAN represents authors of random prolificity grouped together. Curves with down and right curvature indicate better performance that curves with up and left curvature. Curves positioned further to the right indicate better performance that curves positioned further to the left. Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}}{70}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 and a Web1T\% of 0 for the Enron E-mail Corpus. Each panel represents a different group size. From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN). STL represents groups of similarly prolific authors. SAL represents groups of dissimilarly prolific authors. RAN represents authors of random prolificity grouped together. Curves with down and right curvature indicate better performance that curves with up and left curvature. Curves positioned further to the right indicate better performance that curves positioned further to the left. Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}}{71}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 and a Web1T\% of 1 for the Enron E-mail Corpus. Each panel represents a different group size. From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN). STL represents groups of similarly prolific authors. SAL represents groups of dissimilarly prolific authors. RAN represents authors of random prolificity grouped together. Curves with down and right curvature indicate better performance that curves with up and left curvature. Curves positioned further to the right indicate better performance that curves positioned further to the left. Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}}{72}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Graphs of the Cumulative Distribution of Authors Over F-Score for the NPS Twitter Short Message Corpus using SVM. Each panel in this figure shows SVM using GB3 for the Enron E-mail Corpus. Each panel represents a different group size. From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150. The blank graph in the sixth panel represents a author-feature pairing that was too large for libLinear to execute as described in Section 3.2.2 and Section 4.1. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN). STL represents groups of similarly prolific authors. SAL represents groups of dissimilarly prolific authors. RAN represents authors of random prolificity grouped together. Curves with down and right curvature indicate better performance that curves with up and left curvature. Curves positioned further to the right indicate better performance that curves positioned further to the left. Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}}{74}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Graphs of the Cumulative Distribution of Authors Over F-Score for the NPS Twitter Short Message Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 for the Enron E-mail Corpus. Each panel represents a different group size. From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN). STL represents groups of similarly prolific authors. SAL represents groups of dissimilarly prolific authors. RAN represents authors of random prolificity grouped together. Curves with down and right curvature indicate better performance that curves with up and left curvature. Curves positioned further to the right indicate better performance that curves positioned further to the left. Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}}{76}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Scatter-Plot of Enron E-mail Corpus Tests}}{87}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Scatter-Plot of Twitter Short Message Corpus Tests}}{90}{figure.4.17}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -47,124 +45,152 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {Q.1}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-5}}{348}{figure.Q.1}
-\contentsline {figure}{\numberline {Q.2}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-10}}{349}{figure.Q.2}
-\contentsline {figure}{\numberline {Q.3}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-25}}{350}{figure.Q.3}
-\contentsline {figure}{\numberline {Q.4}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-50}}{351}{figure.Q.4}
-\contentsline {figure}{\numberline {Q.5}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-75}}{352}{figure.Q.5}
-\contentsline {figure}{\numberline {Q.6}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-150}}{353}{figure.Q.6}
-\contentsline {figure}{\numberline {Q.7}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-5}}{354}{figure.Q.7}
-\contentsline {figure}{\numberline {Q.8}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-10}}{355}{figure.Q.8}
-\contentsline {figure}{\numberline {Q.9}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-25}}{356}{figure.Q.9}
-\contentsline {figure}{\numberline {Q.10}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-50}}{357}{figure.Q.10}
-\contentsline {figure}{\numberline {Q.11}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-75}}{358}{figure.Q.11}
-\contentsline {figure}{\numberline {Q.12}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-150}}{359}{figure.Q.12}
-\contentsline {figure}{\numberline {Q.13}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-5}}{360}{figure.Q.13}
-\contentsline {figure}{\numberline {Q.14}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-10}}{361}{figure.Q.14}
-\contentsline {figure}{\numberline {Q.15}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-25}}{362}{figure.Q.15}
-\contentsline {figure}{\numberline {Q.16}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-50}}{363}{figure.Q.16}
-\contentsline {figure}{\numberline {Q.17}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-75}}{364}{figure.Q.17}
-\contentsline {figure}{\numberline {Q.18}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-150}}{365}{figure.Q.18}
-\contentsline {figure}{\numberline {Q.19}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-5}}{366}{figure.Q.19}
-\contentsline {figure}{\numberline {Q.20}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-10}}{367}{figure.Q.20}
-\contentsline {figure}{\numberline {Q.21}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-25}}{368}{figure.Q.21}
-\contentsline {figure}{\numberline {Q.22}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-50}}{369}{figure.Q.22}
-\contentsline {figure}{\numberline {Q.23}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-75}}{370}{figure.Q.23}
-\contentsline {figure}{\numberline {Q.24}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-150}}{371}{figure.Q.24}
-\contentsline {figure}{\numberline {Q.25}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-5}}{372}{figure.Q.25}
-\contentsline {figure}{\numberline {Q.26}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-10}}{373}{figure.Q.26}
-\contentsline {figure}{\numberline {Q.27}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-25}}{374}{figure.Q.27}
-\contentsline {figure}{\numberline {Q.28}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-50}}{375}{figure.Q.28}
-\contentsline {figure}{\numberline {Q.29}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-75}}{376}{figure.Q.29}
-\contentsline {figure}{\numberline {Q.30}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-150}}{377}{figure.Q.30}
-\contentsline {figure}{\numberline {Q.31}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-5}}{378}{figure.Q.31}
-\contentsline {figure}{\numberline {Q.32}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-10}}{379}{figure.Q.32}
-\contentsline {figure}{\numberline {Q.33}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-25}}{380}{figure.Q.33}
-\contentsline {figure}{\numberline {Q.34}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-50}}{381}{figure.Q.34}
-\contentsline {figure}{\numberline {Q.35}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-75}}{382}{figure.Q.35}
-\contentsline {figure}{\numberline {Q.36}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-150}}{383}{figure.Q.36}
-\contentsline {figure}{\numberline {Q.37}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-5}}{384}{figure.Q.37}
-\contentsline {figure}{\numberline {Q.38}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-10}}{385}{figure.Q.38}
-\contentsline {figure}{\numberline {Q.39}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-25}}{386}{figure.Q.39}
-\contentsline {figure}{\numberline {Q.40}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-50}}{387}{figure.Q.40}
-\contentsline {figure}{\numberline {Q.41}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-75}}{388}{figure.Q.41}
-\contentsline {figure}{\numberline {Q.42}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-150}}{389}{figure.Q.42}
-\contentsline {figure}{\numberline {Q.43}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-5}}{390}{figure.Q.43}
-\contentsline {figure}{\numberline {Q.44}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-10}}{391}{figure.Q.44}
-\contentsline {figure}{\numberline {Q.45}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-25}}{392}{figure.Q.45}
-\contentsline {figure}{\numberline {Q.46}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-50}}{393}{figure.Q.46}
-\contentsline {figure}{\numberline {Q.47}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-75}}{394}{figure.Q.47}
-\contentsline {figure}{\numberline {Q.48}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-150}}{395}{figure.Q.48}
-\contentsline {figure}{\numberline {Q.49}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-5}}{396}{figure.Q.49}
-\contentsline {figure}{\numberline {Q.50}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-10}}{397}{figure.Q.50}
-\contentsline {figure}{\numberline {Q.51}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-25}}{398}{figure.Q.51}
-\contentsline {figure}{\numberline {Q.52}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-50}}{399}{figure.Q.52}
-\contentsline {figure}{\numberline {Q.53}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-75}}{400}{figure.Q.53}
-\contentsline {figure}{\numberline {Q.54}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-150}}{401}{figure.Q.54}
-\contentsline {figure}{\numberline {Q.55}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-5}}{402}{figure.Q.55}
-\contentsline {figure}{\numberline {Q.56}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-10}}{403}{figure.Q.56}
-\contentsline {figure}{\numberline {Q.57}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-25}}{404}{figure.Q.57}
-\contentsline {figure}{\numberline {Q.58}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-50}}{405}{figure.Q.58}
-\contentsline {figure}{\numberline {Q.59}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-75}}{406}{figure.Q.59}
-\contentsline {figure}{\numberline {Q.60}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-150}}{407}{figure.Q.60}
-\contentsline {figure}{\numberline {Q.61}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-5}}{408}{figure.Q.61}
-\contentsline {figure}{\numberline {Q.62}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-10}}{409}{figure.Q.62}
-\contentsline {figure}{\numberline {Q.63}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-25}}{410}{figure.Q.63}
-\contentsline {figure}{\numberline {Q.64}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-50}}{411}{figure.Q.64}
-\contentsline {figure}{\numberline {Q.65}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-75}}{412}{figure.Q.65}
-\contentsline {figure}{\numberline {Q.66}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-150}}{413}{figure.Q.66}
-\contentsline {figure}{\numberline {Q.67}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-5}}{414}{figure.Q.67}
-\contentsline {figure}{\numberline {Q.68}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-10}}{415}{figure.Q.68}
-\contentsline {figure}{\numberline {Q.69}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-25}}{416}{figure.Q.69}
-\contentsline {figure}{\numberline {Q.70}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-50}}{417}{figure.Q.70}
-\contentsline {figure}{\numberline {Q.71}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-75}}{418}{figure.Q.71}
-\contentsline {figure}{\numberline {Q.72}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-150}}{419}{figure.Q.72}
-\contentsline {figure}{\numberline {Q.73}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-5}}{420}{figure.Q.73}
-\contentsline {figure}{\numberline {Q.74}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-10}}{421}{figure.Q.74}
-\contentsline {figure}{\numberline {Q.75}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-25}}{422}{figure.Q.75}
-\contentsline {figure}{\numberline {Q.76}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-50}}{423}{figure.Q.76}
-\contentsline {figure}{\numberline {Q.77}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-75}}{424}{figure.Q.77}
-\contentsline {figure}{\numberline {Q.78}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-150}}{425}{figure.Q.78}
-\contentsline {figure}{\numberline {Q.79}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-5}}{426}{figure.Q.79}
-\contentsline {figure}{\numberline {Q.80}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-10}}{427}{figure.Q.80}
-\contentsline {figure}{\numberline {Q.81}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-25}}{428}{figure.Q.81}
-\contentsline {figure}{\numberline {Q.82}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-50}}{429}{figure.Q.82}
-\contentsline {figure}{\numberline {Q.83}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-75}}{430}{figure.Q.83}
-\contentsline {figure}{\numberline {Q.84}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-150}}{431}{figure.Q.84}
-\contentsline {figure}{\numberline {Q.85}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-5}}{432}{figure.Q.85}
-\contentsline {figure}{\numberline {Q.86}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-10}}{433}{figure.Q.86}
-\contentsline {figure}{\numberline {Q.87}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-25}}{434}{figure.Q.87}
-\contentsline {figure}{\numberline {Q.88}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-50}}{435}{figure.Q.88}
-\contentsline {figure}{\numberline {Q.89}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-75}}{436}{figure.Q.89}
-\contentsline {figure}{\numberline {Q.90}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-150}}{437}{figure.Q.90}
-\contentsline {figure}{\numberline {Q.91}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-5}}{438}{figure.Q.91}
-\contentsline {figure}{\numberline {Q.92}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-10}}{439}{figure.Q.92}
-\contentsline {figure}{\numberline {Q.93}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-25}}{440}{figure.Q.93}
-\contentsline {figure}{\numberline {Q.94}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-50}}{441}{figure.Q.94}
-\contentsline {figure}{\numberline {Q.95}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-75}}{442}{figure.Q.95}
-\contentsline {figure}{\numberline {Q.96}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-150}}{443}{figure.Q.96}
-\contentsline {figure}{\numberline {Q.97}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-5}}{444}{figure.Q.97}
-\contentsline {figure}{\numberline {Q.98}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-10}}{445}{figure.Q.98}
-\contentsline {figure}{\numberline {Q.99}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-25}}{446}{figure.Q.99}
-\contentsline {figure}{\numberline {Q.100}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-50}}{447}{figure.Q.100}
-\contentsline {figure}{\numberline {Q.101}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-75}}{448}{figure.Q.101}
-\contentsline {figure}{\numberline {Q.102}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-150}}{449}{figure.Q.102}
-\contentsline {figure}{\numberline {Q.103}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-5}}{450}{figure.Q.103}
-\contentsline {figure}{\numberline {Q.104}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-10}}{451}{figure.Q.104}
-\contentsline {figure}{\numberline {Q.105}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-25}}{452}{figure.Q.105}
-\contentsline {figure}{\numberline {Q.106}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-50}}{453}{figure.Q.106}
-\contentsline {figure}{\numberline {Q.107}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-75}}{454}{figure.Q.107}
-\contentsline {figure}{\numberline {Q.108}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-150}}{455}{figure.Q.108}
-\contentsline {figure}{\numberline {Q.109}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-5}}{456}{figure.Q.109}
-\contentsline {figure}{\numberline {Q.110}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-10}}{457}{figure.Q.110}
-\contentsline {figure}{\numberline {Q.111}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-25}}{458}{figure.Q.111}
-\contentsline {figure}{\numberline {Q.112}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-50}}{459}{figure.Q.112}
-\contentsline {figure}{\numberline {Q.113}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-75}}{460}{figure.Q.113}
-\contentsline {figure}{\numberline {Q.114}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-150}}{461}{figure.Q.114}
-\contentsline {figure}{\numberline {Q.115}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-5}}{462}{figure.Q.115}
-\contentsline {figure}{\numberline {Q.116}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-10}}{463}{figure.Q.116}
-\contentsline {figure}{\numberline {Q.117}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-25}}{464}{figure.Q.117}
-\contentsline {figure}{\numberline {Q.118}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-50}}{465}{figure.Q.118}
-\contentsline {figure}{\numberline {Q.119}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-75}}{466}{figure.Q.119}
-\contentsline {figure}{\numberline {Q.120}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-150}}{467}{figure.Q.120}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {Q.1}{\ignorespaces plot-accuracy-SVM-enron-GM1}}{369}{figure.Q.1}
+\contentsline {figure}{\numberline {Q.2}{\ignorespaces plot-accuracy-SVM-enron-GM2}}{370}{figure.Q.2}
+\contentsline {figure}{\numberline {Q.3}{\ignorespaces plot-accuracy-SVM-enron-GM5}}{371}{figure.Q.3}
+\contentsline {figure}{\numberline {Q.4}{\ignorespaces plot-accuracy-SVM-enron-GB3}}{372}{figure.Q.4}
+\contentsline {figure}{\numberline {Q.5}{\ignorespaces plot-accuracy-liblinear-enron-OSB3}}{373}{figure.Q.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {R.1}{\ignorespaces plot-accuracy-nb-enron-GM1}}{375}{figure.R.1}
+\contentsline {figure}{\numberline {R.2}{\ignorespaces plot-accuracy-nb-enron-GM2}}{376}{figure.R.2}
+\contentsline {figure}{\numberline {R.3}{\ignorespaces plot-accuracy-nb-enron-GM5}}{377}{figure.R.3}
+\contentsline {figure}{\numberline {R.4}{\ignorespaces plot-accuracy-nb-enron-GB3}}{378}{figure.R.4}
+\contentsline {figure}{\numberline {R.5}{\ignorespaces plot-accuracy-nb-enron-OSB3}}{379}{figure.R.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {S.1}{\ignorespaces plot-accuracy-SVM-twitter-GM1}}{381}{figure.S.1}
+\contentsline {figure}{\numberline {S.2}{\ignorespaces plot-accuracy-SVM-twitter-GM2}}{382}{figure.S.2}
+\contentsline {figure}{\numberline {S.3}{\ignorespaces plot-accuracy-SVM-twitter-GM5}}{383}{figure.S.3}
+\contentsline {figure}{\numberline {S.4}{\ignorespaces plot-accuracy-SVM-twitter-GB3}}{384}{figure.S.4}
+\contentsline {figure}{\numberline {S.5}{\ignorespaces plot-accuracy-liblinear-twitter-OSB3}}{385}{figure.S.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {T.1}{\ignorespaces plot-accuracy-nb-twitter-GM1}}{387}{figure.T.1}
+\contentsline {figure}{\numberline {T.2}{\ignorespaces plot-accuracy-nb-twitter-GM2}}{388}{figure.T.2}
+\contentsline {figure}{\numberline {T.3}{\ignorespaces plot-accuracy-nb-twitter-GM5}}{389}{figure.T.3}
+\contentsline {figure}{\numberline {T.4}{\ignorespaces plot-accuracy-nb-twitter-GB3}}{390}{figure.T.4}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {U.1}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-5}}{392}{figure.U.1}
+\contentsline {figure}{\numberline {U.2}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-10}}{393}{figure.U.2}
+\contentsline {figure}{\numberline {U.3}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-25}}{394}{figure.U.3}
+\contentsline {figure}{\numberline {U.4}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-50}}{395}{figure.U.4}
+\contentsline {figure}{\numberline {U.5}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-75}}{396}{figure.U.5}
+\contentsline {figure}{\numberline {U.6}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GB3-150}}{397}{figure.U.6}
+\contentsline {figure}{\numberline {U.7}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-5}}{398}{figure.U.7}
+\contentsline {figure}{\numberline {U.8}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-10}}{399}{figure.U.8}
+\contentsline {figure}{\numberline {U.9}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-25}}{400}{figure.U.9}
+\contentsline {figure}{\numberline {U.10}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-50}}{401}{figure.U.10}
+\contentsline {figure}{\numberline {U.11}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-75}}{402}{figure.U.11}
+\contentsline {figure}{\numberline {U.12}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM1-150}}{403}{figure.U.12}
+\contentsline {figure}{\numberline {U.13}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-5}}{404}{figure.U.13}
+\contentsline {figure}{\numberline {U.14}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-10}}{405}{figure.U.14}
+\contentsline {figure}{\numberline {U.15}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-25}}{406}{figure.U.15}
+\contentsline {figure}{\numberline {U.16}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-50}}{407}{figure.U.16}
+\contentsline {figure}{\numberline {U.17}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-75}}{408}{figure.U.17}
+\contentsline {figure}{\numberline {U.18}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM2-150}}{409}{figure.U.18}
+\contentsline {figure}{\numberline {U.19}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-5}}{410}{figure.U.19}
+\contentsline {figure}{\numberline {U.20}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-10}}{411}{figure.U.20}
+\contentsline {figure}{\numberline {U.21}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-25}}{412}{figure.U.21}
+\contentsline {figure}{\numberline {U.22}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-50}}{413}{figure.U.22}
+\contentsline {figure}{\numberline {U.23}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-75}}{414}{figure.U.23}
+\contentsline {figure}{\numberline {U.24}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-GM5-150}}{415}{figure.U.24}
+\contentsline {figure}{\numberline {U.25}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-5}}{416}{figure.U.25}
+\contentsline {figure}{\numberline {U.26}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-10}}{417}{figure.U.26}
+\contentsline {figure}{\numberline {U.27}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-25}}{418}{figure.U.27}
+\contentsline {figure}{\numberline {U.28}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-50}}{419}{figure.U.28}
+\contentsline {figure}{\numberline {U.29}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-75}}{420}{figure.U.29}
+\contentsline {figure}{\numberline {U.30}{\ignorespaces plot-tiled-cdf-summary-SVM-Enron-OSB3-150}}{421}{figure.U.30}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {V.1}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-5}}{424}{figure.V.1}
+\contentsline {figure}{\numberline {V.2}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-10}}{425}{figure.V.2}
+\contentsline {figure}{\numberline {V.3}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-25}}{426}{figure.V.3}
+\contentsline {figure}{\numberline {V.4}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-50}}{427}{figure.V.4}
+\contentsline {figure}{\numberline {V.5}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-75}}{428}{figure.V.5}
+\contentsline {figure}{\numberline {V.6}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GB3-150}}{429}{figure.V.6}
+\contentsline {figure}{\numberline {V.7}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-5}}{430}{figure.V.7}
+\contentsline {figure}{\numberline {V.8}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-10}}{431}{figure.V.8}
+\contentsline {figure}{\numberline {V.9}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-25}}{432}{figure.V.9}
+\contentsline {figure}{\numberline {V.10}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-50}}{433}{figure.V.10}
+\contentsline {figure}{\numberline {V.11}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-75}}{434}{figure.V.11}
+\contentsline {figure}{\numberline {V.12}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM1-150}}{435}{figure.V.12}
+\contentsline {figure}{\numberline {V.13}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-5}}{436}{figure.V.13}
+\contentsline {figure}{\numberline {V.14}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-10}}{437}{figure.V.14}
+\contentsline {figure}{\numberline {V.15}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-25}}{438}{figure.V.15}
+\contentsline {figure}{\numberline {V.16}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-50}}{439}{figure.V.16}
+\contentsline {figure}{\numberline {V.17}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-75}}{440}{figure.V.17}
+\contentsline {figure}{\numberline {V.18}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM2-150}}{441}{figure.V.18}
+\contentsline {figure}{\numberline {V.19}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-5}}{442}{figure.V.19}
+\contentsline {figure}{\numberline {V.20}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-10}}{443}{figure.V.20}
+\contentsline {figure}{\numberline {V.21}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-25}}{444}{figure.V.21}
+\contentsline {figure}{\numberline {V.22}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-50}}{445}{figure.V.22}
+\contentsline {figure}{\numberline {V.23}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-75}}{446}{figure.V.23}
+\contentsline {figure}{\numberline {V.24}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-GM5-150}}{447}{figure.V.24}
+\contentsline {figure}{\numberline {V.25}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-5}}{448}{figure.V.25}
+\contentsline {figure}{\numberline {V.26}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-10}}{449}{figure.V.26}
+\contentsline {figure}{\numberline {V.27}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-25}}{450}{figure.V.27}
+\contentsline {figure}{\numberline {V.28}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-50}}{451}{figure.V.28}
+\contentsline {figure}{\numberline {V.29}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-75}}{452}{figure.V.29}
+\contentsline {figure}{\numberline {V.30}{\ignorespaces plot-tiled-cdf-summary-SVM-Twitter-OSB3-150}}{453}{figure.V.30}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {W.1}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-5}}{456}{figure.W.1}
+\contentsline {figure}{\numberline {W.2}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-10}}{457}{figure.W.2}
+\contentsline {figure}{\numberline {W.3}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-25}}{458}{figure.W.3}
+\contentsline {figure}{\numberline {W.4}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-50}}{459}{figure.W.4}
+\contentsline {figure}{\numberline {W.5}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-75}}{460}{figure.W.5}
+\contentsline {figure}{\numberline {W.6}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GB3-150}}{461}{figure.W.6}
+\contentsline {figure}{\numberline {W.7}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-5}}{462}{figure.W.7}
+\contentsline {figure}{\numberline {W.8}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-10}}{463}{figure.W.8}
+\contentsline {figure}{\numberline {W.9}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-25}}{464}{figure.W.9}
+\contentsline {figure}{\numberline {W.10}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-50}}{465}{figure.W.10}
+\contentsline {figure}{\numberline {W.11}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-75}}{466}{figure.W.11}
+\contentsline {figure}{\numberline {W.12}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM1-150}}{467}{figure.W.12}
+\contentsline {figure}{\numberline {W.13}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-5}}{468}{figure.W.13}
+\contentsline {figure}{\numberline {W.14}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-10}}{469}{figure.W.14}
+\contentsline {figure}{\numberline {W.15}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-25}}{470}{figure.W.15}
+\contentsline {figure}{\numberline {W.16}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-50}}{471}{figure.W.16}
+\contentsline {figure}{\numberline {W.17}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-75}}{472}{figure.W.17}
+\contentsline {figure}{\numberline {W.18}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM2-150}}{473}{figure.W.18}
+\contentsline {figure}{\numberline {W.19}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-5}}{474}{figure.W.19}
+\contentsline {figure}{\numberline {W.20}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-10}}{475}{figure.W.20}
+\contentsline {figure}{\numberline {W.21}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-25}}{476}{figure.W.21}
+\contentsline {figure}{\numberline {W.22}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-50}}{477}{figure.W.22}
+\contentsline {figure}{\numberline {W.23}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-75}}{478}{figure.W.23}
+\contentsline {figure}{\numberline {W.24}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-GM5-150}}{479}{figure.W.24}
+\contentsline {figure}{\numberline {W.25}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-5}}{480}{figure.W.25}
+\contentsline {figure}{\numberline {W.26}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-10}}{481}{figure.W.26}
+\contentsline {figure}{\numberline {W.27}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-25}}{482}{figure.W.27}
+\contentsline {figure}{\numberline {W.28}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-50}}{483}{figure.W.28}
+\contentsline {figure}{\numberline {W.29}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-75}}{484}{figure.W.29}
+\contentsline {figure}{\numberline {W.30}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Enron-OSB3-150}}{485}{figure.W.30}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {X.1}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-5}}{488}{figure.X.1}
+\contentsline {figure}{\numberline {X.2}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-10}}{489}{figure.X.2}
+\contentsline {figure}{\numberline {X.3}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-25}}{490}{figure.X.3}
+\contentsline {figure}{\numberline {X.4}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-50}}{491}{figure.X.4}
+\contentsline {figure}{\numberline {X.5}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-75}}{492}{figure.X.5}
+\contentsline {figure}{\numberline {X.6}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GB3-150}}{493}{figure.X.6}
+\contentsline {figure}{\numberline {X.7}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-5}}{494}{figure.X.7}
+\contentsline {figure}{\numberline {X.8}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-10}}{495}{figure.X.8}
+\contentsline {figure}{\numberline {X.9}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-25}}{496}{figure.X.9}
+\contentsline {figure}{\numberline {X.10}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-50}}{497}{figure.X.10}
+\contentsline {figure}{\numberline {X.11}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-75}}{498}{figure.X.11}
+\contentsline {figure}{\numberline {X.12}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM1-150}}{499}{figure.X.12}
+\contentsline {figure}{\numberline {X.13}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-5}}{500}{figure.X.13}
+\contentsline {figure}{\numberline {X.14}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-10}}{501}{figure.X.14}
+\contentsline {figure}{\numberline {X.15}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-25}}{502}{figure.X.15}
+\contentsline {figure}{\numberline {X.16}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-50}}{503}{figure.X.16}
+\contentsline {figure}{\numberline {X.17}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-75}}{504}{figure.X.17}
+\contentsline {figure}{\numberline {X.18}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM2-150}}{505}{figure.X.18}
+\contentsline {figure}{\numberline {X.19}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-5}}{506}{figure.X.19}
+\contentsline {figure}{\numberline {X.20}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-10}}{507}{figure.X.20}
+\contentsline {figure}{\numberline {X.21}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-25}}{508}{figure.X.21}
+\contentsline {figure}{\numberline {X.22}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-50}}{509}{figure.X.22}
+\contentsline {figure}{\numberline {X.23}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-75}}{510}{figure.X.23}
+\contentsline {figure}{\numberline {X.24}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-GM5-150}}{511}{figure.X.24}
+\contentsline {figure}{\numberline {X.25}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-5}}{512}{figure.X.25}
+\contentsline {figure}{\numberline {X.26}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-10}}{513}{figure.X.26}
+\contentsline {figure}{\numberline {X.27}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-25}}{514}{figure.X.27}
+\contentsline {figure}{\numberline {X.28}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-50}}{515}{figure.X.28}
+\contentsline {figure}{\numberline {X.29}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-75}}{516}{figure.X.29}
+\contentsline {figure}{\numberline {X.30}{\ignorespaces plot-tiled-cdf-summary-Naive Bayes-Twitter-OSB3-150}}{517}{figure.X.30}
 \contentsfinish 

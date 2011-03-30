@@ -1,4 +1,45 @@
-\chapter{LibLinear Accuracy and F-Score Results for the ENRON Email Corpus}
+\chapter{SVM Accuracy and F-Score Results for the ENRON E-mail Corpus}
+
+
+The tables in this appendix use an abbreviated naming convention to describe the combination of method, corpus, feature type, Web1T\%, and group size.  The key to this naming convention is:
+
+\begin{center}
+\begin{table}[htbp!]
+	\begin{center}
+	\begin{tabular}{ll}
+	SVM & Support Vector Machine\\
+	liblinear & Support Vector Machine\\
+	NB & Naive Bayes\\
+	nb & Naive Bayes\\
+	
+	Enron & The Enron E-mail Corpus\\
+	Twitter & The NPS Twitter Short Message Corpus\\
+	
+	GM1 & 1-Grams (Unigrams)\\
+	GM2 & 2-Grams (Bigrams)\\
+	GM5 & 5-Grams\\
+	GB3 & Gappy Bigrams of Maximum Distance 3\\
+	OSB3 & Orthogonal Sparse Bigrams of Maximum Distance 3\\
+		
+	5 & Group Size of 5 Authors\\
+	10 & Group Size of 10 Authors\\
+	25 & Group Size of 25 Authors\\
+	50 & Group Size of 50 Authors\\
+	75 & Group Size of 75 Authors\\
+	150 & Group Size of 150 Authors\\
+	
+	0 & No Web1T Corpus Used To Build Model Vocabulary\\
+	1 & The top 1\% of the Web1T Used To Buld Model Vocabulary\\
+	2 & The top 2\% of the Web1T Used To Buld Model Vocabulary\\
+	4 & The top 4\% of the Web1T Used To Buld Model Vocabulary\\
+	8 & The top 8\% of the Web1T Used To Buld Model Vocabulary\\
+	16 & The top 16\% of the Web1T Used To Buld Model Vocabulary\\
+	\end{tabular}
+	\end{center}
+\end{table}
+\end{center}
+
+
 
 \begin{center}
 \begin{table}[htbp] 
@@ -19,8 +60,8 @@
  & 16 & 0.8239 & 0.9732 & 0.4444 & 0.0987 & 0.6901 & 0.9878 & 0.0000 & 0.2316\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM1-ALL-ALL-5}
-\label{table:liblinear-enron-GM1-ALL-ALL-5}
+\caption{SVM-enron-GM1-ALL-ALL-5}
+\label{table:SVM-enron-GM1-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -44,8 +85,8 @@
  & 16 & 0.7622 & 0.9187 & 0.3878 & 0.1142 & 0.6116 & 0.9698 & 0.0000 & 0.2425\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM1-ALL-ALL-10}
-\label{table:liblinear-enron-GM1-ALL-ALL-10}
+\caption{SVM-enron-GM1-ALL-ALL-10}
+\label{table:SVM-enron-GM1-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -69,8 +110,8 @@
  & 16 & 0.6861 & 0.7925 & 0.4483 & 0.1033 & 0.5223 & 0.9568 & 0.0000 & 0.2620\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM1-ALL-ALL-25}
-\label{table:liblinear-enron-GM1-ALL-ALL-25}
+\caption{SVM-enron-GM1-ALL-ALL-25}
+\label{table:SVM-enron-GM1-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -94,8 +135,8 @@
  & 16 & 0.6437 & 0.7524 & 0.4406 & 0.0913 & 0.4771 & 0.9504 & 0.0000 & 0.2576\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM1-ALL-ALL-50}
-\label{table:liblinear-enron-GM1-ALL-ALL-50}
+\caption{SVM-enron-GM1-ALL-ALL-50}
+\label{table:SVM-enron-GM1-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -119,8 +160,8 @@
  & 16 & 0.6137 & 0.6716 & 0.4030 & 0.0948 & 0.4403 & 0.9413 & 0.0000 & 0.2595\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM1-ALL-ALL-75}
-\label{table:liblinear-enron-GM1-ALL-ALL-75}
+\caption{SVM-enron-GM1-ALL-ALL-75}
+\label{table:SVM-enron-GM1-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}
@@ -144,8 +185,8 @@
  & 16 & 0.5987 & 0.6011 & 0.5975 & 0.0017 & 0.3991 & 0.9489 & 0.0000 & 0.2664\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM1-ALL-ALL-150}
-\label{table:liblinear-enron-GM1-ALL-ALL-150}
+\caption{SVM-enron-GM1-ALL-ALL-150}
+\label{table:SVM-enron-GM1-ALL-ALL-150}
 \end{center}
  \end{table}
 \end{center}
@@ -169,8 +210,8 @@
  & 16 & 0.8154 & 0.9606 & 0.4444 & 0.1037 & 0.6782 & 0.9881 & 0.0000 & 0.2379\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM2-ALL-ALL-5}
-\label{table:liblinear-enron-GM2-ALL-ALL-5}
+\caption{SVM-enron-GM2-ALL-ALL-5}
+\label{table:SVM-enron-GM2-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -194,8 +235,8 @@
  & 16 & 0.7528 & 0.9065 & 0.3936 & 0.1138 & 0.5986 & 0.9728 & 0.0000 & 0.2510\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM2-ALL-ALL-10}
-\label{table:liblinear-enron-GM2-ALL-ALL-10}
+\caption{SVM-enron-GM2-ALL-ALL-10}
+\label{table:SVM-enron-GM2-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -217,8 +258,8 @@
  & 4 & 0.6810 & 0.7994 & 0.4465 & 0.1055 & 0.5174 & 0.9674 & 0.0000 & 0.2565\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM2-ALL-ALL-25}
-\label{table:liblinear-enron-GM2-ALL-ALL-25}
+\caption{SVM-enron-GM2-ALL-ALL-25}
+\label{table:SVM-enron-GM2-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -239,8 +280,8 @@
  & 2 & 0.6341 & 0.7156 & 0.4119 & 0.0963 & 0.4709 & 0.9504 & 0.0000 & 0.2581\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM2-ALL-ALL-50}
-\label{table:liblinear-enron-GM2-ALL-ALL-50}
+\caption{SVM-enron-GM2-ALL-ALL-50}
+\label{table:SVM-enron-GM2-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -261,8 +302,8 @@
  & 2 & 0.5987 & 0.6677 & 0.3874 & 0.0974 & 0.4385 & 0.9523 & 0.0000 & 0.2653\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM2-ALL-ALL-75}
-\label{table:liblinear-enron-GM2-ALL-ALL-75}
+\caption{SVM-enron-GM2-ALL-ALL-75}
+\label{table:SVM-enron-GM2-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}
@@ -282,8 +323,8 @@
  & 1 & 0.5978 & 0.6047 & 0.5841 & 0.0097 & 0.3979 & 0.9387 & 0.0000 & 0.2697\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM2-ALL-ALL-150}
-\label{table:liblinear-enron-GM2-ALL-ALL-150}
+\caption{SVM-enron-GM2-ALL-ALL-150}
+\label{table:SVM-enron-GM2-ALL-ALL-150}
 \end{center}
  \end{table}
 \end{center}
@@ -306,8 +347,8 @@
  & 8 & 0.8070 & 0.9513 & 0.4000 & 0.1152 & 0.6749 & 0.9824 & 0.0000 & 0.2367\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM5-ALL-ALL-5}
-\label{table:liblinear-enron-GM5-ALL-ALL-5}
+\caption{SVM-enron-GM5-ALL-ALL-5}
+\label{table:SVM-enron-GM5-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -329,8 +370,8 @@
  & 4 & 0.7418 & 0.9256 & 0.3908 & 0.1161 & 0.5992 & 0.9729 & 0.0000 & 0.2479\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM5-ALL-ALL-10}
-\label{table:liblinear-enron-GM5-ALL-ALL-10}
+\caption{SVM-enron-GM5-ALL-ALL-10}
+\label{table:SVM-enron-GM5-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -351,8 +392,8 @@
  & 2 & 0.6728 & 0.7759 & 0.4371 & 0.0982 & 0.5252 & 0.9599 & 0.0000 & 0.2552\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM5-ALL-ALL-25}
-\label{table:liblinear-enron-GM5-ALL-ALL-25}
+\caption{SVM-enron-GM5-ALL-ALL-25}
+\label{table:SVM-enron-GM5-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -372,8 +413,8 @@
  & 1 & 0.6259 & 0.7342 & 0.4304 & 0.0929 & 0.4757 & 0.9572 & 0.0000 & 0.2655\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM5-ALL-ALL-50}
-\label{table:liblinear-enron-GM5-ALL-ALL-50}
+\caption{SVM-enron-GM5-ALL-ALL-50}
+\label{table:SVM-enron-GM5-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -392,8 +433,8 @@
  & 0 & 0.5211 & 0.6206 & 0.3240 & 0.0953 & 0.4148 & 0.9870 & 0.0000 & 0.3171\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GM5-ALL-ALL-75}
-\label{table:liblinear-enron-GM5-ALL-ALL-75}
+\caption{SVM-enron-GM5-ALL-ALL-75}
+\label{table:SVM-enron-GM5-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}
@@ -417,8 +458,8 @@
  & 16 & 0.8523 & 0.9756 & 0.5185 & 0.1028 & 0.7136 & 0.9886 & 0.0000 & 0.2520\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GB3-ALL-ALL-5}
-\label{table:liblinear-enron-GB3-ALL-ALL-5}
+\caption{SVM-enron-GB3-ALL-ALL-5}
+\label{table:SVM-enron-GB3-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -441,8 +482,8 @@
  & 8 & 0.8134 & 0.9512 & 0.4894 & 0.1100 & 0.6725 & 0.9870 & 0.0000 & 0.2545\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GB3-ALL-ALL-10}
-\label{table:liblinear-enron-GB3-ALL-ALL-10}
+\caption{SVM-enron-GB3-ALL-ALL-10}
+\label{table:SVM-enron-GB3-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -463,8 +504,8 @@
  & 2 & 0.7684 & 0.8788 & 0.5130 & 0.1119 & 0.6208 & 0.9772 & 0.0000 & 0.2646\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GB3-ALL-ALL-25}
-\label{table:liblinear-enron-GB3-ALL-ALL-25}
+\caption{SVM-enron-GB3-ALL-ALL-25}
+\label{table:SVM-enron-GB3-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -484,8 +525,8 @@
  & 1 & 0.7372 & 0.8204 & 0.4731 & 0.1083 & 0.5865 & 0.9753 & 0.0000 & 0.2732\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GB3-ALL-ALL-50}
-\label{table:liblinear-enron-GB3-ALL-ALL-50}
+\caption{SVM-enron-GB3-ALL-ALL-50}
+\label{table:SVM-enron-GB3-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -505,8 +546,8 @@
  & 1 & 0.7336 & 0.8161 & 0.5273 & 0.0952 & 0.5773 & 0.9763 & 0.0000 & 0.2722\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-GB3-ALL-ALL-75}
-\label{table:liblinear-enron-GB3-ALL-ALL-75}
+\caption{SVM-enron-GB3-ALL-ALL-75}
+\label{table:SVM-enron-GB3-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}
@@ -528,8 +569,8 @@
  & 4 & 0.8687 & 0.9762 & 0.5185 & 0.0958 & 0.7367 & 0.9884 & 0.0000 & 0.2416\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-OSB3-ALL-ALL-5}
-\label{table:liblinear-enron-OSB3-ALL-ALL-5}
+\caption{SVM-enron-OSB3-ALL-ALL-5}
+\label{table:SVM-enron-OSB3-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -548,8 +589,8 @@
  & 0 & 0.8250 & 0.9469 & 0.5106 & 0.1028 & 0.6886 & 0.9867 & 0.0000 & 0.2502\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-OSB3-ALL-ALL-10}
-\label{table:liblinear-enron-OSB3-ALL-ALL-10}
+\caption{SVM-enron-OSB3-ALL-ALL-10}
+\label{table:SVM-enron-OSB3-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -568,8 +609,8 @@
  & 0 & 0.7826 & 0.8954 & 0.5385 & 0.1038 & 0.6374 & 0.9815 & 0.0000 & 0.2599\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-OSB3-ALL-ALL-25}
-\label{table:liblinear-enron-OSB3-ALL-ALL-25}
+\caption{SVM-enron-OSB3-ALL-ALL-25}
+\label{table:SVM-enron-OSB3-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -588,8 +629,8 @@
  & 0 & 0.7567 & 0.8569 & 0.5160 & 0.1016 & 0.6056 & 0.9793 & 0.0000 & 0.2645\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-OSB3-ALL-ALL-50}
-\label{table:liblinear-enron-OSB3-ALL-ALL-50}
+\caption{SVM-enron-OSB3-ALL-ALL-50}
+\label{table:SVM-enron-OSB3-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -608,8 +649,8 @@
  & 0 & 0.7470 & 0.7931 & 0.5547 & 0.0862 & 0.5858 & 0.9786 & 0.0000 & 0.2703\\ \cline{2-10}
 \hline
 \end{tabular}
-\caption{liblinear-enron-OSB3-ALL-ALL-75}
-\label{table:liblinear-enron-OSB3-ALL-ALL-75}
+\caption{SVM-enron-OSB3-ALL-ALL-75}
+\label{table:SVM-enron-OSB3-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}

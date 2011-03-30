@@ -1,4 +1,43 @@
-\chapter{Liblinear Scores (Accuracy / Size) for the Twitter Short Message Corpus}
+\chapter{SVM Scores (Accuracy / Size) for the Twitter Short Message Corpus}
+
+The tables in this appendix use an abbreviated naming convention to describe the combination of method, corpus, feature type, Web1T\%, and group size.  The key to this naming convention is:
+
+\begin{center}
+\begin{table}[htbp!]
+	\begin{center}
+	\begin{tabular}{ll}
+	SVM & Support Vector Machine\\
+	liblinear & Support Vector Machine\\
+	NB & Naive Bayes\\
+	nb & Naive Bayes\\
+	
+	Enron & The Enron E-mail Corpus\\
+	Twitter & The NPS Twitter Short Message Corpus\\
+	
+	GM1 & 1-Grams (Unigrams)\\
+	GM2 & 2-Grams (Bigrams)\\
+	GM5 & 5-Grams\\
+	GB3 & Gappy Bigrams of Maximum Distance 3\\
+	OSB3 & Orthogonal Sparse Bigrams of Maximum Distance 3\\
+		
+	5 & Group Size of 5 Authors\\
+	10 & Group Size of 10 Authors\\
+	25 & Group Size of 25 Authors\\
+	50 & Group Size of 50 Authors\\
+	75 & Group Size of 75 Authors\\
+	150 & Group Size of 150 Authors\\
+	
+	0 & No Web1T Corpus Used To Build Model Vocabulary\\
+	1 & The top 1\% of the Web1T Used To Buld Model Vocabulary\\
+	2 & The top 2\% of the Web1T Used To Buld Model Vocabulary\\
+	4 & The top 4\% of the Web1T Used To Buld Model Vocabulary\\
+	8 & The top 8\% of the Web1T Used To Buld Model Vocabulary\\
+	16 & The top 16\% of the Web1T Used To Buld Model Vocabulary\\
+	\end{tabular}
+	\end{center}
+\end{table}
+\end{center}
+
 
 \begin{center}
 \begin{table}[htbp] 
@@ -18,8 +57,8 @@
  & 16 & 0.0145 & 0.6181 & 42.4984\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM1-ALL-ALL-5}
-\label{table:liblinear-twitter-GM1-ALL-ALL-5}
+\caption{SVM-twitter-GM1-ALL-ALL-5}
+\label{table:SVM-twitter-GM1-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -42,8 +81,8 @@
  & 16 & 0.0075 & 0.4800 & 64.3495\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM1-ALL-ALL-10}
-\label{table:liblinear-twitter-GM1-ALL-ALL-10}
+\caption{SVM-twitter-GM1-ALL-ALL-10}
+\label{table:SVM-twitter-GM1-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -66,8 +105,8 @@
  & 16 & 0.0026 & 0.3411 & 130.0523\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM1-ALL-ALL-25}
-\label{table:liblinear-twitter-GM1-ALL-ALL-25}
+\caption{SVM-twitter-GM1-ALL-ALL-25}
+\label{table:SVM-twitter-GM1-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -90,8 +129,8 @@
  & 16 & 0.0011 & 0.2710 & 239.7010\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM1-ALL-ALL-50}
-\label{table:liblinear-twitter-GM1-ALL-ALL-50}
+\caption{SVM-twitter-GM1-ALL-ALL-50}
+\label{table:SVM-twitter-GM1-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -114,8 +153,8 @@
  & 16 & 0.0007 & 0.2368 & 349.3536\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM1-ALL-ALL-75}
-\label{table:liblinear-twitter-GM1-ALL-ALL-75}
+\caption{SVM-twitter-GM1-ALL-ALL-75}
+\label{table:SVM-twitter-GM1-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}
@@ -138,8 +177,8 @@
  & 16 & 0.0003 & 0.1877 & 678.6646\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM1-ALL-ALL-150}
-\label{table:liblinear-twitter-GM1-ALL-ALL-150}
+\caption{SVM-twitter-GM1-ALL-ALL-150}
+\label{table:SVM-twitter-GM1-ALL-ALL-150}
 \end{center}
  \end{table}
 \end{center}
@@ -162,8 +201,8 @@
  & 16 & 0.0006 & 0.6258 & 976.1899\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM2-ALL-ALL-5}
-\label{table:liblinear-twitter-GM2-ALL-ALL-5}
+\caption{SVM-twitter-GM2-ALL-ALL-5}
+\label{table:SVM-twitter-GM2-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -186,8 +225,8 @@
  & 16 & 0.0003 & 0.4891 & 1475.9678\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM2-ALL-ALL-10}
-\label{table:liblinear-twitter-GM2-ALL-ALL-10}
+\caption{SVM-twitter-GM2-ALL-ALL-10}
+\label{table:SVM-twitter-GM2-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -208,8 +247,8 @@
  & 4 & 0.0005 & 0.3526 & 738.0104\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM2-ALL-ALL-25}
-\label{table:liblinear-twitter-GM2-ALL-ALL-25}
+\caption{SVM-twitter-GM2-ALL-ALL-25}
+\label{table:SVM-twitter-GM2-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -229,8 +268,8 @@
  & 2 & 0.0004 & 0.2707 & 679.7548\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM2-ALL-ALL-50}
-\label{table:liblinear-twitter-GM2-ALL-ALL-50}
+\caption{SVM-twitter-GM2-ALL-ALL-50}
+\label{table:SVM-twitter-GM2-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -250,8 +289,8 @@
  & 2 & 0.0002 & 0.2354 & 990.5135\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM2-ALL-ALL-75}
-\label{table:liblinear-twitter-GM2-ALL-ALL-75}
+\caption{SVM-twitter-GM2-ALL-ALL-75}
+\label{table:SVM-twitter-GM2-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}
@@ -270,8 +309,8 @@
  & 1 & 0.0002 & 0.1889 & 979.9898\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM2-ALL-ALL-150}
-\label{table:liblinear-twitter-GM2-ALL-ALL-150}
+\caption{SVM-twitter-GM2-ALL-ALL-150}
+\label{table:SVM-twitter-GM2-ALL-ALL-150}
 \end{center}
  \end{table}
 \end{center}
@@ -291,8 +330,8 @@
  & 2 & 0.0013 & 0.5802 & 447.1519\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM5-ALL-ALL-5}
-\label{table:liblinear-twitter-GM5-ALL-ALL-5}
+\caption{SVM-twitter-GM5-ALL-ALL-5}
+\label{table:SVM-twitter-GM5-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -312,8 +351,8 @@
  & 2 & 0.0006 & 0.4382 & 677.8461\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM5-ALL-ALL-10}
-\label{table:liblinear-twitter-GM5-ALL-ALL-10}
+\caption{SVM-twitter-GM5-ALL-ALL-10}
+\label{table:SVM-twitter-GM5-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -332,8 +371,8 @@
  & 1 & 0.0004 & 0.3011 & 682.9173\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM5-ALL-ALL-25}
-\label{table:liblinear-twitter-GM5-ALL-ALL-25}
+\caption{SVM-twitter-GM5-ALL-ALL-25}
+\label{table:SVM-twitter-GM5-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -351,8 +390,8 @@
  & 0 & 0.0033 & 0.0805 & 24.4182\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM5-ALL-ALL-50}
-\label{table:liblinear-twitter-GM5-ALL-ALL-50}
+\caption{SVM-twitter-GM5-ALL-ALL-50}
+\label{table:SVM-twitter-GM5-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -370,8 +409,8 @@
  & 0 & 0.0015 & 0.0643 & 42.2738\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM5-ALL-ALL-75}
-\label{table:liblinear-twitter-GM5-ALL-ALL-75}
+\caption{SVM-twitter-GM5-ALL-ALL-75}
+\label{table:SVM-twitter-GM5-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}
@@ -389,8 +428,8 @@
  & 0 & 0.0006 & 0.0636 & 114.3282\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GM5-ALL-ALL-150}
-\label{table:liblinear-twitter-GM5-ALL-ALL-150}
+\caption{SVM-twitter-GM5-ALL-ALL-150}
+\label{table:SVM-twitter-GM5-ALL-ALL-150}
 \end{center}
  \end{table}
 \end{center}
@@ -413,8 +452,8 @@
  & 16 & 0.0003 & 0.5386 & 1893.1607\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GB3-ALL-ALL-5}
-\label{table:liblinear-twitter-GB3-ALL-ALL-5}
+\caption{SVM-twitter-GB3-ALL-ALL-5}
+\label{table:SVM-twitter-GB3-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -436,8 +475,8 @@
  & 8 & 0.0003 & 0.4246 & 1431.7552\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GB3-ALL-ALL-10}
-\label{table:liblinear-twitter-GB3-ALL-ALL-10}
+\caption{SVM-twitter-GB3-ALL-ALL-10}
+\label{table:SVM-twitter-GB3-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -457,8 +496,8 @@
  & 2 & 0.0004 & 0.3134 & 728.8935\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GB3-ALL-ALL-25}
-\label{table:liblinear-twitter-GB3-ALL-ALL-25}
+\caption{SVM-twitter-GB3-ALL-ALL-25}
+\label{table:SVM-twitter-GB3-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -477,8 +516,8 @@
  & 1 & 0.0004 & 0.2465 & 681.2334\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GB3-ALL-ALL-50}
-\label{table:liblinear-twitter-GB3-ALL-ALL-50}
+\caption{SVM-twitter-GB3-ALL-ALL-50}
+\label{table:SVM-twitter-GB3-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -497,8 +536,8 @@
  & 1 & 0.0002 & 0.2155 & 999.3930\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GB3-ALL-ALL-75}
-\label{table:liblinear-twitter-GB3-ALL-ALL-75}
+\caption{SVM-twitter-GB3-ALL-ALL-75}
+\label{table:SVM-twitter-GB3-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}
@@ -516,8 +555,8 @@
  & 0 & 0.0013 & 0.1739 & 135.6456\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-GB3-ALL-ALL-150}
-\label{table:liblinear-twitter-GB3-ALL-ALL-150}
+\caption{SVM-twitter-GB3-ALL-ALL-150}
+\label{table:SVM-twitter-GB3-ALL-ALL-150}
 \end{center}
  \end{table}
 \end{center}
@@ -538,8 +577,8 @@
  & 4 & 0.0003 & 0.5391 & 1832.3842\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-OSB3-ALL-ALL-5}
-\label{table:liblinear-twitter-OSB3-ALL-ALL-5}
+\caption{SVM-twitter-OSB3-ALL-ALL-5}
+\label{table:SVM-twitter-OSB3-ALL-ALL-5}
 \end{center}
  \end{table}
 \end{center}
@@ -559,8 +598,8 @@
  & 2 & 0.0003 & 0.4255 & 1387.3440\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-OSB3-ALL-ALL-10}
-\label{table:liblinear-twitter-OSB3-ALL-ALL-10}
+\caption{SVM-twitter-OSB3-ALL-ALL-10}
+\label{table:SVM-twitter-OSB3-ALL-ALL-10}
 \end{center}
  \end{table}
 \end{center}
@@ -578,8 +617,8 @@
  & 0 & 0.0103 & 0.3084 & 29.8123\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-OSB3-ALL-ALL-25}
-\label{table:liblinear-twitter-OSB3-ALL-ALL-25}
+\caption{SVM-twitter-OSB3-ALL-ALL-25}
+\label{table:SVM-twitter-OSB3-ALL-ALL-25}
 \end{center}
  \end{table}
 \end{center}
@@ -597,8 +636,8 @@
  & 0 & 0.0036 & 0.2520 & 69.4942\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-OSB3-ALL-ALL-50}
-\label{table:liblinear-twitter-OSB3-ALL-ALL-50}
+\caption{SVM-twitter-OSB3-ALL-ALL-50}
+\label{table:SVM-twitter-OSB3-ALL-ALL-50}
 \end{center}
  \end{table}
 \end{center}
@@ -616,8 +655,8 @@
  & 0 & 0.0019 & 0.2211 & 116.9183\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-OSB3-ALL-ALL-75}
-\label{table:liblinear-twitter-OSB3-ALL-ALL-75}
+\caption{SVM-twitter-OSB3-ALL-ALL-75}
+\label{table:SVM-twitter-OSB3-ALL-ALL-75}
 \end{center}
  \end{table}
 \end{center}
@@ -635,8 +674,8 @@
  & 0 & 0.0006 & 0.1750 & 296.1385\\ \cline{2-5}
 \hline
 \end{tabular}
-\caption{liblinear-twitter-OSB3-ALL-ALL-150}
-\label{table:liblinear-twitter-OSB3-ALL-ALL-150}
+\caption{SVM-twitter-OSB3-ALL-ALL-150}
+\label{table:SVM-twitter-OSB3-ALL-ALL-150}
 \end{center}
  \end{table}
 \end{center}
