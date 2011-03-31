@@ -6,7 +6,7 @@
 	\item For the two dominant mobile phone text mediums, short message and e-mail, what combination of classification method and feature type provides the best accuracy?
 	\item What is the storage requirement for each combination of method and feature type?
 	\item What is the relative value of classification accuracy versus storage requirement for each classification method and feature type?
-	\item what is the impact on performance due to number of distinct authors (group size)?
+	\item What is the impact on performance due to number of distinct authors (group size)?
 	\item Does the relative prolificity of each author in a detection group significantly affect the accuracy of each classification method and feature type?
 	\item Does a highly effective method-feature type combination exist with a small enough storage requirement to be executed on a mobile device?
 \end{itemize}
@@ -28,12 +28,12 @@
 
 \section{Future Work}
 
-This thesis sets the stage for several future work efforts.  Some future work should focus specifically on implementation of mobile device author detection tools.  Other efforts could focus on the natural language processing impacts of the model-feature combinations. Specific items of future work are:
+This thesis sets the stage for several future work efforts.  Some future work should focus specifically on implementation of mobile device author detection tools.  Other efforts could focus on the natural language processing impacts of the model-feature combinations. Specific items for future work are:
 \begin{itemize}
 	\item Implementation of Author Detection in an Operational Environment
 	\item Explore Google Web1T as a Tool for Natural Language Processing
-	\item Continue Experiments in This Thesis
-	\item Conduct Further Analysis of Statistics from This Thesis
+	\item Continue Experiments including varied Minimum Perfect Hash models and varied classification techniques
+	\item Conduct Further Statistical Analysis of Gathered Data
 \end{itemize}
 
 \begin{singlespace}
@@ -47,7 +47,7 @@ This thesis sets the stage for several future work efforts.  Some future work sh
 		\paragraph*{} With these Android preparations and the results of this thesis, the only limiting factor to running author detection tests on a variety of Android phones is time.  Another researcher with access to a small number of Android phones or tablets could conduct these tests in a few weeks.  The tests should span the range of Android versions from Android version 1.6 all the way up to Android version 3.0.  Underpowered phones such as the HTC ADP2 should be tested along with higher end phones like the Google ADP3 or the Motorola Xoom.  These tests could determine not only the feasibility of author detection on a mobile device, but the impact on CPU usage, battery life, and SDcard life.
 
 	\subsection{Determine Appropriate Group Size for Target Authors}
-	\paragraph*{}  Training to a large number of authors may not be necessary.  Do most mobile device users have a social network of 150 people they routinely communicate with via mobile phone?  While a mobile device user may have hundreds of ``friends" on Facebook, they may only send text messages and e-mails to a small number of people.  If a reasonable number can be determined for expected authors to be detected, then the choice of method-feature combination can be specifically refined to that number of people.  This would alos keep the authors model size minimized for disk storage.
+	\paragraph*{}  Training to a large number of authors may not be necessary.  Do most mobile device users have a social network of 150 people they routinely communicate with via mobile phone?  While a mobile device user may have hundreds of ``friends" on Facebook, they may only send text messages and e-mails to a small number of people.  If a reasonable number can be determined for expected authors to be detected, then the choice of method-feature combination can be specifically refined to that number of people.  This would also keep the authors model size minimized for disk storage.
 
 
 	\subsection{Study ``Stealthiness" for Author Detection Software}
@@ -63,12 +63,12 @@ This thesis sets the stage for several future work efforts.  Some future work sh
 \begin{singlespace}
 \subsection{Conduct LibLinear and Naive Bayes Tests With a Large ``Noise" Group}
 \end{singlespace}
-\paragraph*{} One of the most important tests that could be run against the data in this thesis would be to create noise groups to test the accuracy and f-score of the author detection tools in this thesis.  To do this, a 150-author group could have all but 5 authors relabeled as ``author X".  This would create a six author test set where one author is actually a mix of 145 authors (``author X").  Such a test would provide an indication of how well these tools work in an environment filled with many non-targets authors and a few target authors.
+\paragraph*{} One of the most important tests that could be run against the data in this thesis would be to create ``noise groups" to test the accuracy and f-score of the author detection tools in this thesis.  To do this, a 150-author group could have all but 5 authors relabeled as ``author X".  This would create a six author test set where one author is actually a mix of 145 authors (``author X").  Such a test would provide an indication as to how well these tools work in an environment filled with many non-targets authors and a few target authors.
 \paragraph*{} This same test could be conducted with 10 authors and an ``author X", 25 authors with an ``author X", etc.  This is a more realistic test scenario than the 5 versus 5, 10 versus 10, etc tests conducted in this thesis.  
 \paragraph*{} Such tests would likely be very time consuming.  150-versus-150 tests in this thesis often took hours to execute. However, having a large number of documents to process against only six authors would reduce the overall processing time.  Though time consuming, the noise group tests are an important next step towards implementation.
 
 \subsection{Test Spoken Keyword Recognition Techniques} 
-\paragraph*{}With text processing examined for use on mobile devices, a natural progression is to detect key words on a mobile device.  Conducting author detection using voice recognition is likely beyond the capability of 2011 mobile devices. However, detecting key words or combinations of key words using voice techniques may not be beyond the capability of 2011 mobile devices.
+\paragraph*{}With text processing examined for use on mobile devices, a natural progression is to detect key words on a mobile device.  Conducting author detection using voice recognition is likely beyond the capability of 2011 mobile devices. However, detecting key words or combinations of key words using voice techniques may not be feasible.
 \paragraph*{} For example, detecting words often associated with an attack on a convoy could be incorporated on a mobile device which then sends a signal to a central alert center to warn nearby convoys.  A teenager's phone could recognize key words associated with drug use or other dangerous behaviors.  Parents could then receive an alert.
 \paragraph*{} Voice processing is much more difficult than text processing and would require a substantially different approach from this thesis.  Also, accounting for voice tenor and variation in phonemes between languages would be complex. In the end, the operations task of creating author text models may be more daunting than the complexity of keyword recognition from phonemes, thus making keyword recognition a viable path of research.
 
@@ -102,7 +102,7 @@ This thesis sets the stage for several future work efforts.  Some future work sh
 	\paragraph*{} Since Web1T\% of 0 scored better relative to its more storage intensive counterparts, further exploration is warranted.  Instead of the very basic Laplace Smoothing, Good-Turing or Witten-Bell could be used over all the feature types to see if performance is significantly improved.  Since Good-Turing and Witten-Bell would likely have little impact on the storage requirements for any given feature type, a higher accuracy would result in a higher score ($score=\frac{accuracy}{storage \medspace requirement}$) for that feature type.
 
 	\subsection{Increase Size of the Twitter Short Message Corpus}
-		\paragraph*{} The large difference in accuracy and f-score between the ENRON E-mail Corpus and Twitter Short Message Corpus may be a function of how few tokens are present in the Twitter Corpus compared to the ENRON E-mail Corpus.  If the most prolific Twitter authors could be recorded for several months, a large enough body of tokens could be created to put the token count of some Twitter authors on par with the average ENRON e-mail author's token count.  Testing a Twitter corpus with a larger amount of text could clarify whether Twitter is inherently different from e-mail or is simply less predictable when there is a smaller sample to analyze.
+		\paragraph*{} The large difference in accuracy and f-score between the Enron E-mail Corpus and Twitter Short Message Corpus may be a function of how few tokens are present in the Twitter Corpus compared to the Enron E-mail Corpus.  If the most prolific Twitter authors could be recorded for several months, a large enough body of tokens could be created to put the token count of some Twitter authors on par with the average Enron e-mail author's token count.  Testing a Twitter corpus with a larger amount of text could clarify whether Twitter is inherently different from e-mail or is simply less predictable when there is a smaller sample to analyze.
 		\paragraph*{} A large Twitter corpus would need to find a few hundred Twitter authors who regularly create original content that is publicly accessible.  The Twitter Garden Hose would need to gather Tweets for a few weeks to identify these prolific Twitter authors.  After the initial gathering, the identified prolific Twitter authors would be collected exclusively while screening out re-tweets.  A good faith effort to identify whether any of the prolific twitter authors represented a corporation or public figure known to use a group of writers for their tweets would be needed.  Twitter author attribution only works if there is truly one person creating the content for each Twitter account tracked.
 		\paragraph*{} Once there are a few Twitter authors that have approximately 15MB of Twitter text and numerous Twitter authors with at least 500K of Twitter text, the Twitter corpus would be comparable to the Enron E-mail Corpus for size of text and relative author prolificity.  At this point, this new Twitter corpus could be tested again, using all the method-feature combinations of this thesis, to determine if the new Twitter accuracy and f-score improve to more closely resemble the Enron corpus.  If the Twitter results begin to more closely resemble Enron results, then there may not be a significant language ``signal" difference between short message posts and e-mail messages.
 
@@ -114,15 +114,14 @@ This thesis sets the stage for several future work efforts.  Some future work sh
 	\end{singlespace}
 	\paragraph*{} The relative difference between SVM accuracy and naive Bayes accuracy is much smaller for Twitter than for Enron.  Is this caused by the overall lower accuracies for both SVM and naive Bayes in Twitter?  Is the short length of tweets better suited for naive Bayes?  Answering these questions could provide insight into the language ``signal" of Twitter and the effect of short documents on SVM and naive Bayes.
 
-	\subsection{Study Public Tweets of Former ENRON Employees}
-	\paragraph*{} If former ENRON employees maintain public Twitter posts, their compiled Tweets could be tested against author detection models created from their Enron e-mails.  This could be a straightforward check of language ``signal" similarity between short messages and e-mail.
+	\subsection{Study Public Tweets of Former Enron Employees}
+	\paragraph*{} If former Enron employees maintain public Twitter posts, their compiled Tweets could be tested against author detection models created from their Enron e-mails.  This could be a straightforward check of language ``signal" similarity between short messages and e-mail.
 	\paragraph*{} If any corpus of short message and emails created by the same group of users could be located, conducting author detection by training on one corpus and testing against the other corpus would provide valuable insight into the uniqueness of the email and short message mediums.  Even comparing traditional text such as journals, magazines, book, and newspapers against public Twitter posts could yield valuable insight into author detection across mediums.
 
 	\begin{singlespace}
 	\subsection{Statistical Study of Small-To-Large Versus Small-And-Large Groupings Results}
 	\end{singlespace}
-	\paragraph*{} A detailed study of the impact of author prolificity alters on author detection accuracy and f-score could reveal important relative prolificity breakpoints between authors.  By breakpoints, when is an author so prolific that he cannot be placed in a group of less prolific authors without decreasing author detection accuracy for that group. By the same token, when is an author so unprolific that ne cannot be placed in a groupo of more prolific authors without decreasing author detection accuracy for that group. Studying breakpoints in the variation between authors in prolificity and its impacts on author detection accuracy and f-score would benefit author model construction.
-	\paragraph*{} This study would not necessarily need to be conducted by a natural language processing researcher.  An operations research analyst may be better suited to analyze the data already produced in this thesis using natural language processing techniques.
+	\paragraph*{} A detailed study of the impact of author prolificity on author detection accuracy and f-score could reveal important prolificity breakpoints between authors.  By breakpoints, we mean when is an author so prolific that he cannot be placed in a group of less prolific authors without decreasing author detection accuracy for that group. By the same token, when an author so unprolific that they cannot be placed in a group of more prolific authors without decreasing author detection accuracy for that group. Studying breakpoints in the variation between authors in prolificity and its impact on author detection accuracy and f-score would benefit author model construction.
 
 		\subsection{Deliver Author Detection Tools to Mobile Device}
 			\paragraph*{} Having a working author detection tool is one step toward deployed implementation. However, that tool still must be installed on mobile devices.  There are different installation methods for varying purposes.  Two major categories of installation can be termed ``deliberate" and ``covert."
@@ -130,24 +129,6 @@ This thesis sets the stage for several future work efforts.  Some future work sh
 			\paragraph*{} An example of a covert installation would be saturating mobile devices in a combat operation's area with an author detection tool containing models of high-value enemies. This covert delivery to an unknowing device and user poses many more difficulties than the deliberate installation. Several questions must be answered for a covert delivery:  Is the local cell tower controlled by an independent entity?  Are there popular applications used by the target demographic?  Can the author detection tools be joined with that popular application?  Is it easy to detect the author detection tools once installed?
 			\paragraph*{} Each of these delivery categories is worthy of their own study to determine feasibility and to develop efficient and reliable installation methods.  Each of these delivery categories would also need extensive legal and administrative review to ensure compliance with federal, state, and local laws as well as intelligence collection constraints.
 
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
 \section{Concluding Remarks}
-\paragraph*{} With billions of mobile phones across the world, leveraging the power of those billions of processors to identify persons of interest could be of enormous use to governments, organizations, and families.  This thesis has shown that author detection method-feature combinations exist which can be executed in the constrained environment of a mobile device.  With additional testing and engineering, the model of centralized analysis of data collected from distributed mobile devices could be changed dramatically.  This centralized model could be changed to distributed collection, distributed processing, and distributed notification.  This distributed model offers great promise for detecting persons of interest via mobile devices.
+\paragraph*{} With billions of mobile phones across the world, leveraging the power of those billions of processors to identify persons of interest could be of enormous use to governments, organizations, and families.  This thesis has shown that author detection method-feature combinations exist which can be executed in the constrained environment of a mobile device.  With additional testing and engineering, the model of centralized analysis of data collected from distributed mobile devices could be changed dramatically to include distributed collection, distributed processing, and distributed notification.  This distributed model offers great promise for detecting persons of interest via mobile devices.
 

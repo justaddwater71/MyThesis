@@ -23,12 +23,12 @@
 
 	\paragraph*{}  While libLinear is the chosen SVM tool for this thesis, the classifier method being tested is SVM.  For the rest of this chapter, results will be analyzed by method instead of by tool.  For this reason, results will be discussed in terms of SVM and naive Bayes instead of in terms of libLinear and naive Bayes.
 
-	\paragraph*{} The LibLinear maximum token-author pairs affects the average accuracies measured across feature types. The maximum token-author pairs limit causes large vocabularies to show a higher accuracy and f-score than smaller vocabularies.  This is not necessarily because the large vocabularies are more effective, but because the larger vocabularies do not have the lower accuracy and f-score outcomes of the large group sizes.  To illustrate this, the top twenty feature-method combinations are shown in Table \ref{tab:enron-accuracy-filtered-ranked} for the ENRON E-mail Corpus.  The performance of each SVM OSB3-vocabulary combination is shown in Figure \ref{fig:plot-liblinear-enron-accuracy}. Using Table \ref{tab:twitter-accuracy-filtered-ranked} to evaluate accuracy would lead to a conclusion that SVM OSB3 has the best accuracy and f-score in this thesis.  However, plotting all OSB3 results for each Web1T\%  in \ref{fig:plot-liblinear-enron-accuracy} shows that all OSB3-vocabulary combinations perform along a similar curve.  The Web1T\% of 0 is actually able to execute, without any "index array out of bounds errors" due to the token-author pairs limit, against all group sizes (5, 10, 25, 50, 75, and 150) and, thus, appears to perform worse than other OSB3s in the table, but clearly performs similarly from Figure \ref{fig:plot-liblinear-enron-accuracy}.  From this example, it becomes clear that simply using the table values in Appendix A through Appendix D provides an insufficient analysis.  A better analysis is provided by examining the plots in Appendix Q through Appendix T.  
+	\paragraph*{} The LibLinear maximum token-author pairs affects the average accuracies measured across feature types. The maximum token-author pairs limit causes large vocabularies to show a higher accuracy and f-score than smaller vocabularies.  This is not necessarily because the large vocabularies are more effective, but because the larger vocabularies do not have the lower accuracy and f-score outcomes of the large group sizes.  To illustrate this, the top twenty feature-method combinations are shown in Table \ref{tab:enron-accuracy-filtered-ranked} for the Enron E-mail Corpus.  The performance of each SVM OSB3-vocabulary combination is shown in Figure \ref{fig:plot-liblinear-enron-accuracy}. Using Table \ref{tab:twitter-accuracy-filtered-ranked} to evaluate accuracy would lead to a conclusion that SVM OSB3 has the best accuracy and f-score in this thesis.  However, plotting all OSB3 results for each Web1T\%  in \ref{fig:plot-liblinear-enron-accuracy} shows that all OSB3-vocabulary combinations perform along a similar curve.  The Web1T\% of 0 is actually able to execute, without any "index array out of bounds errors" due to the token-author pairs limit, against all group sizes (5, 10, 25, 50, 75, and 150) and, thus, appears to perform worse than other OSB3s in the table, but clearly performs similarly from Figure \ref{fig:plot-liblinear-enron-accuracy}.  From this example, it becomes clear that simply using the table values in Appendix A through Appendix D provides an insufficient analysis.  A better analysis is provided by examining the plots in Appendix Q through Appendix T.  
 	
 \begin{figure}[htbp!]
 	\centering
 	\includegraphics[scale=0.75]{liblinear-enron-avg-by-group_size}
-	\caption{Accuracy of SVM OSB3 for the ENRON E-mail Corpus}
+	\caption{Accuracy of SVM OSB3 for the Enron E-mail Corpus}
 	\label{fig:plot-liblinear-enron-accuracy}
 \end{figure}
 	
@@ -36,7 +36,7 @@
 
 	\paragraph*{} By examining the plots in Appendix Q through Appendix T, a clear trend emerges that the bootstrapped models, meaning models that made no use of the Web1T corpus as a vocabulary) performed similarly for SVM that did use Web1T vocabularies.  In all cases, the bootstrapped SVM tests are usable for all group sizes.  In this case, a good comparison would be to drop all SVM combinations that are not usable for all group sizes, then compare these remaining SVM tests against all naive Bayes tests.  Since all naive Bayes tests were usable for all group sizes, this makes the comparison fair.
 	
-	\paragraph*{} After removing SVM tests that were not usable against all groups sizes from consideration, the highest accuracy method-feature combinations for the ENRON E-mail Corpus are higher in Table \ref{tab:enron-accuracy-filtered-ranked}.  The highest accuracy method-feature combination show the most accurate results for the Twitter Short Message Corpus in Table \ref{tab:twitter-accuracy-filtered-ranked}.
+	\paragraph*{} After removing SVM tests that were not usable against all groups sizes from consideration, the highest accuracy method-feature combinations for the Enron E-mail Corpus are higher in Table \ref{tab:enron-accuracy-filtered-ranked}.  The highest accuracy method-feature combination show the most accurate results for the Twitter Short Message Corpus in Table \ref{tab:twitter-accuracy-filtered-ranked}.
 	
 	
 	\begin{table}[htbp!]
@@ -69,7 +69,7 @@
 			SVM & GM1 & 0 & 0.7735 & 0.3776 & 0.9531 & 0.1222\\ \hline 
 
 			\end{tabular}
-		\caption{Highest Accuracy Method-Feature Type Combinations for the ENRON E-mail Corpus}
+		\caption{Highest Accuracy Method-Feature Type Combinations for the Enron E-mail Corpus}
 		\label{tab:enron-accuracy-filtered-ranked}
 		\end{center}
 	\end{table}
@@ -82,28 +82,27 @@
 			\hline
 			\multicolumn{2}{|c|}{Combinations} & \multicolumn{5}{|c|}{Accuracy}\\
 			\hline
-			Method & Feature Type & Web1T \% & AVG & MIN & MAX & STDDEV\\ \hline 
-			NB & OSB3 & 0 & 0.5525 & 0.2320 & 0.8164 & 0.1339\\ \hline 
-			NB & GB3 & 16 & 0.5327 & 0.2216 & 0.8216 & 0.1351\\ \hline 
-			NB & GB3 & 4 & 0.5271 & 0.2190 & 0.8546 & 0.1375\\ \hline 
-			NB & GB3 & 8 & 0.5256 & 0.2176 & 0.8474 & 0.1362\\ \hline 
-			NB & GB3 & 2 & 0.5249 & 0.2186 & 0.7823 & 0.1324\\ \hline 
-			SVM & GM2 & 4 & 0.5228 & 0.1809 & 0.8210 & 0.1477\\ \hline 
-			NB & GB3 & 1 & 0.5204 & 0.2148 & 0.8125 & 0.1319\\ \hline 
-			NB & GB3 & 0 & 0.5203 & 0.1973 & 0.8021 & 0.1389\\ \hline 
-			SVM & GM2 & 1 & 0.5197 & 0.1882 & 0.8454 & 0.1483\\ \hline 
-			SVM & GM1 & 8 & 0.5187 & 0.1743 & 0.9026 & 0.1525\\ \hline 
-			SVM & GM2 & 2 & 0.5186 & 0.1830 & 0.8232 & 0.1495\\ \hline 
-			SVM & GM1 & 1 & 0.5159 & 0.1768 & 0.8211 & 0.1494\\ \hline 
-			SVM & GM1 & 4 & 0.5149 & 0.1874 & 0.8546 & 0.1485\\ \hline 
-			SVM & GM1 & 0 & 0.5141 & 0.1802 & 0.8089 & 0.1485\\ \hline 
-			NB & GM1 & 0 & 0.5140 & 0.1247 & 0.7714 & 0.1631\\ \hline 
-			SVM & GM1 & 16 & 0.5134 & 0.1865 & 0.8324 & 0.1483\\ \hline 
-			SVM & GM1 & 2 & 0.5131 & 0.1818 & 0.8966 & 0.1487\\ \hline 
-			SVM & GM5 & 1 & 0.4768 & 0.1398 & 0.8362 & 0.1521\\ \hline 
-			NB & GM2 & 0 & 0.4750 & 0.1630 & 0.7890 & 0.1406\\ \hline 
-			NB & OSB3 & 2 & 0.4739 & 0.1790 & 0.7734 & 0.1370\\ \hline 
-			NB & OSB3 & 8 & 0.4707 & 0.1787 & 0.7790 & 0.1373\\ \hline 
+			Method	& Feature Type 	& Web1T \%	& AVG 		& MIN		& MAX		& STDDEV\\ \hline 
+			NB	& OSB3		& 0		& 0.5525	& 0.2320	& 0.8164	& 0.1339\\ \hline 
+			SVM	& GM2		& 16		& 0.5524	& 0.2419	& 0.8544	& 0.1270\\ \hline 
+			SVM	& OSB3		& 16		& 0.5405	& 0.3704	& 0.7773	& 0.0788\\ \hline 
+			SVM	& GM5		& 8		& 0.5343	& 0.3375	& 0.7827	& 0.0970\\ \hline 
+			NB	& GB3		& 16		& 0.5327	& 0.2216	& 0.8216	& 0.1351\\ \hline 
+			SVM	& GM5		& 16		& 0.5312	& 0.2951	& 0.8039	& 0.1048\\ \hline 
+			NB	& GB3		& 4		& 0.5271	& 0.2190	& 0.8546	& 0.1375\\ \hline 
+			SVM	& GM2		& 8		& 0.5264	& 0.1843	& 0.8489	& 0.1422\\ \hline 
+			NB	& GB3		& 8		& 0.5256	& 0.2176	& 0.8474	& 0.1362\\ \hline 
+			NB	& GB3		& 2		& 0.5249	& 0.2186	& 0.7823	& 0.1324\\ \hline 
+			SVM	& GM2		& 4		& 0.5228	& 0.1809	& 0.8210	& 0.1477\\ \hline 
+			NB	& GB3		& 1		& 0.5204	& 0.2148	& 0.8125	& 0.1319\\ \hline 
+			NB	& GB3		& 0		& 0.5203	& 0.1973	& 0.8021	& 0.1389\\ \hline 
+			SVM	& GM2		& 1		& 0.5197	& 0.1882	& 0.8454	& 0.1483\\ \hline 
+			SVM	& GM1		& 8		& 0.5187	& 0.1743	& 0.9026	& 0.1525\\ \hline 
+			SVM	& GM2		& 2		& 0.5186	& 0.1830	& 0.8232	& 0.1495\\ \hline 
+			SVM	& GM1		& 1		& 0.5159	& 0.1768	& 0.8211	& 0.1494\\ \hline 
+			SVM	& GM1		& 4		& 0.5149	& 0.1874	& 0.8546	& 0.1485\\ \hline 
+			SVM	& GM1		& 0		& 0.5141	& 0.1802	& 0.8089	& 0.1485\\ \hline 
+			NB	& GM1		& 0		& 0.5140	& 0.1247	& 0.7714	& 0.1631\\ \hline  
 
 			\end{tabular}
 		\caption{Highest Accuracy Method-Feature Type Combinations for the Twitter Short Message Corpus}
@@ -148,7 +147,7 @@
 \section{Impact of Author Relative Prolificity on Classifier Effectiveness}
 \end{singlespace}
 	\paragraph*{} While identifying the highest accuracy for method-feature combinations is important, these results could mask a weakness in the method-feature combinations.  Does the relative prolificity of each author impact the results?  To answer this question, the tests in this thesis were conducted in three groupings: small-to-large, small-and-large, and random.  As explained fully in Chapter 3, these groupings were based on a rank-ordering by size for each author's total document collection.  For small-to-large, the least prolific authors are grouped together, while the most prolific authors are grouped together. The idea behind the small-to-large group is to keep the difference in total document size between the authors to a minimum. For small-and-large, the opposite idea is employed.  The smallest authors are combined with the largest authors using a bucket strategy.  Each bucket contains rank-ordered by size authors of similar size.  One author is picked from each bucket to provide a maximum variety of author document collections sizes.  In the random group, the authors are grouped together using a pseudo-random number generator, where each author has been assigned a number.
-	\paragraph*{} The results of testing in this thesis for accuracy and f-score, broken out by small-to-large, small-and-large, and random are given in Appendix E through Appendix H.  The results from Appendix E, SVM Results for the ENRON E-mail Corpus, show that the accuracy for small-to-large is always lower than for small-and-large and random.  However, the f-score for small-to-large is always higher than the f-score for small-and-large and random.  This result shows how accuracy is dominated by the MLE author, since allowing a more prolific author into a group with less prolific authors tends to raise accuracy, but hurts f-score. To illustrate the effect of author prolificity on accuracy and f-score Table \ref{tab:enron-stl-confusionmatrix} shows the confusion matrix for a small-to-large grouping of size 10 for GB3, Web1T\%=0.  Table \ref{tab:enron-sal-confusionmatrix} shows the confusion matrix for a small-and-large grouping of size 10 for GB3, Web1T\%=0. 
+	\paragraph*{} The results of testing in this thesis for accuracy and f-score, broken out by small-to-large, small-and-large, and random are given in Appendix E through Appendix H.  The results from Appendix E, SVM Results for the Enron E-mail Corpus, show that the accuracy for small-to-large is always lower than for small-and-large and random.  However, the f-score for small-to-large is always higher than the f-score for small-and-large and random.  This result shows how accuracy is dominated by the MLE author, since allowing a more prolific author into a group with less prolific authors tends to raise accuracy, but hurts f-score. To illustrate the effect of author prolificity on accuracy and f-score Table \ref{tab:enron-stl-confusionmatrix} shows the confusion matrix for a small-to-large grouping of size 10 for GB3, Web1T\%=0.  Table \ref{tab:enron-sal-confusionmatrix} shows the confusion matrix for a small-and-large grouping of size 10 for GB3, Web1T\%=0. 
 	
 	\begin{table}[htbp!]
 	\begin{center}
@@ -227,28 +226,29 @@
 	
 	\subsection{Cumulative Distribution of Authors Over F-Scores Due to Grouping}
 	\paragraph*{} To further illustrate the impact of grouping similarly prolific, dissimilarly prolific, and randomly prolific authors together, cumulative distribution graphs were constructed for four scenarios: SVM for Enron in Figure \ref{fig:plot-tiled-cdf-summary-liblinear-enron-gb3-10}, naive Bayes for Enron in Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-gb3-10}, SVM for Twitter in Figure \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-gb3-10}, and naive Bayes for Twitter in Figure \ref{fig:plot-tiled-cdf-summary-nb-twitter-gb3-10}.  Each graph is displayed as one of six panels, all tiled in one figure.  Each panel represents a different Web1T\% value for that method-corpus combination.  The Web1T\% values for each panel are, from upper left to lower right by row, 0, 1, 2, 4, 8, and 16.  
-	\paragraph*{}Each panel has three curves plotted as the cumulative distribution of authors over f-score.  The f-scores in these panels are per-author. These per-author f-scores are not averaged over author and are not weighted in any way.  For the sake of consistent presentation, all four figures use GB3 as the feature type and a group size of 10.  The graphs shown are representative of all feature types (GM1, GM2, GM5, GB3, OSB3) as shown in Appendix U through Appendix X. There is one blank graph in Figures \ref{fig:plot-tiled-cdf-summary-liblinear-enron-gb3-10} and \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-gb3-10}.  The blank graph occurs when the number of authors coupled with the number of types exceeds $2^{31}$ elements and cannot fit into the array used by the libLinear model as described in Section 3.2.2 and Section 4.1.
+	\paragraph*{}Each panel has three curves plotted as the cumulative distribution of author's f-score.  The f-scores in these panels are per-author. These per-author f-scores are not averaged over author and are not weighted in any way.  For the sake of consistent presentation, all four figures use GB3 as the feature type and a group size of 10.  The graphs shown are representative of all feature types (GM1, GM2, GM5, GB3, OSB3) as shown in Appendix U through Appendix X. There is one blank graph in Figures \ref{fig:plot-tiled-cdf-summary-liblinear-enron-gb3-10} and \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-gb3-10}.  The blank graph occurs when the number of authors coupled with the number of types exceeds $2^{31}$ elements and cannot fit into the array used by the libLinear model as described in Section 3.2.2 and Section 4.1.
 	
 	\paragraph*{} The characteristics being examined in these cumulative distribution graphs are: the curvature within the graph, how closely the curves are grouped, and the left/right position of the curves.  
 	\begin{itemize}
-		\item For curvature, down and right curvatures shows that a larger number of authors have higher f-scores. Down and right curvature means better classifier performance. A curve with up and left curvature shows that a larger number of authors have lower f-scores.  Up and left curvature indicates poorer classifier performance.
-		\item For close grouping of curves, more closely grouped curves indicate a smaller author prolificity effect on f-score.  For instance, if the small-to-large curve, representing similarly prolific authors, has down and right curvature while the small-and-large, representing similarly prolific authors, has up and left curvature, there is a clear indication that author prolificity affects the classifier.  More closely grouped curves demonstrate more consistent classifier performance.
+		\item For curvature, down and right curvatures shows that a larger number of authors have higher f-scores (e.g. more of the probability mass is contained in high scores). Down and right curvature means more authors experience better classifier performance. A curve with up and left curvature shows that a larger number of authors have lower f-scores.  Up and left curvature indicates poorer classifier performance.
+		\item For inter-CDF similarity, more closely grouped curves indicate a smaller author prolificity effect on f-score.  For instance, if the small-to-large curve, representing similarly prolific authors, has down and right curvature while the small-and-large, representing dissimilarly prolific authors, has up and left curvature, there is a clear indication that author prolificity affects the classifier.  More closely grouped curves demonstrate more consistent classifier performance across grouping strategies.
 		\item In examining the left/right position of curves, curves positioned further to the right indicate more authors with a higher f-score. For instance, a line starting with an f-score of 0.0 shows that at least one author had a f-score of 0.0.  A line starting at 0.4 shows the worst f-score for any author was 0.4.  Curves with positions further to the right demonstrate a better performing method-feature combination.
 	\end{itemize}
 	
-	\paragraph*{} There are several overall findings from the cumulative distribution analysis:
+	\paragraph*{} There are several overall findings from the cumulative distribution analysis of f-score for different Web1T\% values:
 	\begin{itemize}
-	\item Overall, groups of similarly prolific authors performs the same or slightly better than groups of dissimilarly prolific authors.
+	\item SVM performs better for the Enron E-mail Corpus than naive Bayes
+	\item Overall, groups of similarly prolific authors perform the same or slightly better than groups of dissimilarly prolific authors.
 	\item Except for naive Bayes in the Enron E-mail Corpus, Web1T provides little improvement to classifier performance.
 	\item Naive Bayes for the Enron E-mail Corpus has better performance for Web1T\% of 1 and than Web1T\% of 0, but increasing Web1T\% above 1 provides no additional performance improvement.
-	\item Author detection in Twitter produces almost identical results for SVM and naive Bayes.
+	\item Author detection in Twitter accuracy is almost identical for SVM and naive Bayes.
 	\end{itemize}
 	
 	\begin{figure}[htbp!]
 		\begin{center}
 		\centering
 		\includegraphics[angle=270, scale=0.75]{plot-tiled-cdf-summary-liblinear-enron-gb3-10-crop}
-		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using SVM. Each panel in this figure shows SVM using GB3 for the Enron E-mail Corpus.  Each panel represents a different Web1T\% value.  From top-left to bottom-right, those Web1T\% values are 0, 1, 2, 4, 8, and 16.  The blank graph in the sixth panel represents a author-feature pairing that was too large for libLinear to execute as described in Section 3.2.2 and Section 4.1.  The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
+		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the Enron E-mail Corpus using SVM. Each panel in this figure shows SVM using GB3 for the Enron E-mail Corpus.  Each panel represents a different Web1T\% value.  From top-left to bottom-right, those Web1T\% values are 0, 1, 2, 4, 8, and 16.  The blank graph in the sixth panel represents an author-feature pairing that was too large for libLinear to execute as described in Section 3.2.2 and Section 4.1.  The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
 		\label{fig:plot-tiled-cdf-summary-liblinear-enron-gb3-10}
 		\end{center}
 	\end{figure}
@@ -260,13 +260,13 @@
 	\paragraph*{Curvature}The panels in Figure \ref{fig:plot-tiled-cdf-summary-liblinear-enron-gb3-10} show a representative set of curves for all SVM tests on the Enron E-Mail Corpus.  Looking at the first panel of Figure \ref{fig:plot-tiled-cdf-summary-liblinear-enron-gb3-10}, Web1T\% of 0, all three lines, small-to-large, small-and-large, and random have similar curvature.  That curvature is down and right. The small-to-large curve slightly outperforms the small-and-large and random curves up to an f-score of 0.7. This similarity in curvature is consistent as the Web1T\% increases through the next five panels: Web1T\% of 1, 2, 4, 8, and 16. 
 	\paragraph*{Grouping}All three curves are grouped closely together.  The close grouping is also consistent through the next five panels. This demonstrates that relative author prolificity within a group has little impact when SVM is used on the Enron E-mail Corpus.
 	\paragraph*{Position}The left to right positioning of the curves is nearly identical.  This positioning is consistent through the next five panels.
-	\paragraph*{Impact} These panels show that SVM on Enron performs consistently and generally positively across Web1T\% values.  This indicates that the Web1T, as a vocabulary, is not very helpful in improving SVM performance on the Enron Email Corpus. These panels also shows that SVM performance against Enron is consistent for both similarly and dissimilarly prolific authors.
+	\paragraph*{Impact} These panels show that SVM on Enron performs consistently and generally positively across Web1T\% values.  This indicates that the Web1T, as a vocabulary, is not very helpful in improving SVM performance on the Enron Email Corpus. These panels also show that SVM performance against Enron is consistent for both similarly and dissimilarly prolific authors.
 	
 	\begin{figure}[htbp!]
 		\begin{center}
 		\centering
 		\includegraphics[angle=270, scale=0.6]{plot-tiled-cdf-summary-nb-enron-gb3-10-crop}
-		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 for the Enron E-mail Corpus.  Each panel represents a different Web1T\% value.  From top-left to bottom-right, those Web1T\% values are 0, 1, 2, 4, 8, and 16.  The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
+		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the Enron E-mail Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 for the Enron E-mail Corpus.  Each panel represents a different Web1T\% value.  From top-left to bottom-right, those Web1T\% values are 0, 1, 2, 4, 8, and 16.  The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
 		\label{fig:plot-tiled-cdf-summary-nb-enron-gb3-10}
 		\end{center}
 	\end{figure}
@@ -275,14 +275,14 @@
 	\begin{itemize}
 	\item Dissimilarly prolific authors perform significantly better with Web1T used in naive Bayes for the Enron Corpus
 	\end{itemize}
-	\paragraph*{Curvature}The panels in Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-gb3-10} shows a representative set of curves for all naive Bayes tests on the Enron E-mail Corpus.  Looking at the first panel of Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-gb3-10}, Web1T\% of 0, the curvature of the small-to-large curve (similarly prolific authors) is down and right.  The small-and-large curve (dissimilarly prolific authors) and the random curve have up and left curvature.  This indicates that similarly prolific authors are classified significantly better than dissimilarly prolific authors when using naive Bayes for the Enron E-mail Corpus with a Web1T\% of 0.  This pattern is not consistent moving to the second panel, Web1T\% of 1.  In the second panel, the small-and-large curve and the random curve  both have down and right curvature.  
+	\paragraph*{Curvature}The panels in Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-gb3-10} show a representative set of curves for all naive Bayes tests on the Enron E-mail Corpus.  Looking at the first panel of Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-gb3-10}, Web1T\% of 0, the curvature of the small-to-large curve (similarly prolific authors) is down and right.  The small-and-large curve (dissimilarly prolific authors) and the random curve have up and left curvature.  This indicates that the majority of similarly prolific authors are classified significantly better than dissimilarly prolific authors when using naive Bayes for the Enron E-mail Corpus with a Web1T\% of 0.  This pattern is not consistent moving to the second panel, Web1T\% of 1.  In the second panel, the small-and-large curve and the random curve  both have down and right curvature.  
 	\paragraph*{Grouping}In the first panel, Web1T\% of 0, the curves are not tightly grouped. In the second panel, Web1T\% of 1, all three curves are grouped closer together, but not as closely as in SVM for Enron (Figure \ref{fig:plot-tiled-cdf-summary-liblinear-enron-gb3-10}).  The grouping varies slightly through the next four panels with the small-to-large curve always outperforming small-and-large and random curves. 
-	\paragraph*{Position}The left to right positioning of the all three curves is nearly identical for the second through sixth panels (Web1T\% of 1, 2, 4, 8, and 16).  The position of the small-and-large curve and the random curve improved from the first panel, Web1T\% of 0, to the second panel, Web1T\% of 1.  This is another indication that increasing Web1T\%  large than 1 does not significantly help performance.
+	\paragraph*{Position}The left to right positioning of the all three curves is nearly identical for the second through sixth panels (Web1T\% of 1, 2, 4, 8, and 16).  The position of the small-and-large curve and the random curve improved from the first panel, Web1T\% of 0, to the second panel, Web1T\% of 1.  This is another indication that increasing Web1T\%  beyond 1 does not significantly help performance.
 	\paragraph*{Impact} There are three observations from the naive Bayes for Enron panels in Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-gb3-10}:
 	\begin{itemize}
 	\item First, moving from a bootstrap naive Bayes using Laplace plus one smoothing to a Laplace Web1T\% smoothing greatly improves the performance of the dissimilarly prolific authors without any appreciable change to the performance of similarly prolific authors.  This demonstrates that Web1T\% is useful as a smoothing tool for naive Bayes in the Enron E-mail corpus.  
-	\item Second, there is no further significant performance improvement to any curve as the Web1T\% increases beyond 1\%.  This demonstrates that only the most common terms in the Web1T corpus have a significant impact on naive Bayes performance. This supports our hypothesis regarding Zipf's Law.  We hypothesized that the most frequently occurring tokens in the Web1T corpus increase classifier performance more than less frequently occurring tokens.  For this case, naive Bayes in the Enron Email Corpus, There is significant performance increase from Web1T\% of 0 to Web1T\% of 1.  There is little performance improvement for Web1T\% greater than 1.  This indicates that the top 1\% of the Web1T corpus is improving naive Bayes performance the most.
-	\item Third, using naive Bayes, f-score performs similarly for small-to-large with Web1T or without Web1T.  This demonstrates that naive Bayes performs the same for similarly prolific authors regardless of the use of Web1T.
+	\item Second, there is no further significant performance improvement to any curve as the Web1T\% increases beyond 1\%.  This demonstrates that only the most common terms in the Web1T corpus have a significant impact on naive Bayes performance. This supports our hypothesis regarding Zipf's Law.  We hypothesized that the most frequently occurring tokens in the Web1T corpus increase classifier performance more than less frequently occurring tokens.  For this case, naive Bayes in the Enron Email Corpus, there is a significant performance increase from Web1T\% of 0 to Web1T\% of 1.  There is little performance improvement for Web1T\% greater than 1.  This indicates that the top 1\% of the Web1T corpus is improving naive Bayes performance the most.
+	\item Third, using naive Bayes, f-score performs similarly for small-to-large with Web1T or without Web1T.  This demonstrates that naive Bayes performs the same for similarly prolific authors regardless of the use of Web1T. 
 	\end{itemize}
 	
 	\begin{figure}[htbp!]
@@ -307,28 +307,31 @@
 	\item Both SVM and naive Bayes produce nearly identical, mediocre results for the Twitter Short Message Corpus
 	\end{itemize}
 	
-		\paragraph*{Curvature}  The panels in Figure \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-gb3-10} show a representative set of curves for all SVM tests on the Twitter Short Message Corpus.  The panels in Figure \ref{fig:plot-tiled-cdf-summary-nb-twitter-gb3-10} show a representative set of curves for all naive Bayes tests on the Twitter Short Message Corpus. Both figures are nearly identical.  Looking at the first panel, Web1T\% of 0, of both figures, all three curves, small-to-large (similarly prolific authors), small-and-large (dissimilarly prolific authors), and random are all have similar curvature.  That curvature is an ``S" shape. The ``S" shape indicates that there are few authors with low f-scores and few authors with high f-scores. No curve regularly outperforms the others. This similarity in curvature is consistent as the Web1T\% increases through the next five panels (Web1T of 1, 2, 4, 8, and 16). 
-		\paragraph*{Grouping} All three curves are grouped closely together.  The close grouping is consistent through the all six panels.  This shows that neither SVM nor naive Bayes is significantly impacted by similarly or dissimilarly prolific author grouping. 
+		\paragraph*{Curvature}  The panels in Figure \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-gb3-10} show a representative set of curves for all SVM tests on the Twitter Short Message Corpus.  The panels in Figure \ref{fig:plot-tiled-cdf-summary-nb-twitter-gb3-10} show a representative set of curves for all naive Bayes tests on the Twitter Short Message Corpus. Both figures are nearly identical.  Looking at the first panel, Web1T\% of 0, of both figures, all three curves, small-to-large (similarly prolific authors), small-and-large (dissimilarly prolific authors), and random are all have similar curvature.  That curvature is an ``S" shape. The ``S" shape indicates that there are few authors with low f-scores and few authors with high f-scores. This suggests the same, small, number of authors perform well for small-to-large as in small-and-large while authors in the middle of the curve perform worse. No curve regularly outperforms the others. This similarity in curvature is consistent as the Web1T\% increases through the next five panels (Web1T of 1, 2, 4, 8, and 16). 
+		\paragraph*{Grouping} All three curves are grouped closely together.  The close grouping is consistent through all six panels.  This shows that neither SVM nor naive Bayes is significantly impacted by similarly or dissimilarly prolific author grouping. 
 		\paragraph*{Position} The left/right positioning of all three curves is nearly identical except that introducing a Web1T\% of 1 as the Laplace Smoothing values for naive Bayes (Figure \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-gb3-10}) shifts the curves further to the right, improving overall performance.  This positioning does not shift as the Web1T\% increases.  This demonstrates that only the top 1\% of Web1T has a significant impact on naive Bayes and SVM performance in the Twitter Short Message Corpus.
-		\paragraph*{Impact} These panels show that the results of SVM and naive Bayes on Twitter are consistent and generally mediocre with or without Web1T\%.  It also shows that SVM performance against Twitter is consistent for both similarly and dissimilarly prolific authors.
+		\paragraph*{Impact} These panels show that the results of SVM and naive Bayes on Twitter are consistent and generally mediocre with any or none of Web1T.  It also shows that SVM performance against Twitter is consistent for both similarly and dissimilarly prolific authors.
 
 \subsection{Cumulative Distribution of Authors Over F-Score Due to Group Sizes}
 \begin{comment}\paragraph*{} Figures \ref{fig:plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0}, \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0}, \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1}, \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1}, and \ref{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0} all display the cumulative distribution of authors over f-score as group size is increased. There are six panels in each figure.  The panels progress from upper left to bottom right through group sizes 5, 10, 25, 50, 75, and 150.  To provide a consistent presentation, all of these figures except Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1} display a Web1T\% of 0 for feature type GB3. Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1} displays a Web1T\% of 1 for feature type GB3 to present the difference in curvature between naive Bayes against Enron for both Web1T\% of 0 (Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0}) and a Web1T\% of 1 (Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1}).
 \end{comment}
 	\paragraph*{} To further illustrate the impact of grouping similarly prolific, dissimilarly prolific, and randomly prolific authors together, cumulative distribution graphs were constructed for four scenarios: SVM for Enron in Figure \ref{fig:plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0}, naive Bayes for Enron in Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1}, SVM for Twitter in Figure \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0}, and naive Bayes for Twitter in Figure \ref{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0}.  Each graph is displayed as one of six panels, all tiled in one figure.  Each panel represents a different group size for that method-corpus combination.  The group sizes for each panel are, from upper left to lower right by row, 5, 10, 25, 50, 75, and 150.  
-	\paragraph*{}Each panel has three curves plotted as the cumulative distribution of authors over f-score.  The f-scores in these panels are per-author. These per-author f-scores are not averaged over author and are not weighted in any way.  For the sake of consistent presentation, all five figures use GB3 as the feature type and a WEb1T\% of 0 (except for Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1}).  The graphs shown are representative of all feature types (GM1, GM2, GM5, GB3, OSB3) as shown in Appendix U through Appendix X. There is one blank graph in Figures \ref{fig:plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0} and \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0}.  The blank graph occurs when the number of authors coupled with the number of types exceeds $2^{31}$ elements and cannot fit into the array used by the libLinear model as described in Section 3.2.2 and Section 4.1.
+	\paragraph*{}Each panel has three curves plotted as the cumulative distribution of authors over f-score.  The f-scores in these panels are per-author. These per-author f-scores are not averaged over author and are not weighted in any way.  For the sake of consistent presentation, all five figures use GB3 as the feature type and a Web1T\% of 0 (except for Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1}).  The graphs shown are representative of all feature types (GM1, GM2, GM5, GB3, OSB3) as shown in Appendix U through Appendix X. There is one blank graph in Figures \ref{fig:plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0} and \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0}.  The blank graph occurs when the number of authors coupled with the number of types exceeds $2^{31}$ elements and cannot fit into the array used by the libLinear model as described in Section 3.2.2 and Section 4.1.
 	
+\begin{comment}
 	\paragraph*{} The characteristics being examined in these cumulative distribution graphs are: the curvature within the graph, how closely the curves are grouped, and the left/right position of the curves.  
 	\begin{itemize}
 		\item For curvature, down and right curvature shows that a larger number of authors have higher f-scores. down and right curvature means better classifier performance. Up and left curvature shows that a larger number of authors have lower f-scores.  Up and left curvature indicates poorer classifier performance.
 		\item For close grouping of curves, more closely grouped curves indicate a smaller author prolificity effect on f-score.  For instance, if the small-to-large curve, representing similarly prolific authors, has down and right curvature while the small-and-large curve, representing similarly prolific authors, has up and left curvature, there is a clear indication that author prolificity affects the classifier.  More closely grouped curves demonstrate more consistent classifier performance.
-		\item In examining the left/right position of curves, curves positioned further to the right indicate more authors with a higher f-score. For instance, a line starting with an f-score of 0.0 shows that at least one author had a f-score of 0.0.  A line starting at 0.4 shows the worst f-score for any author was 0.4.  Curves with positions further to the right demonstrate a better performing method-feature combination.
+		\item In examining the left/right position of curves, curves positioned further to the right indicate more authors with a higher f-score. For instance, a line starting with an f-score of 0.0 shows that at least one author had a f-score of 0.0.  A line starting at 0.4 shows the worst f-score for any author was 0.4.  Curves with positions further to the right demonstrate a better performing method-feature combination.	
 	\end{itemize}
+\end{comment}
 
-	\paragraph*{} There are several overall findings from the cumulative distribution analysis:
+	\paragraph*{} There are several overall findings from the cumulative distribution analysis of f-score for different author set sizes:
 	\begin{itemize}
-	\item Overall, groups of similarly prolific authors performs the same or slightly better than groups of dissimilarly prolific authors.
-	\item As group size increases, overall classifier performance worsens.
+	\item SVM performs better for the Enron E-mail Corpus than naive Bayes
+	\item Overall, groups of similarly prolific authors perform the same or slightly better than groups of dissimilarly prolific authors.
+	\item As group size increases, overall performance worsens.
 	\item As group size increases, the top and bottom performing authors maintain their f-scores while more average performing authors experience worse performance.
 	\item Author detection in Twitter produces almost identical results for SVM and naive Bayes.
 	\end{itemize}
@@ -338,7 +341,7 @@
 		\begin{center}
 		\centering
 		\includegraphics[angle=270, scale=0.75]{plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0-crop}
-		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using SVM. Each panel in this figure shows SVM using GB3 for the Enron E-mail Corpus.  Each panel represents a different group size.  From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150.  The blank graph in the sixth panel represents a author-feature pairing that was too large for libLinear to execute as described in Section 3.2.2 and Section 4.1.  The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
+		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the Enron E-mail Corpus using SVM. Each panel in this figure shows SVM using GB3 for the Enron E-mail Corpus.  Each panel represents a different group size.  From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150.  The blank graph in the sixth panel represents a author-feature pairing that was too large for libLinear to execute as described in Section 3.2.2 and Section 4.1.  The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
 		\label{fig:plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0}
 		\end{center}
 	\end{figure}
@@ -348,7 +351,7 @@
 	\item SVM performance is consistent and generally positive for similarly and dissimilarly prolific authors in the Enron E-mail Corpus.
 	\end{itemize}
 	\paragraph*{Curvature}Figure \ref{fig:plot-tiled-cdf-summary-liblinear-enron-GB3-ALL-0} shows the typical progression of curvature as group size increases from an initial value of 5 to a final value of 150.  All three curves, small-to-large (similarly prolific authors), small-and-large (dissimilarly prolific authors), and random, progress from a down and right curvature to an up and left curvature.  None of the feature-group size combination ever curve left and up past a basically straight, diagonal curve.  This indicates that increasing group size causes worse author detection performance.
-	\paragraph*{Grouping} The grouping of the lines gets tighter as the group size increases.  Specifically, similarly prolific authors decrease performance at a faster rate as the group sizes increase, causing the small-to-large curve to decrease the distance between it and the small-and-large and random lines.  The tightened grouping shows that group size impacts the small-to-large line more than the small-and-large and random lines.  This makes intuitive sense because the larger group sizes makes the similarly prolific authors "less similar".  When all 150 authors are included in the similarly prolific author group, there is no difference between the similarly and dissimilarly prolific authors.  
+	\paragraph*{Grouping} The grouping of the lines gets tighter as the group size increases.  Specifically, similarly prolific authors decrease performance at a faster rate as the group sizes increase, causing the small-to-large curve to decrease the distance between it and the small-and-large and random lines.  The tightened grouping shows that group size impacts the small-to-large line more than the small-and-large and random lines.  This makes intuitive sense because the larger group sizes makes the similarly prolific authors ``less similar."  When all 150 authors are included in the similarly prolific author group, there is no difference between the similarly and dissimilarly prolific authors.  
 	\paragraph*{Position}The left to right position of the endpoints of all three curves remains relatively fixed through all group sizes.  This shows that the worst and best f-scores remain relatively constant through the group sizes while f-scores for average performing authors worsens.  
 	\paragraph*{Impact} SVM performance in the Enron E-mail Corpus is consistent and generally positive for similarly and dissimilarly prolific authors.  Increasing group size worsens performance for both similarly and dissimilarly prolific author groups.
 	
@@ -357,16 +360,16 @@
 		\begin{center}
 		\centering
 		\includegraphics[angle=270, scale=0.75]{plot-tiled-cdf-summary-nb-enron-GB3-ALL-0-crop}
-		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 and a Web1T\% of 0 for the Enron E-mail Corpus.  Each panel represents a different group size.  From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
+		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the Enron E-mail Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 and a Web1T\% of 0 for the Enron E-mail Corpus.  Each panel represents a different group size.  From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
 		\label{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0}
 		\end{center}
 	\end{figure}
-	
+\begin{comment}	
 	\begin{figure}[htbp!]
 		\begin{center}
 		\centering
 		\includegraphics[angle=270, scale=0.75]{plot-tiled-cdf-summary-nb-enron-GB3-ALL-1-crop}
-		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the ENRON E-mail Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 and a Web1T\% of 1 for the Enron E-mail Corpus.  Each panel represents a different group size.  From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
+		\caption{Graphs of the Cumulative Distribution of Authors Over F-Score for the Enron E-mail Corpus using Naive Bayes. Each panel in this figure shows naive Bayes using GB3 and a Web1T\% of 1 for the Enron E-mail Corpus.  Each panel represents a different group size.  From top-left to bottom-right, those group sizes are 5, 10, 25, 50, 75, and 150. The curves in each graph are: Small-To-Large (STL), Small-And-Large (SAL), and Random (RAN).  STL represents groups of similarly prolific authors.  SAL represents groups of dissimilarly prolific authors.  RAN represents authors of random prolificity grouped together.  Curves with down and right curvature indicate better performance that curves with up and left curvature.  Curves positioned further to the right indicate better performance that curves positioned further to the left.  Curves with tighter grouping indicate more consistent performance than curves with looser grouping.}
 		\label{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1}
 		\end{center}
 	\end{figure}
@@ -377,6 +380,7 @@
 \item Naive Bayes for the Enron E-mail Corpus shows different performance progression as group size increases for Web1T\% of 0 and 1.
 \end{itemize}
 Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1} both show the cumulative distribution of authors over f-score for naive Bayes against Enron.  The two graphs start with different curvatures.  Both graphs get closer grouping and worsening performance for all author groups as group size increases.  However, similarly prolific author curves are more alike between Web1T\% of 1 than for Web1T\% of 0 than dissimilarly prolific author groups.  This is expected after the results from Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-gb3-10}. However, the group size of 150 for Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} is essentially a straight, diagonal line whereas in Figure \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-1} the curves are up and left.  This indicates that naive Bayes benefits from the use of Web1T\% of 1 over naive Bayes with a Web1T\% of 0.  This result is typical of all the naive Bayes against Enron cumulative distribution graphs.  This begs the question of whether Web1T smoothing performs better than other smoothing techniques such as Witten-Bell or Good-Turing.  Witten-Bell and Good-Turing do not bring the large storage requirement of Web1T smoothing, but may produce similar results.  Determining this result is left for future work.
+\end{comment}
 
 \paragraph*{} 
 \begin{itemize}
@@ -386,7 +390,7 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 \paragraph*{Grouping}As group size increases, the curvature of all lines increases, but not at the same rate.  The small-to-large curve closes the gap between curves until all curves are merged in the last panel, group size of 150.  (Note: It makes sense that the last panel shows all curves on top of each other because the same 150 authors are included in all three curves.  If these lines showed different curvature, that would indicate a problem with the methodology, since the only difference between the training and test sets of these three lines is the order that documents are read by the classifier.  For group sizes of 5 through 75, each line contains groups unique combinations of authors.)
 \paragraph*{Position}The left/right position of the curves does not change significantly as group size increases while curvature did change.  This shows that increasing group size has less effect on the top and bottom performing authors than on the average performing authors.
 \paragraph*{Impact} Naive Bayes without Web1T in the Enron E-mail corpus does not perform consistently between groups of similarly and dissimilarly prolific authors.  Dissimilarly prolific authors have markedly worse performance than similarly prolific authors for naive Bayes without Web1T in the Enron E-mail Corpus.
-
+\begin{comment}
 \paragraph*{} 
 \begin{itemize}
 \item Naive Bayes performance, with Web1T\% of 1 or greater, is consistent for similarly and dissimilarly prolific authors in the Enron E-mail Corpus.
@@ -396,7 +400,7 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 \paragraph*{Grouping}The grouping of the three curves becomes closer as group size increases with all three curves merging at a group size of 150. 
 \paragraph*{Position} The left/right position for naive Bayes with Web1T\% of 1 is consistent through all group sizes. This shows that increasing group size has less effect on the top and bottom performing authors than on the average performing authors.
 \paragraph*{Impact} Naive Bayes using Web1T as a vocabulary performs consistently across similarly and dissimilarly prolific authors with better performance than naive Bayes without Web1T in the Enron E-mail Corpus.
-
+\end{comment}
 
 	\begin{figure}[htbp!]
 		\begin{center}
@@ -410,8 +414,8 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 	\item Author detection in Twitter performs nearly identically for SVM and naive Bayes regardless of author prolificity groups.
 \end{itemize} 
 
- Both Figures \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0} and \ref{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0} show the cumulative distribution graphs for Twitter.  Figure \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0} show SVM and Figure \ref{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0} shows naive Bayes.  
- \paragraph*{Curvature} The curvature for both figures is nearly identical.  In both figures, the first and second panels show a "S" shape indicative of few authors with low f-scores and few authors with high f-scores.  Both figures show a steady progression from the second panel, Web`T\% of 1, to the sixth panel, Web1T\% of 16, of the "S" shape becoming more of an up and left curve, indicating increasing low f-scores for more authors.  This clearly demonstrates the worsening performance of both SVM and naive Bayes against the Twitter Short Message Corpus over all Web1T\% values.
+ Both Figures \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0} and \ref{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0} show the cumulative distribution graphs for Twitter.  Figure \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0} shows SVM and Figure \ref{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0} shows naive Bayes.  
+ \paragraph*{Curvature} The curvature for both figures is nearly identical.  In both figures, the first and second panels show a "S" shape indicative of few authors with low f-scores and few authors with high f-scores.  Both figures show a steady progression from the first panel, group size 5, to the sixth panel, group size 150, of the "S" shape becoming more of an up and left curve, indicating increasing low f-scores for more authors.  This clearly demonstrates the worsening performance of both SVM and naive Bayes against the Twitter Short Message Corpus as group size increases.
  \paragraph*{Grouping} The grouping for both figures is nearly identical.  The grouping is close for all curves through all group sizes. This shows both SVM and naive Bayes are unaffected by author prolificity groups in Twitter.
  \paragraph*{Position} The position for both figures is nearly identical. The position does not change through larger group sizes.  When combined with the change in curvature as group size increases, the constant position indicates that the top and bottom performing authors have unchanged f-scores while more average performing authors have worsening f-scores.
  \paragraph*{Impact}  Figures \ref{fig:plot-tiled-cdf-summary-liblinear-twitter-GB3-ALL-0}, SVM for Twitter, and Figure \ref{fig:plot-tiled-cdf-summary-nb-twitter-GB3-ALL-0} naive Bayes for Twitter, demonstrate virtually no performance difference between SVM and naive Bayes.  Whether this lack of classifier performance difference is a phenomenon of the language used in Twitter or is simply a result of the small size of the Twitter corpus is left as a question for future work.
@@ -587,7 +591,7 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 	\end{center}
 \end{table}
 
-\paragraph*{}  The top performing method-feature combination for the Twitter Short Message Corpus was naive Bayes using feature type GM1 for a group size of 5.  Table \ref{tab:top_twitter_by_score} shows the top 20 scores along with accuracy and size information for the Twitter Short Message Corpus.  The accuracy of these combinations is in the same range as the most accurate method-feature combinations. The range of groups sizes that made the top 20 scores is much larger than for the ENRON E-mail Corpus because authors in the ENRON E-mail Corpus are much more prolific.  There are three combinations for group size 50, two combinations of group size 75, and two combinations of group size 150. All of the top 20 performing score combinations have a storage requirement of less than 16MB.
+\paragraph*{}  The top performing method-feature combination for the Twitter Short Message Corpus was naive Bayes using feature type GM1 for a group size of 5.  Table \ref{tab:top_twitter_by_score} shows the top 20 scores along with accuracy and size information for the Twitter Short Message Corpus.  The accuracy of these combinations is in the same range as the most accurate method-feature combinations. The range of groups sizes that made the top 20 scores is much larger than for the Enron E-mail Corpus because authors in the Enron E-mail Corpus are much more prolific.  There are three combinations for group size 50, two combinations of group size 75, and two combinations of group size 150. All of the top 20 performing score combinations have a storage requirement of less than 16MB.
 
 \begin{table}[htbp!]
 	\begin{center}
@@ -595,26 +599,26 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Group Size\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways}\\ \hline 
 			
-			NB & twitter & GM1 & 5 & 0 & 2.8233 & 0.6264 & 0.22\\ \hline 
-			NB & twitter & GM1 & 10 & 0 & 1.9815 & 0.4869 & 0.25\\ \hline 
-			SVM & twitter & GM1 & 5 & 0 & 2.1731 & 0.6212 & 0.29\\ \hline 
-			NB & twitter & GM1 & 25 & 0 & 1.0593 & 0.3357 & 0.32\\ \hline 
-			NB & twitter & GM1 & 50 & 0 & 0.5347 & 0.2326 & 0.43\\ \hline 
-			SVM & twitter & GM1 & 10 & 0 & 1.0850 & 0.4762 & 0.44\\ \hline 
-			NB & twitter & GM1 & 75 & 0 & 0.3291 & 0.1820 & 0.55\\ \hline 
-			NB & twitter & GM1 & 150 & 0 & 0.1375 & 0.1252 & 0.91\\ \hline 
-			SVM & twitter & GM1 & 25 & 0 & 0.3301 & 0.3461 & 1.05\\ \hline 
-			NB & twitter & GM2 & 5 & 0 & 0.4866 & 0.5711 & 1.17\\ \hline 
-			NB & twitter & GM2 & 10 & 0 & 0.3644 & 0.4439 & 1.22\\ \hline 
-			NB & twitter & GM2 & 25 & 0 & 0.2380 & 0.3215 & 1.35\\ \hline 
-			SVM & twitter & GM2 & 5 & 0 & 0.3503 & 0.4844 & 1.38\\ \hline 
-			NB & twitter & GM2 & 50 & 0 & 0.1598 & 0.2509 & 1.57\\ \hline 
-			NB & twitter & GM2 & 75 & 0 & 0.1207 & 0.2162 & 1.79\\ \hline 
-			SVM & twitter & GM1 & 5 & 1 & 0.3257 & 0.6228 & 1.91\\ \hline 
-			SVM & twitter & GM2 & 10 & 0 & 0.1911 & 0.3700 & 1.94\\ \hline 
-			SVM & twitter & GM1 & 50 & 0 & 0.1153 & 0.2693 & 2.34\\ \hline 
-			NB & twitter & GM2 & 150 & 0 & 0.0696 & 0.1709 & 2.46\\ \hline 
-			NB & twitter & GM1 & 5 & 1 & 0.1945 & 0.4974 & 2.56\\ \hline 
+			NB	& twitter	& GM1	& 5	& 0	& 2.8233	& 0.6264	& 0.2219\\ \hline 
+			SVM	& twitter	& GM1	& 5	& 0	& 2.1731	& 0.6212	& 0.2859\\ \hline 
+			NB	& twitter	& GM1	& 10	& 0	& 1.9815	& 0.4869	& 0.2457\\ \hline 
+			SVM	& twitter	& GM1	& 10	& 0	& 1.0850	& 0.4762	& 0.4389\\ \hline 
+			NB	& twitter	& GM1	& 25	& 0	& 1.0593	& 0.3357	& 0.3169\\ \hline 
+			NB	& twitter	& GM1	& 50	& 0	& 0.5347	& 0.2326	& 0.4350\\ \hline 
+			NB	& twitter	& GM2	& 5	& 0	& 0.4866	& 0.5711	& 1.1738\\ \hline 
+			NB	& twitter	& GM2	& 10	& 0	& 0.3644	& 0.4439	& 1.2181\\ \hline 
+			SVM	& twitter	& GM2	& 5	& 0	& 0.3503	& 0.4844	& 1.3830\\ \hline 
+			SVM	& twitter	& GM1	& 25	& 0	& 0.3301	& 0.3461	& 1.0483\\ \hline 
+			NB	& twitter	& GM1	& 75	& 0	& 0.3291	& 0.1820	& 0.5530\\ \hline 
+			SVM	& twitter	& GM1	& 5	& 1	& 0.3257	& 0.6228	& 1.9123\\ \hline 
+			NB	& twitter	& GM2	& 25	& 0	& 0.2380	& 0.3215	& 1.3508\\ \hline 
+			NB	& twitter	& GM1	& 5	& 1	& 0.2210	& 0.5652	& 2.5578\\ \hline 
+			SVM	& twitter	& GM2	& 10	& 0	& 0.1911	& 0.3700	& 1.9363\\ \hline 
+			NB	& twitter	& GB3	& 5	& 0	& 0.1868	& 0.6179	& 3.3084\\ \hline 
+			SVM	& twitter	& GM1	& 5	& 2	& 0.1639	& 0.6147	& 3.7511\\ \hline 
+			NB	& twitter	& GM1	& 10	& 1	& 0.1625	& 0.4221	& 2.5972\\ \hline 
+			NB	& twitter	& GM2	& 50	& 0	& 0.1598	& 0.2509	& 1.5700\\ \hline 
+			NB	& twitter	& GB3	& 10	& 0	& 0.1440	& 0.4948	& 3.4368\\ \hline  
 
 		\end{tabular}
 		\caption{Highest Scoring Method-Feature Combinations for the Twitter Short Message Corpus}
@@ -622,7 +626,7 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 	\end{center}
 \end{table}
 
-\paragraph{} With the scores measure for each method-feature combination in hand, the shortcoming of using $score = \frac{accuracy}{size}$ become apparent.  Table \ref{tab:top_enron_by_score} indicates that naive Bayes using GM1 for group size 5 is the best feature-combination to choose for a mobile device.  However, the second highest score, SVM using GM1 for group size 5 has an accuracy of 0.8269 where the top scoring combination has an accuracy of 0.7215, a full 0.1 worse than the second top scorer.  An even more important limitation to this approach is the heavy bias of group size on the scoring process.  To address this, Table \ref{tab:top_enron_by_score_all_groups} for the Enron E-mail Corpus, and Table \ref{tab:top_twitter_by_score_all_groups} for the Twitter Short Message Corpus, were constructed to show the score for each feature-method-percentage combination that could cover all group sizes with score averaged over all group sizes.
+\paragraph{} With the scores measure for each method-feature combination in hand, the shortcoming of using $score = \frac{accuracy}{size}$ become apparent.  Table \ref{tab:top_enron_by_score} indicates that naive Bayes using GM1 for group size 5 is the best feature-combination to choose for a mobile device.  However, the second highest score, SVM using GM1 for group size 5 has an accuracy of 0.6212 where the top scoring combination has an accuracy of 0.6264, a full 0.05 better than the second top scorer.  An even more important limitation to this approach is the heavy bias of group size on the scoring process.  To address this, Table \ref{tab:top_enron_by_score_all_groups} for the Enron E-mail Corpus, and Table \ref{tab:top_twitter_by_score_all_groups} for the Twitter Short Message Corpus, were constructed to show the score for each feature-method-percentage combination that could cover all group sizes with score averaged over all group sizes.
 
 \begin{table}[htbp!]
 	\begin{center}
@@ -630,27 +634,27 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways}\\ \hline 
 
-		NB & enron & GM1 & 0 & 0.3998 & 0.6792 & 1.6986\\ \hline 
-		SVM & enron & GM1 & 0 & 0.3388 & 0.8076 & 2.3840\\ \hline 
-		SVM & enron & GM1 & 1 & 0.2528 & 0.8047 & 3.1834\\ \hline 
-		NB & enron & GM1 & 1 & 0.2030 & 0.6083 & 2.9969\\ \hline 
-		SVM & enron & GM1 & 2 & 0.1424 & 0.8033 & 5.6421\\ \hline 
-		NB & enron & GM1 & 2 & 0.1113 & 0.6140 & 5.5165\\ \hline 
-		SVM & enron & GM1 & 4 & 0.0776 & 0.8097 & 10.4301\\ \hline 
-		NB & enron & GM1 & 4 & 0.0593 & 0.6260 & 10.5528\\ \hline 
-		NB & enron & GM2 & 0 & 0.0437 & 0.7804 & 17.8759\\ \hline 
-		SVM & enron & GM1 & 8 & 0.0397 & 0.8092 & 20.3672\\ \hline 
-		SVM & enron & GM2 & 0 & 0.0383 & 0.8477 & 22.1173\\ \hline 
-		NB & enron & GM1 & 8 & 0.0300 & 0.6192 & 20.6262\\ \hline 
-		SVM & enron & GM1 & 16 & 0.0203 & 0.8057 & 39.6953\\ \hline 
-		NB & enron & GM1 & 16 & 0.0154 & 0.6298 & 40.7717\\ \hline 
-		SVM & enron & GM2 & 1 & 0.0142 & 0.8007 & 56.5585\\ \hline 
-		NB & enron & GB3 & 0 & 0.0131 & 0.7631 & 58.1904\\ \hline 
-		SVM & enron & GB3 & 0 & 0.0119 & 0.8413 & 70.6541\\ \hline 
-		NB & enron & GM2 & 1 & 0.0106 & 0.6206 & 58.8138\\ \hline 
-		SVM & enron & GB3 & 1 & 0.0083 & 0.8429 & 101.9446\\ \hline 
-		SVM & enron & GM2 & 2 & 0.0072 & 0.8011 & 111.2368\\ \hline 
-
+			NB	& enron	& GM1	& 0	& 0.1195	& 0.4259	& 3.5637\\ \hline 
+			NB	& enron	& GM1	& 1	& 0.0648	& 0.3868	& 5.9718\\ \hline 
+			NB	& enron	& GM1	& 2	& 0.0464	& 0.3941	& 8.5024\\ \hline 
+			SVM	& enron	& GM1	& 0	& 0.0402	& 0.6890	& 17.1428\\ \hline 
+			NB	& enron	& GM1	& 4	& 0.0297	& 0.4027	& 13.5433\\ \hline 
+			SVM	& enron	& GM1	& 1	& 0.0291	& 0.6851	& 23.5517\\ \hline 
+			NB	& enron	& GM2	& 0	& 0.0235	& 0.6060	& 25.7537\\ \hline 
+			SVM	& enron	& GM1	& 2	& 0.0179	& 0.6869	& 38.3513\\ \hline 
+			NB	& enron	& GM1	& 8	& 0.0170	& 0.4022	& 23.6185\\ \hline 
+			SVM	& enron	& GM1	& 4	& 0.0118	& 0.6955	& 58.8048\\ \hline 
+			NB	& enron	& GM1	& 16	& 0.0093	& 0.4084	& 43.7648\\ \hline 
+			NB	& enron	& GB3	& 0	& 0.0071	& 0.5833	& 82.2663\\ \hline 
+			NB	& enron	& GM2	& 1	& 0.0066	& 0.4101	& 61.7548\\ \hline 
+			SVM	& enron	& GM2	& 0	& 0.0062	& 0.7772	& 124.3990\\ \hline 
+			SVM	& enron	& GM1	& 8	& 0.0054	& 0.6872	& 126.8721\\ \hline 
+			NB	& enron	& GM5	& 0	& 0.0048	& 0.6218	& 128.3638\\ \hline 
+			NB	& enron	& GB3	& 1	& 0.0044	& 0.6866	& 156.4631\\ \hline 
+			NB	& enron	& OSB3	& 0	& 0.0042	& 0.7310	& 173.9431\\ \hline 
+			NB	& enron	& GM2	& 2	& 0.0038	& 0.4546	& 118.2138\\ \hline 
+			SVM	& enron	& GB3	& 0	& 0.0036	& 0.7809	& 218.5693\\ \hline 
+			SVM	& enron	& GM1	& 16	& 0.0034	& 0.6962	& 204.5598\\ \hline
 
 		\end{tabular}
 		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Enron E-mail Corpus}
@@ -664,26 +668,25 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways}\\ \hline 
 			
-		NB & twitter & GM1 & 0 & 2.5176 & 0.5858 & 0.2327\\ \hline 
-		SVM & twitter & GM1 & 0 & 1.5509 & 0.5806 & 0.3744\\ \hline 
-		NB & twitter & GM2 & 0 & 0.4482 & 0.5351 & 1.1939\\ \hline 
-		SVM & twitter & GM2 & 0 & 0.2607 & 0.4524 & 1.7353\\ \hline 
-		SVM & twitter & GM1 & 1 & 0.2244 & 0.5827 & 2.5972\\ \hline 
-		NB & twitter & GM1 & 1 & 0.1772 & 0.4565 & 2.5758\\ \hline 
-		NB & twitter & GB3 & 0 & 0.1729 & 0.5822 & 3.3669\\ \hline 
-		SVM & twitter & GM1 & 2 & 0.1142 & 0.5773 & 5.0542\\ \hline 
-		NB & twitter & GM5 & 0 & 0.1006 & 0.3167 & 3.1482\\ \hline 
-		SVM & twitter & GB3 & 0 & 0.0995 & 0.5074 & 5.0984\\ \hline 
-		NB & twitter & GM1 & 2 & 0.0927 & 0.4721 & 5.0936\\ \hline 
-		NB & twitter & OSB3 & 0 & 0.0797 & 0.6127 & 7.6833\\ \hline 
-		SVM & twitter & GM5 & 0 & 0.0599 & 0.2488 & 4.1559\\ \hline 
-		SVM & twitter & GM1 & 4 & 0.0581 & 0.5792 & 9.9645\\ \hline 
-		NB & twitter & GM1 & 4 & 0.0467 & 0.4728 & 10.1292\\ \hline 
-		SVM & twitter & OSB3 & 0 & 0.0449 & 0.5100 & 11.3466\\ \hline 
-		SVM & twitter & GM1 & 8 & 0.0296 & 0.5862 & 19.8001\\ \hline 
-		NB & twitter & GM1 & 8 & 0.0239 & 0.4823 & 20.2023\\ \hline 
-		SVM & twitter & GM1 & 16 & 0.0147 & 0.5789 & 39.4154\\ \hline 
-		NB & twitter & GM1 & 16 & 0.0116 & 0.4694 & 40.3477\\ \hline 
+		NB	& twitter	& GM1	& 0	& 0.7413	& 0.3315	& 0.4471\\ \hline 
+		NB	& twitter	& GM2	& 0	& 0.2065	& 0.3291	& 1.5934\\ \hline 
+		SVM	& twitter	& GM1	& 0	& 0.1212	& 0.3542	& 2.9234\\ \hline 
+		NB	& twitter	& GM1	& 1	& 0.1028	& 0.3015	& 2.9332\\ \hline 
+		NB	& twitter	& GB3	& 0	& 0.0811	& 0.3670	& 4.5253\\ \hline 
+		NB	& twitter	& GM1	& 2	& 0.0562	& 0.3062	& 5.4527\\ \hline 
+		NB	& twitter	& GM5	& 0	& 0.0488	& 0.1732	& 3.5527\\ \hline 
+		NB	& twitter	& OSB3	& 0	& 0.0401	& 0.4025	& 10.0340\\ \hline 
+		NB	& twitter	& GM1	& 4	& 0.0290	& 0.3044	& 10.4871\\ \hline 
+		SVM	& twitter	& GM1	& 1	& 0.0215	& 0.3556	& 16.5257\\ \hline 
+		SVM	& twitter	& GM2	& 0	& 0.0214	& 0.2768	& 12.9316\\ \hline 
+		NB	& twitter	& GM1	& 8	& 0.0149	& 0.3057	& 20.5600\\ \hline 
+		SVM	& twitter	& GM1	& 2	& 0.0114	& 0.3551	& 31.2754\\ \hline 
+		SVM	& twitter	& GB3	& 0	& 0.0078	& 0.3183	& 40.9074\\ \hline 
+		NB	& twitter	& GM1	& 16	& 0.0075	& 0.3057	& 40.7048\\ \hline 
+		SVM	& twitter	& GM1	& 4	& 0.0059	& 0.3577	& 60.7786\\ \hline 
+		NB	& twitter	& GM2	& 1	& 0.0056	& 0.3280	& 58.7434\\ \hline 
+		SVM	& twitter	& GM5	& 0	& 0.0038	& 0.1271	& 33.0844\\ \hline 
+		SVM	& twitter	& OSB3	& 0	& 0.0036	& 0.3211	& 88.9854\\ \hline 
 		\end{tabular}
 		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Twitter Short Message Corpus}
 		\label{tab:top_twitter_by_score_all_groups}
@@ -692,7 +695,7 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 
 \paragraph*{} The top method-feature combinations in Table \ref{tab:top_enron_by_score_all_groups} are still dominated by GM1 as a feature type.  Naive Bayes using GM1 and a Web1T\%=0 had a higher score than SVM using GM1 and a Web1T\%=0, but the SVM accuracy is 0.1284 higher than the naive Bayes accuracy.  This shows again that this scoring method by itself does not produce an optimal feature-method combination on its own.
 
-\paragraph*{} Similarly, the top method-feature combinations for the Twitter Short Message Corpus in Table \ref{tab:top_twitter_by_score_all_groups} are GM1.  However, there is a much wider mix of feature types in the Twitter Corpus than was seen in the Enron Corpus.  Also, naive Bayes outperforms its SVM counterparts in some situations.  Just like with Enron, the highest scoring method-feature combination is not necessarily the most appropriate combination for deployment on a mobile phone.  For the Twitter Corpus, SVM using OSB3 and a Web1T\%=0 has a .6127 accuracy with a size of 11.3466MB.  This is the highest accuracy on the top 20 list that is still below 16MB.  There are several accuracies above 0.5 that have significantly smaller storage requirements.
+\paragraph*{} Similarly, the top method-feature combinations for the Twitter Short Message Corpus in Table \ref{tab:top_twitter_by_score_all_groups} are GM1.  However, there is a much wider mix of feature types in the Twitter Corpus than was seen in the Enron Corpus.  Also, naive Bayes outperforms its SVM counterparts in some situations.  Just like with Enron, the highest scoring method-feature combination is not necessarily the most appropriate combination for deployment on a mobile phone.  For the Twitter Corpus, naive Bayes using OSB3 and a Web1T\%=0 has a 40.25\% accuracy with a size of 10.0340MB.  This is the highest accuracy on the top 20 list that is still below 16MB.  \begin{comment}There are several accuracies above 0.5 that have significantly smaller storage requirements.\end{comment}
 
 \paragraph*{} To more clearly illustrate the results of accuracy and storage size on the Enron E-mail Corpus and the Twitter Short Message Corpus, Figures \ref{fig:plot-scatter-enron} and \ref{fig:plot-scatter-twitter} were generated.  In these figures:
 	\begin{itemize}
@@ -815,16 +818,13 @@ Figures \ref{fig:plot-tiled-cdf-summary-nb-enron-GB3-ALL-0} and \ref{fig:plot-ti
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways} &\begin{sideways}MLE\end{sideways} & \begin{sideways}F-Score\end{sideways}\\ \hline
 
-SVM & enron & GM1 & 0 & 0.1601 & 0.7735 & 4.83 & 0.3842 & 0.6257\\ \hline 
-SVM & enron & GM1 & 1 & 0.1113 & 0.7710 & 6.93 & 0.3859 & 0.6235\\ \hline 
-SVM & enron & GM1 & 2 & 0.0658 & 0.7704 & 11.71 & 0.3849 & 0.6255\\ \hline 
-NB & enron & GM1 & 0 & 0.2954 & 0.6055 & 2.05 & 0.3842 & 0.3399\\ \hline 
-NB & enron & GM1 & 4 & 0.0507 & 0.5640 & 11.12 & 0.3793 & 0.4771\\ \hline 
-NB & enron & GM1 & 2 & 0.0908 & 0.5520 & 6.08 & 0.3849 & 0.4719\\ \hline 
-NB & enron & GM1 & 1 & 0.1536 & 0.5462 & 3.56 & 0.3859 & 0.4649\\ \hline 
+NB	& enron	& GM1	& 0	& 0.1195	& 0.4259	& 3.5637	& 0.2218	& 0.1949\\ \hline 
+NB	& enron	& GM1	& 1	& 0.0648	& 0.3868	& 5.9718	& 0.2230	& 0.3451\\ \hline 
+NB	& enron	& GM1	& 2	& 0.0464	& 0.3941	& 8.5024	& 0.2254	& 0.3498\\ \hline 
+NB	& enron	& GM1	& 4	& 0.0297	& 0.4027	& 13.5433	& 0.2209	& 0.3555\\ \hline
 
 \end{tabular}
-		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Enron E-mail Corpus}
+		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Enron E-mail Corpus With A Storage Requirement Less Than 16MB}
 		\label{tab:top_enron_by_score_all_groups_under_16mb}
 	\end{center}
 \end{table}
@@ -835,23 +835,19 @@ NB & enron & GM1 & 1 & 0.1536 & 0.5462 & 3.56 & 0.3859 & 0.4649\\ \hline
 			\hline
 			\begin{sideways}Method\end{sideways} & \begin{sideways}Corpus\end{sideways} & \begin{sideways}Feature Type\end{sideways} & \begin{sideways}Web1T\end{sideways} \% & \begin{sideways}Score\end{sideways} & \begin{sideways}Accuracy\end{sideways} & \begin{sideways}Size(MB)\end{sideways} &\begin{sideways}MLE\end{sideways} & \begin{sideways}F-Score\end{sideways}\\ \hline
 
-NB & twitter & OSB3 & 0 & 0.0680 & 0.5525 & 8.13 & 0.1978 & 0.5338\\ \hline 
-NB & twitter & GB3 & 0 & 0.1451 & 0.5203 & 3.59 & 0.1990 & 0.4820\\ \hline 
-SVM & twitter & GM1 & 1 & 0.0992 & 0.5159 & 5.20 & 0.1960 & 0.4953\\ \hline 
-SVM & twitter & GM1 & 0 & 0.6402 & 0.5141 & 0.80 & 0.1975 & 0.4934\\ \hline 
-NB & twitter & GM1 & 0 & 1.8823 & 0.5140 & 0.27 & 0.1975 & 0.4708\\ \hline 
-SVM & twitter & GM1 & 2 & 0.0515 & 0.5131 & 9.97 & 0.1944 & 0.4915\\ \hline 
-NB & twitter & GM2 & 0 & 0.3743 & 0.4750 & 1.27 & 0.1978 & 0.4350\\ \hline 
-SVM & twitter & GB3 & 0 & 0.0411 & 0.4522 & 11.01 & 0.1990 & 0.4207\\ \hline 
-NB & twitter & GM1 & 4 & 0.0399 & 0.4070 & 10.20 & 0.1957 & 0.3838\\ \hline 
-NB & twitter & GM1 & 2 & 0.0786 & 0.4059 & 5.16 & 0.1944 & 0.3833\\ \hline 
-SVM & twitter & GM2 & 0 & 0.1121 & 0.4002 & 3.57 & 0.1978 & 0.3726\\ \hline 
-NB & twitter & GM1 & 1 & 0.1484 & 0.3922 & 2.64 & 0.1960 & 0.3672\\ \hline 
-NB & twitter & GM5 & 0 & 0.0845 & 0.2726 & 3.22 & 0.1995 & 0.1902\\ \hline 
-SVM & twitter & GM5 & 0 & 0.0240 & 0.2095 & 8.73 & 0.1995 & 0.1547\\ \hline 
+			NB	& twitter	& GM1	& 0	& 0.7413	& 0.3315	& 0.4471	& 0.1023	& 0.2882\\ \hline 
+			NB	& twitter	& GM2	& 0	& 0.2065	& 0.3291	& 1.5934	& 0.1023	& 0.2925\\ \hline 
+			SVM	& twitter	& GM1	& 0	& 0.1212	& 0.3542	& 2.9234	& 0.1023	& 0.3331\\ \hline 
+			NB	& twitter	& GM1	& 1	& 0.1028	& 0.3015	& 2.9332	& 0.1015	& 0.2689\\ \hline 
+			NB	& twitter	& GM5	& 0	& 0.0488	& 0.1732	& 3.5527	& 0.1033	& 0.1341\\ \hline 
+			NB	& twitter	& GB3	& 0	& 0.0811	& 0.3670	& 4.5253	& 0.1034	& 0.3285\\ \hline 
+			NB	& twitter	& GM1	& 2	& 0.0562	& 0.3062	& 5.4527	& 0.1017	& 0.2734\\ \hline 
+			NB	& twitter	& OSB3	& 0	& 0.0401	& 0.4025	& 10.0340	& 0.1029	& 0.3813\\ \hline 
+			NB	& twitter	& GM1	& 4	& 0.0290	& 0.3044	& 10.4871	& 0.1017	& 0.2715\\ \hline 
+			SVM	& twitter	& GM2	& 0	& 0.0214	& 0.2768	& 12.9316	& 0.1023	& 0.2594\\ \hline 
 
 \end{tabular}
-		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Twitter Short Message Corpus}
+		\caption{Highest Scoring Method-Feature Combinations Over All Groups for the Twitter Short Message Corpus With A Storage Requirement Less Than 16MB}
 		\label{tab:top_twitter_by_score_all_groups_under_16mb}
 	\end{center}
 \end{table}
